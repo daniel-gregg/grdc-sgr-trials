@@ -5,7 +5,7 @@ A Python package supporting data uploads, data validation and data organisation 
 ## modules included
 Two modules/packages are included in this package:
 * A data upload function providing upload from a .csv file (user provided file path)
-* A data validation function that checks for the validity of the uploaded data and returns the pandas dataframe if pass
+* A data validation function that checks for the validity of the uploaded data and returns the pandas dataframe if pass (into 'output' folder)
 
 ## outputs
 * If upload or validation fails a relevant warning is returned
@@ -16,4 +16,4 @@ Two modules/packages are included in this package:
     * fertiliserApplications
     * fieldActivities
     * pesticideApplications
-* These are located in the 'outputs' folder
+* These are located in the 'output' folder
