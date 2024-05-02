@@ -21,14 +21,25 @@ def testFertiliserProductsModel():
                 {"name": "BigN", "productType": "pellet", "nitrogen": 23.0, "phosphorous": 12.0, "potassium": 2.0, "calcium": 0.5},
                 {"name": "SuperP", "productType": "slow_release", "nitrogen": 20.0, "phosphorous": 32.0, "potassium": 2.0, "calcium": 0.5},
                 {"name": "Erua", "productType": "liquid", "nitrogen": 48.0, "phosphorous": 0, "potassium": 0, "calcium": 0.0},
-                {"name": "JustCalcium", "productType": "pellet", "nitrogen": 0.0, "phosphorous": 0, "potassium": 0, "calcium": 14}
+                {"name": "OnlyC", "productType": "pellet", "nitrogen": 0.0, "phosphorous": 0, "potassium": 0, "calcium": 14}
             ]
         )
 
     try: 
-        #should pass
-        FertilisersProductsModel(**fertilisers)
+        #Convert pandas DF to dictionary
+        df_dict = fertilisers.to_dict(orient='records')
+        
+        #Loop through each record and validate
+        for record in df_dict:
+            FertilisersProductsModel(**record)
+        
+        #If pass, print the DF 
+        #(in actual validator you should return the df for further processing)
+        print(fertilisers)
+
     except ValidationError as e:
         print(e)
+
+testFertiliserProductsModel()
 
 

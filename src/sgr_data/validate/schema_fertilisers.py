@@ -5,7 +5,6 @@ import pandas as pd
 from pydantic import BaseModel, Field, ValidationError, validator, field_validator
 from enum import Enum
 from typing_extensions import TypedDict
-from validateschema import validate_data_schema
 
 # Provides a list of potential application types for fertiliser products
 class FertiliserType(str, Enum):
@@ -15,7 +14,7 @@ class FertiliserType(str, Enum):
     slowrelease = 'slow_release'
 
 # Provides a model for entry of new fertiliser products that can be referenced in fertiliser applications
-class FertilisersProductsModel(TypedDict):
+class FertilisersProductsModel(BaseModel):
     name: str = Field(..., max_length=20)
     productType: FertiliserType
     nitrogen: float = Field(..., ge=0, le=100, description="Nitrogen percent by weight or volume")
@@ -38,7 +37,7 @@ class FertiliserApplicationMethod(str, Enum):
     soilinjection = 'soil_injection'
 
 # Provides the core model for entering fertiliser application data
-class FertilisersApplicationsModel(TypedDict):
+class FertilisersApplicationsModel(BaseModel):
     plotID: str = Field(..., max_length=20)
     year: int = Field(..., ge=2023, le=2029, description="Year of application event")
     month: int = Field(..., ge=1, le=12, description="Month of application event")
