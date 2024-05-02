@@ -3,7 +3,6 @@
 """
 
 import pandas as pd
-from validateschema import validate_data_schema
 from schema_fertilisers import (
     FertiliserApplicationMethod,
     FertilisersApplicationsModel,
