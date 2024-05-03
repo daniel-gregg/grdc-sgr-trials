@@ -63,9 +63,6 @@ class FertilisersApplicationsModel(BaseModel):
         except:
             fertProducts = pd.read_csv(here('src/sgr_data/output/testProductData.csv'))
         
-        #extract names column from fertiliser products
-        fertProductsNames = fertProducts.loc[:,"name"]
-        
         #check if provided 'fertname' is in the existing products list
         if sum(fertProducts['name'].str.contains(fertname))==0:
             raise ValueError("Fertiliser product must be defined in the 'fertProductData' table in '../output'")

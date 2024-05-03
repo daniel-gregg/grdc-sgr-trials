@@ -5,11 +5,8 @@
 
 import pandas as pd
 from sgr_data.validate.schema_fertilisers import (
-    FertiliserApplicationMethod,
     FertilisersApplicationsModel,
-    FertilisersProductsModel,
-    FertiliserUnits,
-    FertiliserType
+    FertilisersProductsModel
 )
 from typing import List
 from pydantic import ValidationError
