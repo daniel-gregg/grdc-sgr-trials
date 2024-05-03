@@ -2,9 +2,12 @@
 ## Used for validation of uploaded data
 
 import pandas as pd
-from pydantic import BaseModel, Field, ValidationError, validator, field_validator
+from pydantic import BaseModel, Field, ConfigDict, field_validator
 from enum import Enum
 from typing_extensions import TypedDict
+from pyprojroot.here import here
+
+
 
 # Provides a list of potential application types for fertiliser products
 class FertiliserType(str, Enum):
@@ -13,8 +16,9 @@ class FertiliserType(str, Enum):
     powder = 'powder'
     slowrelease = 'slow_release'
 
-# Provides a model for entry of new fertiliser products that can be referenced in fertiliser applications
 class FertilisersProductsModel(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
     name: str = Field(..., max_length=20)
     productType: FertiliserType
     nitrogen: float = Field(..., ge=0, le=100, description="Nitrogen percent by weight or volume")
@@ -38,20 +42,35 @@ class FertiliserApplicationMethod(str, Enum):
 
 # Provides the core model for entering fertiliser application data
 class FertilisersApplicationsModel(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
     plotID: str = Field(..., max_length=20)
+
     year: int = Field(..., ge=2023, le=2029, description="Year of application event")
     month: int = Field(..., ge=1, le=12, description="Month of application event")
     day: int = Field(..., ge=1, le=31, description="Day of application event")
+    # To Do - define a validator to ensure the date is not in the future
 
-    #Define and validate fertiliser name against names in the 'FertilisersTypesModels.name' df
+    #Define and validate fertiliser name against names in the 'FertilisersTypesModels' df
     fertiliserName: str
     @field_validator('fertiliserName')
     @classmethod
     def fert_product_exists(cls, fertname):
-        fertnames = set(item.value for item in FertilisersProductsModel.name)
-        if not all(map(lambda x: x in fertnames, fertname)):
-            raise ValueError("Fertiliser product must be defined in the 'fertiliserTypes' dataframe")
+
+        #read in ProductData.csv
+        try:
+            fertProducts = pd.read_csv(here('src/sgr_data/output/fertProductData.csv'))
+        except:
+            fertProducts = pd.read_csv(here('src/sgr_data/output/testProductData.csv'))
+        
+        #extract names column from fertiliser products
+        fertProductsNames = fertProducts.loc[:,"name"]
+        
+        #check if provided 'fertname' is in the existing products list
+        if sum(fertProducts['name'].str.contains(fertname))==0:
+            raise ValueError("Fertiliser product must be defined in the 'fertProductData' table in '../output'")
         return fertname
+    
     
     #Define and validate units against options in the 'FertiliserUnits' model - automated by the 'use_enum_values' arg
     unitsApplied: FertiliserUnits

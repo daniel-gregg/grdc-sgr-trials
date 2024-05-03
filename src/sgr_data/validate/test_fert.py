@@ -1,9 +1,10 @@
 """
     Test function for validation program for fertilisers
+    These can be used as models for the validators themselves
 """
 
 import pandas as pd
-from schema_fertilisers import (
+from sgr_data.validate.schema_fertilisers import (
     FertiliserApplicationMethod,
     FertilisersApplicationsModel,
     FertilisersProductsModel,
@@ -13,6 +14,7 @@ from schema_fertilisers import (
 from typing import List
 from pydantic import ValidationError
 
+### Test the fertiliser products model schema
 def testFertiliserProductsModel():
 
     #Initialise fake dataframe
@@ -35,11 +37,39 @@ def testFertiliserProductsModel():
         
         #If pass, print the DF 
         #(in actual validator you should return the df for further processing)
-        print(fertilisers)
+        return(fertilisers)
+
+        #TEMPORARY - save this to csv in outputs
+        #fertilisers.to_csv('..//output//fertiliserProducts.csv')
 
     except ValidationError as e:
         print(e)
 
-testFertiliserProductsModel()
 
+### Test the fertiliser products model schema
+# This relies on a validated fertiliser products model 
+# which is imported into the 'schema_fertilisers.py' file
+def testFertiliserApplicationsModel():
+
+    #Initialise fake dataframe
+    applications = pd.DataFrame(
+            [
+                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "fertiliserName": "BigN", "unitsApplied": 'kilograms', "methodApplied": 'banding', "value": 234, "comments": 'Leave your number here'},
+            ]
+        )
+
+    try: 
+        #Convert pandas DF to dictionary
+        df_dict = applications.to_dict(orient='records')
+        
+        #Loop through each record and validate
+        for record in df_dict:
+            FertilisersApplicationsModel(**record)
+        
+        #If pass, print the DF 
+        #(in actual validator you should return the df for further processing)
+        return(applications)
+
+    except ValidationError as e:
+        print(e)
 
