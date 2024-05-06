@@ -4,7 +4,7 @@
 """
 
 import pandas as pd
-from sgr_data.validate.schema_fertilisers import (
+from src.sgr_data.validate.schema_fertilisers import (
     FertilisersApplicationsModel,
     FertilisersProductsModel
 )

@@ -26,6 +26,8 @@ class FertilisersProductsModel(BaseModel):
     potassium: float = Field(..., ge=0, le=100, description="Potassium percent by weight or volume")
     calcium: float = Field(..., ge=0, le=100, description="Calcium percent by weight or volume")
 
+    price_per_unit: float = Field(..., ge=0, le=1000, description="Price per kilogram or litre of product")
+
 # Enum of the possible units of measurement of fertiliser
 class FertiliserUnits(str, Enum):
     kilograms = 'kilograms'
@@ -74,7 +76,7 @@ class FertilisersApplicationsModel(BaseModel):
 
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
     methodApplied: FertiliserApplicationMethod
-    value: float = Field(..., ge=0,le=1000, description="Number of litres/kg applied PER HECTARE")
+    value: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
     comments: str = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 

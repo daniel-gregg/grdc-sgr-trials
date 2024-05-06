@@ -100,10 +100,10 @@ def addFertiliserApplicationsRecords(df):
 ### TEST - REMOVE ONCE CONFIRMED WORKING
 """ fertilisers = pd.DataFrame(
             [
-                {"name": "BigN", "productType": "pellet", "nitrogen": 23.0, "phosphorous": 12.0, "potassium": 2.0, "calcium": 0.5},
-                {"name": "SuperP", "productType": "slow_release", "nitrogen": 20.0, "phosphorous": 32.0, "potassium": 2.0, "calcium": 0.5},
-                {"name": "Erua", "productType": "liquid", "nitrogen": 48.0, "phosphorous": 0, "potassium": 0, "calcium": 0.0},
-                {"name": "OnlyC", "productType": "pellet", "nitrogen": 0.0, "phosphorous": 0, "potassium": 0, "calcium": 14}
+                {"name": "BigN", "productType": "pellet", "nitrogen": 23.0, "phosphorous": 12.0, "potassium": 2.0, "calcium": 0.5, "price_per_unit":2},
+                {"name": "SuperP", "productType": "slow_release", "nitrogen": 20.0, "phosphorous": 32.0, "potassium": 2.0, "calcium": 0.5, "price_per_unit":2},
+                {"name": "Erua", "productType": "liquid", "nitrogen": 48.0, "phosphorous": 0, "potassium": 0, "calcium": 0.0, "price_per_unit":2},
+                {"name": "OnlyC", "productType": "pellet", "nitrogen": 0.0, "phosphorous": 0, "potassium": 0, "calcium": 14, "price_per_unit":2}
             ]
         )
 
@@ -112,8 +112,14 @@ addFertiliserProductRecords(fertilisers)
 applications = pd.DataFrame(
             [
                 {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "fertiliserName": "BigN", "unitsApplied": 'kilograms', "methodApplied": 'banding', "value": 234, "comments": 'Leave your number here'},
+                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "fertiliserName": "BigN", "unitsApplied": 'kilograms', "methodApplied": 'banding', "value": 234, "comments": 'Leave your number here'},
+                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "fertiliserName": "BigN", "unitsApplied": 'kilograms', "methodApplied": 'banding', "value": 234, "comments": 'Leave your number here'},
+                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "fertiliserName": "BigN", "unitsApplied": 'kilograms', "methodApplied": 'banding', "value": 234, "comments": 'Leave your number here'},
+                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "fertiliserName": "BigN", "unitsApplied": 'kilograms', "methodApplied": 'banding', "value": 234, "comments": 'Leave your number here'},
+                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "fertiliserName": "BigN", "unitsApplied": 'kilograms', "methodApplied": 'banding', "value": 234, "comments": 'Leave your number here'}
             ]
         )
 
 addFertiliserApplicationsRecords(applications)
+
  """
