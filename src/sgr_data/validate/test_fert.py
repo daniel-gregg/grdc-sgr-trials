@@ -51,7 +51,7 @@ def testFertiliserApplicationsModel():
     #Initialise fake dataframe
     applications = pd.DataFrame(
             [
-                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "fertiliserName": "BigN", "unitsApplied": 'kilograms', "methodApplied": 'banding', "value": 234, "comments": 'Leave your number here'},
+                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "fertiliserName": "BigN", "unitsApplied": 'kilograms', "methodApplied": 'banding', "value": 234, "applicationTiming": 'sowing', "comments": 'Leave your number here'},
             ]
         )
 

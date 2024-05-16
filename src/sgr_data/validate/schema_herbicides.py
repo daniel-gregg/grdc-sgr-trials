@@ -21,11 +21,12 @@ class FertilisersProductsModel(BaseModel):
 
     name: str = Field(..., max_length=20)
     productType: FertiliserType
-    nAmmonia: float = Field(..., ge=0, le=100, description="Nitrogen as ammonia percent by weight or volume")
-    nUrea: float = Field(..., ge=0, le=100, description="Nitrogen as urea percent by weight or volume")
+    nitrogen: float = Field(..., ge=0, le=100, description="Nitrogen percent by weight or volume")
     phosphorous: float = Field(..., ge=0, le=100, description="Phosphorous percent by weight or volume")
     potassium: float = Field(..., ge=0, le=100, description="Potassium percent by weight or volume")
     calcium: float = Field(..., ge=0, le=100, description="Calcium percent by weight or volume")
+
+    price_per_unit: float = Field(..., ge=0, le=1000, description="Price per kilogram or litre of product")
 
 # Enum of the possible units of measurement of fertiliser
 class FertiliserUnits(str, Enum):
@@ -40,15 +41,6 @@ class FertiliserApplicationMethod(str, Enum):
     broadcast = 'broadcast'
     sidedressing = 'sidedressing'
     soilinjection = 'soil_injection'
-
-# Enum of reasons for fertiliser applications
-class FertiliserTiming(str, Enum):
-    preemergence = 'preemergence'
-    sowing = 'sowing'
-    midcrop = 'midcrop'
-    flowering = 'flowering'
-    grainset = 'grainset'
-    other = 'other'
 
 # Provides the core model for entering fertiliser application data
 class FertilisersApplicationsModel(BaseModel):
@@ -85,7 +77,6 @@ class FertilisersApplicationsModel(BaseModel):
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
     methodApplied: FertiliserApplicationMethod
     value: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
-    applicationTiming: FertiliserTiming
     comments: str = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 
