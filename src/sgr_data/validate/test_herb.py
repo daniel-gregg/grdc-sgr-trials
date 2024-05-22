@@ -59,6 +59,7 @@ def testHerbicidesApplicationsModel():
     applications = pd.DataFrame(
             [
                 {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "herbName": "No weeds on me", "herbUnitsApplied": 'litres', "herbMethodApplied": 'shielded', "herbValue": 12, "herbApplicationTiming": "sowing", "comments": 'Leave your number here'},
+                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "herbName": "No weeds on me", "herbUnitsApplied": 'litres', "herbMethodApplied": 'shielded', "herbValue": 12, "herbApplicationTiming": None, "comments": 'Leave your number here'},
             ]
         )
 
