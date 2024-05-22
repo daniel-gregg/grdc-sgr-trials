@@ -76,7 +76,14 @@ class FertilisersApplicationsModel(BaseModel):
         try:
             fertProducts = pd.read_csv(here('src/sgr_data/output/FertProductData.csv'))
         except:
-            fertProducts = pd.read_csv(here('src/sgr_data/output/testFertProductData.csv'))
+            #check if a testProducts csv is available
+            try:
+                fertProducts = pd.read_csv(here('src/sgr_data/output/testFertProductData.csv'))
+                print("Note that you have not specified a fertProducts dataset so the TEST data is being used")
+            
+            except: 
+                return "no fertiliser products data ('FertProductData.csv') exists in expected directory (.../sgr_data/output)"
+        
         
         #check if provided 'fertname' is in the existing products list
         if sum(fertProducts['name'].str.contains(fertname))==0:
