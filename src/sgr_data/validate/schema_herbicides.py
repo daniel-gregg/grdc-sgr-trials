@@ -4,46 +4,40 @@
 import pandas as pd
 from pydantic import BaseModel, Field, ConfigDict, field_validator
 from enum import Enum
-from typing_extensions import TypedDict
+from typing import Optional
 from pyprojroot.here import here
 
-
-
-# Provides a list of potential application types for fertiliser products
-class FertiliserType(str, Enum):
-    liquid = 'liquid'
-    pellet = 'pellet'
-    powder = 'powder'
-    slowrelease = 'slow_release'
-
-class FertilisersProductsModel(BaseModel):
+# Defines all used herbicide products
+# note that all secondary and onwards active ingredients fields are optional - they should be included
+# if present but can be omitted if there are only 1 (or more as relevant) active ingredients.
+class HerbicidesProductsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     name: str = Field(..., max_length=20)
-    productType: FertiliserType
-    nitrogen: float = Field(..., ge=0, le=100, description="Nitrogen percent by weight or volume")
-    phosphorous: float = Field(..., ge=0, le=100, description="Phosphorous percent by weight or volume")
-    potassium: float = Field(..., ge=0, le=100, description="Potassium percent by weight or volume")
-    calcium: float = Field(..., ge=0, le=100, description="Calcium percent by weight or volume")
-
-    price_per_unit: float = Field(..., ge=0, le=1000, description="Price per kilogram or litre of product")
+    activeIngredient1: str = Field(..., min_length=1, max_length=100, description="Primary active ingredient name")
+    activeIngredient1Value:float = Field(..., ge=0, le=100, description="Percent by weight or volume of active ingredient for primary active ingredient") 
+    activeIngredient2: Optional[str] = Field(..., min_length=1, max_length=100, description="Secondary active ingredient name")
+    activeIngredient2Value:Optional[float] = Field(..., ge=0, le=100, description="Percent by weight or volume of active ingredient for secondary active ingredient") 
+    activeIngredient3: Optional[str] = Field(..., min_length=1, max_length=100, description="Tertiary active ingredient name")
+    activeIngredient3Value:Optional[float] = Field(..., ge=0, le=100, description="Percent by weight or volume of active ingredient for tertiary active ingredient") 
+    activeIngredient4: Optional[str] = Field(..., min_length=1, max_length=100, description="Quartenary active ingredient name")
+    activeIngredient4Value:Optional[float] = Field(..., ge=0, le=100, description="Percent by weight or volume of active ingredient for quarternary active ingredient") 
 
 # Enum of the possible units of measurement of fertiliser
-class FertiliserUnits(str, Enum):
+class HerbicidesUnits(str, Enum):
     kilograms = 'kilograms'
     litres = 'litres'
 
-# Enum of possible application methods
-class FertiliserApplicationMethod(str, Enum):
+# Enum of possible application methods - no longer used.
+""" class HerbicidesApplicationMethod(str, Enum):
     foliar = 'foliar'
-    banding= 'banding'
-    fertigation = 'fertigation'
-    broadcast = 'broadcast'
-    sidedressing = 'sidedressing'
-    soilinjection = 'soil_injection'
+    broadcast= 'broadcast'
+    shielded = 'shielded' """
 
-# Provides the core model for entering fertiliser application data
-class FertilisersApplicationsModel(BaseModel):
+# Provides the core model for entering herbicide application data
+# note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'herb' to ensure
+# aggregation of these data with other activities does not generate duplicated field names. 
+class HerbicidesApplicationsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     plotID: str = Field(..., max_length=20)
@@ -54,29 +48,30 @@ class FertilisersApplicationsModel(BaseModel):
     # To Do - define a validator to ensure the date is not in the future
 
     #Define and validate fertiliser name against names in the 'FertilisersTypesModels' df
-    fertiliserName: str
-    @field_validator('fertiliserName')
+    herbName: str
+    @field_validator('herbName')
     @classmethod
-    def fert_product_exists(cls, fertname):
+    def herbicide_product_exists(cls, herbname):
 
         #read in ProductData.csv
         try:
-            fertProducts = pd.read_csv(here('src/sgr_data/output/fertProductData.csv'))
+            herbicideProducts = pd.read_csv(here('src/sgr_data/output/HerbProductData.csv'))
         except:
-            fertProducts = pd.read_csv(here('src/sgr_data/output/testProductData.csv'))
+            herbicideProducts = pd.read_csv(here('src/sgr_data/output/testHerbProductData.csv'))
+            #return "no herbicide products data ('HerbicideProductData.csv') exists in expected directory (.../sgr_data/output)"
         
-        #check if provided 'fertname' is in the existing products list
-        if sum(fertProducts['name'].str.contains(fertname))==0:
-            raise ValueError("Fertiliser product must be defined in the 'fertProductData' table in '../output'")
-        return fertname
+        #check if provided 'herbicidename' is in the existing products list
+        if sum(herbicideProducts['name'].str.contains(herbname))==0:
+            raise ValueError("Herbicide product must be defined in the 'herbicideProductData' table in '.../sgr_data/output'")
+        return herbname
     
     
     #Define and validate units against options in the 'FertiliserUnits' model - automated by the 'use_enum_values' arg
-    unitsApplied: FertiliserUnits
+    herbUnitsApplied: HerbicidesUnits
 
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
-    methodApplied: FertiliserApplicationMethod
-    value: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
+    herbValue: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
+    herbApplicationTiming: Optional[str] = Field(..., min_length=1, max_length=1000, description="Comment on herbicide timing (optional)")
     comments: str = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 
