@@ -1,4 +1,4 @@
-### A schema representation of all fields in the 'fertilisers' dataframe
+### A schema representation of all fields in the 'herbicides' dataframe
 ## Used for validation of uploaded data
 
 import pandas as pd
@@ -47,7 +47,7 @@ class HerbicidesApplicationsModel(BaseModel):
     day: int = Field(..., ge=1, le=31, description="Day of application event")
     # To Do - define a validator to ensure the date is not in the future
 
-    #Define and validate fertiliser name against names in the 'FertilisersTypesModels' df
+    #Define and validate herbicide name against names in the 'HerbicideProductData' df
     herbName: str
     @field_validator('herbName')
     @classmethod
@@ -57,8 +57,15 @@ class HerbicidesApplicationsModel(BaseModel):
         try:
             herbicideProducts = pd.read_csv(here('src/sgr_data/output/HerbProductData.csv'))
         except:
-            herbicideProducts = pd.read_csv(here('src/sgr_data/output/testHerbProductData.csv'))
-            #return "no herbicide products data ('HerbicideProductData.csv') exists in expected directory (.../sgr_data/output)"
+            
+            #check if a testProducts csv is available
+            try:
+                herbicideProducts = pd.read_csv(here('src/sgr_data/output/testHerbProductData.csv'))
+                print("Note that you have not specified a herbicideProducts dataset so the TEST data is being used")
+            
+            except: 
+                return "no pesticide products data ('HerbicideProductData.csv') exists in expected directory (.../sgr_data/output)"
+        
         
         #check if provided 'herbicidename' is in the existing products list
         if sum(herbicideProducts['name'].str.contains(herbname))==0:
