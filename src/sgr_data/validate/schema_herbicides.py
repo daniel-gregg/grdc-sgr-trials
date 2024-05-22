@@ -23,7 +23,7 @@ class HerbicidesProductsModel(BaseModel):
     activeIngredient4: Optional[str] = Field(..., min_length=1, max_length=100, description="Quartenary active ingredient name")
     activeIngredient4Value:Optional[float] = Field(..., ge=0, le=100, description="Percent by weight or volume of active ingredient for quarternary active ingredient") 
 
-# Enum of the possible units of measurement of fertiliser
+# Enum of the possible units of measurement of herbicide
 class HerbicidesUnits(str, Enum):
     kilograms = 'kilograms'
     litres = 'litres'

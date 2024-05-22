@@ -1,5 +1,5 @@
 """
-    Test function for validation program for herbicides
+    Test function for validation program for pesticides
     These can be used as models for the validators themselves
 """
 
@@ -13,35 +13,35 @@ import sys
 path_root = here()
 sys.path.append(str(path_root))
 
-from src.sgr_data.validate.schema_herbicides import (
-    HerbicidesApplicationsModel,
-    HerbicidesProductsModel
+from src.sgr_data.validate.schema_pesticides import (
+    PesticidesApplicationsModel,
+    PesticidesProductsModel
 )
 from typing import List
 from pydantic import ValidationError
 
 ### Test the fertiliser products model schema
-def testHerbicideProductsModel():
+def testPesticideProductsModel():
 
     #Read in test data
-    herbicides = pd.read_csv(here('src/sgr_data/output/testHerbProductData.csv'))
+    pesticides = pd.read_csv(here('src/sgr_data/output/testPesticideProductData.csv'))
 
     #Note empty values in a .csv are read in as 'nan'. 
     #Need to replace these prior to implementing as dict
     try: 
         #Convert NA to None type
-        herbicides = herbicides.replace(np.nan, None)
+        pesticides = pesticides.replace(np.nan, None)
 
         #Convert pandas DF to dictionary
-        df_dict = herbicides.to_dict(orient='records')
+        df_dict = pesticides.to_dict(orient='records')
         
         #Loop through each record and validate
         for record in df_dict:
-            HerbicidesProductsModel(**record)
+            PesticidesProductsModel(**record)
         
         #If pass, print the DF 
         #(in actual validator you should return the df for further processing)
-        return(herbicides)
+        return(pesticides)
 
         #TEMPORARY - save this to csv in outputs
         #fertilisers.to_csv('..//output//fertiliserProducts.csv')
@@ -53,14 +53,13 @@ def testHerbicideProductsModel():
 ### Test the fertiliser products model schema
 # This relies on a validated fertiliser products model 
 # which is imported into the 'schema_fertilisers.py' file
-def testHerbicidesApplicationsModel():
+def testPesticidesApplicationsModel():
 
     #Initialise fake dataframe
-    #Note, the creation of the instance IGNORES irrelevant variables. This can help with upload strategies (define a single spreadsheet)
     applications = pd.DataFrame(
             [
-                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "herbName": "No weeds on me", "herbUnitsApplied": 'litres', "herbValue": 12, "herbApplicationTiming": "sowing", "comments": 'Leave your number here'},
-                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "herbName": "No weeds on me", "herbUnitsApplied": 'kilograms', "herbMethodApplied": 'shielded', "herbValue": 12, "herbApplicationTiming": None, "comments": 'Leave your number here'},
+                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "pesticideName": "shoofly", "pesticideUnitsApplied": 'litres', "pesticideValue": 12, "pesticideApplicationTiming": "sowing", "comments": 'Leave your number here'},
+                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "pesticideName": "Four products", "pesticideUnitsApplied": 'kilograms', "pesticideValue": 12, "pesticideApplicationTiming": None, "comments": 'Leave your number here'},
             ]
         )
 
@@ -70,7 +69,7 @@ def testHerbicidesApplicationsModel():
         
         #Loop through each record and validate
         for record in df_dict:
-            HerbicidesApplicationsModel(**record)
+            PesticidesApplicationsModel(**record)
         
         #If pass, print the DF 
         #(in actual validator you should return the df for further processing)
@@ -81,5 +80,5 @@ def testHerbicidesApplicationsModel():
 
 
 #run the tests
-testHerbicideProductsModel()
-testHerbicidesApplicationsModel()
+testPesticideProductsModel()
+testPesticidesApplicationsModel()
