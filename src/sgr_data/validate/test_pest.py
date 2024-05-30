@@ -24,7 +24,7 @@ from pydantic import ValidationError
 def testPesticideProductsModel():
 
     #Read in test data
-    pesticides = pd.read_csv(here('src/sgr_data/output/testPesticideProductData.csv'))
+    pesticides = pd.read_csv(here('src/sgr_data/data/test_data/testPesticideProductData.csv'))
 
     #Note empty values in a .csv are read in as 'nan'. 
     #Need to replace these prior to implementing as dict

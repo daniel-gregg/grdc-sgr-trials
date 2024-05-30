@@ -55,12 +55,12 @@ class PesticidesApplicationsModel(BaseModel):
 
         #read in ProductData.csv
         try:
-            pesticideProducts = pd.read_csv(here('src/sgr_data/output/PesticideProductData.csv'))
+            pesticideProducts = pd.read_csv(here('src/sgr_data/data/PesticideProductData.csv'))
         except:
             
             #check if a testProducts csv is available
             try:
-                pesticideProducts = pd.read_csv(here('src/sgr_data/output/testPesticideProductData.csv'))
+                pesticideProducts = pd.read_csv(here('src/sgr_data/data/test_Data/testPesticideProductData.csv'))
                 print("Note that you have not specified a pesticideProducts dataset so the TEST data is being used")
             
             except: 
@@ -68,7 +68,7 @@ class PesticidesApplicationsModel(BaseModel):
         
         #check if provided 'herbicidename' is in the existing products list
         if sum(pesticideProducts['name'].str.contains(pestname))==0:
-            raise ValueError("Pesticide product must be defined in the 'pesticideProductData' table in '.../sgr_data/output'")
+            raise ValueError("Pesticide product must be defined in the 'pesticideProductData' table in '.../sgr_data/data'")
         return pestname
     
     
@@ -78,7 +78,7 @@ class PesticidesApplicationsModel(BaseModel):
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
     pesticideValue: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
     pesticideApplicationTiming: Optional[str] = Field(..., min_length=1, max_length=1000, description="Comment on pesticide timing (optional)")
-    comments: str = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
+    comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 
 

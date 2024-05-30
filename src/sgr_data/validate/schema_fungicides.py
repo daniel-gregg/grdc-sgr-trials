@@ -55,20 +55,20 @@ class FungicidesApplicationsModel(BaseModel):
 
         #read in ProductData.csv
         try:
-            fungicideProducts = pd.read_csv(here('src/sgr_data/output/FungicideProductData.csv'))
+            fungicideProducts = pd.read_csv(here('src/sgr_data/data/test_data/FungicideProductData.csv'))
         except:
             
             #check if a testProducts csv is available
             try:
-                fungicideProducts = pd.read_csv(here('src/sgr_data/output/testFungProductData.csv'))
+                fungicideProducts = pd.read_csv(here('src/sgr_data/data/test_data/testFungProductData.csv'))
                 print("Note that you have not specified a FungicideProducts dataset so the TEST data is being used")
             
             except: 
-                return "no fungicide products data ('FungicideProductData.csv') exists in expected directory (.../sgr_data/output)"
+                return "no fungicide products data ('FungicideProductData.csv') exists in expected directory (.../sgr_data/data)"
         
         #check if provided 'fungicidename' is in the existing products list
         if sum(fungicideProducts['name'].str.contains(fungname))==0:
-            raise ValueError("Fungicide product must be defined in the 'FungicideProductData' table in '.../sgr_data/output'")
+            raise ValueError("Fungicide product must be defined in the 'FungicideProductData' table in '.../sgr_data/data'")
         return fungname
     
     
@@ -78,7 +78,7 @@ class FungicidesApplicationsModel(BaseModel):
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
     fungicideValue: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
     fungicideApplicationTiming: Optional[str] = Field(..., min_length=1, max_length=1000, description="Comment on fungicide timing (optional)")
-    comments: str = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
+    comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 
 

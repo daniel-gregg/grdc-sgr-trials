@@ -23,7 +23,7 @@ from pydantic import ValidationError
 def testFertiliserProductsModel():
 
     #Read in test data
-    fertilisers = pd.read_csv(here('src/sgr_data/output/testFertProductData.csv'))
+    fertilisers = pd.read_csv(here('src/sgr_data/data/test_data/testFertProductData.csv'))
 
     try: 
         #Convert NA to None type
