@@ -4,7 +4,7 @@
 import pandas as pd
 from pydantic import BaseModel, Field, ConfigDict, field_validator
 from enum import Enum
-from typing_extensions import TypedDict
+from typing import Optional
 from pyprojroot.here import here
 
 # Provides a list of potential application types for fertiliser products
@@ -74,20 +74,20 @@ class FertilisersApplicationsModel(BaseModel):
 
         #read in ProductData.csv
         try:
-            fertProducts = pd.read_csv(here('src/sgr_data/output/FertProductData.csv'))
+            fertProducts = pd.read_csv(here('src/sgr_data/data/FertProductData.csv'))
         except:
             #check if a testProducts csv is available
             try:
-                fertProducts = pd.read_csv(here('src/sgr_data/output/testFertProductData.csv'))
+                fertProducts = pd.read_csv(here('src/sgr_data/data/test_data/testFertProductData.csv'))
                 print("Note that you have not specified a fertProducts dataset so the TEST data is being used")
             
             except: 
-                return "no fertiliser products data ('FertProductData.csv') exists in expected directory (.../sgr_data/output)"
+                return "no fertiliser products data ('FertProductData.csv') exists in expected directory (.../sgr_data/data)"
         
         
         #check if provided 'fertname' is in the existing products list
         if sum(fertProducts['name'].str.contains(fertname))==0:
-            raise ValueError("Fertiliser product must be defined in the 'fertProductData' table in '../output'")
+            raise ValueError("Fertiliser product must be defined in the 'fertProductData' table in '..sgr_data//data'")
         return fertname
     
     
@@ -95,7 +95,7 @@ class FertilisersApplicationsModel(BaseModel):
     fertUnitsApplied: FertiliserUnits
 
     fertValue: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
-    comments: str = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
+    comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 
 
