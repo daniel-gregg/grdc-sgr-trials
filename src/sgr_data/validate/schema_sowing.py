@@ -67,7 +67,7 @@ class TimelinessOptions(str, Enum):
 #Crops and crop varieties
 #Whenever a plot-planted crop data point is validated it WILL be added to a plot-date-planted-cropname-harvest dataframe
 #This dataframe is then used for validation of harvest observations (i.e. cannot harvest wheat from a barley planted plot)
-class PlantedCrops(BaseModel):
+class Sowing(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     #identifying details
