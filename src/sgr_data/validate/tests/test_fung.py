@@ -14,7 +14,7 @@ import sys
 path_root = here()
 sys.path.append(str(path_root))
 
-from src.sgr_data.validate.schema_fungicides import (
+from src.sgr_data.validate.schemas.schema_fungicides import (
     FungicidesApplicationsModel,
     FungicidesProductsModel
 )

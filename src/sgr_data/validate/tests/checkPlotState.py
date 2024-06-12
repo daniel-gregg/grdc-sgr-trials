@@ -6,7 +6,6 @@ path_root = here()
 sys.path.append(str(path_root))
 
 import pandas as pd
-import datetime
 
 #plotActivityType must be either 'SOWING' or 'TERMINATION' and comes from the pydantic 
 #validator path (defined post validation)
@@ -17,10 +16,10 @@ import datetime
 def checkPlotState(plot_id, plotActivityType, crop1=None, crop2=None, crop3=None):
     
     #Conduct checks
-    if (plotActivityType!='SOWING' | type!='TERMINATION'):
+    if (plotActivityType!='SOWING' or type!='TERMINATION'):
         NameError("plotActivityType must be either 'SOWING' or 'TERMINATION'.")
     
-    if(plotActivityType=='TERMINATION' & crop1 == None):
+    if(plotActivityType=='TERMINATION' and crop1 == None):
         ValueError("At a minimum, the 'crop1' argument must be non-empty if you are seeking to enter a crop termination data observation")
     
     #read in state data
