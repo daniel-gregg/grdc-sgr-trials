@@ -112,10 +112,10 @@ class SowingModel(BaseModel):
         #read in the .csv
         ## Load in the crop and varieties data
         try:
-            crops_varieties = pd.read_csv(here('src/sgr_data/data/varieties/varieties.csv'))
+            crops_varieties = pd.read_csv(here('src/sgr_data/data/reference_data/varieties.csv'))
         except:
             #If no actual data available, print warning to terminal
-            print("There is no longer a 'varieties.csv' file in the 'src/sgr_data/data/varieties/' directory. This must be replaced for validation to proceed.")
+            print("There is no longer a 'varieties.csv' file in the 'src/sgr_data/data/reference_data/' directory. This must be replaced for validation to proceed.")
 
         #now loop through each crop and check the relevant variety
         for crop in range(3):
