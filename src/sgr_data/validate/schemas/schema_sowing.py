@@ -7,6 +7,8 @@ from pyprojroot.here import here
 path_root = here()
 sys.path.append(str(path_root))
 
+from src.utils.auto_enum import AutoEnum, auto, alias
+
 import pandas as pd
 from pydantic import (
     BaseModel,
@@ -16,38 +18,21 @@ from pydantic import (
     field_validator,
     model_validator
 ) 
-from enum import Enum, StrEnum, auto
 from typing import Optional
 from typing_extensions import Self
 
 #Planting reason - improves detail for pasture and other crops above (can move pasture types into own types)
-class Reason(StrEnum):
+class Reason(AutoEnum):
     sale = auto()
     fodder = auto()
     hay = auto()
     silage = auto()
     soilManagement = auto()
-
-    @classmethod
-    def _missing_(cls, value):
-        value = value.lower()
-        for member in cls:
-            if member == value:
-                return member
-        return None
     
-class TimelinessOptions(StrEnum):
+class TimelinessOptions(AutoEnum):
     on_time = auto()
     early = auto()
     late = auto()
-
-    @classmethod
-    def _missing_(cls, value):
-        value = value.lower()
-        for member in cls:
-            if member.lower() == value:
-                return member
-        return None
 
 #Crops and crop varieties
 #Whenever a plot-planted crop data point is validated it WILL be added to a plot-date-planted-cropname-harvest dataframe

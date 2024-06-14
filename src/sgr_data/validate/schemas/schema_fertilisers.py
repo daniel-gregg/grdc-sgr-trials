@@ -1,41 +1,42 @@
 ### A schema representation of all fields in the 'fertilisers' dataframe
 ## Used for validation of uploaded data
 
+
+import sys
+from pyprojroot.here import here
+
+#append path using 'here'
+path_root = here()
+sys.path.append(str(path_root))
+from src.utils.auto_enum import AutoEnum, auto, alias
+
 import pandas as pd
 from pydantic import BaseModel, Field, ConfigDict, field_validator
 from enum import Enum
 from typing import Optional
 from pyprojroot.here import here
 
+
 # Provides a list of potential application types for fertiliser products
-class FertiliserType(str, Enum):
-    liquid = 'liquid'
-    pellet = 'pellet'
-    powder = 'powder'
-    slowrelease = 'slowrelease'
+class FertiliserType(AutoEnum):
+    liquid = auto()
+    pellet = auto()
+    powder = auto()
+    slowrelease = auto()
 
 # Enum of the possible units of measurement of fertiliser
-class FertiliserUnits(str, Enum):
-    kilograms = 'kilograms'
-    litres = 'litres'
+class FertiliserUnits(AutoEnum):
+    kilograms = alias('kg', 'kilo', 'kilos')
+    litres = alias('l', 'liters')
 
 # Enum of possible application methods
-class FertiliserApplicationMethod(str, Enum):
-    foliar = 'foliar'
-    banding= 'banding'
-    fertigation = 'fertigation'
-    broadcast = 'broadcast'
-    sidedressing = 'sidedressing'
-    soilinjection = 'soil_injection'
-
-# Enum of reasons for fertiliser applications - no longer used.
-""" class FertiliserTiming(str, Enum):
-    preemergence = 'preemergence'
-    sowing = 'sowing'
-    midcrop = 'midcrop'
-    flowering = 'flowering'
-    grainset = 'grainset'
-    other = 'other' """
+class FertiliserApplicationMethod(AutoEnum):
+    foliar = auto()
+    banding= auto()
+    fertigation = auto()
+    broadcast = auto()
+    sidedressing = auto()
+    soilinjection = auto()
 
 class FertilisersProductsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)

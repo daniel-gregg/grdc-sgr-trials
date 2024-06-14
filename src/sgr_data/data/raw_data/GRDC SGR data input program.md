@@ -13,8 +13,8 @@ The process of entering data from receipt of trial operators records to adding d
 3.  Query any gross omissions or mistakes
 4.  Save files in the referent site-activity directory within the ‘src/sgr_data/data/raw_data’ directory (e.g. ‘roseworthy/fertiliser/’) with naming convention as:
 
-    ‘DD_MM_YY SITE ACTIVITY’  
-    for example – ‘01_01_24 ROSEWORTHY FERTILISER’
+    ‘DD_MM_YYYY ’  
+    for example – ‘01_01_2024’
 
 5.  Notify data manager of new data availability when all data has been incorporated into the relevant folder
 6.  Respond to any errors in upload and validation arising from the new data and coordinate their correction

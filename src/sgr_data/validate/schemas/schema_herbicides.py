@@ -1,11 +1,18 @@
 ### A schema representation of all fields in the 'herbicides' dataframe
 ## Used for validation of uploaded data
 
+import sys
+from pyprojroot.here import here
+
+#append path using 'here'
+path_root = here()
+sys.path.append(str(path_root))
+from src.utils.auto_enum import AutoEnum, auto, alias
+
 import pandas as pd
 from pydantic import BaseModel, Field, ConfigDict, field_validator
 from enum import Enum
 from typing import Optional
-from pyprojroot.here import here
 
 # Defines all used herbicide products
 # note that all secondary and onwards active ingredients fields are optional - they should be included
@@ -24,15 +31,9 @@ class HerbicidesProductsModel(BaseModel):
     activeIngredient4Value:Optional[float] = Field(..., ge=0, le=100, description="Percent by weight or volume of active ingredient for quarternary active ingredient") 
 
 # Enum of the possible units of measurement of herbicide
-class HerbicidesUnits(str, Enum):
-    kilograms = 'kilograms'
-    litres = 'litres'
-
-# Enum of possible application methods - no longer used.
-""" class HerbicidesApplicationMethod(str, Enum):
-    foliar = 'foliar'
-    broadcast= 'broadcast'
-    shielded = 'shielded' """
+class HerbicidesUnits(AutoEnum):
+    kilograms = alias('kg', 'kilo', 'kilos')
+    litres = alias('l', 'liters')
 
 # Provides the core model for entering herbicide application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'herb' to ensure

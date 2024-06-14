@@ -2,64 +2,60 @@
 
 ##Note: May want to rename this to include non-termination events such as simulated grazing
 
-import pandas as pd
-from pydantic import BaseModel, Field, ConfigDict, field_validator, StrictBool
-from enum import Enum
-from typing import Optional
-from typing_extensions import Annotated
-from pydantic.functional_validators import AfterValidator
+import sys
+from pyprojroot.here import here
 
-#Create a special case-insensitive enum
-class CaseInsensitiveEnum(str, Enum):
-    @classmethod
-    def _missing_(cls, value: str):
-        for member in cls:
-            if member.lower() == value.lower():
-                return member
-        return None
+#append path using 'here'
+path_root = here()
+sys.path.append(str(path_root))
+
+from src.utils.auto_enum import AutoEnum, auto, alias
+
+from pydantic import BaseModel, Field, ConfigDict
+from typing import Optional
 
 #Crop names
-class Crops(CaseInsensitiveEnum):
-    wheat = 'wheat'
-    barley = 'barley'
-    canola = 'canola'
-    lentil = 'lentil'
-    vetch = 'vetch'
-    oat = 'oat'
-    fababean = 'fababean'
-    fieldpea = 'fieldpea'
-    clover = 'clover'
-    chicory = 'chicory'
-    perennialRyegrass = 'perrenialryegrass'
-    subClover = 'subclover'
-    millet = 'millet'
-    brassica = 'brassica'
-    durum = 'durum'
-    tillageradish = 'tillageradish'
+class Crops(AutoEnum):
+    wheat = auto()
+    barley = auto()
+    canola = auto()
+    lentil = auto()
+    vetch = auto()
+    oat = auto()
+    fababean = auto()
+    fieldpea = auto()
+    clover = auto()
+    chicory = auto()
+    perennialRyegrass = auto()
+    subClover = auto()
+    millet = auto()
+    brassica = auto()
+    durum = auto()
+    tillageradish = auto()
 
-class TerminationMethod(CaseInsensitiveEnum):
+class TerminationMethod(AutoEnum):
     #Provides a range of termination methods, most prominent of which is harvest
-    harvest = 'harvest'
-    sprayout = 'sprayout'
-    tillage = 'tillage'
-    no_termination = None
+    harvest = auto()
+    sprayout = auto()
+    tillage = auto()
+    no_termination = alias('None','',  'no', 'NA', 'nothing')
 
 #Crop termination reason - improves detail for pasture and other crops above (can move pasture types into own types)
-class Reason(CaseInsensitiveEnum):
-    success = 'success'#indicates that planting objectives were substantively achieved
-    fail_water = 'fail_water' #crop failed due to insufficient crop water availability
-    fail_pests = 'fail_pests' #crop failed due to pests
-    fail_disease = 'fail_disease' #crop failed due to disease 
-    fail_strategic = 'fail_strategic' #crop terminated early for strategic reasons - provide comments
-    fail_other = 'fail_other'
+class Reason(AutoEnum):
+    success = alias('harvest','good','pass') #indicates that planting objectives were substantively achieved
+    fail_water = alias('water','dry','drought') #crop failed due to insufficient crop water availability
+    fail_pests = alias('vermin', 'insects', 'mice', 'locusts') #crop failed due to pests
+    fail_disease = alias('disease', 'fungus', 'infection', 'rot') #crop failed due to disease 
+    fail_strategic = alias('management') #crop terminated early for strategic reasons - provide comments
+    fail_other = alias('NA','', 'No reason')
 
 #This model captures the ending state of the plot after a crop is terminated
-class terminationState(CaseInsensitiveEnum):
-    fallowStubble = 'stubble'                           #Crop stubble left
-    fallowBareGround = 'bare'                           #Bare ground fallow
-    fodder = 'fodder'                                   #Crop treated as fodder
-    crop = 'crop'                                       #No mechanical harvesting or other activity
-    otherterminationstate = 'Other'                     #Other state not included here - include in comments
+class terminationState(AutoEnum):
+    fallowStubble = alias('stubble', 'no till')                           #Crop stubble left
+    fallowBareGround = alias('bare ground', 'tillage', 'till')                           #Bare ground fallow
+    fodder = alias('grazing')                                  #Crop treated as fodder
+    crop = alias('no harvest', 'crop')                                      #No mechanical harvesting or other activity
+    otherterminationstate = alias('NA', '', 'other')                     #Other state not included here - include in comments
 
 
 #Crops and crop varieties
