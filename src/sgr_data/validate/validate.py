@@ -14,18 +14,17 @@ path_root = here()
 sys.path.append(str(path_root))
 
 # module imports
-from src.sgr_data.upload.modules import (
+from src.sgr_data.validate.modules import (
     validate_fertiliser,
     validate_fungicide,
     validate_herbicide,
     validate_insecticide,
-    validate_pesticide,
+    validate_pests,
     validate_sowing,
     validate_termination
 )
 
-from src.sgr_data.upload.upload import uploadFiles
+def validateData(data, schema):
+    #validate data against schema
+    return data
 
-
-#Get the data files from upload files
-uploadFiles('roseworthy','fertiliser')

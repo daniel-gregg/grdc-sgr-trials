@@ -13,38 +13,35 @@ import sys
 path_root = here()
 sys.path.append(str(path_root))
 
-from src.sgr_data.validate.schemas.schema_pest import (
-    PesticidesApplicationsModel,
-    PesticidesProductsModel
+from src.sgr_data.validate.schemas.schema_pests import (
+    PestsApplicationsModel,
+    PestProductsModel
 )
 from typing import List
 from pydantic import ValidationError
 
 ### Test the fertiliser products model schema
-def testPesticideProductsModel():
+def testPestProductsModel():
 
     #Read in test data
-    pesticides = pd.read_csv(here('src/sgr_data/data/test_data/testPesticideProductData.csv'))
+    pests = pd.read_csv(here('src/sgr_data/data/test_data/testPestProductData.csv'))
 
     #Note empty values in a .csv are read in as 'nan'. 
     #Need to replace these prior to implementing as dict
     try: 
         #Convert NA to None type
-        pesticides = pesticides.replace(np.nan, None)
+        pests = pests.replace(np.nan, None)
 
         #Convert pandas DF to dictionary
-        df_dict = pesticides.to_dict(orient='records')
+        df_dict = pests.to_dict(orient='records')
         
         #Loop through each record and validate
         for record in df_dict:
-            PesticidesProductsModel(**record)
+            PestProductsModel(**record)
         
         #If pass, print the DF 
         #(in actual validator you should return the df for further processing)
-        return(pesticides)
-
-        #TEMPORARY - save this to csv in outputs
-        #fertilisers.to_csv('..//output//fertiliserProducts.csv')
+        return(pests)
 
     except ValidationError as e:
         print(e)
@@ -53,13 +50,13 @@ def testPesticideProductsModel():
 ### Test the fertiliser products model schema
 # This relies on a validated fertiliser products model 
 # which is imported into the 'schema_fertilisers.py' file
-def testPesticidesApplicationsModel():
+def testPestApplicationsModel():
 
     #Initialise fake dataframe
     applications = pd.DataFrame(
             [
-                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "pesticideName": "shoofly", "pesticideUnitsApplied": 'litres', "pesticideValue": 12, "pesticideApplicationTiming": "sowing", "comments": 'Leave your number here'},
-                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "pesticideName": "Four products", "pesticideUnitsApplied": 'kilograms', "pesticideValue": 12, "pesticideApplicationTiming": None, "comments": 'Leave your number here'},
+                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "pestProductName": "shoofly", "pestProductUnitsApplied": 'litres', "pestProductValue": 12, "pestProductApplicationTiming": "sowing", "comments": 'Leave your number here'},
+                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "pestProductName": "Four products", "pestProductUnitsApplied": 'kilograms', "pestProductValue": 12, "pestProductApplicationTiming": None, "comments": 'Leave your number here'},
             ]
         )
 
@@ -69,7 +66,7 @@ def testPesticidesApplicationsModel():
         
         #Loop through each record and validate
         for record in df_dict:
-            PesticidesApplicationsModel(**record)
+            PestsApplicationsModel(**record)
         
         #If pass, print the DF 
         #(in actual validator you should return the df for further processing)
@@ -78,7 +75,6 @@ def testPesticidesApplicationsModel():
     except ValidationError as e:
         print(e)
 
-
 #run the tests
-testPesticideProductsModel()
-testPesticidesApplicationsModel()
+testPestProductsModel()
+testPestApplicationsModel()

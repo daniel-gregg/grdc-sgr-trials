@@ -17,13 +17,13 @@ from src.sgr_data.validate.schemas.schema_termination import (
     TerminationModel
 )
 
-from src.sgr_data.upload.modules.checkPlotState import checkPlotState
+from src.sgr_data.validate.modules.checkPlotState import checkPlotState
 
 from typing import List
 from pydantic import ValidationError
 
 ### Test the fertiliser products model schema
-def testTerminationModel():
+def validateTerminationModel():
 
     #Read in test data
     termination_data = pd.read_csv(here('src/sgr_data/data/test_data/testTerminationDataFail1.csv'))
@@ -58,6 +58,3 @@ def testTerminationModel():
 
     except ValidationError as e:
         print(e)
-
-
-testTerminationModel()

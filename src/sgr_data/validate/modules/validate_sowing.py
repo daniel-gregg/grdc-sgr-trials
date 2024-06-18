@@ -17,13 +17,13 @@ from src.sgr_data.validate.schemas.schema_sowing import (
     SowingModel
 )
 
-from src.sgr_data.upload.modules.checkPlotState import checkPlotState
+from src.sgr_data.validate.modules.checkPlotState import checkPlotState
 
 from typing import List
 from pydantic import ValidationError
 
 ### Test the fertiliser products model schema
-def testSowingModel():
+def validateSowingModel():
 
     #Read in test data
     sowing_data = pd.read_csv(here('src/sgr_data/data/test_data/testSowingDataPass.csv'))
@@ -58,6 +58,3 @@ def testSowingModel():
 
     except ValidationError as e:
         print(e)
-
-
-testSowingModel()

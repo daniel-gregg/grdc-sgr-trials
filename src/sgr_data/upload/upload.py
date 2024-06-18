@@ -34,28 +34,9 @@ def getCSV(filePath):
     df_ = pd.read_csv(filePath)
     return df_
 
-#define sites and activities
-sites = [
-    'roseworthy'
-    #add remaining sites
-]
-
-activities = [
-    'fertiliser',
-    'fungicide',
-    'herbicide',
-    'insecticide',
-    'pesticide',
-    'sowing',
-    'termination'
-]
-
 # Get existing files - REPLACE THIS WTIH DB GET QUERY WHEN CONNECTING TO DB
 def getExistingFiles(path):
-
-    #get already existing data as single file .csv
-    existing_files_path = path
-    existing_files = os.listdir(existing_files_path)
+    existing_files = os.listdir(path)
 
     #This is a dictionary of activities (see above) as keys with values a list of dates (indicating existing data entries)
     return existing_files
@@ -96,10 +77,8 @@ def uploadFiles(site, activity):
     #Else upload data into list of pandas dfs
     else:
         data = {}
-        print(upload_files_list)
         for file in upload_files_list:
             #file_name = upload_files_list[file]
-            print(file)
             path_name = os.path.join(raw_data_path,file+'.csv')
             df = getCSV(path_name)
             data[file] = df
