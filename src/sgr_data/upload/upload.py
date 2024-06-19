@@ -45,7 +45,7 @@ def getExistingFiles(path):
 def getRawFilesList(path):
     raw_files = os.listdir(path)
 
-    raw_files = [x.rstrip('.csv') for x in raw_files] #strip '.csv'
+    raw_files = [x[:-4] for x in raw_files] #strip '.csv'
 
     #This returns a list of dates without the '.csv' appended
     return raw_files
@@ -60,7 +60,7 @@ def getFilesToUpload(existing,raw):
 def uploadFiles(site, activity):
 
     raw_data_path = os.path.join(base_path, 'raw_data', site, activity)
-    existing_data_path = os.path.join(base_path, 'processed_data', 'upload_records', site, activity)
+    existing_data_path = os.path.join(base_path, 'validated_data', site, activity)
 
     #get existing data record
     existing_data = getExistingFiles(existing_data_path)

@@ -13,9 +13,9 @@ import sys
 path_root = here()
 sys.path.append(str(path_root))
 
-from src.sgr_data.validate.schemas.schema_insecticides import (
-    InsecticidesApplicationsModel,
-    InsecticidesProductsModel
+from src.sgr_data.validate.schemas.schema_insecticide import (
+    InsecticideApplicationsModel,
+    InsecticideProductsModel
 )
 from typing import List
 from pydantic import ValidationError
@@ -37,7 +37,7 @@ def validateInsecticideProductsModel():
         
         #Loop through each record and validate
         for record in df_dict:
-            InsecticidesProductsModel(**record)
+            InsecticideProductsModel(**record)
         
         #If pass, print the DF 
         #(in actual validator you should return the df for further processing)
@@ -53,15 +53,7 @@ def validateInsecticideProductsModel():
 ### Test the fertiliser products model schema
 # This relies on a validated fertiliser products model 
 # which is imported into the 'schema_fertilisers.py' file
-def validateInsecticidesApplicationsModel():
-
-    #Initialise fake dataframe
-    applications = pd.DataFrame(
-            [
-                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "insecticideName": "shoofly", "insecticideUnitsApplied": 'liters', "insecticideValue": 12, "insecticideApplicationTiming": "sowing", "comments": 'Leave your number here'},
-                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "insecticideName": "Four products", "insecticideUnitsApplied": 'kg', "insecticideValue": 12, "insecticideApplicationTiming": None, "comments": 'Leave your number here'},
-            ]
-        )
+def validateInsecticideApplicationsModel(applications):
 
     try: 
         #Convert pandas DF to dictionary
@@ -69,7 +61,7 @@ def validateInsecticidesApplicationsModel():
         
         #Loop through each record and validate
         for record in df_dict:
-            InsecticidesApplicationsModel(**record)
+            InsecticideApplicationsModel(**record)
         
         #If pass, print the DF 
         #(in actual validator you should return the df for further processing)

@@ -13,8 +13,8 @@ import sys
 path_root = here()
 sys.path.append(str(path_root))
 
-from src.sgr_data.validate.schemas.schema_pests import (
-    PestsApplicationsModel,
+from src.sgr_data.validate.schemas.schema_pest import (
+    PestApplicationsModel,
     PestProductsModel
 )
 from typing import List
@@ -50,15 +50,7 @@ def validatePestProductsModel():
 ### Test the fertiliser products model schema
 # This relies on a validated fertiliser products model 
 # which is imported into the 'schema_fertilisers.py' file
-def validatePestApplicationsModel():
-
-    #Initialise fake dataframe
-    applications = pd.DataFrame(
-            [
-                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "pestProductName": "shoofly", "pestProductUnitsApplied": 'litres', "pestProductValue": 12, "pestProductApplicationTiming": "sowing", "comments": 'Leave your number here'},
-                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "pestProductName": "Four products", "pestProductUnitsApplied": 'kilograms', "pestProductValue": 12, "pestProductApplicationTiming": None, "comments": 'Leave your number here'},
-            ]
-        )
+def validatePestApplicationsModel(applications):
 
     try: 
         #Convert pandas DF to dictionary
@@ -66,7 +58,7 @@ def validatePestApplicationsModel():
         
         #Loop through each record and validate
         for record in df_dict:
-            PestsApplicationsModel(**record)
+            PestApplicationsModel(**record)
         
         #If pass, print the DF 
         #(in actual validator you should return the df for further processing)

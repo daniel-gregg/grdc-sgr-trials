@@ -104,13 +104,9 @@ class SowingModel(BaseModel):
 
         #now loop through each crop and check the relevant variety
         for crop in range(3):
-            print(crop)
-
             #set core variables
             crop_name = crops[crop]
-            print(crop_name)
             variety_name = varieties[crop]
-            print(variety_name)
 
             # check if crop_name is empty and if so move to next if it is crop2 or crop3
             if crop_name == None:     #element is empty (and is allowed to be)
@@ -129,13 +125,13 @@ class SowingModel(BaseModel):
             #convert to lower
             possible_crop_names = [x.lower() for x in possible_crop_names]
             #remove any white space in crop_name
-            print(possible_crop_names)
+
             if not(crop_name in possible_crop_names):
                 raise ValueError("Please check your crop names - one is not included in the allowed crops")                           
             
             #now check varieties
             dataframe_index = possible_crop_names.index(crop_name)
-            print(crops_varieties.iloc[:,dataframe_index])
+            
             if variety_name in list(crops_varieties.iloc[:,dataframe_index]):
                 raise ValueError("Variety must be defined in the 'varieties.csv' table in '.../sgr_data/data'")
         

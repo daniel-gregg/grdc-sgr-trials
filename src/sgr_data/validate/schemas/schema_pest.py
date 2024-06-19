@@ -1,4 +1,4 @@
-### A schema representation of all fields in the 'herbicides' dataframe
+### A schema representation of all fields in the 'pesticides' dataframe
 ## Used for validation of uploaded data
 
 import sys
@@ -14,10 +14,10 @@ from pydantic import BaseModel, Field, ConfigDict, field_validator
 from enum import Enum
 from typing import Optional
 
-# Defines all used herbicide products
+# Defines all used pesticide products
 # note that all secondary and onwards active ingredients fields are optional - they should be included
 # if present but can be omitted if there are only 1 (or more as relevant) active ingredients.
-class HerbicidesProductsModel(BaseModel):
+class PestProductsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     name: str = Field(..., max_length=20)
@@ -30,15 +30,15 @@ class HerbicidesProductsModel(BaseModel):
     activeIngredient4: Optional[str] = Field(..., min_length=1, max_length=100, description="Quartenary active ingredient name")
     activeIngredient4Value:Optional[float] = Field(..., ge=0, le=100, description="Percent by weight or volume of active ingredient for quarternary active ingredient") 
 
-# Enum of the possible units of measurement of herbicide
-class HerbicidesUnits(AutoEnum):
+# Enum of the possible units of measurement of pesticide
+class PesticidesUnits(AutoEnum):
     kilograms = alias('kg', 'kilo', 'kilos')
     litres = alias('l', 'liters')
 
-# Provides the core model for entering herbicide application data
-# note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'herb' to ensure
+# Provides the core model for entering pesticide application data
+# note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'pesticide' to ensure
 # aggregation of these data with other activities does not generate duplicated field names. 
-class HerbicidesApplicationsModel(BaseModel):
+class PestApplicationsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     plotID: str = Field(..., max_length=20)
@@ -48,38 +48,37 @@ class HerbicidesApplicationsModel(BaseModel):
     day: int = Field(..., ge=1, le=31, description="Day of application event")
     # To Do - define a validator to ensure the date is not in the future
 
-    #Define and validate herbicide name against names in the 'HerbicideProductData' df
-    herbName: str
-    @field_validator('herbName')
+    #Define and validate pesticide name against names in the 'PesticidesProductData' df
+    pestProductName: str
+    @field_validator('pestProductName')
     @classmethod
-    def herbicide_product_exists(cls, herbname):
+    def pesticide_product_exists(cls, pestname):
 
         #read in ProductData.csv
         try:
-            herbicideProducts = pd.read_csv(here('src/sgr_data/data/HerbProductData.csv'))
+            pestProducts = pd.read_csv(here('src/sgr_data/data/PestProductData.csv'))
         except:
             
             #check if a testProducts csv is available
             try:
-                herbicideProducts = pd.read_csv(here('src/sgr_data/data/test_data/testHerbProductData.csv'))
-                print("Note that you have not specified a herbicideProducts dataset so the TEST data is being used")
+                pestProducts = pd.read_csv(here('src/sgr_data/data/test_Data/testPestProductData.csv'))
+                print("Note that you have not specified a pesticideProducts dataset so the TEST data is being used")
             
             except: 
-                return "no pesticide products data ('HerbicideProductData.csv') exists in expected directory (.../sgr_data/data)"
-        
+                return "no pesticide products data ('PestProductData.csv') exists in expected directory (.../sgr_data/output)"
         
         #check if provided 'herbicidename' is in the existing products list
-        if sum(herbicideProducts['name'].str.contains(herbname))==0:
-            raise ValueError("Herbicide product must be defined in the 'herbicideProductData' table in '.../sgr_data/data'")
-        return herbname
+        if sum(pestProducts['name'].str.lower().str.contains(pestname.lower()))==0:
+            raise ValueError("Pest product must be defined in the 'PestProductData' table in '.../sgr_data/data'")
+        return pestname
     
     
     #Define and validate units against options in the 'FertiliserUnits' model - automated by the 'use_enum_values' arg
-    herbUnitsApplied: HerbicidesUnits
+    pestProductUnitsApplied: PesticidesUnits
 
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
-    herbValue: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
-    herbApplicationTiming: Optional[str] = Field(..., min_length=1, max_length=1000, description="Comment on herbicide timing (optional)")
+    pestProductValue: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
+    pestProductApplicationTiming: Optional[str] = Field(..., max_length=1000, description="Comment on pest product application timing (optional)")
     comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 

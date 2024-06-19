@@ -13,7 +13,7 @@ import sys
 path_root = here()
 sys.path.append(str(path_root))
 
-from src.sgr_data.validate.schemas.schema_pests import (
+from src.sgr_data.validate.schemas.schema_pest import (
     PestsApplicationsModel,
     PestProductsModel
 )

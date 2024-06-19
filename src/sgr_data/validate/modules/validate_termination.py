@@ -23,11 +23,8 @@ from typing import List
 from pydantic import ValidationError
 
 ### Test the fertiliser products model schema
-def validateTerminationModel():
+def validateTerminationModel(termination_data):
 
-    #Read in test data
-    termination_data = pd.read_csv(here('src/sgr_data/data/test_data/testTerminationDataFail1.csv'))
-    
     #Note empty values in a .csv are read in as 'nan'. 
     #Need to replace these prior to implementing as dict
 

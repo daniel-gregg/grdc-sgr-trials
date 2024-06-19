@@ -18,18 +18,10 @@ from src.sgr_data.validate.schemas.schema_sowing import (
 )
 
 from src.sgr_data.validate.modules.checkPlotState import checkPlotState
-
-from typing import List
 from pydantic import ValidationError
 
 ### Test the fertiliser products model schema
-def validateSowingModel():
-
-    #Read in test data
-    sowing_data = pd.read_csv(here('src/sgr_data/data/test_data/testSowingDataPass.csv'))
-
-    #Note empty values in a .csv are read in as 'nan'. 
-    #Need to replace these prior to implementing as dict
+def validateSowingModel(sowing_data):
 
     try: 
         #Convert NA to None type
