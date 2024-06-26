@@ -35,6 +35,14 @@ class InsecticidesUnits(AutoEnum):
     kilograms = alias('kg', 'kilo', 'kilos')
     litres = alias('l', 'liters')
 
+class Pests(Enum):
+
+    fall_army_worm = 'fall army worm'
+    other_insects = 'other insects'
+    other_macro_pests = 'other macro pests'
+    rodents = 'rodents'
+
+
 # Provides the core model for entering pesticide application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'pesticide' to ensure
 # aggregation of these data with other activities does not generate duplicated field names. 
@@ -47,6 +55,9 @@ class InsecticideApplicationsModel(BaseModel):
     month: int = Field(..., ge=1, le=12, description="Month of application event")
     day: int = Field(..., ge=1, le=31, description="Day of application event")
     # To Do - define a validator to ensure the date is not in the future
+
+    # Target pest
+    targetPest: Pests
 
     #Define and validate pesticide name against names in the 'PesticidesProductData' df
     insecticideName: str

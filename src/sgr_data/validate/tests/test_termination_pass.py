@@ -34,7 +34,7 @@ def testTerminationModel():
     try: 
         #Convert NA to None type
         termination_data = termination_data.replace(np.nan, None)
-
+        print(termination_data)
         #Convert pandas DF to dictionary
         df_dict = termination_data.to_dict(orient='records')
         

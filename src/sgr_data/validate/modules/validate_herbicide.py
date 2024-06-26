@@ -57,7 +57,7 @@ def validateHerbicideApplicationsModel(applications):
 
     try: 
         #Convert pandas DF to dictionary
-        applications.replace(np.nan, None)
+        applications.replace(np.nan, "fuck")
         df_dict = applications.to_dict(orient='records')
         
         #Loop through each record and validate

@@ -78,8 +78,8 @@ class FungicideApplicationsModel(BaseModel):
 
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
     fungicideValue: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
-    fungicideApplicationTiming: Optional[str] = Field(default="", max_length=1000, description="Comment on fungicide timing (optional)")
-    comments: Optional[str] = Field(max_length=4000, description="Comments (maximum 4,000 characters)", default=None)
+    fungicideApplicationTiming: Optional[str] = Field(..., max_length=1000, description="Comment on insecticide timing (optional)")
+    comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 
 
