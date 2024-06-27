@@ -81,6 +81,11 @@ def uploadFiles(site, activity):
             #file_name = upload_files_list[file]
             path_name = os.path.join(raw_data_path,file+'.csv')
             df = getCSV(path_name)
+
+            #replace missing values with None
+            df = df.replace({float('nan'): None})
+
+            #add to array
             data[file] = df
         
         return data

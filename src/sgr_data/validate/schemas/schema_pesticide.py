@@ -1,4 +1,4 @@
-### A schema representation of all fields in the 'pesticides' dataframe
+### A schema representation of all fields in the 'pestticides' dataframe
 ## Used for validation of uploaded data
 
 import sys
@@ -14,10 +14,10 @@ from pydantic import BaseModel, Field, ConfigDict, field_validator
 from enum import Enum
 from typing import Optional
 
-# Defines all used pesticide products
+# Defines all used pestticide products
 # note that all secondary and onwards active ingredients fields are optional - they should be included
 # if present but can be omitted if there are only 1 (or more as relevant) active ingredients.
-class PestProductsModel(BaseModel):
+class PesticideProductsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     name: str = Field(..., max_length=20)
@@ -35,10 +35,16 @@ class PesticidesUnits(AutoEnum):
     kilograms = alias('kg', 'kilo', 'kilos')
     litres = alias('l', 'liters')
 
+class TargetPest(AutoEnum):
+    fall_army_worm = alias('faw')
+    locusts = alias('grasshoppers')
+    other_insects = alias('insects','other')
+    rodents = alias('mice', 'mouse', 'rats')
+
 # Provides the core model for entering pesticide application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'pesticide' to ensure
 # aggregation of these data with other activities does not generate duplicated field names. 
-class PestApplicationsModel(BaseModel):
+class PesticideApplicationsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     plotID: str = Field(..., max_length=20)
@@ -48,37 +54,42 @@ class PestApplicationsModel(BaseModel):
     day: int = Field(..., ge=1, le=31, description="Day of application event")
     # To Do - define a validator to ensure the date is not in the future
 
+    # Target pest
+    targetPest: TargetPest
+
     #Define and validate pesticide name against names in the 'PesticidesProductData' df
-    pestProductName: str
-    @field_validator('pestProductName')
+    pesticideName: str
+    @field_validator('pesticideName')
     @classmethod
-    def pesticide_product_exists(cls, pestname):
+    def pesticide_product_exists(cls, pesticidename):
 
         #read in ProductData.csv
         try:
-            pestProducts = pd.read_csv(here('src/sgr_data/data/PestProductData.csv'))
+            pesticideProducts = pd.read_csv(here('src/sgr_data/data/PesticideProductData.csv'))
         except:
             
             #check if a testProducts csv is available
             try:
-                pestProducts = pd.read_csv(here('src/sgr_data/data/test_Data/testPestProductData.csv'))
+                pesticideProducts = pd.read_csv(here('src/sgr_data/data/test_Data/testPesticideProductData.csv'))
                 print("Note that you have not specified a pesticideProducts dataset so the TEST data is being used")
             
             except: 
-                return "no pesticide products data ('PestProductData.csv') exists in expected directory (.../sgr_data/output)"
+                return "no pesticide products data ('PesticideProductData.csv') exists in expected directory (.../sgr_data/output)"
         
-        #check if provided 'herbicidename' is in the existing products list
-        if sum(pestProducts['name'].str.lower().str.contains(pestname.lower()))==0:
-            raise ValueError("Pest product must be defined in the 'PestProductData' table in '.../sgr_data/data'")
-        return pestname
+        #check if provided 'pessticidename' is in the existing products list
+        if sum(pesticideProducts['name'].str.lower().str.contains(pesticidename.lower()))==0:
+            raise ValueError("Pesticide product must be defined in the 'pesticideProductData' table in '.../sgr_data/data'")
+        return pesticidename
     
     
-    #Define and validate units against options in the 'FertiliserUnits' model - automated by the 'use_enum_values' arg
-    pestProductUnitsApplied: PesticidesUnits
+    #Define and validate units against options in the 'PesticideUnits' model - automated by the 'use_enum_values' arg
+    pesticideUnitsApplied: PesticidesUnits
 
-    #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
-    pestProductValue: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
-    pestProductApplicationTiming: Optional[str] = Field(..., max_length=1000, description="Comment on pest product application timing (optional)")
+    #Amount of pesticide applied
+    pesticideValue: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
+    
+    #optional indications regarding timing and comments
+    pesticideApplicationTiming: Optional[str] = Field(..., max_length=1000, description="Comment on pesticide timing (optional)")
     comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 

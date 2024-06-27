@@ -13,8 +13,7 @@ sys.path.append(str(path_root))
 from src.sgr_data.validate.modules.validate_fertiliser import validateFertiliserApplicationsModel
 from src.sgr_data.validate.modules.validate_fungicide import validateFungicideApplicationsModel
 from src.sgr_data.validate.modules.validate_herbicide import validateHerbicideApplicationsModel
-from src.sgr_data.validate.modules.validate_insecticide import validateInsecticideApplicationsModel
-from src.sgr_data.validate.modules.validate_pest import validatePestApplicationsModel
+from src.sgr_data.validate.modules.validate_pesticide import validatePesticideApplicationsModel
 from src.sgr_data.validate.modules.validate_sowing import validateSowingModel
 from src.sgr_data.validate.modules.validate_termination import validateTerminationModel
 
@@ -27,10 +26,8 @@ def validateData(data, schema):
         validated = validateFungicideApplicationsModel(data)
     if schema=='herbicide':
         validated = validateHerbicideApplicationsModel(data)
-    if schema=='insecticide':
-        validated = validateInsecticideApplicationsModel(data)
-    if schema=='pest':
-        validated = validatePestApplicationsModel(data)
+    if schema=='pesticide':
+        validated = validatePesticideApplicationsModel(data)
     if schema=='sowing':
         validated = validateSowingModel(data)
     if schema=='termination':
