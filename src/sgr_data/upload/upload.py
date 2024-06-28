@@ -80,6 +80,7 @@ def uploadFiles(site, activity):
         for file in upload_files_list:
             #file_name = upload_files_list[file]
             path_name = os.path.join(raw_data_path,file+'.csv')
+            print('this is the path:\n {}'.format(path_name))
             df = getCSV(path_name)
 
             #replace missing values with None

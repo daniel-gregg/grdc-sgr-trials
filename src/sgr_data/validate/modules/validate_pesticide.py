@@ -68,4 +68,5 @@ def validatePesticideApplicationsModel(applications):
         return(applications)
 
     except ValidationError as e:
-        print(e)
+        raise Exception(e)
+        

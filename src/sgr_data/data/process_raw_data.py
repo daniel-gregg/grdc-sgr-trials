@@ -62,15 +62,15 @@ for site in sites_activities_dict:
                 #attempt validation
                 try:
                     valid_data_frame = validateData(*file.values(),activity)
-                except ValidationError as e:
+                except ValidationError:
                     print('upload of file {} for activity {} failed\n'.format(file_name_date,activity))
                     continue
                 
                 #If validation passes, process data
                 #get key (date) for file
-                path_to_target = os.path.join('src' ,'sgr_data', 'data', 'raw_data', site, activity)
-                save_path = os.path.join(path_to_target, file_name_date) 
-                #valid_data_frame.to_pickle(save_path)
+                path_for_saving = os.path.join('src' ,'sgr_data', 'data', 'validated_data', site, activity)
+                save_path = os.path.join(path_for_saving, file_name_date) 
+                valid_data_frame.to_pickle(save_path)
                 print('successfully uploaded file {} for activity {}\n\n'.format(file_name_date, activity) )
         
         else:

@@ -21,16 +21,15 @@ from src.sgr_data.validate.modules.validate_termination import validateTerminati
 def validateData(data, schema):
     #validate data against schema
     if schema=='fertiliser':
-        validated = validateFertiliserApplicationsModel(data)
+        return validateFertiliserApplicationsModel(data)
     if schema=='fungicide':
-        validated = validateFungicideApplicationsModel(data)
+        return validateFungicideApplicationsModel(data)
     if schema=='herbicide':
-        validated = validateHerbicideApplicationsModel(data)
+        return validateHerbicideApplicationsModel(data)
     if schema=='pesticide':
-        validated = validatePesticideApplicationsModel(data)
+        return validatePesticideApplicationsModel(data)
     if schema=='sowing':
-        validated = validateSowingModel(data)
+        return validateSowingModel(data)
     if schema=='termination':
-        validated = validateTerminationModel(data)
-    return validated
+        return validateTerminationModel(data)
 
