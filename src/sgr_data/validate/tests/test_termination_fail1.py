@@ -17,7 +17,7 @@ from src.sgr_data.validate.schemas.schema_termination import (
     TerminationModel
 )
 
-from src.sgr_data.validate.tests.checkPlotState import checkPlotState
+from src.sgr_data.validate.tests.testcheckPlotState import checkPlotState
 
 from typing import List
 from pydantic import ValidationError

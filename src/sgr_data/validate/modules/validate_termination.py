@@ -23,11 +23,8 @@ from typing import List
 from pydantic import ValidationError
 
 ### Test the fertiliser products model schema
-def validateTerminationModel():
+def validateTerminationModel(termination_data):
 
-    #Read in test data
-    termination_data = pd.read_csv(here('src/sgr_data/data/test_data/testTerminationDataFail1.csv'))
-    
     #Note empty values in a .csv are read in as 'nan'. 
     #Need to replace these prior to implementing as dict
 
@@ -47,7 +44,7 @@ def validateTerminationModel():
             #If pass, validate against plot state
             checkPlotState(
                 plot_id=record.get('plotID'), 
-                plotActivityType='SOWING', 
+                plotActivityType='TERMINATION', 
                 crop1=record.get('crop1Name'), 
                 crop2=record.get('crop2Name'), 
                 crop3=record.get('crop3Name')

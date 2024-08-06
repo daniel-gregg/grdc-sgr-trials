@@ -38,7 +38,7 @@ class FertiliserApplicationMethod(AutoEnum):
     sidedressing = auto()
     soilinjection = auto()
 
-class FertilisersProductsModel(BaseModel):
+class FertiliserProductsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     name: str = Field(..., max_length=20)
@@ -57,7 +57,7 @@ class FertilisersProductsModel(BaseModel):
 # Provides the core model for entering fertiliser application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'fert' to ensure
 # aggregation of these data with other activities does not generate duplicated field names. 
-class FertilisersApplicationsModel(BaseModel):
+class FertiliserApplicationsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     plotID: str = Field(..., max_length=20)
@@ -87,7 +87,7 @@ class FertilisersApplicationsModel(BaseModel):
         
         
         #check if provided 'fertname' is in the existing products list
-        if sum(fertProducts['name'].str.contains(fertname))==0:
+        if sum(fertProducts['name'].str.lower().str.contains(fertname.lower()))==0:
             raise ValueError("Fertiliser product must be defined in the 'fertProductData' table in '..sgr_data//data'")
         return fertname
     

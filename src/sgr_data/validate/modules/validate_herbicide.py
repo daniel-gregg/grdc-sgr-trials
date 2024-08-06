@@ -13,9 +13,9 @@ import sys
 path_root = here()
 sys.path.append(str(path_root))
 
-from src.sgr_data.validate.schemas.schema_herbicides import (
-    HerbicidesApplicationsModel,
-    HerbicidesProductsModel
+from src.sgr_data.validate.schemas.schema_herbicide import (
+    HerbicideApplicationsModel,
+    HerbicideProductsModel
 )
 from typing import List
 from pydantic import ValidationError
@@ -37,7 +37,7 @@ def validateHerbicideProductsModel():
         
         #Loop through each record and validate
         for record in df_dict:
-            HerbicidesProductsModel(**record)
+            HerbicideProductsModel(**record)
         
         #If pass, print the DF 
         #(in actual validator you should return the df for further processing)
@@ -53,24 +53,16 @@ def validateHerbicideProductsModel():
 ### Test the fertiliser products model schema
 # This relies on a validated fertiliser products model 
 # which is imported into the 'schema_fertilisers.py' file
-def validateHerbicidesApplicationsModel():
-
-    #Initialise fake dataframe
-    #Note, the creation of the instance IGNORES irrelevant variables. This can help with upload strategies (define a single spreadsheet)
-    applications = pd.DataFrame(
-            [
-                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "herbName": "No weeds on me", "herbUnitsApplied": 'l', "herbValue": 12, "herbApplicationTiming": "sowing", "comments": 'Leave your number here'},
-                {"plotID": "RS29_P1234", "year": 2024, "month": 3, "day": 23, "herbName": "No weeds on me", "herbUnitsApplied": 'kilos', "herbMethodApplied": 'shielded', "herbValue": 12, "herbApplicationTiming": None, "comments": 'Leave your number here'},
-            ]
-        )
+def validateHerbicideApplicationsModel(applications):
 
     try: 
         #Convert pandas DF to dictionary
+        applications.replace(np.nan, "fuck")
         df_dict = applications.to_dict(orient='records')
         
         #Loop through each record and validate
         for record in df_dict:
-            HerbicidesApplicationsModel(**record)
+            HerbicideApplicationsModel(**record)
         
         #If pass, print the DF 
         #(in actual validator you should return the df for further processing)

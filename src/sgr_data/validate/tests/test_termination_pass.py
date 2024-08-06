@@ -17,7 +17,7 @@ from src.sgr_data.validate.schemas.schema_termination import (
     TerminationModel
 )
 
-from src.sgr_data.validate.tests.checkPlotState import checkPlotState
+from src.sgr_data.validate.tests.testcheckPlotState import checkPlotState
 
 from typing import List
 from pydantic import ValidationError
@@ -34,7 +34,7 @@ def testTerminationModel():
     try: 
         #Convert NA to None type
         termination_data = termination_data.replace(np.nan, None)
-
+        print(termination_data)
         #Convert pandas DF to dictionary
         df_dict = termination_data.to_dict(orient='records')
         

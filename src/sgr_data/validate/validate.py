@@ -4,27 +4,32 @@
 # base imports
 from pyprojroot.here import here
 import sys
-import asyncio
-import os
-import pandas as pd
-import csv 
 
 #append path using 'here'
 path_root = here()
 sys.path.append(str(path_root))
 
 # module imports
-from src.sgr_data.validate.modules import (
-    validate_fertiliser,
-    validate_fungicide,
-    validate_herbicide,
-    validate_insecticide,
-    validate_pests,
-    validate_sowing,
-    validate_termination
-)
+from src.sgr_data.validate.modules.validate_fertiliser import validateFertiliserApplicationsModel
+from src.sgr_data.validate.modules.validate_fungicide import validateFungicideApplicationsModel
+from src.sgr_data.validate.modules.validate_herbicide import validateHerbicideApplicationsModel
+from src.sgr_data.validate.modules.validate_pesticide import validatePesticideApplicationsModel
+from src.sgr_data.validate.modules.validate_sowing import validateSowingModel
+from src.sgr_data.validate.modules.validate_termination import validateTerminationModel
+
 
 def validateData(data, schema):
     #validate data against schema
-    return data
+    if schema=='fertiliser':
+        return validateFertiliserApplicationsModel(data)
+    if schema=='fungicide':
+        return validateFungicideApplicationsModel(data)
+    if schema=='herbicide':
+        return validateHerbicideApplicationsModel(data)
+    if schema=='pesticide':
+        return validatePesticideApplicationsModel(data)
+    if schema=='sowing':
+        return validateSowingModel(data)
+    if schema=='termination':
+        return validateTerminationModel(data)
 
