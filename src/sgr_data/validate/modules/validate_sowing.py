@@ -28,7 +28,8 @@ def validateSowingModel(sowing_data):
         sowing_data = sowing_data.replace(np.nan, None)
 
         #Convert pandas DF to dictionary
-        df_dict = sowing_data.to_dict(orient='records')
+        df_dict = sowing_data.to_dict(orient='records') 
+        #print(df_dict)
         
         #Loop through each record and validate against the model
         for record in df_dict:
@@ -37,13 +38,20 @@ def validateSowingModel(sowing_data):
             SowingModel(**record)
             
             #If pass, validate against plot state
+            #try:
             checkPlotState(
                 plot_id=record.get('plotID'), 
-                plotActivityType='FALLOW', 
+                plotActivityType='SOWING', 
                 crop1=record.get('crop1Name'), 
                 crop2=record.get('crop2Name'), 
                 crop3=record.get('crop3Name')
                 )
+            #except NameError as e:
+            #    raise e
+            #except FileNotFoundError as e:
+            #    raise e
+            #except ValueError as e:
+            #S    raise e
         
         # If all pass return the DF
         return(sowing_data)

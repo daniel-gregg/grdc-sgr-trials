@@ -1,5 +1,6 @@
 # To Do list from meetings
 
-* Fix the save function for passed data
-* Check the remaining errors
+* Generate a plot mapping data file
+* finalise the plot-state functionality
+* Initiate gross margin modelling program
 

@@ -57,9 +57,9 @@ class TerminationModel(BaseModel):
     # To Do - define a validator to ensure the date is not in the future
     
     #Crops harvested
-    crop1Harvest : str
-    crop2Harvest : Optional[str]
-    crop3Harvest : Optional[str]
+    crop1Name : str
+    crop2Name : Optional[str]
+    crop3Name : Optional[str]
 
     #Termination reason
     harvestReason : Reason
@@ -79,7 +79,7 @@ class TerminationModel(BaseModel):
     def validate_choice(self) -> Self:
         
         #get cropnames
-        crops = [self.crop1Harvest, self.crop2Harvest, self.crop3Harvest]
+        crops = [self.crop1Name, self.crop2Name, self.crop3Name]
 
         #read in the .csv
         ## Load in the crop and varieties data

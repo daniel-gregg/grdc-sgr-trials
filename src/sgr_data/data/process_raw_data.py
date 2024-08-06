@@ -62,9 +62,12 @@ for site in sites_activities_dict:
                 #attempt validation
                 try:
                     valid_data_frame = validateData(*file.values(),activity)
-                except ValidationError:
-                    print('upload of file {} for activity {} failed\n'.format(file_name_date,activity))
-                    continue
+                except ValueError as e:
+                    raise e
+                except ValidationError as e:
+                    raise e
+                except FileNotFoundError as e:
+                    raise e
                 
                 #If validation passes, process data
                 #get key (date) for file

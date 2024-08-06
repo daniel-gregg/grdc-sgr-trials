@@ -1,3 +1,3 @@
-﻿plotID,year,month,day,crop1Harvest,crop2Harvest,crop3Harvest,harvestReason,crop1Yield,crop2Yield,crop3Yield,terminationState,comments
+﻿plotID,year,month,day,crop1Name,crop2Name,crop3Name,harvestReason,crop1Yield,crop2Yield,crop3Yield,terminationState,comments
 DEF123,2023,7,3,WHEAT,BARLEY,,succeSS,250,300,,stubble,some comment
-DEF456,2023,7,3,Canola,,,fail_water,150,,,bare,antoher comment
+DEF456,2023,7,3,CANOLA,,,fail_water,150,,,bare,antoher comment

@@ -44,7 +44,7 @@ def validateTerminationModel(termination_data):
             #If pass, validate against plot state
             checkPlotState(
                 plot_id=record.get('plotID'), 
-                plotActivityType='SOWING', 
+                plotActivityType='TERMINATION', 
                 crop1=record.get('crop1Name'), 
                 crop2=record.get('crop2Name'), 
                 crop3=record.get('crop3Name')
