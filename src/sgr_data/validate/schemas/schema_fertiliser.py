@@ -23,6 +23,7 @@ class FertiliserType(AutoEnum):
     pellet = auto()
     powder = auto()
     slowrelease = auto()
+    granule = auto()
 
 # Enum of the possible units of measurement of fertiliser
 class FertiliserUnits(AutoEnum):
@@ -43,16 +44,12 @@ class FertiliserProductsModel(BaseModel):
 
     name: str = Field(..., max_length=20)
     productType: FertiliserType
+    units: FertiliserUnits
+    price : float
 
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
-    productApplicationMethod: FertiliserApplicationMethod
-    
-    nDAP: float = Field(..., ge=0, le=100, description="Nitrogen as diammonium phospate percent by weight or volume")
-    nMAP: float = Field(..., ge=0, le=100, description="Nitrogen as monoammonium phospate percent by weight or volume")
-    nUrea: float = Field(..., ge=0, le=100, description="Nitrogen as urea percent by weight or volume")
+    nitrogen: float = Field(..., ge=0, le=100, description="Nitrogen as urea percent by weight or volume")
     phosphorous: float = Field(..., ge=0, le=100, description="Phosphorous percent by weight or volume")
-    potassium: float = Field(..., ge=0, le=100, description="Potassium percent by weight or volume")
-    calcium: float = Field(..., ge=0, le=100, description="Calcium percent by weight or volume")
 
 # Provides the core model for entering fertiliser application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'fert' to ensure
@@ -75,7 +72,7 @@ class FertiliserApplicationsModel(BaseModel):
 
         #read in ProductData.csv
         try:
-            fertProducts = pd.read_csv(here('src/sgr_data/data/FertProductData.csv'))
+            fertProducts = pd.read_csv(here('src/sgr_data/data/reference_data/FertProductData.csv'))
         except:
             #check if a testProducts csv is available
             try:

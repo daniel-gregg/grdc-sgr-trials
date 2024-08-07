@@ -1,5 +1,5 @@
-,name,productType,productApplicationMethod,nMAP,nDAP,nUrea,phosphorous,potassium,calcium
-0,BigN,pellet,broadcast,23.0,2,0,12.0,2.0,0.5
-1,SuperP,slowrelease,broadcast,20.0,5,0,32.0,2.0,0.5
-2,Erua,liquid,foliar,0,0,46,0.0,0.0,0
-3,OnlyC,pellet,banding,0.0,0,0,0.0,0.0,14.0
+,name,productType,units,price,nitrogen,phosphorous
+0,BigN,pellet,kg,1000,hello,2.0
+1,SuperP,slowrelease,kg,1000,20.0,32.0
+2,Erua,liquid,kg,1000,0,0.0
+3,OnlyC,pellet,kg,1000,0,0.0
