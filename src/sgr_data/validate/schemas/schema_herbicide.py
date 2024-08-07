@@ -25,9 +25,9 @@ class HerbicidesUnits(AutoEnum):
 class HerbicideProductsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
-    name: str = Field(..., max_length=20)
+    name: str = Field(..., max_length=40)
     units: HerbicidesUnits
-    price: float
+    price: Optional[float]
 
 # Provides the core model for entering herbicide application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'herb' to ensure

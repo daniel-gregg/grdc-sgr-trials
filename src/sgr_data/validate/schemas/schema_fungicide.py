@@ -28,7 +28,7 @@ class FungicideProductsModel(BaseModel):
 
     name: str = Field(..., max_length=20)
     units: FungicidesUnits
-    price: float
+    price: Optional[float]
 
 # Provides the core model for entering fungicide application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'fungicide' to ensure

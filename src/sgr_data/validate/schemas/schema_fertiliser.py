@@ -45,7 +45,7 @@ class FertiliserProductsModel(BaseModel):
     name: str = Field(..., max_length=20)
     productType: FertiliserType
     units: FertiliserUnits
-    price : float
+    price: Optional[float]
 
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
     nitrogenPercent: float = Field(..., ge=0, le=100, description="Nitrogen as urea percent by weight or volume")
