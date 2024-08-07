@@ -48,8 +48,8 @@ class FertiliserProductsModel(BaseModel):
     price : float
 
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
-    nitrogen: float = Field(..., ge=0, le=100, description="Nitrogen as urea percent by weight or volume")
-    phosphorous: float = Field(..., ge=0, le=100, description="Phosphorous percent by weight or volume")
+    nitrogenPercent: float = Field(..., ge=0, le=100, description="Nitrogen as urea percent by weight or volume")
+    phosphorousPercent: float = Field(..., ge=0, le=100, description="Phosphorous percent by weight or volume")
 
 # Provides the core model for entering fertiliser application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'fert' to ensure

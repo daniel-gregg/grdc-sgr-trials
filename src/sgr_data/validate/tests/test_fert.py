@@ -13,8 +13,8 @@ path_root = here()
 sys.path.append(str(path_root))
 
 from src.sgr_data.validate.schemas.schema_fertiliser import (
-    FertilisersApplicationsModel,
-    FertilisersProductsModel
+    FertiliserApplicationsModel,
+    FertiliserProductsModel
 )
 from typing import List
 from pydantic import ValidationError
@@ -28,13 +28,13 @@ def testFertiliserProductsModel():
     try: 
         #Convert NA to None type
         fertilisers = fertilisers.replace(np.nan, None)
-
+        print(fertilisers)
         #Convert pandas DF to dictionary
         df_dict = fertilisers.to_dict(orient='records')
         
         #Loop through each record and validate
         for record in df_dict:
-            FertilisersProductsModel(**record)
+            FertiliserProductsModel(**record)
         
         #If pass, print the DF 
         #(in actual validator you should return the df for further processing)
@@ -65,7 +65,7 @@ def testFertiliserApplicationsModel():
         
         #Loop through each record and validate
         for record in df_dict:
-            rec = FertilisersApplicationsModel(**record)
+            rec = FertiliserApplicationsModel(**record)
             print(rec)
         
         #If pass, print the DF 
