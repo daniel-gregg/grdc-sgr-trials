@@ -7,13 +7,15 @@ sys.path.append(str(path_root))
 
 import pandas as pd
 import numpy as np
+import datetime
+import csv
 #plotActivityType must be either 'SOWING' or 'TERMINATION' and comes from the pydantic 
 #validator path (defined post validation)
 #crop1 is required if plotActivityType = 'TERMINATION'
 #crop2 and crop3 are optional for plotActivityType 'TERMINATION'
 #all cropX arguments are ignored for plotActivityType 'SOWING'
 
-def checkPlotState(plot_id, plotActivityType, crop1=None, crop2=None, crop3=None):
+def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop2=None, crop3=None):
     print(plotActivityType)
     #Conduct checks
     if not (plotActivityType == 'SOWING' or plotActivityType == 'TERMINATION'):
@@ -62,4 +64,22 @@ def checkPlotState(plot_id, plotActivityType, crop1=None, crop2=None, crop3=None
             if crop3 not in plot_states_set:
                 raise ValueError("Check plot " + plot_id + ". Terminated crops must match planted crops\n Crop" + crop3 + "not in planted set")       
         
+    ## At this stage, the sowing/termination data are valid - update plot-state data table
+    if plotActivityType=="SOWING":
+        state = "CROP"
+    else:
+        state = "FALLOW"
+
+    newrow = pd.DataFrame({
+        'PLOT_ID' : [plot_id],
+        'DATE' : [datetime.datetime(year,month,day)], 
+        'STATE' : [state],
+        'CROP1' : [crop1],
+        'CROP2' : [crop2],
+        'CROP3': [crop3]
+    })
+
+    #write new line to plotStateData.csv
+    newrow.to_csv(here('src/sgr_data/data/PlotStateData.csv'), mode='a', index=False, header=False)
+
     return plot_id
