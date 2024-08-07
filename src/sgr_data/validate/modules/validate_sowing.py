@@ -42,6 +42,9 @@ def validateSowingModel(sowing_data):
             checkPlotState(
                 plot_id=record.get('plotID'), 
                 plotActivityType='SOWING', 
+                year = record.get('year'),
+                month = record.get('month'),
+                day = record.get('day'),
                 crop1=record.get('crop1Name'), 
                 crop2=record.get('crop2Name'), 
                 crop3=record.get('crop3Name')
