@@ -14,6 +14,11 @@ from pydantic import BaseModel, Field, ConfigDict, field_validator
 from enum import Enum
 from typing import Optional
 
+# Enum of the possible units of measurement of herbicide
+class HerbicidesUnits(AutoEnum):
+    kilograms = alias('kg', 'kilo', 'kilos')
+    litres = alias('l', 'liters')
+
 # Defines all used herbicide products
 # note that all secondary and onwards active ingredients fields are optional - they should be included
 # if present but can be omitted if there are only 1 (or more as relevant) active ingredients.
@@ -21,19 +26,8 @@ class HerbicideProductsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     name: str = Field(..., max_length=20)
-    activeIngredient1: str = Field(..., min_length=1, max_length=100, description="Primary active ingredient name")
-    activeIngredient1Value:float = Field(..., ge=0, le=100, description="Percent by weight or volume of active ingredient for primary active ingredient") 
-    activeIngredient2: Optional[str] = Field(..., min_length=1, max_length=100, description="Secondary active ingredient name")
-    activeIngredient2Value:Optional[float] = Field(..., ge=0, le=100, description="Percent by weight or volume of active ingredient for secondary active ingredient") 
-    activeIngredient3: Optional[str] = Field(..., min_length=1, max_length=100, description="Tertiary active ingredient name")
-    activeIngredient3Value:Optional[float] = Field(..., ge=0, le=100, description="Percent by weight or volume of active ingredient for tertiary active ingredient") 
-    activeIngredient4: Optional[str] = Field(..., min_length=1, max_length=100, description="Quartenary active ingredient name")
-    activeIngredient4Value:Optional[float] = Field(..., ge=0, le=100, description="Percent by weight or volume of active ingredient for quarternary active ingredient") 
-
-# Enum of the possible units of measurement of herbicide
-class HerbicidesUnits(AutoEnum):
-    kilograms = alias('kg', 'kilo', 'kilos')
-    litres = alias('l', 'liters')
+    units: HerbicidesUnits
+    price: float
 
 # Provides the core model for entering herbicide application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'herb' to ensure

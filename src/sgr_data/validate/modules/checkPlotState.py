@@ -82,4 +82,4 @@ def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop
     #write new line to plotStateData.csv
     newrow.to_csv(here('src/sgr_data/data/PlotStateData.csv'), mode='a', index=False, header=False)
 
-    return plot_id
+    return newrow
