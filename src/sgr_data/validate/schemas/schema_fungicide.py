@@ -51,7 +51,7 @@ class FungicideApplicationsModel(BaseModel):
 
         #read in ProductData.csv
         try:
-            fungicideProducts = pd.read_csv(here('src/sgr_data/data/test_data/FungicideProductData.csv'))
+            fungicideProducts = pd.read_csv(here('src/sgr_data/data/reference_data/FungProductData.csv'))
         except:
             
             #check if a testProducts csv is available

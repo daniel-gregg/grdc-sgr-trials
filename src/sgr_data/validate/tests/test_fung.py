@@ -15,8 +15,8 @@ path_root = here()
 sys.path.append(str(path_root))
 
 from src.sgr_data.validate.schemas.schema_fungicide import (
-    FungicidesApplicationsModel,
-    FungicidesProductsModel
+    FungicideApplicationsModel,
+    FungicideProductsModel
 )
 from typing import List
 from pydantic import ValidationError
@@ -25,7 +25,7 @@ from pydantic import ValidationError
 def testFungicideProductsModel():
 
     #Read in test data
-    fungicides = pd.read_csv(here('src/sgr_data/data/test_data/testFungProductData.csv'))
+    fungicides = pd.read_csv(here('src/sgr_data/data/reference_data/FungProductData.csv'))
 
     #Note empty values in a .csv are read in as 'nan'. 
     #Need to replace these prior to implementing as dict
@@ -38,7 +38,7 @@ def testFungicideProductsModel():
         
         #Loop through each record and validate
         for record in df_dict:
-            FungicidesProductsModel(**record)
+            FungicideProductsModel(**record)
         
         #If pass, print the DF 
         #(in actual validator you should return the df for further processing)
@@ -71,7 +71,7 @@ def testFungicidesApplicationsModel():
         
         #Loop through each record and validate
         for record in df_dict:
-            FungicidesApplicationsModel(**record)
+            FungicideApplicationsModel(**record)
         
         #If pass, print the DF 
         #(in actual validator you should return the df for further processing)
