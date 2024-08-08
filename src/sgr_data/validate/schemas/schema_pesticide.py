@@ -27,7 +27,7 @@ class PesticideProductsModel(BaseModel):
 
     name: str = Field(..., max_length=20)
     units: PesticidesUnits
-    price: float
+    price: Optional[float]
 
 class TargetPest(AutoEnum):
     fall_army_worm = alias('faw')
