@@ -41,7 +41,7 @@ class SowingModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     #identifying details
-    plotID: str = Field(..., max_length=20)
+    plotID: str = Field(..., max_length=50)
 
     year: int = Field(..., ge=2023, le=2029, description="Year of application event")
     month: int = Field(..., ge=1, le=12, description="Month of application event")

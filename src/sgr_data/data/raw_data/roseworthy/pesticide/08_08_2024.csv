@@ -1,0 +1,241 @@
+plotID,year,month,day,pestName,targetPest,pestUnitsAppliedKgOrLitres,pestAppliedAmount,comments
+ROSEWORTHY_S1.2_P2312_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S7_P0000_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S2_P1212_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S6_P0000_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.1_P3123_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S4_P3123_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S4_P1231_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.1_P1231_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S3_P2121_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S2_P2121_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S3_P1212_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S4_P2312_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.2_P3123_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.2_P1231_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S5_P0000_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.1_P2312_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S4_P3123_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S2_P2121_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S2_P1212_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.1_P3123_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.2_P2312_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.1_P2312_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S3_P1212_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S5_P0000_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S7_P0000_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.1_P1231_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S4_P2312_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S3_P2121_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S6_P0000_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.2_P1231_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.2_P3123_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S4_P1231_R2,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.2_P3123_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.1_P1231_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S3_P1212_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S2_P1212_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.1_P3123_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.2_P1231_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S4_P2312_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S7_P0000_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S5_P0000_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S6_P0000_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S3_P2121_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.2_P2312_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S2_P2121_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S4_P1231_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.1_P2312_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S4_P3123_R3,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
+ROSEWORTHY_S1.2_P2312_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S7_P0000_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S2_P1212_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S6_P0000_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.1_P3123_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S4_P3123_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S4_P1231_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.1_P1231_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S3_P2121_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S2_P2121_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S3_P1212_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S4_P2312_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.2_P3123_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.2_P1231_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S5_P0000_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.1_P2312_R1,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S4_P3123_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S2_P2121_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S2_P1212_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.1_P3123_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.2_P2312_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.1_P2312_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S3_P1212_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S5_P0000_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S7_P0000_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.1_P1231_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S4_P2312_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S3_P2121_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S6_P0000_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.2_P1231_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.2_P3123_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S4_P1231_R2,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.2_P3123_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.1_P1231_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S3_P1212_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S2_P1212_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.1_P3123_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.2_P1231_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S4_P2312_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S7_P0000_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S5_P0000_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S6_P0000_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S3_P2121_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.2_P2312_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S2_P2121_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S4_P1231_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.1_P2312_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S4_P3123_R3,2023,6,2,MouseOff,mice,kg,1.5,1.5kg/ha applied before estableshment
+ROSEWORTHY_S1.2_P2312_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S7_P0000_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S2_P1212_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S6_P0000_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.1_P3123_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S4_P3123_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S4_P1231_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.1_P1231_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S3_P2121_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S2_P2121_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S3_P1212_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S4_P2312_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.2_P3123_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.2_P1231_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S5_P0000_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.1_P2312_R1,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S4_P3123_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S2_P2121_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S2_P1212_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.1_P3123_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.2_P2312_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.1_P2312_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S3_P1212_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S5_P0000_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S7_P0000_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.1_P1231_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S4_P2312_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S3_P2121_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S6_P0000_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.2_P1231_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.2_P3123_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S4_P1231_R2,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.2_P3123_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.1_P1231_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S3_P1212_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S2_P1212_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.1_P3123_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.2_P1231_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S4_P2312_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S7_P0000_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S5_P0000_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S6_P0000_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S3_P2121_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.2_P2312_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S2_P2121_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S4_P1231_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.1_P2312_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S4_P3123_R3,2023,7,24,MouseOff,mice,kg,1.5,1.5kg/ha applied at early growth development
+ROSEWORTHY_S1.2_P2312_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S7_P0000_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S2_P1212_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S6_P0000_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.1_P3123_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S4_P3123_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S4_P1231_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.1_P1231_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S3_P2121_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S2_P2121_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S3_P1212_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S4_P2312_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.2_P3123_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.2_P1231_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S5_P0000_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.1_P2312_R1,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S4_P3123_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S2_P2121_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S2_P1212_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.1_P3123_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.2_P2312_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.1_P2312_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S3_P1212_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S5_P0000_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S7_P0000_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.1_P1231_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S4_P2312_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S3_P2121_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S6_P0000_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.2_P1231_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.2_P3123_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S4_P1231_R2,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.2_P3123_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.1_P1231_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S3_P1212_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S2_P1212_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.1_P3123_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.2_P1231_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S4_P2312_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S7_P0000_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S5_P0000_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S6_P0000_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S3_P2121_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.2_P2312_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S2_P2121_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S4_P1231_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.1_P2312_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S4_P3123_R3,2023,6,1,Albatross,insects,L,0.05,0.05L/ha applied before establishment - whole site
+ROSEWORTHY_S1.2_P2312_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S7_P0000_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S2_P1212_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S6_P0000_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.1_P3123_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S4_P3123_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S4_P1231_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.1_P1231_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S3_P2121_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S2_P2121_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S3_P1212_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S4_P2312_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.2_P3123_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.2_P1231_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S5_P0000_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.1_P2312_R1,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S4_P3123_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S2_P2121_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S2_P1212_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.1_P3123_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.2_P2312_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.1_P2312_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S3_P1212_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S5_P0000_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S7_P0000_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.1_P1231_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S4_P2312_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S3_P2121_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S6_P0000_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.2_P1231_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.2_P3123_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S4_P1231_R2,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.2_P3123_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.1_P1231_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S3_P1212_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S2_P1212_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.1_P3123_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.2_P1231_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S4_P2312_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S7_P0000_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S5_P0000_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S6_P0000_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S3_P2121_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.2_P2312_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S2_P2121_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S4_P1231_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S1.1_P2312_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"
+ROSEWORTHY_S4_P3123_R3,2023,9,22,Trojan,insects,L,0.03,"0.03L/ha applied post-flowering/maturity - whole site (Protect the pods target pulse/canola, but went whole site)"

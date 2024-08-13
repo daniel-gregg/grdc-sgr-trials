@@ -26,7 +26,7 @@ class PesticideProductsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     name: str = Field(..., max_length=20)
-    units: PesticidesUnits
+    unitsKgOrLitres: PesticidesUnits
     price: Optional[float]
 
 class TargetPest(AutoEnum):
@@ -41,7 +41,7 @@ class TargetPest(AutoEnum):
 class PesticideApplicationsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
-    plotID: str = Field(..., max_length=20)
+    plotID: str = Field(..., max_length=50)
 
     year: int = Field(..., ge=2023, le=2029, description="Year of application event")
     month: int = Field(..., ge=1, le=12, description="Month of application event")
@@ -52,14 +52,14 @@ class PesticideApplicationsModel(BaseModel):
     targetPest: TargetPest
 
     #Define and validate pesticide name against names in the 'PesticidesProductData' df
-    pesticideName: str
-    @field_validator('pesticideName')
+    pestName: str
+    @field_validator('pestName')
     @classmethod
-    def pesticide_product_exists(cls, pesticidename):
+    def pesticide_product_exists(cls, pestname):
 
         #read in ProductData.csv
         try:
-            pesticideProducts = pd.read_csv(here('src/sgr_data/data/PesticideProductData.csv'))
+            pesticideProducts = pd.read_csv(here('src/sgr_data/data/reference_data/PestProductData.csv'))
         except:
             
             #check if a testProducts csv is available
@@ -71,19 +71,18 @@ class PesticideApplicationsModel(BaseModel):
                 return "no pesticide products data ('PesticideProductData.csv') exists in expected directory (.../sgr_data/output)"
         
         #check if provided 'pessticidename' is in the existing products list
-        if sum(pesticideProducts['name'].str.lower().str.contains(pesticidename.lower()))==0:
+        if sum(pesticideProducts['name'].str.lower().str.contains(pestname.lower()))==0:
             raise ValueError("Pesticide product must be defined in the 'pesticideProductData' table in '.../sgr_data/data'")
-        return pesticidename
+        return pestname
     
     
     #Define and validate units against options in the 'PesticideUnits' model - automated by the 'use_enum_values' arg
-    pesticideUnitsApplied: PesticidesUnits
+    pestUnitsAppliedKgOrLitres: PesticidesUnits
 
     #Amount of pesticide applied
-    pesticideValue: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
+    pestAppliedAmount: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
     
     #optional indications regarding timing and comments
-    pesticideApplicationTiming: Optional[str] = Field(..., max_length=1000, description="Comment on pesticide timing (optional)")
     comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 

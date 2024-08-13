@@ -5,7 +5,7 @@ Agritone LVE 570,kg,8,
 Amine,L,5.9,SAGIT
 AMS,L,3.5,
 Archer,L,14.5,
-Archer(300),L,14.5,
+Archer 300,L,14.5,
 Archer 750,L,160,
 Avadex,L,17,
 Avadex Xtra,L,17,
@@ -40,7 +40,7 @@ Hammer,L,20,
 Hasten,L,4.7,SAGIT
 Intercept,L,275,
 Intervix,L,29.46,SAGIT
-Leopard (QPE 99 g/L),L,21,
+Leopard,L,21,
 Liase,L,4,
 Lontrel Advanced 600,L,145,
 LVA Agritone,kg,8,
@@ -48,7 +48,7 @@ MCPA LVE ,L,8.14,SAGIT
 MCPA LVE (~100mL/leaf),L,8.14,SAGIT
 Overwatch,L,10,
 Oxyflurfen,L,15.76,SAGIT
-Paradigm ,kg,490,SAGIT
+Paradigm,kg,490,SAGIT
 Paraquat,L,4.95,SAGIT
 Propyzamide,L,21.8,SAGIT
 Prosaro,L,,
