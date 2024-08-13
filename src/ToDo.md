@@ -1,6 +1,5 @@
 # To Do list from meetings
 
-* Generate a plot mapping data file
-* finalise the plot-state functionality
-* Initiate gross margin modelling program
-
+* Gross margin modelling program
+    * add in a call to the product data files to get product costs (in addition to activity costs)
+    * add in a function to access reference data (need to generate) for crop prices in order to generate revenue
