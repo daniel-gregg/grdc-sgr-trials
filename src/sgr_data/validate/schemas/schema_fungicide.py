@@ -27,8 +27,8 @@ class FungicideProductsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     name: str = Field(..., max_length=20)
-    units: FungicidesUnits
-    price: float
+    unitsKgOrLitres: FungicidesUnits
+    price: Optional[float]
 
 # Provides the core model for entering fungicide application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'fungicide' to ensure
@@ -36,7 +36,7 @@ class FungicideProductsModel(BaseModel):
 class FungicideApplicationsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
-    plotID: str = Field(..., max_length=20)
+    plotID: str = Field(..., max_length=50)
 
     year: int = Field(..., ge=2023, le=2029, description="Year of application event")
     month: int = Field(..., ge=1, le=12, description="Month of application event")
@@ -44,14 +44,14 @@ class FungicideApplicationsModel(BaseModel):
     # To Do - define a validator to ensure the date is not in the future
 
     #Define and validate fungicide name against names in the 'FungicidesProductData' df
-    fungicideName: str
-    @field_validator('fungicideName')
+    fungName: str
+    @field_validator('fungName')
     @classmethod
     def fungicide_product_exists(cls, fungname):
 
         #read in ProductData.csv
         try:
-            fungicideProducts = pd.read_csv(here('src/sgr_data/data/test_data/FungicideProductData.csv'))
+            fungicideProducts = pd.read_csv(here('src/sgr_data/data/reference_data/FungProductData.csv'))
         except:
             
             #check if a testProducts csv is available
@@ -69,11 +69,10 @@ class FungicideApplicationsModel(BaseModel):
     
     
     #Define and validate units against options in the 'FertiliserUnits' model - automated by the 'use_enum_values' arg
-    fungicideUnitsApplied: FungicidesUnits
+    fungUnitsAppliedKgOrLitres: FungicidesUnits
 
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
-    fungicideValue: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
-    fungicideApplicationTiming: Optional[str] = Field(..., max_length=1000, description="Comment on fungicide timing (optional)")
+    fungAppliedAmount: float = Field(..., ge=0,le=4000, description="Number of litres/kg applied PER HECTARE")
     comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 

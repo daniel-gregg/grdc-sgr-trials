@@ -25,9 +25,9 @@ class HerbicidesUnits(AutoEnum):
 class HerbicideProductsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
-    name: str = Field(..., max_length=20)
-    units: HerbicidesUnits
-    price: float
+    name: str = Field(..., max_length=40)
+    unitsKgOrLitres: HerbicidesUnits
+    price: Optional[float]
 
 # Provides the core model for entering herbicide application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'herb' to ensure
@@ -35,7 +35,7 @@ class HerbicideProductsModel(BaseModel):
 class HerbicideApplicationsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
-    plotID: str = Field(..., max_length=20)
+    plotID: str = Field(..., max_length=50)
 
     year: int = Field(..., ge=2023, le=2029, description="Year of application event")
     month: int = Field(..., ge=1, le=12, description="Month of application event")
@@ -50,7 +50,7 @@ class HerbicideApplicationsModel(BaseModel):
 
         #read in ProductData.csv
         try:
-            herbicideProducts = pd.read_csv(here('src/sgr_data/data/HerbProductData.csv'))
+            herbicideProducts = pd.read_csv(here('src/sgr_data/data/reference_Data/HerbProductData.csv'))
         except:
             
             #check if a testProducts csv is available
@@ -69,11 +69,10 @@ class HerbicideApplicationsModel(BaseModel):
     
     
     #Define and validate units against options in the 'FertiliserUnits' model - automated by the 'use_enum_values' arg
-    herbUnitsApplied: HerbicidesUnits
+    herbUnitsAppliedKgOrLitres: HerbicidesUnits
 
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
-    herbValue: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
-    herbApplicationTiming: Optional[str] = Field(..., max_length=1000, description="Comment on herbicide timing (optional)")
+    herbAppliedAmount: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
     comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 

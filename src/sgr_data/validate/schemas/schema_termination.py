@@ -23,8 +23,8 @@ class TerminationMethod(AutoEnum):
     tillage = auto()
     no_termination = alias('None','',  'no', 'NA', 'nothing')
 
-#Crop termination reason - improves detail for pasture and other crops above (can move pasture types into own types)
-class Reason(AutoEnum):
+#Crop termination outcme - improves detail for pasture and other crops above (can move pasture types into own types)
+class Outcome(AutoEnum):
     success = alias('harvest','good','pass') #indicates that planting objectives were substantively achieved
     fail_water = alias('water','dry','drought') #crop failed due to insufficient crop water availability
     fail_pests = alias('vermin', 'insects', 'mice', 'locusts') #crop failed due to pests
@@ -40,6 +40,12 @@ class terminationState(AutoEnum):
     asis = alias('no harvest')                                      #No mechanical harvesting or other activity
     otherterminationstate = alias('NA', '', 'other')                     #Other state not included here - include in comments
 
+#Crop termination reason - improves detail for pasture and other crops above (can move pasture types into own types)
+class Reason(AutoEnum):
+    sale = alias('sell','market','revenue') #market sale
+    mulch = alias('groundcover') #use for groundcover, soil health, etc
+    fodder = alias('livestock', 'silage', 'cattle', 'grazing', 'sheep') #fodder reason
+
 
 #Crops and crop varieties
 #Whenever a plot-planted crop data point is validated it WILL be added to a plot-date-planted-cropname-harvest dataframe
@@ -48,7 +54,7 @@ class TerminationModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     ###identifying details
-    plotID: str = Field(..., max_length=20)
+    plotID: str = Field(..., max_length=50)
     
     #date details
     year: int = Field(..., ge=2023, le=2029, description="Year of application event")
@@ -62,18 +68,19 @@ class TerminationModel(BaseModel):
     crop3Name : Optional[str]
 
     #Termination reason
+    harvestOutcome : Outcome
     harvestReason : Reason
 
     #Yield
-    crop1Yield : float = Field(..., ge=0,le=500, description="Kg per hectare")
-    crop2Yield : Optional[float] = Field(..., ge=0,le=500, description="Kg per hectare")
-    crop3Yield : Optional[float] = Field(..., ge=0,le=500, description="Kg per hectare")
+    crop1Yield : float = Field(..., ge=0,le=10000, description="Kg per hectare")
+    crop2Yield : Optional[float] = Field(..., ge=0,le=10000, description="Kg per hectare")
+    crop3Yield : Optional[float] = Field(..., ge=0,le=10000, description="Kg per hectare")
     
     #Update Termination state - ensures that the plot state changes to one of the termination states
     terminationState : terminationState
 
     #Comments are optional
-    comments: str = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
+    comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
     @model_validator(mode='after')
     def validate_choice(self) -> Self:

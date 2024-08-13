@@ -44,12 +44,12 @@ class FertiliserProductsModel(BaseModel):
 
     name: str = Field(..., max_length=20)
     productType: FertiliserType
-    units: FertiliserUnits
-    price : float
+    unitsKgOrLitres: FertiliserUnits
+    price: Optional[float]
 
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
-    nitrogen: float = Field(..., ge=0, le=100, description="Nitrogen as urea percent by weight or volume")
-    phosphorous: float = Field(..., ge=0, le=100, description="Phosphorous percent by weight or volume")
+    nitrogenPercent: float = Field(..., ge=0, le=100, description="Nitrogen as urea percent by weight or volume")
+    phosphorousPercent: float = Field(..., ge=0, le=100, description="Phosphorous percent by weight or volume")
 
 # Provides the core model for entering fertiliser application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'fert' to ensure
@@ -57,7 +57,7 @@ class FertiliserProductsModel(BaseModel):
 class FertiliserApplicationsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
-    plotID: str = Field(..., max_length=20)
+    plotID: str = Field(..., max_length=50)
 
     year: int = Field(..., ge=2023, le=2029, description="Year of application event")
     month: int = Field(..., ge=1, le=12, description="Month of application event")
@@ -90,9 +90,9 @@ class FertiliserApplicationsModel(BaseModel):
     
     
     #Define and validate units against options in the 'FertiliserUnits' model - automated by the 'use_enum_values' arg
-    fertUnitsApplied: FertiliserUnits
+    fertUnitsAppliedKgOrLitres: FertiliserUnits
 
-    fertValue: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
+    fertAppliedAmount: float = Field(..., ge=0,le=4000, description="Number of litres/kg applied PER HECTARE")
     comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 

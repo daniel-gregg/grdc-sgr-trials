@@ -1,5 +1,12 @@
-,name,units,price
-0,No weeds on me,L,2000
-1,Herbie holdup,L,2000
-2,Agent Pinky,L,2000
-3,Four products,L,2000
+name,units,price,source
+Amistar,L,90,
+Aviator Xpro,L,54.5,SAGIT
+Carbendazim,kg,9.85,SAGIT
+Echo900 ,kg,25,
+Flutriafol 500,L,39,SAGIT
+Mancozeb,kg,8.83,SAGIT
+Miravis Star,L,130,
+Orius 430,L,40,
+Prosaro ,L,74.5,SAGIT
+Radial,L,68,
+TazerXpert,L,14.5,SAGIT
