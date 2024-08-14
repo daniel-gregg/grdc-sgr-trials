@@ -1,4 +1,4 @@
-plotID,year,month,day,fungName,fungUnitsAppliedKgOrLitres,fungAppliedAmount,comments
+plotID,year,month,day,name,unitsAppliedKgOrLitres,appliedAmount,comments
 ROSEWORTHY_S1.2_P2312_R1,2023,7,25,Aviator Xpro,L,0.3,0.3L/ha applied at Z-30 stage (cereal) / pre-canopy close (pulse) - whole site
 ROSEWORTHY_S7_P0000_R1,2023,7,25,Aviator Xpro,L,0.3,0.3L/ha applied at Z-30 stage (cereal) / pre-canopy close (pulse) - whole site
 ROSEWORTHY_S2_P1212_R1,2023,7,25,Aviator Xpro,L,0.3,0.3L/ha applied at Z-30 stage (cereal) / pre-canopy close (pulse) - whole site

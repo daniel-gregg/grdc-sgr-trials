@@ -1,4 +1,4 @@
-plotID,year,month,day,fertName,fertUnitsAppliedKgOrLitres,fertAppliedAmount,comments
+plotID,year,month,day,name,unitsAppliedKgOrLitres,appliedAmount,comments
 ROSEWORTHY_S7_P0000_R1,2023,5,22,Dynamic lifter,kg,3333,"3330kg/ha applied pre-sowing as organic treatment, broadcast on top of soil"
 ROSEWORTHY_S7_P0000_R2,2023,5,22,Dynamic lifter,kg,3333,"3330kg/ha applied pre-sowing as organic treatment, broadcast on top of soil"
 ROSEWORTHY_S7_P0000_R3,2023,5,22,Dynamic lifter,kg,3333,"3330kg/ha applied pre-sowing as organic treatment, broadcast on top of soil"

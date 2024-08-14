@@ -1,4 +1,4 @@
-plotID,year,month,day,herbName,herbUnitsAppliedKgOrLitres,herbAppliedAmount,comments
+plotID,year,month,day,name,unitsAppliedKgOrLitres,appliedAmount,comments
 ROSEWORTHY_S1.1_P1231_R1,2023,4,15,Crucial,L,2,2L/ha applied as Knockdown - Whole site
 ROSEWORTHY_S1.1_P1231_R2,2023,4,15,Crucial,L,2,2L/ha applied as Knockdown - Whole site
 ROSEWORTHY_S1.1_P1231_R3,2023,4,15,Crucial,L,2,2L/ha applied as Knockdown - Whole site

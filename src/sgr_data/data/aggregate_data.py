@@ -122,6 +122,76 @@ def splitPlotId(plotID):
     
     return id_dict
 
+#use the product and activity to get the product price
+def getProductPrice(product, activity):
+    #returns a product price to use to calculate product costs for an activity
+    #   some values are empty or NA - in these cases it returns an average
+
+    base_path = getBasePath()
+
+    # set up a product-file mapping to activities
+    product_file_dict = {
+        'fertiliser': 'FertProductData.csv',
+        'fungicide' : 'FungProductData.csv',
+        'herbicide' : 'HerbProductData.csv',
+        'pesticide' : 'PestProductData.csv,'
+    }
+
+    #get product data path
+    product_data_path = os.path.join(base_path, 'reference_data', product_file_dict[activity])
+
+    #load the .csv
+    product_data = pd.read_csv(product_data_path)
+    product_names = [x.lower() for x in product_data['name']]
+    select_bool = [x == product.lower() for x in product_names]
+    #find the product in the file and return the price - this must exist because it has been validated already
+    product_price = product_data.loc[select_bool]['price'].item()
+
+    # replace missing data with average noting that '0' is NOT missing
+    if pd.isna(product_price) or product_price == None:
+        #get all prices
+        product_price = np.nanmean(
+            product_data['price']
+        )
+
+    #return the price
+    return product_price
+
+#use crop name and reference data ('CropPriceData.csv') to get crop prices
+def getCropPrice(crop, price_type):
+    #price must be one of the options in the columns of the CropPriceData.csv file. 
+    # currently these are:
+    # prices_ma5
+    # prices_2022
+
+    base_path = getBasePath()
+    crop_file_path = os.path.join(base_path, 'reference_data', 'CropPriceData.csv')
+    
+    crop_price_data = pd.read_csv(crop_file_path)
+    
+    crop_name_dict = {
+        'WHEAT' : 'Wheat',
+        'BARLEY' : 'Barley',
+        'CANOLA' : 'Canola',
+        'LENTIL' : 'Lentil',
+        'VETCH' : 'Vetch',
+        'OAT': 'Oat (hay)',
+        'FABABEAN' : 'Faba bean',
+        'FIELDPEA' : 'Field pea',
+        'CLOVER' : 'Clover',
+        'CHICORY' : 'Chicory',
+        'PERRENIALRYEGRASS' : 'Perrenial ryegrass',
+        'SUBCLOVER' : 'Subclover',
+        'MILLET' : 'Millet',
+        'BRASSICA' : 'Brassica',
+        'DURUM' : 'Durum',
+        'TILLAGERADISH' : 'Tillage radish'
+    }
+
+    crop_price = crop_price_data.loc[crop_price_data['name']==crop_name_dict[crop],][price_type].item()
+    
+    return crop_price
+
 
 # aggregate data by plot - basic function to facilitate directed aggregations of data (e.g. by site-year replicates)
 def aggregatePlotData(plotID):
@@ -204,7 +274,11 @@ def aggregatePlotData(plotID):
     return plot_data
 
 # a more efficient aggregation function for cases where no subsetting is wanted
-def aggregateAll():
+def aggregateAll(price_type = 'prices_ma5'):
+    #price_type is one of the column headers in '../reference_data/CropPriceData.csv'
+    #   it defaults to a 5 year moving average of crop prices. 
+
+
     ### get site directory for validated data
     base_path = getBasePath()
     site_path = os.path.join(base_path, 'validated_data')
@@ -239,18 +313,74 @@ def aggregateAll():
                 
                 # then add in vars that change by year (date and potentially activity cost)
                 dates = []
-                costs = []
+                activity_costs = []
+                product_costs = []
+                yield_kg = []
+                revenue_dollars = []
+
                 for row in range(data.shape[0]):
+
+                    #get date
                     year = data.iloc[row]['year']
                     month = data.iloc[row]['month']
                     day = data.iloc[row]['day']
                     dates.append(datetime.datetime(year, month, day))
-                    costs.append(getActivityCostsData(activity, year))
                     
-                data['date'] = dates
-                data['activity_cost'] = costs
-                #append to data_list for merging later using 'reduce'
+                    #get activity cost
+                    activity_costs.append(getActivityCostsData(activity, year))
 
+                    #get product cost - check if a product using activity
+                    if activity == 'sowing' or activity == 'termination':
+                        product_costs.append(0)
+                    else:    
+                        product = data.iloc[row]['name']
+                        product_price = getProductPrice(product, activity)
+                        product_qty = data.iloc['name',]['fertAppliedAmount'].item()
+                        product_costs.append(np.multiply(product_price, product_qty))
+
+                    #if activity is termination, get yield and revenue
+                    if not activity == 'termination':
+                        yield_kg.append(0)
+                        revenue_dollars.append(0)
+                    else:
+                        yield1 = data.iloc[row]['crop1Yield']
+                        yield2 = data.iloc[row]['crop2Yield']
+                        yield3 = data.iloc[row]['crop3Yield']
+                        yield1 = yield1.replace(np.nan, None)
+                        yield2 = yield2.replace(np.nan, None)
+                        yield3 = yield3.replace(np.nan, None)
+
+                        crop1 = data.iloc[row]['crop1Name']
+                        crop2 = data.iloc[row]['crop2Name']
+                        crop3 = data.iloc[row]['crop3Name']
+
+                        if pd.isna(crop1):
+                            price1 = 0
+                        else:
+                            price1 = getCropPrice(crop1, price_type)
+                        if pd.isna(crop2):
+                            price2 = 0
+                        else:
+                            price2 = getCropPrice(crop2, price_type)
+                        if pd.isna(crop3):
+                            price3 = 0
+                        else:
+                            price3 = getCropPrice(crop3, price_type)
+
+                        yield_kg.append(yield1 + yield2 + yield3)
+                        revenue_dollars.append(
+                            yield1 * price1 +
+                            yield2 * price2 + 
+                            yield3 + price3
+                        )
+
+                data['date'] = dates
+                data['activity_cost'] = activity_costs
+                data['product_applied_costs'] = product_costs
+                data['crop_yield_kg'] = yield_kg
+                data['crop_revenue_dollars'] = revenue_dollars
+
+                #append to data_list for merging later using 'reduce'
                 if activity == 'termination' or activity == 'sowing':
                     data_crops_list.append(data)
                 else:
@@ -290,6 +420,7 @@ def aggregateAll():
                 'month', 
                 'day', 
                 'activity_cost', 
+                'name',
                 'comments'
                 ], 
             how = 'left'), 

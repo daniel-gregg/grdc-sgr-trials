@@ -1,4 +1,4 @@
-plotID,year,month,day,pestName,targetPest,pestUnitsAppliedKgOrLitres,pestAppliedAmount,comments
+plotID,year,month,day,name,targetPest,unitsAppliedKgOrLitres,appliedAmount,comments
 ROSEWORTHY_S1.2_P2312_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
 ROSEWORTHY_S7_P0000_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
 ROSEWORTHY_S2_P1212_R1,2023,5,15,MouseOff,mice,kg,1.5,1.5kg/ha applied pre-sowing
