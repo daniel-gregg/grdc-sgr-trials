@@ -43,7 +43,42 @@ import datetime
 ####### utility functions (export to utilities once working)
 
 def getBasePath():
-    return os.path.join('src','sgr_data','data','validated_data')
+    return os.path.join('src','sgr_data','data')
+
+# for each call on getting activity data this returns an activity cost record
+def getActivityCostsData(activity, year):
+    #note if year not present the function defaults to returning the nearest year record
+    # no warning is given as only 2020-21 records are currently available
+
+    #read in activity cost data from reference data
+    base_path = getBasePath()
+    reference_data_path = os.path.join(base_path, 'reference_data', 'ActivitiesCosts.csv')
+
+    #load .csv data
+    activity_data = pd.read_csv(reference_data_path)
+
+    #acivity mapping
+    activity_mapping_dict = {
+        'fertiliser' : 'FERT_SPREADING_HA',
+        'fungicide' : 'GROUND_SPRAYING_HA',
+        'herbicide' : 'GROUND_SPRAYING_HA',
+        'pesticide' : 'GROUND_SPRAYING_HA',
+        'termination' : 'HARVEST_HA',
+        'sowing' : 'SOWING',
+    }
+
+    #set activity string to reference activity_data columns
+    activity_string = activity_mapping_dict[activity]
+
+    #get values - these are by year
+    activity_value = activity_data.loc[activity_data['FY_END']==year,][activity_string].item()
+
+    if pd.isna(activity_value):
+        #return average instead
+        activity_value = np.nanmean(activity_data[activity_string])
+    
+    return activity_value
+
 
 # Get site-activity data combinations
 def getSiteData(site):
@@ -51,7 +86,7 @@ def getSiteData(site):
     base_path = getBasePath()
 
     ### get site directory for validated data
-    site_path = os.path.join(base_path,site)
+    site_path = os.path.join(base_path, 'validated_data', site)
     activities_list = os.listdir(site_path) # this gets the activity folders in the validated data for the target site
 
     ### initialise an activities-data dictionary to hold target data
@@ -87,75 +122,232 @@ def splitPlotId(plotID):
     
     return id_dict
 
+#use the product and activity to get the product price
+def getProductPrice(product, activity):
+    #returns a product price to use to calculate product costs for an activity
+    #   some values are empty or NA - in these cases it returns an average
 
-# aggregate data by plot - basic function to facilitate directed aggregations of data (e.g. by site-year replicates)
-def aggregatePlotData(plotID):
-    #   1. split site_activity_data into target site using splitPlotId elements
-    #   2. subset each activity by plotID and store resultant DF
-    #   3. generate date series on each activity
-    #   4. merge activity DFs on id and date
-    #   5. return resultant df for merging on a higher-level aggregation
+    base_path = getBasePath()
+
+    # set up a product-file mapping to activities
+    product_file_dict = {
+        'fertiliser': 'FertProductData.csv',
+        'fungicide' : 'FungProductData.csv',
+        'herbicide' : 'HerbProductData.csv',
+        'pesticide' : 'PestProductData.csv',
+    }
+
+    #get product data path
+    product_data_path = os.path.join(base_path, 'reference_data', product_file_dict[activity])
     
-    # get site for plot
-    site = splitPlotId(plotID)['site']
+    #load the .csv
+    product_data = pd.read_csv(product_data_path)
+    product_names = [x.lower().strip() for x in product_data['name']] #strip whitespace
+    select_bool = [x == product.lower().strip() for x in product_names]
+    #find the product in the file and return the price - this must exist because it has been validated already
+    product_price = product_data.loc[select_bool]['price'].item()
 
-    #get site_data
-    activity_data_dict = getSiteData(site)
+    # replace missing data with average noting that '0' is NOT missing
+    if pd.isna(product_price) or product_price == None:
+        #get all prices
+        product_price = np.nanmean(
+            product_data['price']
+        )
 
-    # initialise a plot_data dictionary
-    plot_data_dict = {activity: None for activity in activity_data_dict}
-    for activity in plot_data_dict:
-        #get relevant activity data for site
-        activity_data = activity_data_dict[activity]
-        
-        #get plot data for that site/activity combination
-        plot_activity_data = activity_data.loc[activity_data['plotID']==plotID,]
+    #return the price
+    return product_price
 
-        #add a new date variable
-        year = plot_activity_data['year']
-        month = plot_activity_data['month']
-        day = plot_activity_data['day']
-        date_stamp = [datetime.datetime(year,month,day)]
-        plot_activity_data['date'] = date_stamp
+#use crop name and reference data ('CropPriceData.csv') to get crop prices
+def getCropPrice(crop, price_type):
+    #price must be one of the options in the columns of the CropPriceData.csv file. 
+    # currently these are:
+    # prices_ma5
+    # prices_2022
 
-        #add as recod in plot_data_dict
-        plot_data_dict[activity] = plot_activity_data
+    base_path = getBasePath()
+    crop_file_path = os.path.join(base_path, 'reference_data', 'CropPriceData.csv')
+    
+    crop_price_data = pd.read_csv(crop_file_path)
 
-    # set as list and merge on plotID and date
-    df_list = [plot_data_dict[df] for df in plot_data_dict]
-    plot_data = reduce(lambda left,right: pd.merge(left,right, on = ['plotID', 'date'], how = 'outer'), df_list).fillna(pd.NA)
+    #strip and lower-case the strings
+    crop_names_list = [x.lower().strip() for x in crop_price_data['name']]
+    crop_name = crop.lower().strip()
 
-    return plot_data
+    #use a boolean list to select correct row
+    select_bool = [x == crop_name for x in crop_names_list]
+    if not any(select_bool): #no match found - print exception with crop name
+        raise ValueError('The terminated crop {} is not in the crops list. Ensure consistent naming'.format(crop))
+
+    crop_price = crop_price_data.loc[select_bool][price_type].item()/1000 #prices are in tonnes, yield are in kilograms
+    
+    return crop_price
+
 
 # a more efficient aggregation function for cases where no subsetting is wanted
-def aggregateAll():
+def aggregateAll(price_type = 'prices_ma5'):
+    #price_type is one of the column headers in '../reference_data/CropPriceData.csv'
+    #   it defaults to a 5 year moving average of crop prices. 
+
+
     ### get site directory for validated data
     base_path = getBasePath()
-    sites = os.listdir(base_path)
+    site_path = os.path.join(base_path, 'validated_data')
+    sites = os.listdir(site_path)
 
     #initialise data list for reduce-merge after filling the list
     data_list = []
+    data_crops_list = []
 
     for site in sites:
         #get the list of activities for referent site
-        activity_list = os.listdir(os.path.join(base_path,site))
+        activity_list = os.listdir(os.path.join(site_path,site))
         for activity in activity_list:
             #get the data files included in that activity-site combination (these are dated files)
-            dates_list = os.listdir(os.path.join(base_path, site, activity))
-            for dated_file in dates_list:
-                file_path = os.path.join(base_path, site, activity, dated_file)
-                data = pd.read_pickle(file_path)
-                #add in site, activity, and entry date details to file
-                nrow = data.shape[0]
-                data['site'] = np.repeat(site, nrow)
-                data['activity'] = np.repeat(activity, nrow)
-                data['date_added'] = np.repeat(dated_file, nrow)
+            dates_list = os.listdir(os.path.join(site_path, site, activity))
 
-                #append to data_list
-                data_list.append(data)
+            #check if empty, if so continue
+            if len(dates_list) == 0:
+                continue
+            
+            #else get pickle files and merge
+            for dated_file in dates_list:
+
+                # get file path and data for site-activity-date(uploaded) combinations
+                file_path = os.path.join(site_path, site, activity, dated_file)
+                data = pd.read_pickle(file_path)
+                nrow = data.shape[0]
+
+                # add in fixed (site-activity) variables
+                data['site'] = np.repeat(site, nrow)
+                data['activity_type'] = np.repeat(activity, nrow)
+                
+                # then add in vars that change by year (date and potentially activity cost)
+                dates = []
+                activity_cost = []
+                product_costs = []
+                product_qty = []
+                yield_crop1_kg = []
+                yield_crop2_kg = []
+                yield_crop3_kg = []
+                revenue_dollars = []
+
+                for row in range(data.shape[0]):
+
+                    #get date
+                    year = data.iloc[row]['year']
+                    month = data.iloc[row]['month']
+                    day = data.iloc[row]['day']
+                    dates.append(datetime.datetime(year, month, day))
+                    
+                    #get activity cost
+                    activity_cost.append(getActivityCostsData(activity, year))
+
+                    #get product cost - check if a product using activity
+                    if activity == 'sowing' or activity == 'termination':
+                        product_costs.append(0)
+                    else:    
+                        product = data.iloc[row]['name']
+                        print('product for product price is {} at site {}'.format(product, site))
+                        product_price = getProductPrice(product, activity)
+                        product_qty = data.iloc[row]['appliedAmount'].item()
+                        product_costs.append(np.multiply(product_price, product_qty))
+
+                    #if activity is termination, get yield and revenue
+                    if not activity == 'termination':
+                        revenue_dollars.append(0)
+                    else:
+                        crop1 = data.iloc[row]['crop1Name']
+                        crop2 = data.iloc[row]['crop2Name']
+                        crop3 = data.iloc[row]['crop3Name']
+                        print('crop 1 is {} at site {}'.format(crop1, site))
+                        print('crop 2 is {} at site {}'.format(crop2, site))
+                        print('crop 3 is {} at site {}'.format(crop3, site))
+                        if pd.isna(crop1):
+                            price1 = 0
+                            yield1 = 0
+                        else:
+                            price1 = getCropPrice(crop1, price_type)
+                            yield1 = data.iloc[row]['crop1Yield']
+                        if pd.isna(crop2):
+                            price2 = 0
+                            yield2 = 0
+                        else:
+                            price2 = getCropPrice(crop2, price_type)
+                            yield2 = data.iloc[row]['crop2Yield']
+                        if pd.isna(crop3):
+                            price3 = 0
+                            yield3 = 0
+                        else:
+                            price3 = getCropPrice(crop3, price_type)
+                            yield3 = data.iloc[row]['crop3Yield']
+
+                        revenue_dollars.append(
+                            yield1 * price1 +
+                            yield2 * price2 + 
+                            yield3 + price3
+                        )
+
+                data['date'] = dates
+                data['costs_activity_dollars'] = activity_cost
+                data['costs_product_applied_dollars'] = product_costs
+                data['revenue_crops_dollars'] = revenue_dollars
+
+                #append to data_list for merging later using 'reduce'
+                if activity == 'termination' or activity == 'sowing':
+                    data_crops_list.append(data)
+                else:
+                    data_list.append(data)
     
-    #merge
-    all_data = reduce(lambda left,right: pd.merge(left,right, on = ['plotID', 'date'], how = 'outer'), data_list).fillna(pd.NA)
+    #merge sowing and termination first as they share additional variable names
+    crop_data = reduce(
+        lambda left, right: pd.merge(
+            left, right, on = [
+             'plotID', 
+                'date', 
+                'activity_type', 
+                'site', 
+                'crop1Name',
+                'crop2Name',
+                'crop3Name',
+                'year', 
+                'month', 
+                'day', 
+                'costs_activity_dollars', 
+                'costs_product_applied_dollars',
+                'revenue_crops_dollars',
+                'comments'
+                ], 
+            how = 'outer'), 
+        data_crops_list).fillna(pd.NA)
+
+    #non-crop data
+    non_crop_data = reduce(
+        lambda left,right: pd.merge(
+            left,right, on = [
+                'plotID', 
+                'date', 
+                'activity_type', 
+                'revenue_crops_dollars',
+                'costs_product_applied_dollars',
+                'costs_activity_dollars',
+                'unitsAppliedKgOrLitres',
+                'appliedAmount',
+                'site', 
+                'year', 
+                'month', 
+                'day', 
+                'name',
+                'comments'
+                ], 
+            how = 'outer'), 
+        data_list).fillna(pd.NA)
+
+    all_data = crop_data.merge(non_crop_data, how = 'outer')
+
+    #save all_data to file
+    today = datetime.datetime.today().strftime('%Y-%m-%d')
+    filepath = os.path.join('src','sgr_analysis','sgr_gross_margin', 'gross_margin_outputs', today+'.csv')
+    all_data.to_csv(filepath)
 
     return all_data
 
@@ -186,9 +378,6 @@ def aggregateDataByDetail(
     # exception returned if not provided and either 'phase_sequence = True' or 'replicates = True'
 
     # conduct exception and type checking
-    if plotId == None and (phase_sequence==True or replicates==True):
-        raise ValueError("You must supply a plotId if you want to return either phase_sequence replicates or replicates")
-    
     if not sites == 'all':
         if not type(sites)==list:
             raise TypeError("'sites' argument must either be 'all' or a list")
@@ -199,12 +388,17 @@ def aggregateDataByDetail(
         sites_list = [
             'roseworthy',
             'kinnabulla',
-            'MORE'
+            'edillilie',
+            'streatham',
+            'wallup',
+            'manang',
+            'appila',
+            'hart',
         ]
 
         sites = [site.lower() for site in sites]
         if not all(item in sites_list for item in sites):
-            raise ValueError("Ensure all of your sites are included in the siteslist")
+            raise ValueError("Ensure all of your sites are properly spelt")
     
     ## check aggregation selection and aggregate
     if sites == 'all':
@@ -212,13 +406,91 @@ def aggregateDataByDetail(
 
     else:
         #generate a plot list (list of plotIDs)to send to 
-        if phase_sequence == True:
-            for site in sites:
-
-
+        #COMPLETE THIS LATER
+        x=1 #fill later
 
     return data
 
+
+# aggregate data by plot - basic function to facilitate directed aggregations of data (e.g. by site-year replicates)
+def aggregatePlotData(plotID):
+    #   1. split site_activity_data into target site using splitPlotId elements
+    #   2. subset each activity by plotID and store resultant DF
+    #   3. generate date series on each activity
+    #   4. merge activity DFs on id and date
+    #   5. return resultant df for merging on a higher-level aggregation
+    
+    # get site for plot
+    site = splitPlotId(plotID)['site']
+
+    #get site_data
+    activity_data_dict = getSiteData(site)
+
+    #initialise a dataframe for new variables to merge later
+    df_type_cost = {
+        'plotID' : [],
+        'site' : [],
+        'date' : [],
+        'activity_type' : [],
+        'activity_cost' : [],
+    }
+
+    # initialise a plot_data dictionary
+    plot_data_dict = {activity: None for activity in activity_data_dict}
+    for i, activity in enumerate(plot_data_dict):
+        #get relevant activity data for site
+        activity_data = activity_data_dict[activity]
+        
+        #get plot data for that site/activity combination
+        plot_activity_data = activity_data.loc[activity_data['plotID']==plotID,]
+
+        # plot_activity_data can be more than one row or be empty.
+        if plot_activity_data.empty:
+            continue
+
+        if plot_activity_data.shape[0] == 1:
+
+            #add a new date variable
+            year = plot_activity_data['year']
+            month = plot_activity_data['month']
+            day = plot_activity_data['day']
+            date_stamp = [datetime.datetime(year,month,day)]
+            plot_activity_data['date'] = date_stamp
+
+            #add target variables to type_cost dataframe
+            df_type_cost['plotID'].append(plotID)
+            df_type_cost['date'].append(date_stamp)
+            df_type_cost['activity_type'].append(activity)
+            df_type_cost['activity_cost'].append(getActivityCostsData(activity, year))
+
+        if plot_activity_data.shape[0] > 0:
+            dates = []
+            for activity_date in range(plot_activity_data.shape[0]):
+                year = plot_activity_data.iloc[activity_date,]['year']
+                month = plot_activity_data.iloc[activity_date,]['month']
+                day = plot_activity_data.iloc[activity_date,]['day']
+                date_stamp = datetime.datetime(year,month,day)
+                dates.append(date_stamp)
+
+                #add target variables to type_cost dataframe
+                df_type_cost['plotID'].append(plotID)
+                df_type_cost['site'].append(site)
+                df_type_cost['date'].append(date_stamp)
+                df_type_cost['activity_type'].append(activity)
+                df_type_cost['activity_cost'].append(getActivityCostsData(activity, year))
+            
+            #append dates
+            plot_activity_data['date'] = dates
+
+        #add plot_activity_data as record in plot_data_dict
+        plot_data_dict[activity] = plot_activity_data
+
+    # set as list and merge on plotID and date
+    df_list = [plot_data_dict[df] for df in plot_data_dict]
+    df_list.append(df_type_cost)
+    plot_data = reduce(lambda left,right: pd.merge(left,right, on = ['plotID', 'date'], how = 'outer'), df_list).fillna(pd.NA)
+
+    return plot_data
 
 ## aggregate replicates by plot ID
 def aggregateDataByPlot(
@@ -253,11 +525,11 @@ def aggregateDataByPlot(
         Warning("phase_sequence = 'all' implies that replicates = True")
 
     if replicates == False:
-        #return own data omly
+        #return own data only
+        x=1
+
+    return 1
 
 
 
-    return data
-
-
-
+aggregateAll()

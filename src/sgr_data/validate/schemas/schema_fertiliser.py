@@ -65,8 +65,8 @@ class FertiliserApplicationsModel(BaseModel):
     # To Do - define a validator to ensure the date is not in the future
 
     #Define and validate fertiliser name against names in the 'FertilisersTypesModels' df
-    fertName: str
-    @field_validator('fertName')
+    name: str
+    @field_validator('name')
     @classmethod
     def fert_product_exists(cls, fertname):
 
@@ -84,15 +84,15 @@ class FertiliserApplicationsModel(BaseModel):
         
         
         #check if provided 'fertname' is in the existing products list
-        if sum(fertProducts['name'].str.lower().str.contains(fertname.lower()))==0:
+        if sum(fertProducts['name'].str.lower().str.contains(fertname.lower().strip()))==0:
             raise ValueError("Fertiliser product must be defined in the 'fertProductData' table in '..sgr_data//data'")
         return fertname
     
     
     #Define and validate units against options in the 'FertiliserUnits' model - automated by the 'use_enum_values' arg
-    fertUnitsAppliedKgOrLitres: FertiliserUnits
+    unitsAppliedKgOrLitres: FertiliserUnits
 
-    fertAppliedAmount: float = Field(..., ge=0,le=4000, description="Number of litres/kg applied PER HECTARE")
+    appliedAmount: float = Field(..., ge=0,le=4000, description="Number of litres/kg applied PER HECTARE")
     comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 

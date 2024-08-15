@@ -44,6 +44,21 @@ def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop
     plot_state_CROP2 = plot_data_sorted.tail(1)['CROP2'].item() #gets the last entry after being sorted (ascending is default)
     plot_state_CROP3 = plot_data_sorted.tail(1)['CROP3'].item() #gets the last entry after being sorted (ascending is default)
 
+    #convert strings to lower with no white space
+    if not plot_state_CROP1 == None:
+        plot_state_CROP1 = plot_state_CROP1.lower().strip()
+    if not plot_state_CROP2 == None:
+        plot_state_CROP2 = plot_state_CROP2.lower().strip()
+    if not plot_state_CROP3 == None:
+        plot_state_CROP3 = plot_state_CROP3.lower().strip()
+
+    if not crop1 == None:
+        crop1 = crop1.lower().strip()
+    if not crop2 == None:
+        crop2 = crop2.lower().strip()
+    if not crop3 == None:
+        crop3 = crop3.lower().strip()
+    
     #if plotActivityType = 'TERMINATION' and STATE = 'CROP' fail and pass error message
     if (plotActivityType == 'TERMINATION' and plot_state_STATE == 'FALLOW'):
         raise ValueError("Plot " + plot_id + "is already in a fallow state. You cannot terminate a fallow state")

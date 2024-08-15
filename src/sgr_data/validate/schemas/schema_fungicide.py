@@ -44,8 +44,8 @@ class FungicideApplicationsModel(BaseModel):
     # To Do - define a validator to ensure the date is not in the future
 
     #Define and validate fungicide name against names in the 'FungicidesProductData' df
-    fungName: str
-    @field_validator('fungName')
+    name: str
+    @field_validator('name')
     @classmethod
     def fungicide_product_exists(cls, fungname):
 
@@ -63,16 +63,16 @@ class FungicideApplicationsModel(BaseModel):
                 return "no fungicide products data ('FungicideProductData.csv') exists in expected directory (.../sgr_data/data)"
         
         #check if provided 'fungicidename' is in the existing products list
-        if sum(fungicideProducts['name'].str.lower().str.contains(fungname.lower()))==0:
+        if sum(fungicideProducts['name'].str.lower().str.contains(fungname.lower().strip()))==0:
             raise ValueError("Fungicide product must be defined in the 'FungicideProductData' table in '.../sgr_data/data'")
         return fungname
     
     
     #Define and validate units against options in the 'FertiliserUnits' model - automated by the 'use_enum_values' arg
-    fungUnitsAppliedKgOrLitres: FungicidesUnits
+    unitsAppliedKgOrLitres: FungicidesUnits
 
     #Define and validate method against options in the 'FertiliserApplicationMethod' model - automated by the 'use_enum_values' arg
-    fungAppliedAmount: float = Field(..., ge=0,le=4000, description="Number of litres/kg applied PER HECTARE")
+    appliedAmount: float = Field(..., ge=0,le=4000, description="Number of litres/kg applied PER HECTARE")
     comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 

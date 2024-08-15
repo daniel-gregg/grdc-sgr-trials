@@ -1,6 +1,7 @@
 name,units,price,source
 Activator,L,25,
 "2,4 D Amine 625",L,5.9,SAGIT
+"2,4-D",L,5.9,SAGIT
 Agritone LVE 570,kg,8,
 Amine,L,5.9,SAGIT
 AMS,L,3.5,
@@ -57,6 +58,7 @@ Raptor,kg,270,
 Reflex,L,15,
 Reglone,L,13.8,SAGIT
 "Roundup, 2,4-D",L,6,SAGIT
+Roundup,L,6,SAGIT
 Rustler,L,65,
 Sakura,kg,343.2,SAGIT
 Sakura Flow,L,343.2,

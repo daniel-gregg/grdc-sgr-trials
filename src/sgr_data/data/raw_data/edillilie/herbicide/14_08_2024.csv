@@ -1,0 +1,433 @@
+plotID,year,month,day,name,unitsAppliedKgOrLitres,appliedAmount,comments
+EDILLILIE_S1.1 _P2121_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.1 _P2121_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.1 _P2121_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.1 _P2121_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.1 _P2121_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.1 _P2121_R1,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S1.1 _P2121_R1,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S1.1 _P2121_R1,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S1.1_P1212_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.1_P1212_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.1_P1212_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.1_P1212_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.1_P1212_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.1_P1212_R1,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S1.1_P1212_R1,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S1.1_P1212_R1,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S1.1_P1212_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.1_P1212_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.1_P1212_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.1_P1212_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.1_P1212_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.1_P1212_R2,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S1.1_P1212_R2,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S1.1_P1212_R2,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S1.1_P1212_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.1_P1212_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.1_P1212_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.1_P1212_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.1_P1212_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.1_P1212_R3,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S1.1_P1212_R3,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S1.1_P1212_R3,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S1.1_P2121_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.1_P2121_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.1_P2121_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.1_P2121_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.1_P2121_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.1_P2121_R2,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S1.1_P2121_R2,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S1.1_P2121_R2,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S1.1_P2121_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.1_P2121_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.1_P2121_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.1_P2121_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.1_P2121_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.1_P2121_R3,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S1.1_P2121_R3,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S1.1_P2121_R3,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S1.2 _P1212_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.2 _P1212_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.2 _P1212_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.2 _P1212_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.2 _P1212_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.2 _P1212_R1,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S1.2 _P1212_R1,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S1.2 _P1212_R1,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S1.2 _P1212_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.2 _P1212_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.2 _P1212_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.2 _P1212_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.2 _P1212_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.2 _P1212_R2,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S1.2 _P1212_R2,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S1.2 _P1212_R2,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S1.2 _P1212_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.2 _P1212_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.2 _P1212_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.2 _P1212_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.2 _P1212_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.2 _P1212_R3,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S1.2 _P1212_R3,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S1.2 _P1212_R3,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S1.2 _P2121_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.2 _P2121_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.2 _P2121_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.2 _P2121_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.2 _P2121_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.2 _P2121_R1,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S1.2 _P2121_R1,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S1.2 _P2121_R1,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S1.2 _P2121_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.2 _P2121_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.2 _P2121_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.2 _P2121_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.2 _P2121_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.2 _P2121_R2,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S1.2 _P2121_R2,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S1.2 _P2121_R2,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S1.2 _P2121_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.2 _P2121_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.2 _P2121_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.2 _P2121_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.2 _P2121_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.2 _P2121_R3,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S1.2 _P2121_R3,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S1.2 _P2121_R3,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S1.3_P1212_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.3_P1212_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.3_P1212_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.3_P1212_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.3_P1212_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.3_P1212_R1,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S1.3_P1212_R1,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S1.3_P1212_R1,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S1.3_P1212_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.3_P1212_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.3_P1212_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.3_P1212_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.3_P1212_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.3_P1212_R2,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S1.3_P1212_R2,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S1.3_P1212_R2,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S1.3_P1212_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.3_P1212_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.3_P1212_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.3_P1212_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.3_P1212_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.3_P1212_R3,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S1.3_P1212_R3,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S1.3_P1212_R3,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S1.3_P2121_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.3_P2121_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.3_P2121_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.3_P2121_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.3_P2121_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.3_P2121_R1,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S1.3_P2121_R1,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S1.3_P2121_R1,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S1.3_P2121_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.3_P2121_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.3_P2121_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.3_P2121_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.3_P2121_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.3_P2121_R2,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S1.3_P2121_R2,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S1.3_P2121_R2,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S1.3_P2121_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.3_P2121_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S1.3_P2121_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S1.3_P2121_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S1.3_P2121_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S1.3_P2121_R3,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S1.3_P2121_R3,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S1.3_P2121_R3,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S2.1_P1234_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P1234_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P1234_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.1_P1234_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.1_P1234_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.1_P1234_R1,2023,5,12,Reflex ,L,0.5,0.5L/ha applied pre-em control of broadleaf weeds (canola) IBS
+EDILLILIE_S2.1_P1234_R1,2023,5,12,Simazine 900,kg,0.2,0.2kg/ha applied pre-em control of broadleaf weeds IBS
+EDILLILIE_S2.1_P1234_R1,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 4 node 
+EDILLILIE_S2.1_P1234_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P1234_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P1234_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.1_P1234_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.1_P1234_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.1_P1234_R2,2023,5,12,Reflex ,L,0.5,0.5L/ha applied pre-em control of broadleaf weeds (canola) IBS
+EDILLILIE_S2.1_P1234_R2,2023,5,12,Simazine 900,kg,0.2,0.2kg/ha applied pre-em control of broadleaf weeds IBS
+EDILLILIE_S2.1_P1234_R2,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 4 node 
+EDILLILIE_S2.1_P1234_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P1234_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P1234_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.1_P1234_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.1_P1234_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.1_P1234_R3,2023,5,12,Reflex ,L,0.5,0.5L/ha applied pre-em control of broadleaf weeds (canola) IBS
+EDILLILIE_S2.1_P1234_R3,2023,5,12,Simazine 900,kg,0.2,0.2kg/ha applied pre-em control of broadleaf weeds IBS
+EDILLILIE_S2.1_P1234_R3,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 4 node 
+EDILLILIE_S2.1_P2341_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P2341_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P2341_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.1_P2341_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.1_P2341_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.1_P2341_R1,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S2.1_P2341_R1,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S2.1_P2341_R1,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S2.1_P2341_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P2341_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P2341_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.1_P2341_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.1_P2341_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.1_P2341_R2,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S2.1_P2341_R2,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S2.1_P2341_R2,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S2.1_P2341_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P2341_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P2341_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.1_P2341_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.1_P2341_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.1_P2341_R3,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S2.1_P2341_R3,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S2.1_P2341_R3,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S2.1_P3412_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P3412_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P3412_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.1_P3412_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.1_P3412_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.1_P3412_R1,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S2.1_P3412_R1,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S2.1_P3412_R1,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S2.1_P3412_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P3412_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P3412_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.1_P3412_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.1_P3412_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.1_P3412_R2,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S2.1_P3412_R2,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S2.1_P3412_R2,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S2.1_P3412_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P3412_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P3412_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.1_P3412_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.1_P3412_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.1_P3412_R3,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S2.1_P3412_R3,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S2.1_P3412_R3,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S2.1_P4123_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P4123_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P4123_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.1_P4123_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.1_P4123_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.1_P4123_R1,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S2.1_P4123_R1,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S2.1_P4123_R1,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S2.1_P4123_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P4123_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P4123_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.1_P4123_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.1_P4123_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.1_P4123_R2,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S2.1_P4123_R2,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S2.1_P4123_R2,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S2.1_P4123_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P4123_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.1_P4123_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.1_P4123_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.1_P4123_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.1_P4123_R3,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S2.1_P4123_R3,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S2.1_P4123_R3,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S2.2 _P2341_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2 _P2341_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2 _P2341_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.2 _P2341_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.2 _P2341_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.2 _P2341_R1,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S2.2 _P2341_R1,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S2.2 _P2341_R1,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S2.2_P1234_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P1234_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P1234_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.2_P1234_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.2_P1234_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.2_P1234_R1,2023,5,12,Reflex ,L,0.5,0.5L/ha applied pre-em control of broadleaf weeds (canola) IBS
+EDILLILIE_S2.2_P1234_R1,2023,5,12,Simazine 900,kg,0.2,0.2kg/ha applied pre-em control of broadleaf weeds IBS
+EDILLILIE_S2.2_P1234_R1,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 4 node 
+EDILLILIE_S2.2_P1234_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P1234_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P1234_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.2_P1234_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.2_P1234_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.2_P1234_R2,2023,5,12,Reflex ,L,0.5,0.5L/ha applied pre-em control of broadleaf weeds (canola) IBS
+EDILLILIE_S2.2_P1234_R2,2023,5,12,Simazine 900,kg,0.2,0.2kg/ha applied pre-em control of broadleaf weeds IBS
+EDILLILIE_S2.2_P1234_R2,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 4 node 
+EDILLILIE_S2.2_P1234_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P1234_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P1234_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.2_P1234_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.2_P1234_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.2_P1234_R3,2023,5,12,Reflex ,L,0.5,0.5L/ha applied pre-em control of broadleaf weeds (canola) IBS
+EDILLILIE_S2.2_P1234_R3,2023,5,12,Simazine 900,kg,0.2,0.2kg/ha applied pre-em control of broadleaf weeds IBS
+EDILLILIE_S2.2_P1234_R3,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 4 node 
+EDILLILIE_S2.2_P2341_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P2341_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P2341_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.2_P2341_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.2_P2341_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.2_P2341_R2,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S2.2_P2341_R2,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S2.2_P2341_R2,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S2.2_P2341_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P2341_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P2341_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.2_P2341_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.2_P2341_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.2_P2341_R3,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S2.2_P2341_R3,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S2.2_P2341_R3,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S2.2_P3412_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P3412_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P3412_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.2_P3412_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.2_P3412_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.2_P3412_R1,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S2.2_P3412_R1,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S2.2_P3412_R1,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S2.2_P3412_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P3412_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P3412_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.2_P3412_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.2_P3412_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.2_P3412_R2,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S2.2_P3412_R2,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S2.2_P3412_R2,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S2.2_P3412_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P3412_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P3412_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.2_P3412_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.2_P3412_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.2_P3412_R3,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S2.2_P3412_R3,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S2.2_P3412_R3,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S2.2_P4123_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P4123_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P4123_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.2_P4123_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.2_P4123_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.2_P4123_R1,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S2.2_P4123_R1,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S2.2_P4123_R1,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S2.2_P4123_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P4123_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P4123_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.2_P4123_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.2_P4123_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.2_P4123_R2,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S2.2_P4123_R2,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S2.2_P4123_R2,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S2.2_P4123_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P4123_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S2.2_P4123_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S2.2_P4123_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S2.2_P4123_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S2.2_P4123_R3,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S2.2_P4123_R3,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S2.2_P4123_R3,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S3_P1234_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P1234_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P1234_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S3_P1234_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S3_P1234_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S3_P1234_R1,2023,5,12,Reflex ,L,0.5,0.5L/ha applied pre-em control of broadleaf weeds (canola) IBS
+EDILLILIE_S3_P1234_R1,2023,5,12,Simazine 900,kg,0.2,0.2kg/ha applied pre-em control of broadleaf weeds IBS
+EDILLILIE_S3_P1234_R1,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 -8 leaf
+EDILLILIE_S3_P1234_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P1234_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P1234_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S3_P1234_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S3_P1234_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S3_P1234_R2,2023,5,12,Reflex ,L,0.5,0.5L/ha applied pre-em control of broadleaf weeds (canola) IBS
+EDILLILIE_S3_P1234_R2,2023,5,12,Simazine 900,kg,0.2,0.2kg/ha applied pre-em control of broadleaf weeds IBS
+EDILLILIE_S3_P1234_R2,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 -8 leaf
+EDILLILIE_S3_P1234_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P1234_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P1234_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S3_P1234_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S3_P1234_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S3_P1234_R3,2023,5,12,Reflex ,L,0.5,0.5L/ha applied pre-em control of broadleaf weeds (canola) IBS
+EDILLILIE_S3_P1234_R3,2023,5,12,Simazine 900,kg,0.2,0.2kg/ha applied pre-em control of broadleaf weeds IBS
+EDILLILIE_S3_P1234_R3,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 -8 leaf
+EDILLILIE_S3_P2341_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P2341_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P2341_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S3_P2341_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S3_P2341_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S3_P2341_R1,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S3_P2341_R1,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S3_P2341_R1,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S3_P2341_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P2341_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P2341_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S3_P2341_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S3_P2341_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S3_P2341_R2,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S3_P2341_R2,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S3_P2341_R2,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S3_P2341_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P2341_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P2341_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S3_P2341_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S3_P2341_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S3_P2341_R3,2023,5,29,Crucial ,L,1.5,1.5L/ha applied post-em control vol canola GS 6 leaf
+EDILLILIE_S3_P2341_R3,2023,5,29,Clethodim,L,0.33,0.33L/ha applied post-em control of ryegrass GS 6 leaf 
+EDILLILIE_S3_P2341_R3,2023,5,12,Rustler,L,1,1L/ha applied pre-em control of ryegrass
+EDILLILIE_S3_P3412_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P3412_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P3412_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S3_P3412_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S3_P3412_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S3_P3412_R1,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S3_P3412_R1,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S3_P3412_R1,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S3_P3412_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P3412_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P3412_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S3_P3412_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S3_P3412_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S3_P3412_R2,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S3_P3412_R2,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S3_P3412_R2,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S3_P3412_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P3412_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P3412_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S3_P3412_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S3_P3412_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S3_P3412_R3,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S3_P3412_R3,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S3_P3412_R3,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S3_P4123_R1,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P4123_R1,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P4123_R1,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S3_P4123_R1,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S3_P4123_R1,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S3_P4123_R1,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S3_P4123_R1,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S3_P4123_R1,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S3_P4123_R2,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P4123_R2,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P4123_R2,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S3_P4123_R2,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S3_P4123_R2,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S3_P4123_R2,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S3_P4123_R2,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S3_P4123_R2,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25
+EDILLILIE_S3_P4123_R3,2023,12,21,Roundup,L,1.5,1.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P4123_R3,2023,12,21,"2,4-D",L,0.5,0.5L/ha applied to control of summer weeds and volunteer crop as per district practice 
+EDILLILIE_S3_P4123_R3,2023,5,12,Glyphosate 540g/l,L,2,"2L/ha applied to volunteer canola, some small ryegrass. Pre-sow knockdown"
+EDILLILIE_S3_P4123_R3,2023,5,12,Oxyflurfen,L,0.075,0.075L/ha applied spike to glyphosate to help control broadleaf weeds. Pre-sow knockdown
+EDILLILIE_S3_P4123_R3,2023,5,12,Trifluralin ,L,1.5,1.5L/ha applied pre-em control wireweed and ryegrass
+EDILLILIE_S3_P4123_R3,2023,5,12,Sakura ,kg,0.118,0.118kg/ha applied pre-em control of ryegrass
+EDILLILIE_S3_P4123_R3,2023,5,29,Paradigm ,kg,0.025,0.025kg/ha applied post-em control vol canola GS25
+EDILLILIE_S3_P4123_R3,2023,5,29,MCPA LVE ,L,0.35,0.35L/ha applied post-em control vol canola GS25

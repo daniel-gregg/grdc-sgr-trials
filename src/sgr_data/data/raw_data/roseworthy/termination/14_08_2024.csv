@@ -1,4 +1,4 @@
-﻿plotID,year,month,day,crop1Name,crop2Name,crop3Name,harvestOutcome,harvestReason,crop1Yield,crop2Yield,crop3Yield,terminationState,comments
+plotID,year,month,day,crop1Name,crop2Name,crop3Name,harvestOutcome,harvestReason,crop1Yield,crop2Yield,crop3Yield,terminationState,comments
 ROSEWORTHY_S1.1_P1231_R1,2023,11,7,lentil,NA,NA,success,sale,1983,NA,NA,stubble,
 ROSEWORTHY_S1.1_P1231_R2,2023,11,7,lentil,NA,NA,success,sale,1118,NA,NA,stubble,
 ROSEWORTHY_S1.1_P1231_R3,2023,11,7,lentil,NA,NA,success,sale,1799,NA,NA,stubble,

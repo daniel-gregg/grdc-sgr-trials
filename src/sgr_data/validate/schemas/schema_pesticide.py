@@ -52,8 +52,8 @@ class PesticideApplicationsModel(BaseModel):
     targetPest: TargetPest
 
     #Define and validate pesticide name against names in the 'PesticidesProductData' df
-    pestName: str
-    @field_validator('pestName')
+    name: str
+    @field_validator('name')
     @classmethod
     def pesticide_product_exists(cls, pestname):
 
@@ -71,16 +71,16 @@ class PesticideApplicationsModel(BaseModel):
                 return "no pesticide products data ('PesticideProductData.csv') exists in expected directory (.../sgr_data/output)"
         
         #check if provided 'pessticidename' is in the existing products list
-        if sum(pesticideProducts['name'].str.lower().str.contains(pestname.lower()))==0:
+        if sum(pesticideProducts['name'].str.lower().str.contains(pestname.lower().strip()))==0:
             raise ValueError("Pesticide product must be defined in the 'pesticideProductData' table in '.../sgr_data/data'")
         return pestname
     
     
     #Define and validate units against options in the 'PesticideUnits' model - automated by the 'use_enum_values' arg
-    pestUnitsAppliedKgOrLitres: PesticidesUnits
+    unitsAppliedKgOrLitres: PesticidesUnits
 
     #Amount of pesticide applied
-    pestAppliedAmount: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
+    appliedAmount: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
     
     #optional indications regarding timing and comments
     comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")

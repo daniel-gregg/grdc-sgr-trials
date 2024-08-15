@@ -43,7 +43,7 @@ class terminationState(AutoEnum):
 #Crop termination reason - improves detail for pasture and other crops above (can move pasture types into own types)
 class Reason(AutoEnum):
     sale = alias('sell','market','revenue') #market sale
-    mulch = alias('groundcover') #use for groundcover, soil health, etc
+    mulch = alias('groundcover', 'soilmanagement') #use for groundcover, soil health, etc
     fodder = alias('livestock', 'silage', 'cattle', 'grazing', 'sheep') #fodder reason
 
 
@@ -106,7 +106,7 @@ class TerminationModel(BaseModel):
                 continue              #move to next loop if empty
             
             #create a lower case version
-            crop_name = crop_name.lower()
+            crop_name = crop_name.lower().strip()
 
             #remove whitespace
             crop_name = "".join(crop_name.split())
@@ -114,9 +114,9 @@ class TerminationModel(BaseModel):
             #check if crop_name is included in the crops in the datafile
             possible_crop_names = list(crops_varieties.columns)
             #convert to lower
-            possible_crop_names = [x.lower() for x in possible_crop_names]
+            possible_crop_names = [x.lower().strip() for x in possible_crop_names]
             #remove any white space in crop_name
 
             if not(crop_name in possible_crop_names):
-                raise ValueError("Please check your crop names - one is not included in the allowed crops")                           
+                raise ValueError("Please check your crop names. {} is not included in the allowed crops".format(crop_name))                           
             
