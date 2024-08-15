@@ -31,6 +31,8 @@ def validateFertiliserProductsModel(fertiliserProductData):
         
         #Loop through each record and validate
         for record in df_dict:
+            print(record)
+            print('hello')
             FertiliserProductsModel(**record)
         
         #If pass, print the DF 

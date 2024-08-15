@@ -247,6 +247,7 @@ def aggregateAll(price_type = 'prices_ma5'):
                         product_costs.append(0)
                     else:    
                         product = data.iloc[row]['name']
+                        print('product for product price is {} at site {}'.format(product, site))
                         product_price = getProductPrice(product, activity)
                         product_qty = data.iloc[row]['appliedAmount'].item()
                         product_costs.append(np.multiply(product_price, product_qty))
@@ -258,7 +259,9 @@ def aggregateAll(price_type = 'prices_ma5'):
                         crop1 = data.iloc[row]['crop1Name']
                         crop2 = data.iloc[row]['crop2Name']
                         crop3 = data.iloc[row]['crop3Name']
-
+                        print('crop 1 is {} at site {}'.format(crop1, site))
+                        print('crop 2 is {} at site {}'.format(crop2, site))
+                        print('crop 3 is {} at site {}'.format(crop3, site))
                         if pd.isna(crop1):
                             price1 = 0
                             yield1 = 0
@@ -340,6 +343,11 @@ def aggregateAll(price_type = 'prices_ma5'):
         data_list).fillna(pd.NA)
 
     all_data = crop_data.merge(non_crop_data, how = 'outer')
+
+    #save all_data to file
+    today = datetime.datetime.today().strftime('%Y-%m-%d')
+    filepath = os.path.join('src','sgr_analysis','sgr_gross_margin', 'gross_margin_outputs', today+'.csv')
+    all_data.to_csv(filepath)
 
     return all_data
 
@@ -524,3 +532,4 @@ def aggregateDataByPlot(
 
 
 
+aggregateAll()

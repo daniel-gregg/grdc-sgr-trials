@@ -72,8 +72,14 @@ for site in sites_activities_dict:
                 #If validation passes, process data
                 #get key (date) for file
                 path_for_saving = os.path.join('src' ,'sgr_data', 'data', 'validated_data', site, activity)
+
+                #join file name to directory path
                 save_path = os.path.join(path_for_saving, file_name_date) 
+
+                #save as pickle
                 valid_data_frame.to_pickle(save_path)
+
+                #log outcome
                 print('successfully uploaded file {} for activity {}\n\n'.format(file_name_date, activity) )
         
         else:

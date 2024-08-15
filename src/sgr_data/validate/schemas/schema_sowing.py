@@ -114,11 +114,13 @@ class SowingModel(BaseModel):
             
             #create a lower case version
             crop_name = crop_name.lower()
-            variety_name = variety_name.lower()
+            if not variety_name == None:
+                variety_name = variety_name.lower()
 
             #remove whitespace
             crop_name = "".join(crop_name.split())
-            variety_name = "".join(variety_name.split())
+            if not variety_name == None:
+                variety_name = "".join(variety_name.split())
 
             #check if crop_name is included in the crops in the datafile
             possible_crop_names = list(crops_varieties.columns)
@@ -132,6 +134,7 @@ class SowingModel(BaseModel):
             #now check varieties
             dataframe_index = possible_crop_names.index(crop_name)
             
-            if variety_name in list(crops_varieties.iloc[:,dataframe_index]):
-                raise ValueError("Variety must be defined in the 'varieties.csv' table in '.../sgr_data/data'")
+            if not variety_name == None:
+                if variety_name in list(crops_varieties.iloc[:,dataframe_index]):
+                    raise ValueError("Variety must be defined in the 'varieties.csv' table in '.../sgr_data/data'")
         

@@ -63,7 +63,7 @@ class HerbicideApplicationsModel(BaseModel):
         
         
         #check if provided 'herbicidename' is in the existing products list
-        if sum(herbicideProducts['name'].str.lower().str.contains(herbname.lower()))==0:
+        if sum(herbicideProducts['name'].str.lower().str.contains(herbname.lower().strip()))==0:
             raise ValueError("Herbicide product must be defined in the 'herbicideProductData' table in '.../sgr_data/data'")
         return herbname
     

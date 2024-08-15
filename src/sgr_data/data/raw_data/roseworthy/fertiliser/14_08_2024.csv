@@ -1,37 +1,52 @@
 plotID,year,month,day,name,unitsAppliedKgOrLitres,appliedAmount,comments
-ROSEWORTHY_S7_P0000_R1,2023,5,22,Dynamic lifter,kg,3333,"3330kg/ha applied pre-sowing as organic treatment, broadcast on top of soil"
-ROSEWORTHY_S7_P0000_R2,2023,5,22,Dynamic lifter,kg,3333,"3330kg/ha applied pre-sowing as organic treatment, broadcast on top of soil"
-ROSEWORTHY_S7_P0000_R3,2023,5,22,Dynamic lifter,kg,3333,"3330kg/ha applied pre-sowing as organic treatment, broadcast on top of soil"
 ROSEWORTHY_S1.1_P1231_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S1.1_P1231_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S1.1_P1231_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S1.1_P2312_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S1.1_P2312_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S1.1_P2312_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S1.1_P2312_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S1.1_P2312_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S1.1_P2312_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S1.1_P3123_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S1.1_P3123_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S1.1_P3123_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S1.1_P3123_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S1.1_P3123_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S1.1_P3123_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S1.2_P1231_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S1.2_P1231_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S1.2_P1231_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S1.2_P2312_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S1.2_P2312_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S1.2_P2312_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S1.2_P2312_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S1.2_P2312_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S1.2_P2312_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S1.2_P3123_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S1.2_P3123_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S1.2_P3123_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S1.2_P3123_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S1.2_P3123_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S1.2_P3123_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S2_P1212_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S2_P1212_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S2_P1212_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S2_P2121_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S2_P2121_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S2_P2121_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S2_P2121_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S2_P2121_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S2_P2121_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S3_P1212_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S3_P1212_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S3_P1212_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S3_P2121_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S3_P2121_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S3_P2121_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S3_P2121_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S3_P2121_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S3_P2121_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S4_P1231_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S4_P1231_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S4_P1231_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
@@ -42,41 +57,26 @@ ROSEWORTHY_S4_P3123_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded
 ROSEWORTHY_S4_P3123_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S4_P3123_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S5_P0000_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
-ROSEWORTHY_S5_P0000_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
-ROSEWORTHY_S5_P0000_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
-ROSEWORTHY_S6_P0000_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
-ROSEWORTHY_S6_P0000_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
-ROSEWORTHY_S6_P0000_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
-ROSEWORTHY_S7_P0000_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
-ROSEWORTHY_S7_P0000_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
-ROSEWORTHY_S7_P0000_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
 ROSEWORTHY_S5_P0000_R1,2023,7,6,Urea,kg,100,100kg/ha topdressing at 4-6 leaves
-ROSEWORTHY_S5_P0000_R2,2023,7,6,Urea,kg,100,100kg/ha topdressing at 4-6 leaves
-ROSEWORTHY_S5_P0000_R3,2023,7,6,Urea,kg,100,100kg/ha topdressing at 4-6 leaves
-ROSEWORTHY_S1.1_P2312_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S1.1_P2312_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S1.1_P2312_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S1.1_P3123_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S1.1_P3123_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S1.1_P3123_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S1.2_P2312_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S1.2_P2312_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S1.2_P2312_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S1.2_P3123_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S1.2_P3123_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S1.2_P3123_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S2_P2121_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S2_P2121_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S2_P2121_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S3_P2121_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S3_P2121_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S3_P2121_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S5_P0000_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S5_P0000_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S5_P0000_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S6_P0000_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S6_P0000_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
-ROSEWORTHY_S6_P0000_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S5_P0000_R1,2023,8,9,Urea,kg,100,100kg/ha topdressing
+ROSEWORTHY_S5_P0000_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S5_P0000_R2,2023,7,6,Urea,kg,100,100kg/ha topdressing at 4-6 leaves
+ROSEWORTHY_S5_P0000_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S5_P0000_R2,2023,8,9,Urea,kg,100,100kg/ha topdressing
+ROSEWORTHY_S5_P0000_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S5_P0000_R3,2023,7,6,Urea,kg,100,100kg/ha topdressing at 4-6 leaves
+ROSEWORTHY_S5_P0000_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
 ROSEWORTHY_S5_P0000_R3,2023,8,9,Urea,kg,100,100kg/ha topdressing
+ROSEWORTHY_S6_P0000_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S6_P0000_R1,2023,7,27,Urea,kg,100,100kg/ha topdressing
+ROSEWORTHY_S6_P0000_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S6_P0000_R2,2023,7,27,Urea,kg,100,100kg/ha topdressing
+ROSEWORTHY_S6_P0000_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S6_P0000_R3,2023,7,27,Urea,kg,100,100kg/ha topdressing
+ROSEWORTHY_S7_P0000_R1,2023,5,22,Dynamic lifter,kg,3333,"3330kg/ha applied pre-sowing as organic treatment, broadcast on top of soil"
+ROSEWORTHY_S7_P0000_R1,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S7_P0000_R2,2023,5,22,Dynamic lifter,kg,3333,"3330kg/ha applied pre-sowing as organic treatment, broadcast on top of soil"
+ROSEWORTHY_S7_P0000_R2,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"
+ROSEWORTHY_S7_P0000_R3,2023,5,22,Dynamic lifter,kg,3333,"3330kg/ha applied pre-sowing as organic treatment, broadcast on top of soil"
+ROSEWORTHY_S7_P0000_R3,2023,5,24,DAP,kg,110,"110kg/ha applied pre-sowing, banded below seed"

@@ -84,7 +84,7 @@ class FertiliserApplicationsModel(BaseModel):
         
         
         #check if provided 'fertname' is in the existing products list
-        if sum(fertProducts['name'].str.lower().str.contains(fertname.lower()))==0:
+        if sum(fertProducts['name'].str.lower().str.contains(fertname.lower().strip()))==0:
             raise ValueError("Fertiliser product must be defined in the 'fertProductData' table in '..sgr_data//data'")
         return fertname
     

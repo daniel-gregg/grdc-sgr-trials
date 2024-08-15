@@ -63,7 +63,7 @@ class FungicideApplicationsModel(BaseModel):
                 return "no fungicide products data ('FungicideProductData.csv') exists in expected directory (.../sgr_data/data)"
         
         #check if provided 'fungicidename' is in the existing products list
-        if sum(fungicideProducts['name'].str.lower().str.contains(fungname.lower()))==0:
+        if sum(fungicideProducts['name'].str.lower().str.contains(fungname.lower().strip()))==0:
             raise ValueError("Fungicide product must be defined in the 'FungicideProductData' table in '.../sgr_data/data'")
         return fungname
     
