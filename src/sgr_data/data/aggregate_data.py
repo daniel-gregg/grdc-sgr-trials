@@ -126,6 +126,7 @@ def splitPlotId(plotID):
 def getProductPrice(product, activity):
     #returns a product price to use to calculate product costs for an activity
     #   some values are empty or NA - in these cases it returns an average
+    product = product.lower().strip()
 
     base_path = getBasePath()
 
@@ -195,8 +196,12 @@ def aggregateAll(price_type = 'prices_ma5'):
     sites = os.listdir(site_path)
 
     #initialise data list for reduce-merge after filling the list
-    data_list = []
-    data_crops_list = []
+    data_fertiliser_list = []
+    data_fungicide_list = []
+    data_herbicide_list = []
+    data_pesticide_list = []
+    data_crops_sowing_list = []
+    data_crops_termination_list = []
 
     for site in sites:
         #get the list of activities for referent site
@@ -226,9 +231,6 @@ def aggregateAll(price_type = 'prices_ma5'):
                 activity_cost = []
                 product_costs = []
                 product_qty = []
-                yield_crop1_kg = []
-                yield_crop2_kg = []
-                yield_crop3_kg = []
                 revenue_dollars = []
 
                 for row in range(data.shape[0]):
@@ -293,16 +295,34 @@ def aggregateAll(price_type = 'prices_ma5'):
                 data['revenue_crops_dollars'] = revenue_dollars
 
                 #append to data_list for merging later using 'reduce'
-                if activity == 'termination' or activity == 'sowing':
-                    data_crops_list.append(data)
-                else:
-                    data_list.append(data)
+                if activity == 'fertiliser':
+                    data_fertiliser_list.append(data)
+                if activity == 'fungicide':
+                    data_fungicide_list.append(data)
+                if activity == 'herbicide':
+                    data_herbicide_list.append(data)
+                if activity == 'pesticide':
+                    data_pesticide_list.append(data)
+                if activity == 'sowing':
+                    data_crops_sowing_list.append(data)
+                if activity == 'termination':
+                    data_crops_termination_list.append(data)
     
-    #merge sowing and termination first as they share additional variable names
+    #concatenate data (of same types)
+    crop_sowing_data = pd.concat(data_crops_sowing_list)
+    crop_termination_data = pd.concat(data_crops_termination_list)
+
+    fertiliser_data = pd.concat(data_fertiliser_list)
+    fungicide_data = pd.concat(data_fungicide_list)
+    herbicide_data = pd.concat(data_herbicide_list)
+    pesticide_data = pd.concat(data_pesticide_list)
+
+    #merge crop (sowing/termination) data
+    data_crops_list = [crop_sowing_data, crop_termination_data]
     crop_data = reduce(
         lambda left, right: pd.merge(
             left, right, on = [
-             'plotID', 
+                'plotID', 
                 'date', 
                 'activity_type', 
                 'site', 
@@ -320,7 +340,14 @@ def aggregateAll(price_type = 'prices_ma5'):
             how = 'outer'), 
         data_crops_list).fillna(pd.NA)
 
-    #non-crop data
+    #merge non-crop data
+    non_crop_data_list = [
+        fertiliser_data,
+        fungicide_data,
+        herbicide_data,
+        pesticide_data
+    ]
+
     non_crop_data = reduce(
         lambda left,right: pd.merge(
             left,right, on = [
@@ -340,8 +367,9 @@ def aggregateAll(price_type = 'prices_ma5'):
                 'comments'
                 ], 
             how = 'outer'), 
-        data_list).fillna(pd.NA)
+        non_crop_data_list).fillna(pd.NA)
 
+    #merge crop and non-crop data
     all_data = crop_data.merge(non_crop_data, how = 'outer')
 
     #save all_data to file

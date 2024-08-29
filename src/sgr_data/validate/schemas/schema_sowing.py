@@ -125,11 +125,11 @@ class SowingModel(BaseModel):
             #check if crop_name is included in the crops in the datafile
             possible_crop_names = list(crops_varieties.columns)
             #convert to lower
-            possible_crop_names = [x.lower() for x in possible_crop_names]
+            possible_crop_names = [x.lower().strip() for x in possible_crop_names]
             #remove any white space in crop_name
 
             if not(crop_name in possible_crop_names):
-                raise ValueError("Please check your crop names - one is not included in the allowed crops")                           
+                raise ValueError("Please check your crop names. {} is not included in the allowed crops".format(crop_name))                           
             
             #now check varieties
             dataframe_index = possible_crop_names.index(crop_name)
