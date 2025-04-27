@@ -374,7 +374,7 @@ def aggregateAll(price_type = 'prices_ma5'):
 
     #save all_data to file
     today = datetime.datetime.today().strftime('%Y-%m-%d')
-    filepath = os.path.join('src','sgr_analysis','sgr_gross_margin', 'gross_margin_outputs', today+'.csv')
+    filepath = os.path.join('src','sgr_data','processed_data', today+'.csv')
     all_data.to_csv(filepath)
 
     return all_data
