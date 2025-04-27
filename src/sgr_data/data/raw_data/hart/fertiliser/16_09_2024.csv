@@ -1,0 +1,274 @@
+plotID,year,month,day,name,unitsAppliedKgOrLitres,appliedAmount,comments
+HART_S5_P0000_R1,2023,4,27,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S5_P0000_R2,2023,4,27,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S5_P0000_R3,2023,4,27,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S5_P0000_R4,2023,4,27,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S5_P0000_R5,2023,4,27,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S5_P0000_R6,2023,4,27,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S5_P0000_R7,2023,4,27,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S5_P0000_R8,2023,4,27,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S5_P0000_R9,2023,4,27,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S9_P1234_R1,2023,4,27,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S9_P1234_R2,2023,4,27,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S9_P1234_R3,2023,4,27,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.1_P1231_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.1_P1231_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.1_P1231_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.1_P2312_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.1_P2312_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.1_P2312_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.1_P3123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.1_P3123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.1_P3123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.2_P1231_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.2_P1231_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.2_P1231_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.2_P2312_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.2_P2312_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.2_P2312_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.2_P3123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.2_P3123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.2_P3123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.3_P1231_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.3_P1231_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.3_P1231_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.3_P2312_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.3_P2312_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.3_P2312_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.3_P3123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.3_P3123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S1.3_P3123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.1_P1231_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.1_P1231_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.1_P1231_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.1_P2312_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.1_P2312_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.1_P2312_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.1_P3123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.1_P3123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.1_P3123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.2_P1231_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.2_P1231_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.2_P1231_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.2_P2312_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.2_P2312_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.2_P2312_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.2_P3123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.2_P3123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.2_P3123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.3_P1231_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.3_P1231_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.3_P1231_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.3_P2312_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.3_P2312_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.3_P2312_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.3_P3123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.3_P3123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S10.3_P3123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S2.1_P0000_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S2.1_P0000_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S2.1_P0000_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S2.2_P0000_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S2.2_P0000_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S2.2_P0000_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S2.3_P0000_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S2.3_P0000_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S2.3_P0000_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S3_P1234_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S3_P1234_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S3_P1234_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S3_P2341_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S3_P2341_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S3_P2341_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S3_P3412_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S3_P3412_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S3_P3412_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S3_P4123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S3_P4123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S3_P4123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.1_P1234_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.1_P1234_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.1_P1234_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.1_P2341_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.1_P2341_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.1_P2341_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.1_P3412_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.1_P3412_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.1_P3412_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.1_P4123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.1_P4123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.1_P4123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.2_P1234_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.2_P1234_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.2_P1234_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.2_P2341_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.2_P2341_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.2_P2341_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.2_P3412_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.2_P3412_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.2_P3412_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.2_P4123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.2_P4123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.2_P4123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.3_P1234_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.3_P1234_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.3_P1234_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.3_P2341_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.3_P2341_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.3_P2341_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.3_P3412_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.3_P3412_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.3_P3412_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.3_P4123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.3_P4123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.3_P4123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S6_P1234_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S6_P1234_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S6_P1234_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S6_P2341_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S6_P2341_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S6_P2341_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S6_P3412_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S6_P3412_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S6_P3412_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S6_P4123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S6_P4123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S6_P4123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S7_P1234_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S7_P1234_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S7_P1234_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S7_P2341_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S7_P2341_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S7_P2341_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S7_P3412_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S7_P3412_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S7_P3412_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S7_P4123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S7_P4123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S7_P4123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S8_P1234_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S8_P1234_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S8_P1234_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S8_P2341_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S8_P2341_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S8_P2341_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S8_P3412_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S8_P3412_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S8_P3412_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S8_P4123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S8_P4123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S8_P4123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S9_P2341_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S9_P2341_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S9_P2341_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S9_P3412_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S9_P3412_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S9_P3412_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S9_P4123_R1,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S9_P4123_R2,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S9_P4123_R3,2023,6,2,MAP,kg,100,at sowing (100kg MAP + 2% Zn)
+HART_S4.1_P3412_R1,2023,8,15,urea,kg,70,Decile 2 = 32 kg N/ha
+HART_S4.1_P3412_R2,2023,8,15,urea,kg,70,Decile 2 = 32 kg N/ha
+HART_S4.1_P3412_R3,2023,8,15,urea,kg,70,Decile 2 = 32 kg N/ha
+HART_S4.2_P3412_R1,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S4.2_P3412_R2,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S4.2_P3412_R3,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S4.3_P3412_R1,2023,8,15,urea,kg,139,Decile 6 = 64 kg N/ha
+HART_S4.3_P3412_R2,2023,8,15,urea,kg,139,Decile 6 = 64 kg N/ha
+HART_S4.3_P3412_R3,2023,8,15,urea,kg,139,Decile 6 = 64 kg N/ha
+HART_S6_P2341_R1,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S6_P2341_R2,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S6_P2341_R3,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S9_P2341_R1,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S9_P2341_R2,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S9_P2341_R3,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S1.1_P3123_R1,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S1.1_P3123_R2,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S1.1_P3123_R3,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S1.3_P3123_R1,2023,8,15,urea,kg,137,Decile 6 = 63 kg N/ha
+HART_S1.3_P3123_R2,2023,8,15,urea,kg,137,Decile 6 = 63 kg N/ha
+HART_S1.3_P3123_R3,2023,8,15,urea,kg,137,Decile 6 = 63 kg N/ha
+HART_S4.3_P4123_R1,2023,8,15,urea,kg,137,Decile 6 = 63 kg N/ha
+HART_S4.3_P4123_R2,2023,8,15,urea,kg,137,Decile 6 = 63 kg N/ha
+HART_S4.3_P4123_R3,2023,8,15,urea,kg,137,Decile 6 = 63 kg N/ha
+HART_S4.1_P4123_R1,2023,8,15,urea,kg,38,Decile 2 = 17.5 kg N/ha
+HART_S4.1_P4123_R2,2023,8,15,urea,kg,38,Decile 2 = 17.5 kg N/ha
+HART_S4.1_P4123_R3,2023,8,15,urea,kg,38,Decile 2 = 17.5 kg N/ha
+HART_S10.3_P3123_R1,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S10.3_P3123_R2,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S10.3_P3123_R3,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S10.2_P3123_R1,2023,8,15,urea,kg,46,T2 = 1/2 fert (21 kg N) - All cereal phase plots treated as decile 4 season. Full rate equivilant to decile 4 
+HART_S10.2_P3123_R2,2023,8,15,urea,kg,46,T2 = 1/2 fert (21 kg N) - All cereal phase plots treated as decile 4 season. Full rate equivilant to decile 4 
+HART_S10.2_P3123_R3,2023,8,15,urea,kg,46,T2 = 1/2 fert (21 kg N) - All cereal phase plots treated as decile 4 season. Full rate equivilant to decile 4 
+HART_S1.2_P3123_R1,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S1.2_P3123_R2,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S1.2_P3123_R3,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S3_P4123_R1,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S3_P4123_R2,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S3_P4123_R3,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S4.2_P4123_R1,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S4.2_P4123_R2,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S4.2_P4123_R3,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S6_P4123_R1,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S6_P4123_R2,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S6_P4123_R3,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S7_P4123_R1,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S7_P4123_R2,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S7_P4123_R3,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S8_P3412_R1,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S8_P3412_R2,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S8_P3412_R3,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S9_P4123_R1,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S9_P4123_R2,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S9_P4123_R3,2023,8,15,urea,kg,91,Decile 4 = 42 kg N/ha
+HART_S4.3_P2341_R1,2023,8,15,urea,kg,139,Decile 6 = 64 kg N/ha
+HART_S4.3_P2341_R2,2023,8,15,urea,kg,139,Decile 6 = 64 kg N/ha
+HART_S4.3_P2341_R3,2023,8,15,urea,kg,139,Decile 6 = 64 kg N/ha
+HART_S4.1_P2341_R1,2023,8,15,urea,kg,70,Decile 2 = 32 kg N/ha
+HART_S4.1_P2341_R2,2023,8,15,urea,kg,70,Decile 2 = 32 kg N/ha
+HART_S4.1_P2341_R3,2023,8,15,urea,kg,70,Decile 2 = 32 kg N/ha
+HART_S1.2_P2312_R1,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S1.2_P2312_R2,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S1.2_P2312_R3,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S3_P2341_R1,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S3_P2341_R2,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S3_P2341_R3,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S4.2_P2341_R1,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S4.2_P2341_R2,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S4.2_P2341_R3,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S6_P3412_R1,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S6_P3412_R2,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S6_P3412_R3,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S7_P3412_R1,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S7_P3412_R2,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S7_P3412_R3,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S8_P2341_R1,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S8_P2341_R2,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S8_P2341_R3,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S8_P4123_R1,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S8_P4123_R2,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S8_P4123_R3,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S9_P3412_R1,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S9_P3412_R2,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S9_P3412_R3,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S1.1_P2312_R1,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S1.1_P2312_R2,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S1.1_P2312_R3,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S1.3_P2312_R1,2023,8,15,urea,kg,139,Decile 6 = 64 kg N/ha
+HART_S1.3_P2312_R2,2023,8,15,urea,kg,139,Decile 6 = 64 kg N/ha
+HART_S1.3_P2312_R3,2023,8,15,urea,kg,139,Decile 6 = 64 kg N/ha
+HART_S10.3_P2312_R1,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S10.3_P2312_R2,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S10.3_P2312_R3,2023,8,15,urea,kg,113,Decile 4 = 52 kg N/ha
+HART_S10.2_P2312_R1,2023,8,15,urea,kg,57,half dec 4 = 26 kg N/ha
+HART_S10.2_P2312_R2,2023,8,15,urea,kg,57,half dec 4 = 26 kg N/ha
+HART_S10.2_P2312_R3,2023,8,15,urea,kg,57,half dec 4 = 26 kg N/ha
+HART_S2.1_P0000_R1,2023,8,15,urea,kg,96,Decile 2 = 44 kg N/ha
+HART_S2.1_P0000_R2,2023,8,15,urea,kg,96,Decile 2 = 44 kg N/ha
+HART_S2.1_P0000_R3,2023,8,15,urea,kg,96,Decile 2 = 44 kg N/ha
+HART_S2.2_P0000_R1,2023,8,15,urea,kg,148,Decile 4 = 68 kg N/ha
+HART_S2.2_P0000_R2,2023,8,15,urea,kg,148,Decile 4 = 68 kg N/ha
+HART_S2.2_P0000_R3,2023,8,15,urea,kg,148,Decile 4 = 68 kg N/ha
+HART_S2.3_P0000_R1,2023,8,15,urea,kg,191,Decile 6 = 88 kg N/ha
+HART_S2.3_P0000_R2,2023,8,15,urea,kg,191,Decile 6 = 88 kg N/ha
+HART_S2.3_P0000_R3,2023,8,15,urea,kg,191,Decile 6 = 88 kg N/ha

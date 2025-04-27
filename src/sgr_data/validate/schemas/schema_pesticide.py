@@ -34,6 +34,8 @@ class TargetPest(AutoEnum):
     locusts = alias('grasshoppers')
     other_insects = alias('insects','other')
     rodents = alias('mice', 'mouse', 'rats')
+    red_legged_earth_mites = alias('RLEM')
+    slugs_or_snails = alias('slug', 'snail', 'slugs', 'snails')
 
 # Provides the core model for entering pesticide application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'pesticide' to ensure

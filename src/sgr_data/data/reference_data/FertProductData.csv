@@ -4,7 +4,9 @@ DAP,kg,0.575,SAGIT,di-ammonium phosphate,Granule,18,20
 Urea,kg,0.5,SAGIT,urea,Granule,46,0
 MAP,kg,0.575,SAGIT,mono-ammonium phosphate,Granule,11,22
 Gran-am,kg,0.4,,"ammonium sulphate, by Incitec Pivot",Granule,21,0
+Gran am,kg,0.4,,"ammonium sulphate, by Incitec Pivot",Granule,21,0
 Granulock SZ,kg,0.64,SAGIT,"MAP enriched with S and Zn, by Incitec Pivot",Granule,11,21.8
+Granulock SZ Blend,kg,0.64,SAGIT,"MAP enriched with S and Zn, by Incitec Pivot",Granule,11,21.8
 Smart Trace Triple,L,7,,"Liquid fertiliser with lignosulfonate, by SprayGro Fertilisers",Liquid,0,0
 19:13:0:9 + Impact,kg,0.65,SAGIT,"Ammonium Sulphate + DAP blend, by Pacific Fertilisers",Granule,19,13
 19:13:0:9,kg,0.65,SAGIT,"Ammonium Sulphate + DAP blend, by Pacific Fertilisers",Granule,19,13

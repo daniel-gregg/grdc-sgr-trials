@@ -34,11 +34,11 @@ class Outcome(AutoEnum):
 
 #This model captures the ending state of the plot after a crop is terminated
 class terminationState(AutoEnum):
-    fallowStubble = alias('stubble', 'no till')                           #Crop stubble left
-    fallowBareGround = alias('bare ground', 'tillage', 'till', 'bare')                           #Bare ground fallow
-    fodder = alias('grazing')                                  #Crop treated as fodder
-    asis = alias('no harvest')                                      #No mechanical harvesting or other activity
-    otherterminationstate = alias('NA', '', 'other')                     #Other state not included here - include in comments
+    fallowStubble = alias('stubble', 'no till')                             #Crop stubble left
+    fallowBareGround = alias('bare ground', 'tillage', 'till', 'bare')      #Bare ground fallow
+    fodder = alias('grazing')                                               #Crop treated as fodder
+    asis = alias('no harvest')                                              #No mechanical harvesting or other activity
+    otherterminationstate = alias('NA', '', 'other')                        #Other state not included here - include in comments
 
 #Crop termination reason - improves detail for pasture and other crops above (can move pasture types into own types)
 class Reason(AutoEnum):

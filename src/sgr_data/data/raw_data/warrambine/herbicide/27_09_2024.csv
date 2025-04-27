@@ -1,0 +1,388 @@
+plotID,year,month,day,name,unitsAppliedKgOrLitres,appliedAmount,comments
+WARRAMBINE_S1_P1212_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S1_P1212_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S1_P1212_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S1_P1212_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S1_P1212_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S1_P1212_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S1_P2121_R1,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S1_P2121_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S1_P2121_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S1_P2121_R1,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S1_P2121_R2,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S1_P2121_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S1_P2121_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S1_P2121_R2,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S1_P2121_R3,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S1_P2121_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S1_P2121_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S1_P2121_R3,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S2_P1231_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S2_P1231_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S2_P1231_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S2_P1231_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S2_P1231_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S2_P1231_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S2_P2312_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S2_P2312_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S2_P2312_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S2_P2312_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S2_P2312_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S2_P2312_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S2_P3123_R1,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S2_P3123_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S2_P3123_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S2_P3123_R1,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S2_P3123_R2,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S2_P3123_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S2_P3123_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S2_P3123_R2,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S2_P3123_R3,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S2_P3123_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S2_P3123_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S2_P3123_R3,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S3_P1231_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S3_P1231_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S3_P1231_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S3_P1231_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S3_P1231_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S3_P1231_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S3_P2312_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S3_P2312_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S3_P2312_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S3_P2312_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S3_P2312_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S3_P2312_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S3_P3123_R1,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S3_P3123_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S3_P3123_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S3_P3123_R1,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S3_P3123_R2,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S3_P3123_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S3_P3123_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S3_P3123_R2,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S3_P3123_R3,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S3_P3123_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S3_P3123_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S3_P3123_R3,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S4_P1231_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S4_P1231_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S4_P1231_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S4_P1231_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S4_P1231_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S4_P1231_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S4_P2312_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S4_P2312_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S4_P2312_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S4_P2312_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S4_P2312_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S4_P2312_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S4_P3123_R1,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S4_P3123_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S4_P3123_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S4_P3123_R1,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S4_P3123_R2,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S4_P3123_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S4_P3123_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S4_P3123_R2,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S4_P3123_R3,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S4_P3123_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S4_P3123_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S4_P3123_R3,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S5_P1231_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S5_P1231_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S5_P1231_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S5_P1231_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S5_P1231_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S5_P1231_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S5_P2312_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S5_P2312_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S5_P2312_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S5_P2312_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S5_P2312_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S5_P2312_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S5_P3123_R1,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S5_P3123_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S5_P3123_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S5_P3123_R1,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S5_P3123_R2,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S5_P3123_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S5_P3123_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S5_P3123_R2,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S5_P3123_R3,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S5_P3123_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S5_P3123_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S5_P3123_R3,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S6_P0000_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S6_P0000_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S6_P0000_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S6_P0000_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S6_P0000_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S6_P0000_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S7_P0000_R1,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S7_P0000_R1,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S7_P0000_R1,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S7_P0000_R1,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S7_P0000_R2,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S7_P0000_R2,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S7_P0000_R2,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S7_P0000_R2,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S7_P0000_R3,2023,5,8,Avadex Xtra,L,3,IBS-Standard practice
+WARRAMBINE_S7_P0000_R3,2023,5,8,Crucial,L,1.8,Pre-sowing - Knockdown
+WARRAMBINE_S7_P0000_R3,2023,5,8,Hammer,L,0.045,Pre-sowing - Knockdown
+WARRAMBINE_S7_P0000_R3,2023,5,8,Sakura,kg,0.118,IBS-Standard practice
+WARRAMBINE_S1_P1212_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S1_P1212_R1,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S1_P1212_R1,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S1_P1212_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S1_P1212_R2,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S1_P1212_R2,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S1_P1212_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S1_P1212_R3,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S1_P1212_R3,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S1_P2121_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S1_P2121_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S1_P2121_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S2_P1231_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S2_P1231_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S2_P1231_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S2_P2312_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S2_P2312_R1,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S2_P2312_R1,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S2_P2312_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S2_P2312_R2,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S2_P2312_R2,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S2_P2312_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S2_P2312_R3,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S2_P2312_R3,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S2_P3123_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S2_P3123_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S2_P3123_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S3_P1231_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S3_P1231_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S3_P1231_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S3_P2312_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S3_P2312_R1,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S3_P2312_R1,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S3_P2312_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S3_P2312_R2,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S3_P2312_R2,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S3_P2312_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S3_P2312_R3,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S3_P2312_R3,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S3_P3123_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S3_P3123_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S3_P3123_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S4_P1231_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S4_P1231_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S4_P1231_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S4_P2312_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S4_P2312_R1,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S4_P2312_R1,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S4_P2312_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S4_P2312_R2,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S4_P2312_R2,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S4_P2312_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S4_P2312_R3,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S4_P2312_R3,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S4_P3123_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S4_P3123_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S4_P3123_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S5_P1231_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S5_P1231_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S5_P1231_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S5_P2312_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S5_P2312_R1,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S5_P2312_R1,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S5_P2312_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S5_P2312_R2,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S5_P2312_R2,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S5_P2312_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S5_P2312_R3,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S5_P2312_R3,2023,5,11,TriflurX,L,3,IBS-Standard practice
+WARRAMBINE_S5_P3123_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S5_P3123_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S5_P3123_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S6_P0000_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S6_P0000_R1,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S6_P0000_R1,2023,5,11,TriflurX,L,0.8,IBS-Standard practice
+WARRAMBINE_S6_P0000_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S6_P0000_R2,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S6_P0000_R2,2023,5,11,TriflurX,L,0.8,IBS-Standard practice
+WARRAMBINE_S6_P0000_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S6_P0000_R3,2023,5,11,Overwatch,L,1.25,IBS-Standard practice
+WARRAMBINE_S6_P0000_R3,2023,5,11,TriflurX,L,0.8,IBS-Standard practice
+WARRAMBINE_S7_P0000_R1,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S7_P0000_R2,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S7_P0000_R3,2023,5,11,Grammoxone 360,L,1.1,Pre-sowing - second knockdown required for lucerne
+WARRAMBINE_S2_P1231_R1,2023,5,12,Simazine,kg,1.1,IBS-Standard practice
+WARRAMBINE_S2_P1231_R1,2023,5,12,Ultro,kg,1.7,IBS-Standard practice
+WARRAMBINE_S2_P1231_R2,2023,5,12,Simazine,kg,1.1,IBS-Standard practice
+WARRAMBINE_S2_P1231_R2,2023,5,12,Ultro,kg,1.7,IBS-Standard practice
+WARRAMBINE_S2_P1231_R3,2023,5,12,Simazine,kg,1.1,IBS-Standard practice
+WARRAMBINE_S2_P1231_R3,2023,5,12,Ultro,kg,1.7,IBS-Standard practice
+WARRAMBINE_S3_P1231_R1,2023,5,12,Terbyne Extreme,kg,1.2,IBS-Standard practice
+WARRAMBINE_S3_P1231_R1,2023,5,12,Ultro,kg,1.7,IBS-Standard practice
+WARRAMBINE_S3_P1231_R2,2023,5,12,Terbyne Extreme,kg,1.2,IBS-Standard practice
+WARRAMBINE_S3_P1231_R2,2023,5,12,Ultro,kg,1.7,IBS-Standard practice
+WARRAMBINE_S3_P1231_R3,2023,5,12,Terbyne Extreme,kg,1.2,IBS-Standard practice
+WARRAMBINE_S3_P1231_R3,2023,5,12,Ultro,kg,1.7,IBS-Standard practice
+WARRAMBINE_S5_P1231_R1,2023,5,12,Ultro,kg,1.7,IBS-Standard practice
+WARRAMBINE_S5_P1231_R2,2023,5,12,Ultro,kg,1.7,IBS-Standard practice
+WARRAMBINE_S5_P1231_R3,2023,5,12,Ultro,kg,1.7,IBS-Standard practice
+WARRAMBINE_S2_P1231_R1,2023,5,18,Reflex,L,1.25,PSPE-Standard practice
+WARRAMBINE_S2_P1231_R2,2023,5,18,Reflex,L,1.25,PSPE-Standard practice
+WARRAMBINE_S2_P1231_R3,2023,5,18,Reflex,L,1.25,PSPE-Standard practice
+WARRAMBINE_S3_P1231_R1,2023,5,18,Reflex,L,1.25,PSPE-Standard practice
+WARRAMBINE_S3_P1231_R2,2023,5,18,Reflex,L,1.25,PSPE-Standard practice
+WARRAMBINE_S3_P1231_R3,2023,5,18,Reflex,L,1.25,PSPE-Standard practice
+WARRAMBINE_S5_P1231_R1,2023,5,18,Reflex,L,1.25,PSPE-Standard practice
+WARRAMBINE_S5_P1231_R2,2023,5,18,Reflex,L,1.25,PSPE-Standard practice
+WARRAMBINE_S5_P1231_R3,2023,5,18,Reflex,L,1.25,PSPE-Standard practice
+WARRAMBINE_S1_P1212_R1,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S1_P1212_R2,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S1_P1212_R3,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S1_P2121_R1,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S1_P2121_R2,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S1_P2121_R3,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S2_P1231_R1,2023,6,21,Factor,kg,0.1,"2-4 node-ARG, vol. cereals"
+WARRAMBINE_S2_P1231_R1,2023,6,21,Select Xtra,L,0.33,2-4 node-ARG
+WARRAMBINE_S2_P1231_R2,2023,6,21,Factor,kg,0.1,"2-4 node-ARG, vol. cereals"
+WARRAMBINE_S2_P1231_R2,2023,6,21,Select Xtra,L,0.33,2-4 node-ARG
+WARRAMBINE_S2_P1231_R3,2023,6,21,Factor,kg,0.1,"2-4 node-ARG, vol. cereals"
+WARRAMBINE_S2_P1231_R3,2023,6,21,Select Xtra,L,0.33,2-4 node-ARG
+WARRAMBINE_S2_P2312_R1,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S2_P2312_R2,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S2_P2312_R3,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S2_P3123_R1,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S2_P3123_R2,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S2_P3123_R3,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S3_P1231_R1,2023,6,21,Factor,kg,0.1,"2-4 node-ARG, vol. cereals"
+WARRAMBINE_S3_P1231_R1,2023,6,21,Select Xtra,L,0.33,2-4 node-ARG
+WARRAMBINE_S3_P1231_R2,2023,6,21,Factor,kg,0.1,"2-4 node-ARG, vol. cereals"
+WARRAMBINE_S3_P1231_R2,2023,6,21,Select Xtra,L,0.33,2-4 node-ARG
+WARRAMBINE_S3_P1231_R3,2023,6,21,Factor,kg,0.1,"2-4 node-ARG, vol. cereals"
+WARRAMBINE_S3_P1231_R3,2023,6,21,Select Xtra,L,0.33,2-4 node-ARG
+WARRAMBINE_S3_P2312_R1,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S3_P2312_R2,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S3_P2312_R3,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S3_P3123_R1,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S3_P3123_R2,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S3_P3123_R3,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S4_P2312_R1,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S4_P2312_R2,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S4_P2312_R3,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S4_P3123_R1,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S4_P3123_R2,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S4_P3123_R3,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S5_P1231_R1,2023,6,21,Factor,kg,0.1,"2-4 node-ARG, vol. cereals"
+WARRAMBINE_S5_P1231_R1,2023,6,21,Select Xtra,L,0.33,2-4 node-ARG
+WARRAMBINE_S5_P1231_R2,2023,6,21,Factor,kg,0.1,"2-4 node-ARG, vol. cereals"
+WARRAMBINE_S5_P1231_R2,2023,6,21,Select Xtra,L,0.33,2-4 node-ARG
+WARRAMBINE_S5_P1231_R3,2023,6,21,Factor,kg,0.1,"2-4 node-ARG, vol. cereals"
+WARRAMBINE_S5_P1231_R3,2023,6,21,Select Xtra,L,0.33,2-4 node-ARG
+WARRAMBINE_S5_P2312_R1,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S5_P2312_R2,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S5_P2312_R3,2023,6,21,Select Xtra,L,0.33,4-6 leaf-ARG
+WARRAMBINE_S5_P3123_R1,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S5_P3123_R2,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S5_P3123_R3,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S6_P0000_R1,2023,6,21,Ecopar,L,0.8,#NAME?
+WARRAMBINE_S6_P0000_R2,2023,6,21,Ecopar,L,0.8,#NAME?
+WARRAMBINE_S6_P0000_R3,2023,6,21,Ecopar,L,0.8,#NAME?
+WARRAMBINE_S7_P0000_R1,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S7_P0000_R2,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S7_P0000_R3,2023,6,21,Boxer Gold,L,3,GS12-25-ARG
+WARRAMBINE_S1_P1212_R1,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S1_P1212_R1,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S1_P1212_R2,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S1_P1212_R2,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S1_P1212_R3,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S1_P1212_R3,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S1_P2121_R1,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S1_P2121_R1,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S1_P2121_R1,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S1_P2121_R2,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S1_P2121_R2,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S1_P2121_R2,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S1_P2121_R3,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S1_P2121_R3,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S1_P2121_R3,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S2_P2312_R1,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S2_P2312_R1,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S2_P2312_R2,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S2_P2312_R2,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S2_P2312_R3,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S2_P2312_R3,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S2_P3123_R1,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S2_P3123_R1,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S2_P3123_R1,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S2_P3123_R2,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S2_P3123_R2,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S2_P3123_R2,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S2_P3123_R3,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S2_P3123_R3,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S2_P3123_R3,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S3_P2312_R1,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S3_P2312_R1,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S3_P2312_R2,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S3_P2312_R2,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S3_P2312_R3,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S3_P2312_R3,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S3_P3123_R1,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S3_P3123_R1,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S3_P3123_R1,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S3_P3123_R2,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S3_P3123_R2,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S3_P3123_R2,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S3_P3123_R3,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S3_P3123_R3,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S3_P3123_R3,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S4_P1231_R1,2023,7,26,Broadstrike,kg,0.025,2-3 trifoliate-Capeweed
+WARRAMBINE_S4_P1231_R2,2023,7,26,Broadstrike,kg,0.025,2-3 trifoliate-Capeweed
+WARRAMBINE_S4_P1231_R3,2023,7,26,Broadstrike,kg,0.025,2-3 trifoliate-Capeweed
+WARRAMBINE_S4_P2312_R1,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S4_P2312_R1,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S4_P2312_R2,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S4_P2312_R2,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S4_P2312_R3,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S4_P2312_R3,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S4_P3123_R1,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S4_P3123_R1,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S4_P3123_R1,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S4_P3123_R2,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S4_P3123_R2,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S4_P3123_R2,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S4_P3123_R3,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S4_P3123_R3,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S4_P3123_R3,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S5_P2312_R1,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S5_P2312_R1,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S5_P2312_R2,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S5_P2312_R2,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S5_P2312_R3,2023,7,26,Archer 750,L,0.12,"5-6 leaf-Capeweed, thistles"
+WARRAMBINE_S5_P2312_R3,2023,7,26,Intervix,L,0.75,"5-6 leaf-Capeweed, ARG"
+WARRAMBINE_S5_P3123_R1,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S5_P3123_R1,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S5_P3123_R1,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S5_P3123_R2,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S5_P3123_R2,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S5_P3123_R2,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S5_P3123_R3,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S5_P3123_R3,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S5_P3123_R3,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S7_P0000_R1,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S7_P0000_R1,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S7_P0000_R1,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S7_P0000_R2,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S7_P0000_R2,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S7_P0000_R2,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S7_P0000_R3,2023,7,26,Archer 750,L,0.12,Tiller-Capeweed
+WARRAMBINE_S7_P0000_R3,2023,7,26,Cutlass,L,0.28,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S7_P0000_R3,2023,7,26,Thistle Killem,L,0.8,"Tiller-Vol. lucerne, capeweed"
+WARRAMBINE_S4_P1231_R1,2023,8,8,Select Xtra,L,0.33,5+ trifoliate-ARG + vol. cereals
+WARRAMBINE_S4_P1231_R2,2023,8,8,Select Xtra,L,0.33,5+ trifoliate-ARG + vol. cereals
+WARRAMBINE_S4_P1231_R3,2023,8,8,Select Xtra,L,0.33,5+ trifoliate-ARG + vol. cereals
+WARRAMBINE_S5_P1231_R1,2023,10,2,Crucial,L,1.6,"Mid-flowering - Brown manure plots, termination"
+WARRAMBINE_S5_P1231_R2,2023,10,2,Crucial,L,1.6,"Mid-flowering - Brown manure plots, termination"
+WARRAMBINE_S5_P1231_R3,2023,10,2,Crucial,L,1.6,"Mid-flowering - Brown manure plots, termination"

@@ -1,0 +1,1321 @@
+plotID,year,month,day,name,unitsAppliedKgOrLitres,appliedAmount,comments
+HART_S1.1_P1231_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.1_P1231_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.1_P1231_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.1_P2312_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.1_P2312_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.1_P2312_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.1_P3123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.1_P3123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.1_P3123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.2_P1231_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.2_P1231_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.2_P1231_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.2_P2312_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.2_P2312_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.2_P2312_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.2_P3123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.2_P3123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.2_P3123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.3_P1231_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.3_P1231_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.3_P1231_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.3_P2312_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.3_P2312_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.3_P2312_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.3_P3123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.3_P3123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.3_P3123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.1_P1231_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.1_P1231_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.1_P1231_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.1_P2312_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.1_P2312_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.1_P2312_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.1_P3123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.1_P3123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.1_P3123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.2_P1231_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.2_P1231_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.2_P1231_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.2_P2312_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.2_P2312_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.2_P2312_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.2_P3123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.2_P3123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.2_P3123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.3_P1231_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.3_P1231_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.3_P1231_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.3_P2312_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.3_P2312_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.3_P2312_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.3_P3123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.3_P3123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S10.3_P3123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S2.1_P0000_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S2.1_P0000_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S2.1_P0000_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S2.2_P0000_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S2.2_P0000_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S2.2_P0000_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S2.3_P0000_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S2.3_P0000_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S2.3_P0000_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S3_P1234_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S3_P1234_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S3_P1234_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S3_P2341_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S3_P2341_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S3_P2341_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S3_P3412_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S3_P3412_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S3_P3412_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S3_P4123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S3_P4123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S3_P4123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.1_P1234_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.1_P1234_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.1_P1234_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.1_P2341_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.1_P2341_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.1_P2341_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.1_P3412_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.1_P3412_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.1_P3412_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.1_P4123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.1_P4123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.1_P4123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.2_P1234_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.2_P1234_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.2_P1234_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.2_P2341_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.2_P2341_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.2_P2341_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.2_P3412_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.2_P3412_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.2_P3412_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.2_P4123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.2_P4123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.2_P4123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.3_P1234_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.3_P1234_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.3_P1234_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.3_P2341_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.3_P2341_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.3_P2341_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.3_P3412_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.3_P3412_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.3_P3412_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.3_P4123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.3_P4123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S4.3_P4123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R4,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R5,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R6,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R7,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R8,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R9,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S6_P1234_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S6_P1234_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S6_P1234_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S6_P2341_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S6_P2341_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S6_P2341_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S6_P3412_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S6_P3412_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S6_P3412_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S6_P4123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S6_P4123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S6_P4123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S7_P1234_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S7_P1234_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S7_P1234_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S7_P2341_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S7_P2341_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S7_P2341_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S7_P3412_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S7_P3412_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S7_P3412_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S7_P4123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S7_P4123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S7_P4123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S8_P1234_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S8_P1234_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S8_P1234_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S8_P2341_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S8_P2341_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S8_P2341_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S8_P3412_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S8_P3412_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S8_P3412_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S8_P4123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S8_P4123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S8_P4123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S9_P1234_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S9_P1234_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S9_P1234_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S9_P2341_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S9_P2341_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S9_P2341_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S9_P3412_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S9_P3412_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S9_P3412_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S9_P4123_R1,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S9_P4123_R2,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S9_P4123_R3,2023,4,15,Carfentrazone,L,0.03,0.03L/ha - Knockdown - whole site all crops
+HART_S1.1_P1231_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.1_P1231_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.1_P1231_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.1_P2312_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.1_P2312_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.1_P2312_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.1_P3123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.1_P3123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.1_P3123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.2_P1231_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.2_P1231_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.2_P1231_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.2_P2312_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.2_P2312_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.2_P2312_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.2_P3123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.2_P3123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.2_P3123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.3_P1231_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.3_P1231_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.3_P1231_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.3_P2312_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.3_P2312_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.3_P2312_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.3_P3123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.3_P3123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.3_P3123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.1_P1231_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.1_P1231_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.1_P1231_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.1_P2312_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.1_P2312_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.1_P2312_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.1_P3123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.1_P3123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.1_P3123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.2_P1231_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.2_P1231_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.2_P1231_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.2_P2312_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.2_P2312_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.2_P2312_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.2_P3123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.2_P3123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.2_P3123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.3_P1231_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.3_P1231_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.3_P1231_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.3_P2312_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.3_P2312_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.3_P2312_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.3_P3123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.3_P3123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S10.3_P3123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S2.1_P0000_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S2.1_P0000_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S2.1_P0000_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S2.2_P0000_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S2.2_P0000_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S2.2_P0000_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S2.3_P0000_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S2.3_P0000_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S2.3_P0000_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S3_P1234_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S3_P1234_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S3_P1234_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S3_P2341_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S3_P2341_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S3_P2341_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S3_P3412_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S3_P3412_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S3_P3412_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S3_P4123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S3_P4123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S3_P4123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.1_P1234_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.1_P1234_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.1_P1234_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.1_P2341_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.1_P2341_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.1_P2341_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.1_P3412_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.1_P3412_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.1_P3412_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.1_P4123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.1_P4123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.1_P4123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.2_P1234_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.2_P1234_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.2_P1234_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.2_P2341_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.2_P2341_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.2_P2341_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.2_P3412_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.2_P3412_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.2_P3412_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.2_P4123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.2_P4123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.2_P4123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.3_P1234_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.3_P1234_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.3_P1234_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.3_P2341_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.3_P2341_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.3_P2341_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.3_P3412_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.3_P3412_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.3_P3412_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.3_P4123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.3_P4123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S4.3_P4123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R4,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R5,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R6,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R7,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R8,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S5_P0000_R9,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S6_P1234_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S6_P1234_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S6_P1234_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S6_P2341_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S6_P2341_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S6_P2341_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S6_P3412_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S6_P3412_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S6_P3412_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S6_P4123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S6_P4123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S6_P4123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S7_P1234_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S7_P1234_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S7_P1234_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S7_P2341_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S7_P2341_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S7_P2341_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S7_P3412_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S7_P3412_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S7_P3412_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S7_P4123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S7_P4123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S7_P4123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S8_P1234_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S8_P1234_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S8_P1234_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S8_P2341_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S8_P2341_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S8_P2341_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S8_P3412_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S8_P3412_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S8_P3412_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S8_P4123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S8_P4123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S8_P4123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S9_P1234_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S9_P1234_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S9_P1234_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S9_P2341_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S9_P2341_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S9_P2341_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S9_P3412_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S9_P3412_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S9_P3412_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S9_P4123_R1,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S9_P4123_R2,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S9_P4123_R3,2023,4,15,Glyphosate 450,L,1.5,1.5L/ha - Knockdown - whole site all crops
+HART_S1.1_P3123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.1_P3123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.1_P3123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.2_P3123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.2_P3123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.2_P3123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.3_P3123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.3_P3123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.3_P3123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.1_P3123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.1_P3123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.1_P3123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.2_P3123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.2_P3123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.2_P3123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.3_P3123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.3_P3123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.3_P3123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S3_P4123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S3_P4123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S3_P4123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.1_P4123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.1_P4123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.1_P4123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.2_P4123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.2_P4123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.2_P4123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.3_P4123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.3_P4123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.3_P4123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S6_P4123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S6_P4123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S6_P4123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S7_P4123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S7_P4123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S7_P4123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S8_P3412_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S8_P3412_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S8_P3412_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S9_P4123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S9_P4123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S9_P4123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.1_P2312_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.1_P2312_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.1_P2312_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.2_P2312_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.2_P2312_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.2_P2312_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.3_P2312_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.3_P2312_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S1.3_P2312_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.1_P2312_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.1_P2312_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.1_P2312_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.2_P2312_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.2_P2312_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.2_P2312_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.3_P2312_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.3_P2312_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S10.3_P2312_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S2.1_P0000_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S2.1_P0000_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S2.1_P0000_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S2.2_P0000_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S2.2_P0000_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S2.2_P0000_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S2.3_P0000_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S2.3_P0000_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S2.3_P0000_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S3_P2341_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S3_P2341_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S3_P2341_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.1_P2341_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.1_P2341_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.1_P2341_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.2_P2341_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.2_P2341_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.2_P2341_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.3_P2341_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.3_P2341_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.3_P2341_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S6_P3412_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S6_P3412_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S6_P3412_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S7_P3412_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S7_P3412_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S7_P3412_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S8_P2341_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S8_P2341_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S8_P2341_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S8_P4123_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S8_P4123_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S8_P4123_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S9_P3412_R1,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S9_P3412_R2,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S9_P3412_R3,2023,6,15,Callisto,L,0.1,0.1L/ha - Pre-emergent
+HART_S4.1_P3412_R1,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S4.1_P3412_R2,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S4.1_P3412_R3,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S4.2_P3412_R1,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S4.2_P3412_R2,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S4.2_P3412_R3,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S4.3_P3412_R1,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S4.3_P3412_R2,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S4.3_P3412_R3,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S6_P2341_R1,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S6_P2341_R2,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S6_P2341_R3,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S9_P2341_R1,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S9_P2341_R2,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S9_P2341_R3,2023,6,15,Overwatch,L,1.25,1.25L/ha - pre-emergent to canola plots
+HART_S7_P2341_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S7_P2341_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S7_P2341_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S10.1_P1231_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S10.1_P1231_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S10.1_P1231_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S10.2_P1231_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S10.2_P1231_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S10.2_P1231_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S10.3_P1231_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S10.3_P1231_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S10.3_P1231_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S1.1_P1231_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S1.1_P1231_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S1.1_P1231_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S1.2_P1231_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S1.2_P1231_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S1.2_P1231_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S1.3_P1231_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S1.3_P1231_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S1.3_P1231_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S3_P1234_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S3_P1234_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S3_P1234_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S3_P3412_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S3_P3412_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S3_P3412_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S4.1_P1234_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S4.1_P1234_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S4.1_P1234_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S4.2_P1234_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S4.2_P1234_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S4.2_P1234_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S4.3_P1234_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S4.3_P1234_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S4.3_P1234_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S5_P0000_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S5_P0000_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S5_P0000_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S5_P0000_R4,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S5_P0000_R5,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S5_P0000_R6,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S5_P0000_R7,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S5_P0000_R8,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S5_P0000_R9,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S6_P1234_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S6_P1234_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S6_P1234_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S7_P1234_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S7_P1234_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S7_P1234_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S8_P1234_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S8_P1234_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S8_P1234_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S9_P1234_R1,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S9_P1234_R2,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S9_P1234_R3,2023,6,15,Rustler 900 WG,kg,1,1kg/ha - Pre-emergent
+HART_S1.1_P3123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.1_P3123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.1_P3123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.2_P3123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.2_P3123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.2_P3123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.3_P3123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.3_P3123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.3_P3123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.1_P3123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.1_P3123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.1_P3123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.2_P3123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.2_P3123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.2_P3123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.3_P3123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.3_P3123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.3_P3123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S3_P4123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S3_P4123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S3_P4123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.1_P4123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.1_P4123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.1_P4123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.2_P4123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.2_P4123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.2_P4123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.3_P4123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.3_P4123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.3_P4123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S6_P4123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S6_P4123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S6_P4123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S7_P4123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S7_P4123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S7_P4123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S8_P3412_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S8_P3412_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S8_P3412_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S9_P4123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S9_P4123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S9_P4123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.1_P2312_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.1_P2312_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.1_P2312_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.2_P2312_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.2_P2312_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.2_P2312_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.3_P2312_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.3_P2312_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S1.3_P2312_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.1_P2312_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.1_P2312_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.1_P2312_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.2_P2312_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.2_P2312_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.2_P2312_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.3_P2312_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.3_P2312_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S10.3_P2312_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S2.1_P0000_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S2.1_P0000_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S2.1_P0000_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S2.2_P0000_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S2.2_P0000_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S2.2_P0000_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S2.3_P0000_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S2.3_P0000_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S2.3_P0000_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S3_P2341_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S3_P2341_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S3_P2341_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.1_P2341_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.1_P2341_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.1_P2341_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.2_P2341_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.2_P2341_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.2_P2341_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.3_P2341_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.3_P2341_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S4.3_P2341_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S6_P3412_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S6_P3412_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S6_P3412_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S7_P3412_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S7_P3412_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S7_P3412_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S8_P2341_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S8_P2341_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S8_P2341_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S8_P4123_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S8_P4123_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S8_P4123_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S9_P3412_R1,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S9_P3412_R2,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S9_P3412_R3,2023,6,15,Sakura,kg,0.118,0.118kg/ha - Pre-emergent
+HART_S7_P2341_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S7_P2341_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S7_P2341_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S10.1_P1231_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S10.1_P1231_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S10.1_P1231_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S10.2_P1231_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S10.2_P1231_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S10.2_P1231_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S10.3_P1231_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S10.3_P1231_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S10.3_P1231_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S1.1_P1231_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S1.1_P1231_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S1.1_P1231_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S1.2_P1231_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S1.2_P1231_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S1.2_P1231_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S1.3_P1231_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S1.3_P1231_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S1.3_P1231_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S3_P1234_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S3_P1234_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S3_P1234_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S3_P3412_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S3_P3412_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S3_P3412_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S4.1_P1234_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S4.1_P1234_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S4.1_P1234_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S4.2_P1234_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S4.2_P1234_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S4.2_P1234_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S4.3_P1234_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S4.3_P1234_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S4.3_P1234_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S5_P0000_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S5_P0000_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S5_P0000_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S5_P0000_R4,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S5_P0000_R5,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S5_P0000_R6,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S5_P0000_R7,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S5_P0000_R8,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S5_P0000_R9,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S6_P1234_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S6_P1234_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S6_P1234_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S7_P1234_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S7_P1234_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S7_P1234_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S8_P1234_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S8_P1234_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S8_P1234_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S9_P1234_R1,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S9_P1234_R2,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S9_P1234_R3,2023,6,15,Trifluralin,L,1.2,1.2L/ha - Pre-emergent
+HART_S7_P2341_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S7_P2341_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S7_P2341_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S1.1_P1231_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S1.1_P1231_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S1.1_P1231_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S1.2_P1231_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S1.2_P1231_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S1.2_P1231_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S1.3_P1231_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S1.3_P1231_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S1.3_P1231_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S3_P1234_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S3_P1234_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S3_P1234_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S3_P3412_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S3_P3412_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S3_P3412_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S4.1_P1234_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S4.1_P1234_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S4.1_P1234_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S4.2_P1234_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S4.2_P1234_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S4.2_P1234_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S4.3_P1234_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S4.3_P1234_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S4.3_P1234_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R4,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R5,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R6,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R7,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R8,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R9,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S6_P1234_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S6_P1234_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S6_P1234_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S7_P1234_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S7_P1234_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S7_P1234_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S8_P1234_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S8_P1234_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S8_P1234_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S9_P1234_R1,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S9_P1234_R2,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S9_P1234_R3,2023,6,20,Diuron,L,0.25,0.25L/ha - PSPE
+HART_S4.1_P3412_R1,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S4.1_P3412_R2,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S4.1_P3412_R3,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S4.2_P3412_R1,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S4.2_P3412_R2,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S4.2_P3412_R3,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S4.3_P3412_R1,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S4.3_P3412_R2,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S4.3_P3412_R3,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S6_P2341_R1,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S6_P2341_R2,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S6_P2341_R3,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S9_P2341_R1,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S9_P2341_R2,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S9_P2341_R3,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S7_P2341_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S7_P2341_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S7_P2341_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S10.1_P1231_R1,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S10.1_P1231_R2,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S10.1_P1231_R3,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S10.2_P1231_R1,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S10.2_P1231_R2,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S10.2_P1231_R3,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S10.3_P1231_R1,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S10.3_P1231_R2,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S10.3_P1231_R3,2023,6,20,Simazine,L,1,1L/ha - PSPE
+HART_S1.1_P1231_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S1.1_P1231_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S1.1_P1231_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S1.2_P1231_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S1.2_P1231_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S1.2_P1231_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S1.3_P1231_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S1.3_P1231_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S1.3_P1231_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S3_P1234_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S3_P1234_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S3_P1234_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S3_P3412_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S3_P3412_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S3_P3412_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S4.1_P1234_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S4.1_P1234_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S4.1_P1234_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S4.2_P1234_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S4.2_P1234_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S4.2_P1234_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S4.3_P1234_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S4.3_P1234_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S4.3_P1234_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R4,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R5,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R6,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R7,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R8,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S5_P0000_R9,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S6_P1234_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S6_P1234_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S6_P1234_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S7_P1234_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S7_P1234_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S7_P1234_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S8_P1234_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S8_P1234_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S8_P1234_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S9_P1234_R1,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S9_P1234_R2,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S9_P1234_R3,2023,6,20,Simazine,L,0.25,0.25L/ha - PSPE
+HART_S7_P2341_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S7_P2341_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S7_P2341_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S10.1_P1231_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S10.1_P1231_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S10.1_P1231_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S10.2_P1231_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S10.2_P1231_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S10.2_P1231_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S10.3_P1231_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S10.3_P1231_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S10.3_P1231_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S1.1_P1231_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S1.1_P1231_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S1.1_P1231_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S1.2_P1231_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S1.2_P1231_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S1.2_P1231_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S1.3_P1231_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S1.3_P1231_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S1.3_P1231_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S3_P1234_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S3_P1234_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S3_P1234_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S3_P3412_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S3_P3412_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S3_P3412_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.1_P1234_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.1_P1234_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.1_P1234_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.2_P1234_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.2_P1234_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.2_P1234_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.3_P1234_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.3_P1234_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.3_P1234_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S5_P0000_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S5_P0000_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S5_P0000_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S5_P0000_R4,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S5_P0000_R5,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S5_P0000_R6,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S5_P0000_R7,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S5_P0000_R8,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S5_P0000_R9,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S6_P1234_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S6_P1234_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S6_P1234_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S7_P1234_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S7_P1234_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S7_P1234_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S8_P1234_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S8_P1234_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S8_P1234_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S9_P1234_R1,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S9_P1234_R2,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S9_P1234_R3,2023,8,1,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S7_P2341_R1,2023,8,1,Haloxyfop,L,0.05,0.05L/ha - post emergent Haloxyfop 520
+HART_S7_P2341_R2,2023,8,1,Haloxyfop,L,0.05,0.05L/ha - post emergent Haloxyfop 520
+HART_S7_P2341_R3,2023,8,1,Haloxyfop,L,0.05,0.05L/ha - post emergent Haloxyfop 520
+HART_S9_P1234_R1,2023,8,1,Haloxyfop,L,0.05,0.05L/ha - post emergent Haloxyfop 520
+HART_S9_P1234_R2,2023,8,1,Haloxyfop,L,0.05,0.05L/ha - post emergent Haloxyfop 520
+HART_S9_P1234_R3,2023,8,1,Haloxyfop,L,0.05,0.05L/ha - post emergent Haloxyfop 520
+HART_S10.1_P1231_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S10.1_P1231_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S10.1_P1231_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S10.2_P1231_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S10.2_P1231_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S10.2_P1231_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S10.3_P1231_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S10.3_P1231_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S10.3_P1231_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S1.1_P1231_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S1.1_P1231_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S1.1_P1231_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S1.2_P1231_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S1.2_P1231_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S1.2_P1231_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S1.3_P1231_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S1.3_P1231_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S1.3_P1231_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S3_P1234_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S3_P1234_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S3_P1234_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S3_P3412_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S3_P3412_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S3_P3412_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S4.1_P1234_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S4.1_P1234_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S4.1_P1234_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S4.2_P1234_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S4.2_P1234_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S4.2_P1234_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S4.3_P1234_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S4.3_P1234_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S4.3_P1234_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S5_P0000_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S5_P0000_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S5_P0000_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S5_P0000_R4,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S5_P0000_R5,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S5_P0000_R6,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S5_P0000_R7,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S5_P0000_R8,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S5_P0000_R9,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S6_P1234_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S6_P1234_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S6_P1234_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S7_P1234_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S7_P1234_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S7_P1234_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S8_P1234_R1,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S8_P1234_R2,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S8_P1234_R3,2023,8,1,Intervix,L,0.5,0.5L/ha - post-emergent
+HART_S1.1_P3123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.1_P3123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.1_P3123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.2_P3123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.2_P3123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.2_P3123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.3_P3123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.3_P3123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.3_P3123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.1_P3123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.1_P3123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.1_P3123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.2_P3123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.2_P3123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.2_P3123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.3_P3123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.3_P3123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.3_P3123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S3_P4123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S3_P4123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S3_P4123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.1_P4123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.1_P4123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.1_P4123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.2_P4123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.2_P4123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.2_P4123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.3_P4123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.3_P4123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.3_P4123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S6_P4123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S6_P4123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S6_P4123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S7_P4123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S7_P4123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S7_P4123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S8_P3412_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S8_P3412_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S8_P3412_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S9_P4123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S9_P4123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S9_P4123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.1_P2312_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.1_P2312_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.1_P2312_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.2_P2312_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.2_P2312_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.2_P2312_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.3_P2312_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.3_P2312_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.3_P2312_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.1_P2312_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.1_P2312_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.1_P2312_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.2_P2312_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.2_P2312_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.2_P2312_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.3_P2312_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.3_P2312_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S10.3_P2312_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S2.1_P0000_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S2.1_P0000_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S2.1_P0000_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S2.2_P0000_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S2.2_P0000_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S2.2_P0000_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S2.3_P0000_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S2.3_P0000_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S2.3_P0000_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S3_P2341_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S3_P2341_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S3_P2341_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.1_P2341_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.1_P2341_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.1_P2341_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.2_P2341_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.2_P2341_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.2_P2341_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.3_P2341_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.3_P2341_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S4.3_P2341_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S6_P3412_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S6_P3412_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S6_P3412_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S7_P3412_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S7_P3412_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S7_P3412_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S8_P2341_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S8_P2341_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S8_P2341_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S8_P4123_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S8_P4123_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S8_P4123_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S9_P3412_R1,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S9_P3412_R2,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S9_P3412_R3,2023,8,1,MCPA LVE,L,0.45,0.45mL/ha - post-emergent
+HART_S1.1_P3123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.1_P3123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.1_P3123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.2_P3123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.2_P3123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.2_P3123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.3_P3123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.3_P3123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.3_P3123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.1_P3123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.1_P3123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.1_P3123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.2_P3123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.2_P3123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.2_P3123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.3_P3123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.3_P3123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.3_P3123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S3_P4123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S3_P4123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S3_P4123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.1_P4123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.1_P4123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.1_P4123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.2_P4123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.2_P4123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.2_P4123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.3_P4123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.3_P4123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.3_P4123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S6_P4123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S6_P4123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S6_P4123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S7_P4123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S7_P4123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S7_P4123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S8_P3412_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S8_P3412_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S8_P3412_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S9_P4123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S9_P4123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S9_P4123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.1_P2312_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.1_P2312_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.1_P2312_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.2_P2312_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.2_P2312_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.2_P2312_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.3_P2312_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.3_P2312_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.3_P2312_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.1_P2312_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.1_P2312_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.1_P2312_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.2_P2312_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.2_P2312_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.2_P2312_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.3_P2312_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.3_P2312_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S10.3_P2312_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S2.1_P0000_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S2.1_P0000_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S2.1_P0000_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S2.2_P0000_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S2.2_P0000_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S2.2_P0000_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S2.3_P0000_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S2.3_P0000_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S2.3_P0000_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S3_P2341_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S3_P2341_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S3_P2341_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.1_P2341_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.1_P2341_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.1_P2341_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.2_P2341_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.2_P2341_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.2_P2341_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.3_P2341_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.3_P2341_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S4.3_P2341_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S6_P3412_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S6_P3412_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S6_P3412_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S7_P3412_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S7_P3412_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S7_P3412_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S8_P2341_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S8_P2341_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S8_P2341_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S8_P4123_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S8_P4123_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S8_P4123_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S9_P3412_R1,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S9_P3412_R2,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S9_P3412_R3,2023,8,1,Paradigm,kg,0.025,0.025kg/ha - post-emergent
+HART_S1.1_P3123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.1_P3123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.1_P3123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.2_P3123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.2_P3123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.2_P3123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.3_P3123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.3_P3123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.3_P3123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.1_P3123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.1_P3123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.1_P3123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.2_P3123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.2_P3123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.2_P3123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.3_P3123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.3_P3123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.3_P3123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S3_P4123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S3_P4123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S3_P4123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.1_P4123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.1_P4123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.1_P4123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.2_P4123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.2_P4123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.2_P4123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.3_P4123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.3_P4123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.3_P4123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S6_P4123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S6_P4123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S6_P4123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S7_P4123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S7_P4123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S7_P4123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S8_P3412_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S8_P3412_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S8_P3412_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S9_P4123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S9_P4123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S9_P4123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S7_P2341_R1,2023,8,1,Uptake,L,0.002, @0.5% with Clethodim (0.33L/ha) + Haloxyfop (0.05L/ha)
+HART_S7_P2341_R2,2023,8,1,Uptake,L,0.002, @0.5% with Clethodim (0.33L/ha) + Haloxyfop (0.05L/ha)
+HART_S7_P2341_R3,2023,8,1,Uptake,L,0.002, @0.5% with Clethodim (0.33L/ha) + Haloxyfop (0.05L/ha)
+HART_S10.1_P1231_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S10.1_P1231_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S10.1_P1231_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S10.2_P1231_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S10.2_P1231_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S10.2_P1231_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S10.3_P1231_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S10.3_P1231_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S10.3_P1231_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S1.1_P1231_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S1.1_P1231_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S1.1_P1231_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S1.2_P1231_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S1.2_P1231_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S1.2_P1231_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S1.3_P1231_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S1.3_P1231_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S1.3_P1231_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S3_P1234_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S3_P1234_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S3_P1234_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S3_P3412_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S3_P3412_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S3_P3412_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S4.1_P1234_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S4.1_P1234_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S4.1_P1234_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S4.2_P1234_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S4.2_P1234_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S4.2_P1234_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S4.3_P1234_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S4.3_P1234_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S4.3_P1234_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S5_P0000_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S5_P0000_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S5_P0000_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S5_P0000_R4,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S5_P0000_R5,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S5_P0000_R6,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S5_P0000_R7,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S5_P0000_R8,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S5_P0000_R9,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S6_P1234_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S6_P1234_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S6_P1234_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S7_P1234_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S7_P1234_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S7_P1234_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S8_P1234_R1,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S8_P1234_R2,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S8_P1234_R3,2023,8,1,Uptake,L,0.0025, @0.5% with Clethodim (0.33L/ha) + Intevix (0.5L/ha)
+HART_S9_P1234_R1,2023,8,1,Uptake,L,0.002, @0.5% with Clethodim (0.33L/ha) + Haloxyfop (0.05L/ha)
+HART_S9_P1234_R2,2023,8,1,Uptake,L,0.002, @0.5% with Clethodim (0.33L/ha) + Haloxyfop (0.05L/ha)
+HART_S9_P1234_R3,2023,8,1,Uptake,L,0.002, @0.5% with Clethodim (0.33L/ha) + Haloxyfop (0.05L/ha)
+HART_S1.1_P2312_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.1_P2312_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.1_P2312_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.2_P2312_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.2_P2312_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.2_P2312_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.3_P2312_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.3_P2312_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S1.3_P2312_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.1_P2312_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.1_P2312_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.1_P2312_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.2_P2312_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.2_P2312_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.2_P2312_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.3_P2312_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.3_P2312_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S10.3_P2312_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S2.1_P0000_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S2.1_P0000_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S2.1_P0000_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S2.2_P0000_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S2.2_P0000_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S2.2_P0000_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S2.3_P0000_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S2.3_P0000_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S2.3_P0000_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S3_P2341_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S3_P2341_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S3_P2341_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.1_P2341_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.1_P2341_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.1_P2341_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.2_P2341_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.2_P2341_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.2_P2341_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.3_P2341_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.3_P2341_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.3_P2341_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S6_P3412_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S6_P3412_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S6_P3412_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S7_P3412_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S7_P3412_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S7_P3412_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S8_P2341_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S8_P2341_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S8_P2341_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S8_P4123_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S8_P4123_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S8_P4123_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S9_P3412_R1,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S9_P3412_R2,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S9_P3412_R3,2023,8,1,Uptake,L,0.00225, @0.5% with MCPA LVE 0.45L/ha
+HART_S4.1_P3412_R1,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.1_P3412_R2,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.1_P3412_R3,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.2_P3412_R1,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.2_P3412_R2,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.2_P3412_R3,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.3_P3412_R1,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.3_P3412_R2,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.3_P3412_R3,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S6_P2341_R1,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S6_P2341_R2,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S6_P2341_R3,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S9_P2341_R1,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S9_P2341_R2,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S9_P2341_R3,2023,8,14,Clethodim,L,0.33,0.33L/ha - post emergent Clethodim 360g/L
+HART_S4.1_P3412_R1,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S4.1_P3412_R2,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S4.1_P3412_R3,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S4.2_P3412_R1,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S4.2_P3412_R2,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S4.2_P3412_R3,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S4.3_P3412_R1,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S4.3_P3412_R2,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S4.3_P3412_R3,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S6_P2341_R1,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S6_P2341_R2,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S6_P2341_R3,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S9_P2341_R1,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S9_P2341_R2,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S9_P2341_R3,2023,8,14,Hasten,L,0.01, @Hasten 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha)
+HART_S4.1_P3412_R1,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S4.1_P3412_R2,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S4.1_P3412_R3,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S4.2_P3412_R1,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S4.2_P3412_R2,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S4.2_P3412_R3,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S4.3_P3412_R1,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S4.3_P3412_R2,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S4.3_P3412_R3,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S6_P2341_R1,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S6_P2341_R2,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S6_P2341_R3,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S9_P2341_R1,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S9_P2341_R2,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S9_P2341_R3,2023,8,14,Intervix,L,0.6,0.6L/ha - post-emergent
+HART_S4.1_P3412_R1,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S4.1_P3412_R2,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S4.1_P3412_R3,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S4.2_P3412_R1,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S4.2_P3412_R2,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S4.2_P3412_R3,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S4.3_P3412_R1,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S4.3_P3412_R2,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S4.3_P3412_R3,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S6_P2341_R1,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S6_P2341_R2,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S6_P2341_R3,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S9_P2341_R1,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S9_P2341_R2,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S9_P2341_R3,2023,8,14,Lontrel,L,0.075,0.075L/ha - post-emergent
+HART_S4.1_P3412_R1,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S4.1_P3412_R2,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S4.1_P3412_R3,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S4.2_P3412_R1,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S4.2_P3412_R2,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S4.2_P3412_R3,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S4.3_P3412_R1,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S4.3_P3412_R2,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S4.3_P3412_R3,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S6_P2341_R1,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S6_P2341_R2,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S6_P2341_R3,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S9_P2341_R1,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S9_P2341_R2,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S9_P2341_R3,2023,8,14,SOA,kg,0.5, @SOA 1% with Clethodim (0.33L/ha) + Intervix (0.6L/ha) + Lontrel (0.075L/ha) - Adjuvant added at 1% (0.5kg in 50L)
+HART_S9_P1234_R1,2023,10,5, Crucial,L,1.2,1.2L/ha - post-emergent 3 brown manure
+HART_S9_P1234_R2,2023,10,5, Crucial,L,1.2,1.2L/ha - post-emergent 3 brown manure
+HART_S9_P1234_R3,2023,10,5, Crucial,L,1.2,1.2L/ha - post-emergent 3 brown manure
+HART_S9_P1234_R1,2023,10,5,Kamba 500,L,0.165,0.165L/ha - post-emergent 3 brown manure
+HART_S9_P1234_R2,2023,10,5,Kamba 500,L,0.165,0.165L/ha - post-emergent 3 brown manure
+HART_S9_P1234_R3,2023,10,5,Kamba 500,L,0.165,0.165L/ha - post-emergent 3 brown manure
+HART_S9_P1234_R1,2023,10,5,Paraquat,L,1.5,1.5L/ha - post-emergent 3 brown manure
+HART_S9_P1234_R2,2023,10,5,Paraquat,L,1.5,1.5L/ha - post-emergent 3 brown manure
+HART_S9_P1234_R3,2023,10,5,Paraquat,L,1.5,1.5L/ha - post-emergent 3 brown manure
