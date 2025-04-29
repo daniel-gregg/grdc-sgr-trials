@@ -5,19 +5,31 @@
 
 
 ### Imports
-from src.sgr_data import process_raw_data
-from src.sgr_data import aggregate_data
+from src.basic_data_processing.validation.validate import process_raw_formatted_data
+from src.basic_data_processing.final_processing.prices_and_costs import integratePricesAndCosts
+# To do:
+#from src.basic_data_processing.final_processing.remote_sense_data import integrateRemoteSenseData
+#from src.basic_data_processing.final_processing.field_measures import integrateFieldMeasures
 
 ##### Data processing and validation
-process_raw_data()
 
-##### Aggregation and basic reporting (.csv outputs of basic structured, prcoessed, data)
+# to do
+# pre_process_tor_data_files() - locate this in 'pre-processing'
 
-# aggregate data:
-#   integrate price series
-#   aggregate to plot level with activities across time (each activity in one row)
+# 
+process_raw_formatted_data()
+
+##### Final processing
+
+# integrate price series
+# integrate remote sensed data, e.g. rainfal, temp, etc. (TBD)
+# integrate other field measures, e.g. soil moisture (TBD)
 # saves .csv files to '.../src/sgr_data/processed_data/*today_date.csv*
-aggregate_data.aggregateAll()
+integratePricesAndCosts()
+
+# to do
+# integrateRemoteSenseData()
+# integrateFieldMeasures()
 
 ##### Analysis (e.g. gross margins, simulations, etc.)
 
