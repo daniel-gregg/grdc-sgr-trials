@@ -1,0 +1,59 @@
+"""
+    Test function for validation program for sowing data entry
+    These can be used as models for the validators themselves
+"""
+
+
+import pandas as pd
+import numpy as np
+from pyprojroot.here import here
+import sys
+
+#append path using 'here'
+path_root = here()
+sys.path.append(str(path_root))
+
+from src.basic_data_processing.validation.schemas.schema_termination import (
+    TerminationModel
+)
+
+from src.basic_data_processing.validation.modules.checkPlotState import checkPlotState
+
+from typing import List
+from pydantic import ValidationError
+
+### Test the fertiliser products model schema
+def validateTerminationModel(termination_data):
+
+    #Note empty values in a .csv are read in as 'nan'. 
+    #Need to replace these prior to implementing as dict
+
+    try: 
+
+        #Convert pandas DF to dictionary
+        df_dict = termination_data.to_dict(orient='records')
+        
+        #Loop through each record and validate against the model
+        for record in df_dict:
+
+            #validate types against schema model
+            TerminationModel(**record)
+            
+            #If pass, validate against plot state
+            
+            checkPlotState(
+                plot_id=record.get('plotID'), 
+                plotActivityType='TERMINATION', 
+                year = record.get('year'),
+                month = record.get('month'),
+                day = record.get('day'),
+                crop1=record.get('crop1Name'), 
+                crop2=record.get('crop2Name'), 
+                crop3=record.get('crop3Name')
+                )
+        
+        # If all pass return the DF
+        return(termination_data)
+
+    except ValidationError as e:
+        print(e)
