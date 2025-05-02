@@ -136,6 +136,7 @@ def getCropPrice(crop, price_type):
     
     return crop_price
 
+
 # process all data integrating target price series
 def integratePricesAndCosts(price_type = 'prices_ma5'):
     #price_type is one of the column headers in '../reference_data/CropPriceData.csv'
