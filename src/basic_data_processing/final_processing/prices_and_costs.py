@@ -136,11 +136,20 @@ def getCropPrice(crop, price_type):
     
     return crop_price
 
+
 # process all data integrating target price series
 def integratePricesAndCosts(price_type = 'prices_ma5'):
     #price_type is one of the column headers in '../reference_data/CropPriceData.csv'
     #   it defaults to a 5 year moving average of crop prices. 
 
+    ## Note: we subset data by id, date and the following groupings of activities:
+    #   Sowing
+    #   Harvest/termination
+    #   Fertiliser applications
+    #   Pesticide, Herbicide and/or Fungicide applications
+    # The latter are all grouped together as they are mixed in a single tank in the 'real world'
+    # We group them together to ensure that activity costs are not over-allocated in instances of grouped activities
+    # Product costs are still individually accounted for
 
     ### get site directory for validated data
     base_path = getBasePath()
@@ -156,10 +165,9 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
     data_crops_termination_list = []
 
     for site in sites:
-        #get the list of activities for referent site
+        #list activities:
         activity_list = os.listdir(os.path.join(site_path,site))
         for activity in activity_list:
-            #get the data files included in that activity-site combination (these are dated files)
             dates_list = os.listdir(os.path.join(site_path, site, activity))
 
             #check if empty, if so continue
@@ -179,6 +187,8 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                 data['activity_type'] = np.repeat(activity, nrow)
                 
                 # then add in vars that change by year (date and potentially activity cost)
+                ids = []
+                activities = []
                 dates = []
                 activity_cost = []
                 product_costs = []
@@ -187,28 +197,44 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
 
                 for row in range(data.shape[0]):
 
-                    #get date
+                    #get date - this is used to ensure product applications that occur in the same effort
+                    #   are allocated to a single 'activity' (so no double counting of activity costs)
                     year = data.iloc[row]['year']
                     month = data.iloc[row]['month']
                     day = data.iloc[row]['day']
                     dates.append(datetime.datetime(year, month, day))
+                    ids.append(data.iloc[row]['plotID'])
+                    activities.append(activity)
                     
-                    #get activity cost
-                    activity_cost.append(getActivityCostsData(activity, year))
+                    ### allocate activity costs
+                    #check if id, date and activity are same as last to ensure no double counting of activities
+                    
+                    # the first iteration case
+                    if row == 0:
+                        activity_cost.append(float(getActivityCostsData(activity, year)))
+                    else:
+                        # the same-activity case for a given plot
+                        if ids[row] == ids[row-1] and activities[row] == activities[row-1] and dates[row] == dates[row-1]:
+                            activity_cost.append(float(0))
+                        # the different activity case for a given plot
+                        else:
+                            activity_cost.append(float(getActivityCostsData(activity, year)))
+
 
                     #get product cost - check if a product using activity
                     if activity == 'sowing' or activity == 'termination':
-                        product_costs.append(0)
+                        product_costs.append(float(0))
                     else:    
+                        data.loc[row,'appliedAmount'] = float(data.iloc[row]['appliedAmount'].item())
                         product = data.iloc[row]['name']
                         print('product for product price is {} at site {}'.format(product, site))
-                        product_price = getProductPrice(product, activity)
+                        product_price = float(getProductPrice(product, activity))
                         product_qty = data.iloc[row]['appliedAmount'].item()
-                        product_costs.append(np.multiply(product_price, product_qty))
+                        product_costs.append(np.multiply(float(product_price), float(product_qty)))
 
                     #if activity is termination, get yield and revenue
                     if not activity == 'termination':
-                        revenue_dollars.append(0)
+                        revenue_dollars.append(float(0))
                     else:
                         crop1 = data.iloc[row]['crop1Name']
                         crop2 = data.iloc[row]['crop2Name']
@@ -217,23 +243,23 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                         print('crop 2 is {} at site {}'.format(crop2, site))
                         print('crop 3 is {} at site {}'.format(crop3, site))
                         if pd.isna(crop1):
-                            price1 = 0
-                            yield1 = 0
+                            price1 = float(0)
+                            yield1 = float(0)
                         else:
-                            price1 = getCropPrice(crop1, price_type)
-                            yield1 = data.iloc[row]['crop1Yield']
+                            price1 = float(getCropPrice(crop1, price_type))
+                            yield1 = float(data.iloc[row]['crop1Yield'])
                         if pd.isna(crop2):
-                            price2 = 0
-                            yield2 = 0
+                            price2 = float(0)
+                            yield2 = float(0)
                         else:
-                            price2 = getCropPrice(crop2, price_type)
-                            yield2 = data.iloc[row]['crop2Yield']
+                            price2 = float(getCropPrice(crop2, price_type))
+                            yield2 = float(data.iloc[row]['crop2Yield'])
                         if pd.isna(crop3):
-                            price3 = 0
-                            yield3 = 0
+                            price3 = float(0)
+                            yield3 = float(0)
                         else:
-                            price3 = getCropPrice(crop3, price_type)
-                            yield3 = data.iloc[row]['crop3Yield']
+                            price3 = float(getCropPrice(crop3, price_type))
+                            yield3 = float(data.iloc[row]['crop3Yield'])
 
                         revenue_dollars.append(
                             yield1 * price1 +
@@ -268,6 +294,9 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
     fungicide_data = pd.concat(data_fungicide_list)
     herbicide_data = pd.concat(data_herbicide_list)
     pesticide_data = pd.concat(data_pesticide_list)
+
+    # set fertiliser_data['appliedAmount'] astype(float) - for some reason it is not converting in the above
+    fertiliser_data['appliedAmount'] = fertiliser_data['appliedAmount'].astype(float)
 
     #merge crop (sowing/termination) data
     data_crops_list = [crop_sowing_data, crop_termination_data]
@@ -321,10 +350,53 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
             how = 'outer'), 
         non_crop_data_list).fillna(pd.NA)
 
-    #merge crop and non-crop data
+    # merge crop and non-crop data
     all_data = crop_data.merge(non_crop_data, how = 'outer')
 
-    #save all_data to file
+    # set obserations id
+    all_data['observation_id'] = np.arange(all_data.shape[0])
+
+    ### clean up data - remove duplicates of activity costs (operational, not product costs)
+    
+    # sort data by date
+    all_data = all_data.sort_values(by=['date'],axis=0, ascending=True)
+    
+    # subset only for target aggregation activities
+    subdat_activities = all_data[all_data['activity_type'].isin(['herbicide', 'pesticide', 'fungicide'])]
+
+    # then loop through each row checking for conditions to set activity costs to zero
+    for site in sites:
+        #subset data by site
+        subdat_site = subdat_activities.loc[subdat_activities['site']==site,]
+
+        #subset by plot
+        plots = [*set(subdat_site['plotID'])]
+        
+        for plot in plots:
+            subdat_plot = subdat_site.loc[subdat_site['plotID']==plot]
+
+            site_dates = [*set(subdat_plot['date'])]
+
+            # loop through dates for site to check for conditions met for resetting of activity costs to zero
+            for site_date in site_dates:
+                subdat_plot_date = subdat_plot.loc[subdat_plot['date'] == site_date]
+                if subdat_plot_date.shape[0] < 2:
+                    # only one activity in date set so continue
+                    continue
+                #remaining observations at this point would be aggregated into a single activity
+                # get observation (row) ids for the full dataset and set all but one to zero
+                obs_id_list = [*subdat_plot_date['observation_id']]
+
+                # check that ALL elements for costs_activity_dollars are the same - warn if not
+                if len(set(all_data.loc[obs_id_list,'costs_activity_dollars'])) > 1:
+                    Warning(f'activity costs for site {site}, plotid {plot} and date {site_date} are not all the same - they need to be for aggregation')
+
+                obs_id_list.pop()
+                for element in range(len(obs_id_list)):
+                    all_data.loc[obs_id_list,'costs_activity_dollars'] = 0
+
+
+    ### save all_data to file
     today = datetime.datetime.today().strftime('%Y-%m-%d')
     filepath = os.path.join('data','processed_data', today+'.csv')
     all_data.to_csv(filepath)
