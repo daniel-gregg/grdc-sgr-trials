@@ -16,6 +16,8 @@ from enum import Enum
 from typing import Optional
 from pyprojroot.here import here
 
+from src.utils.base_paths import get_reference_data_path
+
 
 # Provides a list of potential application types for fertiliser products
 class FertiliserType(AutoEnum):
@@ -72,7 +74,7 @@ class FertiliserApplicationsModel(BaseModel):
 
         #read in ProductData.csv
         try:
-            fertProducts = pd.read_csv(here('data/reference_data/FertProductData.csv'))
+            fertProducts = pd.read_csv(get_reference_data_path('FertProductData.csv'), index_col=False)
         except:
             #check if a testProducts csv is available
             try:

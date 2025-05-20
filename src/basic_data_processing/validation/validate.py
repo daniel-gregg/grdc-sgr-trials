@@ -22,6 +22,10 @@ from src.basic_data_processing.validation.modules.validate_pesticide import vali
 from src.basic_data_processing.validation.modules.validate_sowing import validateSowingModel
 from src.basic_data_processing.validation.modules.validate_termination import validateTerminationModel
 
+from src.utils.base_paths import get_base_data_path
+from src.utils.base_paths import get_raw_data_path 
+from src.utils.base_paths import get_validated_data_path
+from src.utils.base_paths import get_reference_data_path
 
 def validateData(data, schema):
     #validate data against schema
@@ -44,12 +48,12 @@ def process_raw_formatted_data():
 
 
     #sites:
-    sites_list = os.listdir(os.path.join('data', 'raw_data'))
+    sites_list = os.listdir(get_raw_data_path())
     # remove the 'master' folder from the sites list
     sites_list.remove('master')
 
     #activities:
-    activities_list = os.listdir(os.path.join('data', 'raw_data', 'master'))
+    activities_list = os.listdir(get_raw_data_path('master'))
     activities_list = [x[:-4] for x in activities_list] #strip '.csv'
     ### Get the data files from upload files
     #Store new data files in a nested dict based on {site: activity}
@@ -74,7 +78,7 @@ def process_raw_formatted_data():
             if data: #if not empty
                 for i, file in enumerate(data):
                     #check if there is a file to load
-                    path_to_target = os.path.join('data', 'raw_data', site, activity)
+                    path_to_target = get_raw_data_path(site, activity)
                     print('checking activity {} for site {} in path {}'.format(activity, site, path_to_target))
                     if not data[i]:
                         print('activity {} has no new data to upload\n'.format(activity))
@@ -95,7 +99,7 @@ def process_raw_formatted_data():
                     
                     #If validation passes, process data
                     #get key (date) for file
-                    path_for_saving = os.path.join('data', 'validated_data', site, activity)
+                    path_for_saving = get_validated_data_path(site, activity)
 
                     #join file name to directory path
                     save_path = os.path.join(path_for_saving, file_name_date) 

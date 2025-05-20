@@ -16,6 +16,8 @@ from pydantic import BaseModel, Field, ConfigDict, model_validator
 from typing import Optional
 from typing_extensions import Self
 
+from src.utils.base_paths import get_reference_data_path
+
 class TerminationMethod(AutoEnum):
     #Provides a range of termination methods, most prominent of which is harvest
     harvest = auto()
@@ -91,7 +93,7 @@ class TerminationModel(BaseModel):
         #read in the .csv
         ## Load in the crop and varieties data
         try:
-            crops_varieties = pd.read_csv(here('data/reference_data/varieties.csv'))
+            crops_varieties = pd.read_csv(get_reference_data_path('varieties.csv'), index_col=False)
         except:
             #If no actual data available, print warning to terminal
             print("There is no longer a 'varieties.csv' file in the 'data/reference_data/' directory. This must be replaced for validation to proceed.")

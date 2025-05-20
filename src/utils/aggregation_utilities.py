@@ -38,12 +38,13 @@ import numpy as np
 from functools import reduce
 import datetime
 
+from src.utils.base_paths import get_reference_data_path
+from src.utils.base_paths import get_validated_data_path
+from src.utils.base_paths import get_processed_data_path
+
 #### QUESTION: should we include plot-state data? It isn't really necessary but might help data checks
 
 ####### utility functions (export to utilities once working)
-
-def getBasePath():
-    return os.path.join('src','sgr_data','data')
 
 # for each call on getting activity data this returns an activity cost record
 def getActivityCostsData(activity, year):
@@ -51,8 +52,7 @@ def getActivityCostsData(activity, year):
     # no warning is given as only 2020-21 records are currently available
 
     #read in activity cost data from reference data
-    base_path = getBasePath()
-    reference_data_path = os.path.join(base_path, 'reference_data', 'ActivitiesCosts.csv')
+    reference_data_path = get_reference_data_path('ActivitiesCosts.csv')
 
     #load .csv data
     activity_data = pd.read_csv(reference_data_path)
@@ -79,14 +79,24 @@ def getActivityCostsData(activity, year):
     
     return activity_value
 
+# for each call on getting activity data this returns an activity cost record
+def getProcessedDataList():
+    #note if year not present the function defaults to returning the nearest year record
+    # no warning is given as only 2020-21 records are currently available
+
+    #read in activity cost data from reference data
+    processed_data_path = get_processed_data_path()
+
+    # get files list in processed_data
+    processed_data_files_list = os.listdir(processed_data_path)
+
+    return processed_data_files_list
 
 # Get site-activity data combinations
 def getSiteData(site):
 
-    base_path = getBasePath()
-
     ### get site directory for validated data
-    site_path = os.path.join(base_path, 'validated_data', site)
+    site_path = get_validated_data_path(site)
     activities_list = os.listdir(site_path) # this gets the activity folders in the validated data for the target site
 
     ### initialise an activities-data dictionary to hold target data
@@ -94,7 +104,7 @@ def getSiteData(site):
 
     for activity in activities_list:
         #read in validated data first
-        site_activity_path = os.path.join(site_path,activity)
+        site_activity_path = get_validated_data_path(site, activity)
         activity_uploads = os.listdir(site_activity_path)
 
         #build up a dataframe for each activity using uploads for each of those
@@ -128,8 +138,6 @@ def getProductPrice(product, activity):
     #   some values are empty or NA - in these cases it returns an average
     product = product.lower().strip()
 
-    base_path = getBasePath()
-
     # set up a product-file mapping to activities
     product_file_dict = {
         'fertiliser': 'FertProductData.csv',
@@ -139,7 +147,7 @@ def getProductPrice(product, activity):
     }
 
     #get product data path
-    product_data_path = os.path.join(base_path, 'reference_data', product_file_dict[activity])
+    product_data_path = get_reference_data_path(product_file_dict[activity])
     
     #load the .csv
     product_data = pd.read_csv(product_data_path)
@@ -165,8 +173,7 @@ def getCropPrice(crop, price_type):
     # prices_ma5
     # prices_2022
 
-    base_path = getBasePath()
-    crop_file_path = os.path.join(base_path, 'reference_data', 'CropPriceData.csv')
+    crop_file_path = get_reference_data_path('CropPriceData.csv')
     
     crop_price_data = pd.read_csv(crop_file_path)
 

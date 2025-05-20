@@ -19,11 +19,13 @@ from src.basic_data_processing.validation.schemas.schema_fertiliser import (
 from typing import List
 from pydantic import ValidationError
 
+from src.utils.base_paths import get_reference_data_path
+
 ### Test the fertiliser products model schema
 def validateFertiliserProductsModel():
 
     #Read in referfence data
-    fertilisers = pd.read_csv(here('data/reference_data/FertProductData.csv'))
+    fertilisers = pd.read_csv(get_reference_data_path('FertProductData.csv'))
 
     try: 
         #Convert NA to None type

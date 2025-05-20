@@ -14,6 +14,8 @@ from pydantic import BaseModel, Field, ConfigDict, field_validator
 from enum import Enum
 from typing import Optional
 
+from src.utils.base_paths import get_reference_data_path
+
 # Enum of the possible units of measurement of pesticide
 class PesticidesUnits(AutoEnum):
     kilograms = alias('kg', 'kilo', 'kilos')
@@ -61,7 +63,7 @@ class PesticideApplicationsModel(BaseModel):
 
         #read in ProductData.csv
         try:
-            pesticideProducts = pd.read_csv(here('data/reference_data/PestProductData.csv'))
+            pesticideProducts = pd.read_csv(get_reference_data_path('PestProductData.csv'), index_col=False)
         except:
             
             #check if a testProducts csv is available
