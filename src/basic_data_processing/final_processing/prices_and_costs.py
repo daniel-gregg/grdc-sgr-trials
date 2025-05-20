@@ -36,9 +36,10 @@ import numpy as np
 from functools import reduce
 import datetime
 
+from src.utils.base_paths import get_reference_data_path
+from src.utils.base_paths import get_validated_data_path
+from src.utils.base_paths import get_processed_data_path
 
-def getBasePath():
-    return os.path.join('data')
 
 # for each call on getting activity data this returns an activity cost record
 def getActivityCostsData(activity, year):
@@ -46,8 +47,7 @@ def getActivityCostsData(activity, year):
     # no warning is given as only 2020-21 records are currently available
 
     #read in activity cost data from reference data
-    base_path = getBasePath()
-    reference_data_path = os.path.join(base_path, 'reference_data', 'ActivitiesCosts.csv')
+    reference_data_path = get_reference_data_path('ActivitiesCosts.csv')
 
     #load .csv data
     activity_data = pd.read_csv(reference_data_path)
@@ -81,8 +81,6 @@ def getProductPrice(product, activity):
     #   some values are empty or NA - in these cases it returns an average
     product = product.lower().strip()
 
-    base_path = getBasePath()
-
     # set up a product-file mapping to activities
     product_file_dict = {
         'fertiliser': 'FertProductData.csv',
@@ -92,7 +90,7 @@ def getProductPrice(product, activity):
     }
 
     #get product data path
-    product_data_path = os.path.join(base_path, 'reference_data', product_file_dict[activity])
+    product_data_path = get_reference_data_path(product_file_dict[activity])
     
     #load the .csv
     product_data = pd.read_csv(product_data_path)
@@ -118,8 +116,7 @@ def getCropPrice(crop, price_type):
     # prices_ma5
     # prices_2022
 
-    base_path = getBasePath()
-    crop_file_path = os.path.join(base_path, 'reference_data', 'CropPriceData.csv')
+    crop_file_path = get_reference_data_path('CropPriceData.csv')
     
     crop_price_data = pd.read_csv(crop_file_path)
 
@@ -152,8 +149,7 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
     # Product costs are still individually accounted for
 
     ### get site directory for validated data
-    base_path = getBasePath()
-    site_path = os.path.join(base_path, 'validated_data')
+    site_path = get_validated_data_path()
     sites = os.listdir(site_path)
 
     #initialise data list for reduce-merge after filling the list
@@ -166,9 +162,9 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
 
     for site in sites:
         #list activities:
-        activity_list = os.listdir(os.path.join(site_path,site))
+        activity_list = os.listdir(get_validated_data_path(site))
         for activity in activity_list:
-            dates_list = os.listdir(os.path.join(site_path, site, activity))
+            dates_list = os.listdir(get_validated_data_path(site, activity))
 
             #check if empty, if so continue
             if len(dates_list) == 0:
@@ -178,7 +174,7 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
             for dated_file in dates_list:
 
                 # get file path and data for site-activity-date(uploaded) combinations
-                file_path = os.path.join(site_path, site, activity, dated_file)
+                file_path = os.path.join(get_validated_data_path(site, activity), dated_file)
                 data = pd.read_pickle(file_path)
                 nrow = data.shape[0]
 
@@ -398,7 +394,7 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
 
     ### save all_data to file
     today = datetime.datetime.today().strftime('%Y-%m-%d')
-    filepath = os.path.join('data','processed_data', today+'.csv')
+    filepath = os.path.join(get_processed_data_path(), today+'.csv')
     all_data.to_csv(filepath)
 
     return all_data

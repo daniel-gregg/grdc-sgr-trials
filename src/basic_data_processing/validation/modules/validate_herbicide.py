@@ -9,6 +9,8 @@ import numpy as np
 from pyprojroot.here import here
 import sys
 
+from src.utils.base_paths import get_reference_data_path
+
 #append path using 'here'
 path_root = here()
 sys.path.append(str(path_root))
@@ -24,7 +26,7 @@ from pydantic import ValidationError
 def validateHerbicideProductsModel():
 
     #Read in test data
-    herbicides = pd.read_csv(here('data/reference_data/HerbProductData.csv'))
+    herbicides = pd.read_csv(get_reference_data_path('HerbProductData.csv'))
 
     #Note empty values in a .csv are read in as 'nan'. 
     #Need to replace these prior to implementing as dict

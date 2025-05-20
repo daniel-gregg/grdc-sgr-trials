@@ -27,23 +27,9 @@ import datetime
 'Custom imports'
 'TBD - this is for additional modules'
 
-
-def getBasePath():
-    return os.path.join('data')
-
-# for each call on getting activity data this returns an activity cost record
-def getProcessedDataList():
-    #note if year not present the function defaults to returning the nearest year record
-    # no warning is given as only 2020-21 records are currently available
-
-    #read in activity cost data from reference data
-    base_path = getBasePath()
-    processed_data_path = os.path.join(base_path, 'processed_data')
-
-    # get files list in processed_data
-    processed_data_files_list = os.listdir(processed_data_path)
-
-    return processed_data_files_list
+from src.utils.base_paths import get_processed_data_path
+from src.utils.aggregation_utilities import getProcessedDataList
+from src.utils.base_paths import get_gross_margin_data_path
 
 
 def getAnnualGrossMargin():
@@ -53,7 +39,7 @@ def getAnnualGrossMargin():
     
     # loop through to read in 
     for file in processed_data_list:
-        filepath = os.path.join(getBasePath(), 'processed_data', file)
+        filepath = os.path.join(get_processed_data_path(), file)
         data = pd.read_csv(filepath)
 
         #initialise arrays
@@ -108,9 +94,14 @@ def getAnnualGrossMargin():
         })
 
         # write to file with processed file date
-        file_path_gm_csv = os.path.join(getBasePath(), 'annual_reports', 'gross_margin_from_processed_data'+file)
-        gm_df.to_csv(file_path_gm_csv)
-
+        file_path_gm_csv = get_gross_margin_data_path()
+        print(file_path_gm_csv)
+        print(file)
+        if os.path.exists(file_path_gm_csv):
+            gm_df.to_csv(get_gross_margin_data_path(file))
+        else:
+            os.mkdir(file_path_gm_csv)
+            gm_df.to_csv(get_gross_margin_data_path(file))
 
 
     
