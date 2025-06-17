@@ -8,6 +8,7 @@
 from src.basic_data_processing.validation.validate import process_raw_formatted_data
 from src.basic_data_processing.final_processing.prices_and_costs import integratePricesAndCosts
 from src.analysis.gross_margin.grossmargin import getAnnualGrossMargin
+
 # To do:
 #from src.basic_data_processing.final_processing.remote_sense_data import integrateRemoteSenseData
 #from src.basic_data_processing.final_processing.field_measures import integrateFieldMeasures
@@ -36,7 +37,7 @@ integratePricesAndCosts()
 getAnnualGrossMargin()
 
 # calculate and generate reporting for gross margins
-# to do 2025
+getAnnualGrossMargin()
 
 ##### Detailed reporting (e.g. formatted reports)
 # to do 2025

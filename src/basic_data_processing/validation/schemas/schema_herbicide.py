@@ -14,6 +14,8 @@ from pydantic import BaseModel, Field, ConfigDict, field_validator
 from enum import Enum
 from typing import Optional
 
+from src.utils.base_paths import get_reference_data_path
+
 # Enum of the possible units of measurement of herbicide
 class HerbicidesUnits(AutoEnum):
     kilograms = alias('kg', 'kilo', 'kilos')
@@ -50,7 +52,7 @@ class HerbicideApplicationsModel(BaseModel):
 
         #read in ProductData.csv
         try:
-            herbicideProducts = pd.read_csv(here('data/reference_Data/HerbProductData.csv'))
+            herbicideProducts = pd.read_csv(get_reference_data_path('HerbProductData.csv'), index_col=False)
         except:
             
             #check if a testProducts csv is available

@@ -11,6 +11,10 @@ import pandas as pd
 path_root = here()
 sys.path.append(str(path_root))
 
+from src.utils.base_paths import get_base_data_path
+from src.utils.base_paths import get_raw_data_path
+from src.utils.base_paths import get_validated_data_path
+
 #activity can be one of:
     #   fertiliser
     #   fungicide
@@ -27,7 +31,7 @@ sys.path.append(str(path_root))
 ### utilities
 
 #base path
-base_path = os.path.join('src' ,'sgr_data', 'data')
+base_path = get_base_data_path()
 
 # Async function to get data based on a provided filepath
 def getCSV(filePath):
@@ -59,8 +63,8 @@ def getFilesToUpload(existing,raw):
 #Main action (upload) function
 def uploadFiles(site, activity):
 
-    raw_data_path = os.path.join(base_path, 'raw_data', site, activity)
-    existing_data_path = os.path.join(base_path, 'validated_data', site, activity)
+    raw_data_path = get_raw_data_path(site, activity)
+    existing_data_path = get_validated_data_path(site, activity)
 
     #get existing data record
     existing_data = getExistingFiles(existing_data_path)

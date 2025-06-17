@@ -15,6 +15,8 @@ from enum import Enum
 from typing import Optional
 
 
+from src.utils.base_paths import get_reference_data_path
+
 # Enum of the possible units of measurement of fungicide
 class FungicidesUnits(AutoEnum):
     kilograms = alias('kg', 'kilo', 'kilos')
@@ -51,7 +53,7 @@ class FungicideApplicationsModel(BaseModel):
 
         #read in ProductData.csv
         try:
-            fungicideProducts = pd.read_csv(here('data/reference_data/FungProductData.csv'))
+            fungicideProducts = pd.read_csv(get_reference_data_path('FungProductData.csv'), index_col=False)
         except:
             
             #check if a testProducts csv is available

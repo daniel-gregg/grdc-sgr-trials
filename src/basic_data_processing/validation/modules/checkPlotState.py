@@ -15,6 +15,8 @@ import csv
 #crop2 and crop3 are optional for plotActivityType 'TERMINATION'
 #all cropX arguments are ignored for plotActivityType 'SOWING'
 
+from src.utils.base_paths import get_reference_data_path
+
 def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop2=None, crop3=None):
     print(plotActivityType)
     #Conduct checks
@@ -26,7 +28,7 @@ def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop
     
     #read in state data
     try:
-        plot_state_data = pd.read_csv(here('data/PlotStateData.csv'))
+        plot_state_data = pd.read_csv(get_reference_data_path('PlotStateData.csv'))
     except FileNotFoundError as e:
         raise e
 
@@ -95,6 +97,6 @@ def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop
     })
 
     #write new line to plotStateData.csv
-    newrow.to_csv(here('data/PlotStateData.csv'), mode='a', index=False, header=False)
+    newrow.to_csv(get_reference_data_path('plotStateData.csv'), mode='a', index=False, header=False)
 
     return newrow
