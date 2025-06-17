@@ -1,0 +1,2 @@
+﻿plotID,year,month,day,crop1Name,crop2Name,crop3Name,harvestReason,crop1Yield,crop2Yield,crop3Yield,terminationState,comments
+DEF456,1999,7,3,BarlEy,,,fail_water,150,450,,bare,antoher comment

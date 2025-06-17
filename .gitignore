@@ -1,5 +1,7 @@
 # local files and folders
-/data
+/data/processed_data
+/data/raw_data
+/data/validated_data
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,0 +1,199 @@
+plotID,year,month,day,name,unitsAppliedKgOrLitres,appliedAmount,comments
+APPILA_S1_P2312_R1,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S1_P2312_R2,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S1_P2312_R3,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S1_P3123_R1,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S1_P3123_R2,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S1_P3123_R3,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S2_P2121_R1,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S2_P2121_R2,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S2_P2121_R3,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S3_P3412_R1,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S3_P3412_R2,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S3_P3412_R3,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S3_P4123_R1,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S3_P4123_R2,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S3_P4123_R3,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S4_P2312_R1,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S4_P2312_R2,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S4_P2312_R3,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S4_P3123_R1,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S4_P3123_R2,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S4_P3123_R3,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S5_P0000_R1,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S5_P0000_R2,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S5_P0000_R3,2023,5,31,Boxer Gold,L,2.5,Pre-em
+APPILA_S1_P1231_R1,2023,5,31,Diuron,kg,1,Pre-em
+APPILA_S1_P1231_R2,2023,5,31,Diuron,kg,1,Pre-em
+APPILA_S1_P1231_R3,2023,5,31,Diuron,kg,1,Pre-em
+APPILA_S4_P1231_R1,2023,5,31,Diuron,kg,0.5,Pre-em
+APPILA_S4_P1231_R2,2023,5,31,Diuron,kg,0.5,Pre-em
+APPILA_S4_P1231_R3,2023,5,31,Diuron,kg,0.5,Pre-em
+APPILA_S1_P1231_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S1_P1231_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S1_P1231_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S1_P2312_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S1_P2312_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S1_P2312_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S1_P3123_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S1_P3123_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S1_P3123_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S2_P1212_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S2_P1212_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S2_P1212_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S2_P2121_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S2_P2121_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S2_P2121_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S3_P1234_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S3_P1234_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S3_P1234_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S3_P2341_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S3_P2341_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S3_P2341_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S3_P3412_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S3_P3412_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S3_P3412_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S3_P4123_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S3_P4123_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S3_P4123_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S4_P1231_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S4_P1231_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S4_P1231_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S4_P2312_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S4_P2312_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S4_P2312_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S4_P3123_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S4_P3123_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S4_P3123_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S5_P0000_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S5_P0000_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S5_P0000_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S6_P0000_R1,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S6_P0000_R2,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S6_P0000_R3,2023,5,31,Glyphosate,L,2,Knockdown
+APPILA_S1_P1231_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S1_P1231_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S1_P1231_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S1_P2312_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S1_P2312_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S1_P2312_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S1_P3123_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S1_P3123_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S1_P3123_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S2_P1212_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S2_P1212_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S2_P1212_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S2_P2121_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S2_P2121_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S2_P2121_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S3_P1234_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S3_P1234_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S3_P1234_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S3_P2341_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S3_P2341_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S3_P2341_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S3_P3412_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S3_P3412_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S3_P3412_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S3_P4123_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S3_P4123_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S3_P4123_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S4_P1231_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S4_P1231_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S4_P1231_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S4_P2312_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S4_P2312_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S4_P2312_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S4_P3123_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S4_P3123_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S4_P3123_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S5_P0000_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S5_P0000_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S5_P0000_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S6_P0000_R1,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S6_P0000_R2,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S6_P0000_R3,2023,5,31,Hammer,L,0.03,Knockdown
+APPILA_S1_P1231_R1,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S1_P1231_R2,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S1_P1231_R3,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S2_P1212_R1,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S2_P1212_R2,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S2_P1212_R3,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S3_P1234_R1,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S3_P1234_R2,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S3_P1234_R3,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S3_P2341_R1,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S3_P2341_R2,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S3_P2341_R3,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S6_P0000_R1,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S6_P0000_R2,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S6_P0000_R3,2023,5,31,Propyzamide,L,1,Pre-em
+APPILA_S2_P1212_R1,2023,5,31,Reflex,L,1,Pre-em
+APPILA_S2_P1212_R2,2023,5,31,Reflex,L,1,Pre-em
+APPILA_S2_P1212_R3,2023,5,31,Reflex,L,1,Pre-em
+APPILA_S3_P1234_R1,2023,5,31,Reflex,L,1,Pre-em
+APPILA_S3_P1234_R2,2023,5,31,Reflex,L,1,Pre-em
+APPILA_S3_P1234_R3,2023,5,31,Reflex,L,1,Pre-em
+APPILA_S1_P2312_R1,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S1_P2312_R2,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S1_P2312_R3,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S1_P3123_R1,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S1_P3123_R2,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S1_P3123_R3,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S2_P2121_R1,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S2_P2121_R2,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S2_P2121_R3,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S3_P2341_R1,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S3_P2341_R2,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S3_P2341_R3,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S3_P3412_R1,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S3_P3412_R2,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S3_P3412_R3,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S3_P4123_R1,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S3_P4123_R2,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S3_P4123_R3,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S4_P2312_R1,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S4_P2312_R2,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S4_P2312_R3,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S4_P3123_R1,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S4_P3123_R2,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S4_P3123_R3,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S5_P0000_R1,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S5_P0000_R2,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S5_P0000_R3,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S6_P0000_R1,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S6_P0000_R2,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S6_P0000_R3,2023,5,31,Tri-allate,L,1.6,Pre-em
+APPILA_S1_P2312_R1,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S1_P2312_R2,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S1_P2312_R3,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S1_P3123_R1,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S1_P3123_R2,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S1_P3123_R3,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S2_P2121_R1,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S2_P2121_R2,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S2_P2121_R3,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S3_P2341_R1,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S3_P2341_R2,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S3_P2341_R3,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S3_P3412_R1,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S3_P3412_R2,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S3_P3412_R3,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S3_P4123_R1,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S3_P4123_R2,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S3_P4123_R3,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S4_P1231_R1,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S4_P1231_R2,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S4_P1231_R3,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S4_P2312_R1,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S4_P2312_R2,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S4_P2312_R3,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S4_P3123_R1,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S4_P3123_R2,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S4_P3123_R3,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S5_P0000_R1,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S5_P0000_R2,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S5_P0000_R3,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S6_P0000_R1,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S6_P0000_R2,2023,5,31,Trifluralin,L,0.8,Pre-em
+APPILA_S6_P0000_R3,2023,5,31,Trifluralin,L,0.8,Pre-em

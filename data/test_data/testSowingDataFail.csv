@@ -1,0 +1,3 @@
+﻿plotID,year,month,day,crop1Name,crop2Name,crop3Name,crop1Variety,crop2variety,crop3Variety,seedTreatment1Bool,seedTreatment2Bool,seedTreatment3Bool,sowingReason,crop1SowingDensity,crop2SowingDensity,crop3SowingDensity,crop1Sowingdepth,crop2SowingDepth,crop3SowingDepth,sowingTimelinessDescription,comments
+DEF123,1999,7,3,WHEAT,BARLEY,,Scepter,Commondus,,TRUE,TRUE,TRUE,sale,250,30,,10,10,,,
+DEF456,1999,7,3,WHEAT,BARLEY,,Scepter,Commondus,,TRUE,TRUE,TRUE,sale,250,30,,10,10,,,
