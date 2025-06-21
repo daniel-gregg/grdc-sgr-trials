@@ -94,7 +94,7 @@ class FertiliserApplicationsModel(BaseModel):
     #Define and validate units against options in the 'FertiliserUnits' model - automated by the 'use_enum_values' arg
     unitsAppliedKgOrLitres: FertiliserUnits
 
-    appliedAmount: float = Field(..., ge=0,le=4000, description="Number of litres/kg applied PER HECTARE")
+    appliedAmount: float = Field(..., ge=0,le=10000, description="Number of litres/kg applied PER HECTARE")
     comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 
 

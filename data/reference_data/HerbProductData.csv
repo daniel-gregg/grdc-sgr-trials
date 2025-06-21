@@ -2,6 +2,7 @@ name,units,price,source
 Activator,L,25,
 "2,4 D Amine 625",L,5.9,SAGIT
 "2,4-D",L,5.9,SAGIT
+Aggressor, L, 0, CHECK
 Agritone LVE 570,kg,8,
 Amine,L,5.9,SAGIT
 AMS,L,3.5,
@@ -19,8 +20,10 @@ Chlorpyriphos,L,13.5,
 Clethodim,L,20.5,SAGIT
 Clethodim 360,L,20.5,SAGIT
 Crucial,L,12,
+Crucial (glyphosate),L,12,
 Cutlass,L,11,
 Dicamba 500,L,20,
+Dimethoate, L, 0, CHECK
 Diquat,L,15,
 Diuron,kg,15,
 Diuron 900DF,L,20,
@@ -38,6 +41,7 @@ Glyphosate 450,L,4.5,SAGIT
 Glyphosate 540g/l,L,5.4,SAGIT
 Grammoxone 360, L, 7.83, CHECK THIS
 Grasidim,L,30,
+Grazidim,L,30,
 Haloxyfop,L,44,SAGIT
 Haloxyfop 520,L,44,SAGIT
 Hammer,L,20,
@@ -50,7 +54,7 @@ Liase,L,4,
 Lontrel Advanced 600,L,145,
 Lontrel,L,145,
 LVA Agritone,kg,8,
-MCPA LVE ,L,8.14,SAGIT
+MCPA LVE,L,8.14,SAGIT
 MCPA LVE (~100mL/leaf),L,8.14,SAGIT
 Overwatch,L,10,
 Oxyflurfen,L,15.76,SAGIT

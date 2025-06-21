@@ -1,5 +1,6 @@
 name,units,price,source,description,productType,nitrogenPercent,phosphorousPercent
 Dynamic Lifter,kg,1.88,,"organic fertiliser, by Yates",Pellet,3.5,1.7
+Yates Dynamic Lifter,kg,1.88,,"organic fertiliser, by Yates",Pellet,3.5,1.7
 DAP,kg,0.575,SAGIT,di-ammonium phosphate,Granule,18,20
 Urea,kg,0.5,SAGIT,urea,Granule,46,0
 MAP,kg,0.575,SAGIT,mono-ammonium phosphate,Granule,11,22
