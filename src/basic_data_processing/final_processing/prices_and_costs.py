@@ -221,11 +221,11 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                     if activity == 'sowing' or activity == 'termination':
                         product_costs.append(float(0))
                     else:    
-                        data.loc[row,'appliedAmount'] = float(data.iloc[row]['appliedAmount'].item())
+                        data.loc[row,'appliedAmount'] = float(data.iloc[row]['appliedAmount'])
                         product = data.iloc[row]['name']
                         print('product for product price is {} at site {}'.format(product, site))
                         product_price = float(getProductPrice(product, activity))
-                        product_qty = data.iloc[row]['appliedAmount'].item()
+                        product_qty = float(data.iloc[row]['appliedAmount'])
                         product_costs.append(np.multiply(float(product_price), float(product_qty)))
 
                     #if activity is termination, get yield and revenue

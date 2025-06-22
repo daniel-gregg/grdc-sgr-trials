@@ -35,6 +35,6 @@ def get_processed_data_path():
 
 def get_gross_margin_data_path(file = None):
     if not file:
-        return os.path.join('data', 'analysis_outputs', 'gross_margins')
+        return os.path.join('data', 'outputs', 'gross_margins')
     else:
-        return os.path.join('data', 'analysis_outputs', 'gross_margins',file)
+        return os.path.join('data', 'outputs', 'gross_margins',file)
