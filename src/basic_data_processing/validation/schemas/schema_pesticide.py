@@ -32,6 +32,7 @@ class PesticideProductsModel(BaseModel):
     price: Optional[float]
 
 class TargetPest(AutoEnum):
+    not_provided = None
     fall_army_worm = alias('faw')
     locusts = alias('grasshoppers')
     other_insects = alias('insects','other')
