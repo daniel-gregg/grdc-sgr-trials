@@ -26,6 +26,7 @@ from src.utils.base_paths import get_base_data_path
 from src.utils.base_paths import get_raw_data_path 
 from src.utils.base_paths import get_validated_data_path
 from src.utils.base_paths import get_reference_data_path
+from src.utils.base_paths import get_invalid_data_path
 
 def validateData(data, schema):
     #validate data against schema
@@ -74,7 +75,6 @@ def process_raw_formatted_data():
             data = sites_activities_dict[site][activity]
 
             #Attempt validation
-            print('\n')
             if data: #if not empty
                 for i, file in enumerate(data):
                     #check if there is a file to load
@@ -88,28 +88,39 @@ def process_raw_formatted_data():
                     file_name_date = str(*data[i].keys())
 
                     #attempt validation
-                    try:
-                        valid_data_frame = validateData(*file.values(),activity)
-                    except ValueError as e:
-                        raise e
-                    except ValidationError as e:
-                        raise e
-                    except FileNotFoundError as e:
-                        raise e
+                    validation_result = validateData(*file.values(),activity)
                     
-                    #If validation passes, process data
-                    #get key (date) for file
-                    path_for_saving = get_validated_data_path(site, activity)
+                    # check if validation failed - if so save to dict
+                    if isinstance(validation_result, dict):
+                        #If validation fails save error log
+                        #get key (date) for file
+                        path_for_saving_failed_validation = get_invalid_data_path()
+                        file_name_date = site + '_' + activity + '_' + file_name_date + '.csv'
+                        #join file name to directory path
+                        save_path = os.path.join(path_for_saving_failed_validation, file_name_date) 
+                        
+                        #save as csv
+                        validation_result['errors'].to_csv(save_path)
 
-                    #join file name to directory path
-                    save_path = os.path.join(path_for_saving, file_name_date) 
+                        #log outcome
+                        print('Failed to validate file {}. Error log is located in {}\n\n'.format(file_name_date, path_for_saving_failed_validation) )
+                    else:
+                        #if validation passes, save the data
+                        valid_data_frame = validation_result
 
-                    #save as pickle
-                    valid_data_frame.to_pickle(save_path)
+                        #If validation passes, process data
+                        #get key (date) for file
+                        path_for_saving = get_validated_data_path(site, activity)
 
-                    #log outcome
-                    print('successfully uploaded file {} for activity {}\n\n'.format(file_name_date, activity) )
+                        #join file name to directory path
+                        save_path = os.path.join(path_for_saving, file_name_date) 
+
+                        #save as pickle
+                        valid_data_frame.to_pickle(save_path)
+
+                        #log outcome
+                        print('successfully uploaded file {} for activity {}\n\n'.format(file_name_date, activity) )
             
             else:
-                print('no new data to upload\n')
+                print(f'no new data to upload for site {site}\n')
         

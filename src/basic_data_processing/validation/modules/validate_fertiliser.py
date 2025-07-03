@@ -36,8 +36,6 @@ def validateFertiliserProductsModel():
         
         #Loop through each record and validate
         for record in df_dict:
-            print(record)
-            print('hello')
             FertiliserProductsModel(**record)
         
         #return the df for further processing)
@@ -50,18 +48,43 @@ def validateFertiliserProductsModel():
 ### Test the fertiliser products model schema
 # This relies on a validated fertiliser products model 
 # which is imported into the 'schema_fertilisers.py' file
-def validateFertiliserApplicationsModel(applications):
+def validateFertiliserApplicationsModel(treatments):
 
     try: 
         #Convert pandas DF to dictionary
-        df_dict = applications.to_dict(orient='records')
+        df_dict = treatments.to_dict(orient='records')
         
         #Loop through each record and validate
         for record in df_dict:
-            FertiliserApplicationsModel(**record)
+            try:
+                # Validate each record against the FertiliserApplicationsModel schema
+                FertiliserApplicationsModel(**record)
+            except ValidationError as e:
+                # save validation error to validation record
+                if 'validation_list' in locals():
+                    validation_list.append({
+                        'plotID': record['plotID'],
+                        'error': str(e)
+                    })
+                else:
+                    validation_list = [{
+                        'plotID': record['plotID'],
+                        'error': str(e)
+                    }]
+
+                print(f"Validation error for record {record}: {e}")
+            
         
         #return the df for further processing)
-        return(applications)
+        if 'validation_list' in locals():
+            # If there are validation errors, convert the list to a DataFrame
+            validation_df = pd.DataFrame(validation_list)
+            print("Validation errors found:")
+            return {
+                'errors': validation_df,
+            }
+        else:
+            return(treatments)
 
     except ValidationError as e:
         print(e)

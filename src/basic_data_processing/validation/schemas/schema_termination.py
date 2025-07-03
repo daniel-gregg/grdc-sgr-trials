@@ -28,6 +28,7 @@ class TerminationMethod(AutoEnum):
 #Crop termination outcme - improves detail for pasture and other crops above (can move pasture types into own types)
 class Outcome(AutoEnum):
     success = alias('harvest','good','pass') #indicates that planting objectives were substantively achieved
+    fail = alias('FAIL ', 'failed', 'failure') # no reason given
     fail_water = alias('water','dry','drought') #crop failed due to insufficient crop water availability
     fail_pests = alias('vermin', 'insects', 'mice', 'locusts') #crop failed due to pests
     fail_disease = alias('disease', 'fungus', 'infection', 'rot') #crop failed due to disease 
