@@ -122,4 +122,6 @@ class TerminationModel(BaseModel):
 
             if not(crop_name in possible_crop_names):
                 raise ValueError("Please check your crop names. {} is not included in the allowed crops".format(crop_name))                           
+    
+        return self
             

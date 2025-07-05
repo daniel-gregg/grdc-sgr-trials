@@ -139,4 +139,6 @@ class SowingModel(BaseModel):
             if not variety_name == None:
                 if variety_name in list(crops_varieties.iloc[:,dataframe_index]):
                     raise ValueError("Variety must be defined in the 'varieties.csv' table in 'data'")
+                
+        return self
         

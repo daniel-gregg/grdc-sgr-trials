@@ -75,7 +75,7 @@ class PesticideApplicationsModel(BaseModel):
                 return "no pesticide products data ('PesticideProductData.csv') exists in expected directory (.../sgr_data/output)"
         
         #check if provided 'pessticidename' is in the existing products list
-        if sum(pesticideProducts['name'].str.lower().str.contains(pestname.lower().strip()))==0:
+        if sum(pesticideProducts['name'].str.lower().str.match(pestname.lower().strip()))==0:
             raise ValueError("Pesticide product {} must be defined in the 'pesticideProductData' table in '.../sgr_data/data'".format(pestname))
         return pestname
     

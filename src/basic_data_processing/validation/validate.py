@@ -12,6 +12,7 @@ sys.path.append(str(path_root))
 import os
 from copy import deepcopy
 from pydantic import ValidationError
+import datetime
 
 # module imports
 from src.utils.upload import uploadFiles
@@ -48,6 +49,25 @@ def validateData(data, schema):
 def process_raw_formatted_data():
 ### list sites and activities in the raw_data file
 
+    # Get the current date as a string
+    current_date = datetime.datetime.today()
+    formatted_date = current_date.strftime("%d_%m_%Y")
+
+    # check/create the path for saving failed validation
+    path_for_saving_failed_validation = get_invalid_data_path(formatted_date)
+    if not os.path.exists(path_for_saving_failed_validation):
+        os.makedirs(path_for_saving_failed_validation)  
+    else:
+        #remove all files in the directory
+        for file in os.listdir(path_for_saving_failed_validation):
+            file_path = os.path.join(path_for_saving_failed_validation, file)
+            try:
+                if os.path.isfile(file_path) or os.path.islink(file_path):
+                    os.unlink(file_path)
+                elif os.path.isdir(file_path):
+                    os.rmdir(file_path)
+            except Exception as e:
+                print('Failed to delete %s. Reason: %s' % (file_path, e))
 
     #sites:
     sites_list = os.listdir(get_raw_data_path())
@@ -95,18 +115,11 @@ def process_raw_formatted_data():
                     if isinstance(validation_result, dict):
                         #If validation fails save error log
                         #get key (date) for file
-                        path_for_saving_failed_validation = get_invalid_data_path()
                         file_name = site + '_' + activity + '.csv'
                         #join file name to directory path
-                        save_path = os.path.join(path_for_saving_failed_validation, file_name_date, file_name) 
-                        
-                        #save as csv
-                        if os.path.exists(save_path):
-                            validation_result['errors'].to_csv(save_path)
-                        else:
-                            os.mkdir()
-                            validation_result['errors'].to_csv(save_path)
-
+                        save_path = os.path.join(path_for_saving_failed_validation, file_name) 
+                        #save errors to csv
+                        validation_result['errors'].to_csv(save_path, index=False)
                         #log outcome
                         print('Failed to validate file {}. Error log is located in {}\n\n'.format(file_name_date, path_for_saving_failed_validation) )
                     else:

@@ -39,6 +39,10 @@ def get_gross_margin_data_path(file = None):
     else:
         return os.path.join('data', 'outputs', 'gross_margins',file)
     
-def get_invalid_data_path():
+def get_invalid_data_path(date = None):
     # returns the path to the invalid data folder for a specific site and activity
-    return os.path.join('data', 'invalid_data_errors')
+
+    if not date:
+        return os.path.join('data', 'invalid_data_errors')
+    else:
+        return os.path.join('data', 'invalid_data_errors', date)
