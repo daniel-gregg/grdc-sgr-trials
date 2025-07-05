@@ -18,7 +18,7 @@ import csv
 from src.utils.base_paths import get_reference_data_path
 
 def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop2=None, crop3=None):
-    print(plotActivityType)
+
     #Conduct checks
     if not (plotActivityType == 'SOWING' or plotActivityType == 'TERMINATION'):
         raise NameError("plotActivityType must be either 'SOWING' or 'TERMINATION'.")
@@ -95,8 +95,5 @@ def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop
         'CROP2' : [crop2],
         'CROP3': [crop3]
     })
-
-    #write new line to plotStateData.csv
-    newrow.to_csv(get_reference_data_path('plotStateData.csv'), mode='a', index=False, header=False)
 
     return newrow

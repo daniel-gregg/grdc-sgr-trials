@@ -1,0 +1,11 @@
+,plotID,errorLocation,errorType,errorMsg
+0,ROSEWORTHY_S3_P2121_R1,(),value_error,"Value error, Please check your crop names. vetch(brownmanure) is not included in the allowed crops"
+1,ROSEWORTHY_S3_P2121_R1,checkPlotState,<class 'ValueError'>,"Check plot ROSEWORTHY_S3_P2121_R1. Terminated crops must match planted crops
+ Cropvetch (brown manure)not in planted set"
+2,ROSEWORTHY_S3_P2121_R2,(),value_error,"Value error, Please check your crop names. vetch(brownmanure) is not included in the allowed crops"
+3,ROSEWORTHY_S3_P2121_R2,checkPlotState,<class 'ValueError'>,"Check plot ROSEWORTHY_S3_P2121_R2. Terminated crops must match planted crops
+ Cropvetch (brown manure)not in planted set"
+4,ROSEWORTHY_S1.2_P1221_R3,checkPlotState,<class 'ValueError'>,There is no entry in the plot state data forROSEWORTHY_S1.2_P1221_R3. Please ensure a starting state is initiated for ALL plots prior to data entry
+5,ROSEWORTHY_S3_P2121_R3,(),value_error,"Value error, Please check your crop names. vetch(brownmanure) is not included in the allowed crops"
+6,ROSEWORTHY_S3_P2121_R3,checkPlotState,<class 'ValueError'>,"Check plot ROSEWORTHY_S3_P2121_R3. Terminated crops must match planted crops
+ Cropvetch (brown manure)not in planted set"

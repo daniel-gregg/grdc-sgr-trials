@@ -29,6 +29,7 @@ from src.utils.base_paths import get_reference_data_path
 from src.utils.base_paths import get_invalid_data_path
 
 def validateData(data, schema):
+    print(type(data))
     #validate data against schema
     if schema=='fertiliser':
         return validateFertiliserApplicationsModel(data)
@@ -95,12 +96,16 @@ def process_raw_formatted_data():
                         #If validation fails save error log
                         #get key (date) for file
                         path_for_saving_failed_validation = get_invalid_data_path()
-                        file_name_date = site + '_' + activity + '_' + file_name_date + '.csv'
+                        file_name = site + '_' + activity + '.csv'
                         #join file name to directory path
-                        save_path = os.path.join(path_for_saving_failed_validation, file_name_date) 
+                        save_path = os.path.join(path_for_saving_failed_validation, file_name_date, file_name) 
                         
                         #save as csv
-                        validation_result['errors'].to_csv(save_path)
+                        if os.path.exists(save_path):
+                            validation_result['errors'].to_csv(save_path)
+                        else:
+                            os.mkdir()
+                            validation_result['errors'].to_csv(save_path)
 
                         #log outcome
                         print('Failed to validate file {}. Error log is located in {}\n\n'.format(file_name_date, path_for_saving_failed_validation) )

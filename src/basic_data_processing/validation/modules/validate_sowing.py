@@ -18,6 +18,7 @@ from src.basic_data_processing.validation.schemas.schema_sowing import (
 )
 
 from src.basic_data_processing.validation.modules.checkPlotState import checkPlotState
+from src.utils.base_paths import get_reference_data_path
 from pydantic import ValidationError
 
 ### Test the fertiliser products model schema
@@ -37,23 +38,27 @@ def validateSowingModel(sowing_data):
                 SowingModel(**record)
             except ValidationError as e:
                 # save validation error to validation record
-                if 'validation_list' in locals():
-                    validation_list.append({
-                        'plotID': record['plotID'],
-                        'error': str(e)
-                    })
-                else:
-                    validation_list = [{
-                        'plotID': record['plotID'],
-                        'error': str(e)
-                    }]
-
-                print(f"Validation error for record {record}: {e}")
+                for error in e.errors():
+                    # save validation error to validation record
+                    if 'validation_list' in locals():
+                        validation_list.append({
+                            'plotID' : record['plotID'],
+                            'errorLocation' : error['loc'],
+                            'errorType' : error['type'],
+                            'errorMsg' : error['msg']
+                        })
+                    else:
+                        validation_list = [{
+                            'plotID' : record['plotID'],
+                            'errorLocation' : error['loc'],
+                            'errorType' : error['type'],
+                            'errorMsg' : error['msg']
+                        }]
 
             try:
                 #If pass, validate against plot state
                 #try:
-                checkPlotState(
+                plotState = checkPlotState(
                     plot_id=record.get('plotID'), 
                     plotActivityType='SOWING', 
                     year = record.get('year'),
@@ -63,17 +68,33 @@ def validateSowingModel(sowing_data):
                     crop2=record.get('crop2Name'), 
                     crop3=record.get('crop3Name')
                     )
+                
+                # initialise/add records for plotState
+                if 'plotStateRecords' in locals():
+                    plotStateRecords = pd.concat([
+                        plotStateRecords,
+                        plotState
+                        ], 
+                        ignore_index = True
+                        )
+                else:
+                    plotStateRecords = plotState
+
             except Exception as e:
-                # save validation error to validation record
+                # save validation error to validation records
                 if 'validation_list' in locals():
                     validation_list.append({
-                        'plotID': record['plotID'],
-                        'error': str(e)
+                        'plotID' : record['plotID'],
+                        'errorLocation' : 'checkPlotState',
+                        'errorType' : type(e),
+                        'errorMsg' : e
                     })
                 else:
                     validation_list = [{
-                        'plotID': record['plotID'],
-                        'error': str(e)
+                        'plotID' : record['plotID'],
+                        'errorLocation' : 'checkPlotState',
+                        'errorType' : type(e),
+                        'errorMsg' : e
                     }]
         
         # If all pass return the DF
@@ -86,6 +107,10 @@ def validateSowingModel(sowing_data):
                 'errors': validation_df,
             }
         else:
+            # validation was successful
+            # update plotStateData.csv
+            plotStateRecords.to_csv(get_reference_data_path('plotStateData.csv'), mode='a', header=False, index = False)
+            # return sowing data
             return(sowing_data)
 
     except ValidationError as e:

@@ -66,7 +66,7 @@ class FungicideApplicationsModel(BaseModel):
         
         #check if provided 'fungicidename' is in the existing products list
         if sum(fungicideProducts['name'].str.lower().str.contains(fungname.lower().strip()))==0:
-            raise ValueError("Fungicide product must be defined in the 'FungicideProductData' table in '.../sgr_data/data'")
+            raise ValueError("Fungicide product {} must be defined in the 'FungicideProductData' table in '.../sgr_data/data'".format(fungname))
         return fungname
     
     

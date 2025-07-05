@@ -65,19 +65,22 @@ def validateFungicideApplicationsModel(treatments):
                 FungicideApplicationsModel(**record)
             except ValidationError as e:
                 # save validation error to validation record
-                if 'validation_list' in locals():
-                    validation_list.append({
-                        'plotID': record['plotID'],
-                        'error': str(e)
-                    })
-                else:
-                    validation_list = [{
-                        'plotID': record['plotID'],
-                        'error': str(e)
-                    }]
-
-                print(f"Validation error for record {record}: {e}")
-            
+                for error in e.errors():
+                    # save validation error to validation record
+                    if 'validation_list' in locals():
+                        validation_list.append({
+                            'plotID' : record['plotID'],
+                            'errorLocation' : error['loc'],
+                            'errorType' : error['type'],
+                            'errorMsg' : error['msg']
+                        })
+                    else:
+                        validation_list = [{
+                            'plotID' : record['plotID'],
+                            'errorLocation' : error['loc'],
+                            'errorType' : error['type'],
+                            'errorMsg' : error['msg']
+                        }]
         
         #return the df for further processing)
         if 'validation_list' in locals():
