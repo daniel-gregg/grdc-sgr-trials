@@ -36,6 +36,23 @@ class TimelinessOptions(AutoEnum):
     early = auto()
     late = auto()
 
+class CropType(AutoEnum):
+    wheat = alias('durum')
+    barley = auto()
+    canola = auto()
+    lupins = auto()
+    peas = auto()
+    vetch = auto()
+    oat = alias('oats')
+    triticale = auto()
+    pasture = alias('clover', 'chicory', 'perennial ryegrass', 'subclover', 'brassica', 'tillage radish', 'balansa clover')
+    lentil = auto()
+    chickpea = auto()
+    fababean = auto()
+    fieldpea = auto()
+    millet = auto()
+
+
 #Crops and crop varieties
 #Whenever a plot-planted crop data point is validated it WILL be added to a plot-date-planted-cropname-harvest dataframe
 #This dataframe is then used for validation of harvest observations (i.e. cannot harvest wheat from a barley planted plot)
@@ -54,9 +71,9 @@ class SowingModel(BaseModel):
     ##Note: Place a validator here to ensure that the last crop has been terminated
     #(excepting the first entry). This ensures that all plots have a complete record
     #of crop phases. 
-    crop1Name : str
-    crop2Name : Optional[str]
-    crop3Name : Optional[str]
+    crop1Name : CropType
+    crop2Name : Optional[CropType]
+    crop3Name : Optional[CropType]
 
     #crop variety
     crop1Variety : Optional[str]    
@@ -102,7 +119,7 @@ class SowingModel(BaseModel):
             crops_varieties = pd.read_csv(get_reference_data_path('varieties.csv'), index_col=False)
         except:
             #If no actual data available, print warning to terminal
-            print("There is no longer a 'varieties.csv' file in the 'data/reference_data/' directory. This must be replaced for validation to proceed.")
+            print("There is no 'varieties.csv' file in the 'data/reference_data/' directory. This must be replaced for validation to proceed.")
 
         #now loop through each crop and check the relevant variety
         for crop in range(3):
@@ -119,6 +136,10 @@ class SowingModel(BaseModel):
             if not variety_name == None:
                 variety_name = variety_name.lower()
 
+            #check if crop_name is 'pasture' - if so go to next
+            if crop_name == 'pasture':
+                continue
+
             #remove whitespace
             crop_name = "".join(crop_name.split())
             if not variety_name == None:
@@ -130,6 +151,10 @@ class SowingModel(BaseModel):
             possible_crop_names = [x.lower().strip() for x in possible_crop_names]
             #remove any white space in crop_name
 
+            # use AutoEnum to convert crop name to allowed names
+            crop_name = CropType(crop_name).value
+
+            #check if crop_name is included in the crops in the datafile
             if not(crop_name in possible_crop_names):
                 raise ValueError("Please check your crop names. {} is not included in the allowed crops".format(crop_name))                           
             

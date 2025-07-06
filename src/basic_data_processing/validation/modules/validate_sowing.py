@@ -108,7 +108,9 @@ def validateSowingModel(sowing_data):
             }
         else:
             # validation was successful
+            # check if a plotStateData exists in 
             # update plotStateData.csv
+
             plotStateRecords.to_csv(get_reference_data_path('plotStateData.csv'), mode='a', header=False, index = False)
             # return sowing data
             return(sowing_data)

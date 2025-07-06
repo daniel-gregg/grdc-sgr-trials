@@ -1,0 +1,2 @@
+plotID,errorLocation,errorType,errorMsg
+ROSEWORTHY_S1.2_P1221_R3,checkPlotState,<class 'ValueError'>,There is no entry in the plot state data forROSEWORTHY_S1.2_P1221_R3. Please ensure a starting state is initiated for ALL plots prior to data entry

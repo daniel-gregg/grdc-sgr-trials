@@ -49,6 +49,22 @@ class Reason(AutoEnum):
     mulch = alias('groundcover', 'soilmanagement') #use for groundcover, soil health, etc
     fodder = alias('livestock', 'silage', 'cattle', 'grazing', 'sheep') #fodder reason
 
+class CropType(AutoEnum):
+    wheat = alias('durum')
+    barley = auto()
+    canola = auto()
+    lupins = auto()
+    peas = auto()
+    vetch = auto()
+    oat = alias('oats')
+    triticale = auto()
+    pasture = alias('clover', 'chicory', 'perennial ryegrass', 'subclover', 'brassica', 'tillage radish', 'balansa clover')
+    lentil = auto()
+    chickpea = auto()
+    fababean = auto()
+    fieldpea = auto()
+    millet = auto()
+
 
 #Crops and crop varieties
 #Whenever a plot-planted crop data point is validated it WILL be added to a plot-date-planted-cropname-harvest dataframe
@@ -66,9 +82,9 @@ class TerminationModel(BaseModel):
     # To Do - define a validator to ensure the date is not in the future
     
     #Crops harvested
-    crop1Name : str
-    crop2Name : Optional[str]
-    crop3Name : Optional[str]
+    crop1Name : CropType
+    crop2Name : Optional[CropType]
+    crop3Name : Optional[CropType]
 
     #Termination reason
     harvestOutcome : Outcome
@@ -111,8 +127,13 @@ class TerminationModel(BaseModel):
             #create a lower case version
             crop_name = crop_name.lower().strip()
 
+            #check if crop_name is 'pasture' - if so go to next
+            if crop_name == 'pasture':
+                continue
+
             #remove whitespace
             crop_name = "".join(crop_name.split())
+
 
             #check if crop_name is included in the crops in the datafile
             possible_crop_names = list(crops_varieties.columns)

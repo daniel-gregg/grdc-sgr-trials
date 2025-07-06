@@ -30,7 +30,6 @@ from src.utils.base_paths import get_reference_data_path
 from src.utils.base_paths import get_invalid_data_path
 
 def validateData(data, schema):
-    print(type(data))
     #validate data against schema
     if schema=='fertiliser':
         return validateFertiliserApplicationsModel(data)
@@ -87,7 +86,7 @@ def process_raw_formatted_data():
     # Loop through each site and activity, call uploadFiles and store resultant dataframe
     for site in sites_activities_dict:
         for activity in sites_activities_dict[site]:
-            sites_activities_dict[site][activity].append(uploadFiles(site,activity))
+            sites_activities_dict[site][activity] = uploadFiles(site,activity)
 
     ### Loop through the sites_activities_dict and call validation on each item - on pass save to processed_data
     # Note: the object returned by 'uploadFiles' above is a list of data files (possibly empty)
@@ -97,25 +96,22 @@ def process_raw_formatted_data():
 
             #Attempt validation
             if data: #if not empty
-                for i, file in enumerate(data):
+                for i, (key, file) in enumerate(data.items()):
                     #check if there is a file to load
                     path_to_target = get_raw_data_path(site, activity)
                     print('checking activity {} for site {} in path {}'.format(activity, site, path_to_target))
-                    if not data[i]:
-                        print('activity {} has no new data to upload\n'.format(activity))
-                        continue
                     
                     #get file name
-                    file_name_date = str(*data[i].keys())
+                    file_name_date = key
 
                     #attempt validation
-                    validation_result = validateData(*file.values(),activity)
+                    validation_result = validateData(file,activity)
                     
                     # check if validation failed - if so save to dict
                     if isinstance(validation_result, dict):
                         #If validation fails save error log
                         #get key (date) for file
-                        file_name = site + '_' + activity + '.csv'
+                        file_name = site + '_' + activity + '_' + file_name_date + '.csv'
                         #join file name to directory path
                         save_path = os.path.join(path_for_saving_failed_validation, file_name) 
                         #save errors to csv

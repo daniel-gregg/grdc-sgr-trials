@@ -38,6 +38,15 @@ STREATHAM_S11_P0000_R2,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S11_P0
 STREATHAM_S11_P0000_R3,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S11_P0000_R3 is already in a fallow state. You cannot terminate a fallow state
 STREATHAM_S11_P0000_R3,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S11_P0000_R3 is already in a fallow state. You cannot terminate a fallow state
 STREATHAM_S11_P0000_R3,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S11_P0000_R3 is already in a fallow state. You cannot terminate a fallow state
+STREATHAM_S12_P0000_R1,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S12_P0000_R1 is already in a fallow state. You cannot terminate a fallow state
+STREATHAM_S12_P0000_R1,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S12_P0000_R1 is already in a fallow state. You cannot terminate a fallow state
+STREATHAM_S12_P0000_R1,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S12_P0000_R1 is already in a fallow state. You cannot terminate a fallow state
+STREATHAM_S12_P0000_R2,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S12_P0000_R2 is already in a fallow state. You cannot terminate a fallow state
+STREATHAM_S12_P0000_R2,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S12_P0000_R2 is already in a fallow state. You cannot terminate a fallow state
+STREATHAM_S12_P0000_R2,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S12_P0000_R2 is already in a fallow state. You cannot terminate a fallow state
+STREATHAM_S12_P0000_R3,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S12_P0000_R3 is already in a fallow state. You cannot terminate a fallow state
+STREATHAM_S12_P0000_R3,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S12_P0000_R3 is already in a fallow state. You cannot terminate a fallow state
+STREATHAM_S12_P0000_R3,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S12_P0000_R3 is already in a fallow state. You cannot terminate a fallow state
 STREATHAM_S13_P0000_R1,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S13_P0000_R1 is already in a fallow state. You cannot terminate a fallow state
 STREATHAM_S13_P0000_R1,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S13_P0000_R1 is already in a fallow state. You cannot terminate a fallow state
 STREATHAM_S13_P0000_R1,checkPlotState,<class 'ValueError'>,Plot STREATHAM_S13_P0000_R1 is already in a fallow state. You cannot terminate a fallow state

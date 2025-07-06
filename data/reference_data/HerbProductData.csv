@@ -1,9 +1,11 @@
 name,units,price,source
 Activator,L,25,
 "2,4 D Amine 625",L,5.9,SAGIT
+"2,4D amine 625",L,5.9,SAGIT
 "2,4-D",L,5.9,SAGIT
 Aggressor, L, 0, CHECK
 Agritone LVE 570,kg,8,
+Ally, kg, 44, https://www.pestrol.com.au/buy-online/surefire-metsulfuron-methyl-600-wg-herbicide/?attribute_pa_sizes=500g&gad_source=1&gad_campaignid=17182589695&gbraid=0AAAAAC7OKpLpnJukZ8A-3zmfEZYNaGk7F&gclid=Cj0KCQjwmqPDBhCAARIsADorxIYy9oFxL8jkMDT6saNFu0h_D5C1NpssyUT4NeY0ycs4K6SHEdSmgxMaAtIUEALw_wcB
 Amicide Advance 700, L, 10, https://specialistsales.com.au/shop/woody-weeds/woody-weed-herbicides/liquid-chemicals/surefire-amine-625-herbicide/?attribute_pa_size=20-litre&gad_source=1&gad_campaignid=17602049242&gbraid=0AAAAAD3AJcA1J_KV4fXs6ZiH8z2fiJsWT&gclid=Cj0KCQjwjo7DBhCrARIsACWauSlqQGa5qJ69ozM92A-pPIVQEl8ibvJPQEi7ZGYxbRVY2coKsw40VlEaAhqLEALw_wcB
 Amine,L,5.9,SAGIT
 AMS,L,3.5,
@@ -12,6 +14,7 @@ Archer 300,L,14.5,
 Archer 750,L,160,
 Avadex,L,17,
 Avadex Xtra,L,17,
+Axial Xtra, L, 72.5, https://shop.northwestag.com.au/products/axial-xtra
 Boxer Gold,L,12.52,SAGIT
 BoxerGold,L,12.52,SAGIT
 Broadstrike, Kg, 429, CHECK THIS
@@ -34,9 +37,11 @@ Dropzone,L,22,
 Dual Gold,L,60,
 Ecopar, L, 57.50, CHECK THIS
 Edge 900DF,kg,25,
-Elantra (Quizalofop 200),L,35,
+Quizalofop 200,L,35,
 Ester,L,8.45,SAGIT
+Ester 680,L,8.45,SAGIT
 Factor,kg,135,SAGIT
+Fluroxypyr 333, L, 25.50,https://specialistsales.com.au/shop/woody-weeds/woody-weed-herbicides/liquid-chemicals/starane-advanced-herbicide-fluroxypyr/?srsltid=AfmBOooEf880b3l20D5LpeOTxkVLmyhKzwBeoYTCd5_XZG8fQreTXC0K
 Garlon,L,165,
 Gluphosinate,L,20,
 Glyphosate,L,4.5,SAGIT
@@ -58,6 +63,7 @@ Lontrel Advanced 600,L,145,
 Lontrel,L,145,
 LVA Agritone,kg,8,
 LVE Agritone,kg,8,
+Mateno Complete, L, 0, CHECK
 MCPA LVE,L,8.14,SAGIT
 MCPA LVE (~100mL/leaf),L,8.14,SAGIT
 Overwatch,L,10,
@@ -65,7 +71,9 @@ Oxyflurfen,L,15.76,SAGIT
 Palmero 750 WG, KG, 103, https://specialistsales.com.au/shop/farm-chemicals/herbicides/residual-herbicides/bounty-750-wg-herbicide/?srsltid=AfmBOorkCeEuGDxUT7XH1y1q0fwqIPZErrJzyg675YGnL3W91tDnL53q
 Paradigm,kg,490,SAGIT
 Paraquat,L,4.95,SAGIT
+Paraquat 250,L,10,SAGIT
 Paraquat 360,L,4.95,SAGIT
+Precept, L, 16.54, https://shop.northwestag.com.au/products/precept-selective-herbicide-bayer-cropscience
 Propyzamide,L,21.8,SAGIT
 Prosaro,L,,
 Pyrinex Super,L,,
@@ -92,6 +100,8 @@ Trifluralin,L,8,SAGIT
 TriflurX,L,8,
 Ultro,kg,25,
 Uptake,L,6.2,SAGIT
+Select Xtra, L, 20, https://specialistsales.com.au/shop/farm-chemicals/herbicides/clethodim-360-herbicide/?attribute_pa_size=5-litre&gad_source=1&gad_campaignid=17736979598&gbraid=0AAAAAD3AJcDfhpHtMsaY5hRoxBkRUW6HP&gclid=Cj0KCQjwvajDBhCNARIsAEE29WqdKF_nmgI0t8GJ0X0OWBx7q6epoEyh-9YvhQL0W2zJe-tf0x6KAOoaAu2kEALw_wcB
 SOA,kg,0.96,SAGIT
+Stomp Xtra, L, 24.2, https://nuturf.com.au/stomp-xtra-herbicide
 Sulphate of ammonium,kg,0.96,SAGIT
 ammonium sulphate,kg,0.96,SAGIT
