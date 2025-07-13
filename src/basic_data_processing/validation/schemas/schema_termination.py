@@ -47,7 +47,7 @@ class terminationState(AutoEnum):
 class Reason(AutoEnum):
     sale = alias('sell','market','revenue') #market sale
     mulch = alias('groundcover', 'soilmanagement') #use for groundcover, soil health, etc
-    fodder = alias('livestock', 'silage', 'cattle', 'grazing', 'sheep') #fodder reason
+    fodder = alias('livestock', 'silage', 'cattle', 'grazing', 'sheep', 'hay') #fodder reason
 
 class CropType(AutoEnum):
     wheat = alias('durum')

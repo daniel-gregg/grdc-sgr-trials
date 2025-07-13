@@ -25,10 +25,10 @@ def get_validated_data_path(site = None, activity = None):
         else:
             return (os.path.join('data', 'validated_data', site))
 
-def get_reference_data_path(type):
+def get_reference_data_path(file):
     # type must be one of the files in the reference data folder as a string and including the file extension
     # e.g. 'fertiliser.csv'
-    return os.path.join('data', 'reference_data', type)
+    return os.path.join('data', 'reference_data', file)
 
 def get_processed_data_path():
     return os.path.join('data', 'processed_data')
