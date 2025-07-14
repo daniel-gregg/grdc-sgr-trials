@@ -1,19 +1,20 @@
 name,units,price,source
-Transcend,kg,22,
-Pyrenix Super,L,11.6,SAGIT
-Pyrinex Super,L,11.6,SAGIT
+Affirm, L, 0, CHECK - should be enamectin 17g/L but can't find a price reference
+Alpha-scud,L,135,
+Albatross,L,135,
+Arrow 100, L, 21.25, https://www.google.com/search?sca_esv=f3fe50cfd75d2507&rlz=1C1ONGR_en-GBAU1160AU1161&q=Talstar+100+20l&udm=28&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZjSkgYzz5-5RrRWAIniWd7tzPwkE1KJWcRvaH01D-XIX002E0qNXsgfZ6fffiMQMigVxnU6tfQmfH9K5I6DpRZ0bZHP7J9wZhgZxLhz_VHUjP3FUfq8aIQ89-q-WX4tdwHbYSXtQ5Wzr0LQX3-uevbkvkHtjr2tuVBsQmiMlabeztv_zfWGzDInTmpt5ePpR0cLdBIA&ved=1t:220175&ictx=111&biw=1337&bih=944&dpr=1
+Arrow 100 EC, L, 21.25, https://www.google.com/search?sca_esv=f3fe50cfd75d2507&rlz=1C1ONGR_en-GBAU1160AU1161&q=Talstar+100+20l&udm=28&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZjSkgYzz5-5RrRWAIniWd7tzPwkE1KJWcRvaH01D-XIX002E0qNXsgfZ6fffiMQMigVxnU6tfQmfH9K5I6DpRZ0bZHP7J9wZhgZxLhz_VHUjP3FUfq8aIQ89-q-WX4tdwHbYSXtQ5Wzr0LQX3-uevbkvkHtjr2tuVBsQmiMlabeztv_zfWGzDInTmpt5ePpR0cLdBIA&ved=1t:220175&ictx=111&biw=1337&bih=944&dpr=1
+Chlorpyrifos, L, 13.75,https://northsideproduceagency.com.au/products/fortune-500-chlorpyrifos-20-litre-lorsban?variant=42910001856707&country=AU&currency=AUD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOoqEB7SEWcty_G3NI1BSQPvBGzsfyLvGh2m37smLRJz5igQB5GlAJxw&gQT=1 
+Chlorpyrifos 500, L, 13.75,https://northsideproduceagency.com.au/products/fortune-500-chlorpyrifos-20-litre-lorsban?variant=42910001856707&country=AU&currency=AUD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOoqEB7SEWcty_G3NI1BSQPvBGzsfyLvGh2m37smLRJz5igQB5GlAJxw&gQT=1 
+Fortune 500, L, 13.75,https://northsideproduceagency.com.au/products/fortune-500-chlorpyrifos-20-litre-lorsban?variant=42910001856707&country=AU&currency=AUD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOoqEB7SEWcty_G3NI1BSQPvBGzsfyLvGh2m37smLRJz5igQB5GlAJxw&gQT=1 
+Le-mat,L,36,
 Metarex,kg,15,
 Metarex Inov, Kg, 19, https://www.airr.com.au/product/crop-pasture-protection/crop-protection/agnova-metarex-inov-10kg/?srsltid=AfmBOopVhXN4Qc7YWMJafBZDCPZCClYtxIvap-0r2cy-BpTjbyybdKr5
 MouseOff,kg,75,
 Mouse Off,kg,75,
-Alpha-scud,L,135,
-Albatross,L,135,
-Trojan,L,95.98,SAGIT
+Pyrenix Super,L,11.6,SAGIT
+Pyrinex Super,L,11.6,SAGIT
 Sumi-alpha flex,L,9.84,SAGIT
-Le-mat,L,36,
-Chlorpyrifos, L, 13.75,https://northsideproduceagency.com.au/products/fortune-500-chlorpyrifos-20-litre-lorsban?variant=42910001856707&country=AU&currency=AUD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOoqEB7SEWcty_G3NI1BSQPvBGzsfyLvGh2m37smLRJz5igQB5GlAJxw&gQT=1 
-Fortune 500, L, 13.75,https://northsideproduceagency.com.au/products/fortune-500-chlorpyrifos-20-litre-lorsban?variant=42910001856707&country=AU&currency=AUD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOoqEB7SEWcty_G3NI1BSQPvBGzsfyLvGh2m37smLRJz5igQB5GlAJxw&gQT=1 
-Arrow 100, L, 21.25, https://www.google.com/search?sca_esv=f3fe50cfd75d2507&rlz=1C1ONGR_en-GBAU1160AU1161&q=Talstar+100+20l&udm=28&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZjSkgYzz5-5RrRWAIniWd7tzPwkE1KJWcRvaH01D-XIX002E0qNXsgfZ6fffiMQMigVxnU6tfQmfH9K5I6DpRZ0bZHP7J9wZhgZxLhz_VHUjP3FUfq8aIQ89-q-WX4tdwHbYSXtQ5Wzr0LQX3-uevbkvkHtjr2tuVBsQmiMlabeztv_zfWGzDInTmpt5ePpR0cLdBIA&ved=1t:220175&ictx=111&biw=1337&bih=944&dpr=1
-Arrow 100 EC, L, 21.25, https://www.google.com/search?sca_esv=f3fe50cfd75d2507&rlz=1C1ONGR_en-GBAU1160AU1161&q=Talstar+100+20l&udm=28&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZjSkgYzz5-5RrRWAIniWd7tzPwkE1KJWcRvaH01D-XIX002E0qNXsgfZ6fffiMQMigVxnU6tfQmfH9K5I6DpRZ0bZHP7J9wZhgZxLhz_VHUjP3FUfq8aIQ89-q-WX4tdwHbYSXtQ5Wzr0LQX3-uevbkvkHtjr2tuVBsQmiMlabeztv_zfWGzDInTmpt5ePpR0cLdBIA&ved=1t:220175&ictx=111&biw=1337&bih=944&dpr=1
 Talstar 100, L, 21.25, https://www.google.com/search?sca_esv=f3fe50cfd75d2507&rlz=1C1ONGR_en-GBAU1160AU1161&q=Talstar+100+20l&udm=28&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZjSkgYzz5-5RrRWAIniWd7tzPwkE1KJWcRvaH01D-XIX002E0qNXsgfZ6fffiMQMigVxnU6tfQmfH9K5I6DpRZ0bZHP7J9wZhgZxLhz_VHUjP3FUfq8aIQ89-q-WX4tdwHbYSXtQ5Wzr0LQX3-uevbkvkHtjr2tuVBsQmiMlabeztv_zfWGzDInTmpt5ePpR0cLdBIA&ved=1t:220175&ictx=111&biw=1337&bih=944&dpr=1
-Affirm, L, 0, CHECK - should be enamectin 17g/L but can't find a price reference
+Transcend,kg,22,
+Trojan,L,95.98,SAGIT
