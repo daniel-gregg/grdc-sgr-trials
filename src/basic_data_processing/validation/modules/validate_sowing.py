@@ -8,6 +8,7 @@ import pandas as pd
 import numpy as np
 from pyprojroot.here import here
 import sys
+import time
 
 #append path using 'here'
 path_root = here()
@@ -112,7 +113,8 @@ def validateSowingModel(sowing_data):
             # update plotStateData.csv
 
             plotStateRecords.to_csv(get_reference_data_path('plotStateData.csv'), mode='a', header=False, index = False)
-            # return sowing data
+            # return sowing data but wait half a second to allow writing to finish
+            time.sleep(0.5)
             return(sowing_data)
 
     except ValidationError as e:

@@ -4,6 +4,7 @@
 # base imports
 from pyprojroot.here import here
 import sys
+import time
 
 #append path using 'here'
 path_root = here()
@@ -134,6 +135,9 @@ def process_raw_formatted_data():
 
                         #log outcome
                         print('successfully uploaded file {} for activity {}\n\n'.format(file_name_date, activity) )
+
+                        #wait half a second to avoid overwriting files
+                        time.sleep(0.5)                        
             
             else:
                 print(f'no new data to upload for site {site}\n')

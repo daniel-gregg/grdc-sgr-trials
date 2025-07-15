@@ -6,6 +6,7 @@ from pyprojroot.here import here
 import sys
 import os
 import pandas as pd 
+import datetime
 
 #append path using 'here'
 path_root = here()
@@ -78,10 +79,12 @@ def uploadFiles(site, activity):
     #If no new data return None
     if len(upload_files_list) == 0:
         return None
-    #Else sort by date upload data into list of pandas dfs
-    upload_files_list = sort
 
+    #Else sort by date upload data into list of pandas dfs
     else:
+        # sort file list by date (earliest first)
+        upload_files_list = sorted(upload_files_list, key=lambda x: datetime.datetime.strptime(x, '%d_%m_%Y'))
+        
         data = {}
         for file in upload_files_list:
             #file_name = upload_files_list[file]
