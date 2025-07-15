@@ -78,7 +78,9 @@ def uploadFiles(site, activity):
     #If no new data return None
     if len(upload_files_list) == 0:
         return None
-    #Else upload data into list of pandas dfs
+    #Else sort by date upload data into list of pandas dfs
+    upload_files_list = sort
+
     else:
         data = {}
         for file in upload_files_list:
