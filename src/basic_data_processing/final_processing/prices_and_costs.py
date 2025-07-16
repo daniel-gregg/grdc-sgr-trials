@@ -243,20 +243,33 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                             yield1 = float(0)
                         else:
                             price1 = float(getCropPrice(crop1, price_type))
-                            yield1 = float(data.iloc[row]['crop1Yield'])
+                            yield1 = data.iloc[row]['crop1Yield']
+                            if yield1 is not None:
+                                yield1 = float(yield1)
+                            else:
+                                yield1 = float(0)
                         if pd.isna(crop2):
                             price2 = float(0)
                             yield2 = float(0)
                         else:
                             price2 = float(getCropPrice(crop2, price_type))
-                            yield2 = float(data.iloc[row]['crop2Yield'])
+                            yield2 = data.iloc[row]['crop2Yield']
+                            if yield2 is not None:
+                                yield2 = float(yield2)
+                            else:
+                                yield2 = float(0)
                         if pd.isna(crop3):
                             price3 = float(0)
                             yield3 = float(0)
                         else:
                             price3 = float(getCropPrice(crop3, price_type))
-                            yield3 = float(data.iloc[row]['crop3Yield'])
+                            yield3 = data.iloc[row]['crop3Yield']
+                            if yield3 is not None:
+                                yield3 = float(yield3)
+                            else:
+                                yield3 = float(0)
 
+                        #calculate revenue
                         revenue_dollars.append(
                             yield1 * price1 +
                             yield2 * price2 + 
