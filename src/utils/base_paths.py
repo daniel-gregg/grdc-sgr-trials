@@ -25,10 +25,10 @@ def get_validated_data_path(site = None, activity = None):
         else:
             return (os.path.join('data', 'validated_data', site))
 
-def get_reference_data_path(type):
+def get_reference_data_path(file):
     # type must be one of the files in the reference data folder as a string and including the file extension
     # e.g. 'fertiliser.csv'
-    return os.path.join('data', 'reference_data', type)
+    return os.path.join('data', 'reference_data', file)
 
 def get_processed_data_path():
     return os.path.join('data', 'processed_data')
@@ -38,3 +38,11 @@ def get_gross_margin_data_path(file = None):
         return os.path.join('data', 'outputs', 'gross_margins')
     else:
         return os.path.join('data', 'outputs', 'gross_margins',file)
+    
+def get_invalid_data_path(date = None):
+    # returns the path to the invalid data folder for a specific site and activity
+
+    if not date:
+        return os.path.join('data', 'invalid_data_errors')
+    else:
+        return os.path.join('data', 'invalid_data_errors', date)

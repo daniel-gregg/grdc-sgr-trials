@@ -37,7 +37,6 @@ integratePricesAndCosts()
 getAnnualGrossMargin()
 
 # calculate and generate reporting for gross margins
-getAnnualGrossMargin()
 
 ##### Detailed reporting (e.g. formatted reports)
 # to do 2025

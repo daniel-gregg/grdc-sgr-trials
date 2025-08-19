@@ -16,9 +16,26 @@ import csv
 #all cropX arguments are ignored for plotActivityType 'SOWING'
 
 from src.utils.base_paths import get_reference_data_path
+from src.utils.auto_enum import AutoEnum, auto, alias
+
+class CropType(AutoEnum):
+    wheat = alias('durum')
+    barley = auto()
+    canola = auto()
+    lupins = auto()
+    peas = auto()
+    vetch = auto()
+    oat = alias('oats')
+    triticale = auto()
+    pasture = alias('clover', 'chicory', 'perennial ryegrass', 'subclover', 'brassica', 'tillage radish', 'balansa clover')
+    lentil = auto()
+    chickpea = auto()
+    fababean = auto()
+    fieldpea = auto()
+    millet = auto()
 
 def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop2=None, crop3=None):
-    print(plotActivityType)
+
     #Conduct checks
     if not (plotActivityType == 'SOWING' or plotActivityType == 'TERMINATION'):
         raise NameError("plotActivityType must be either 'SOWING' or 'TERMINATION'.")
@@ -48,18 +65,18 @@ def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop
 
     #convert strings to lower with no white space
     if not plot_state_CROP1 == None:
-        plot_state_CROP1 = plot_state_CROP1.lower().strip()
+        plot_state_CROP1 = CropType(plot_state_CROP1.lower().strip())
     if not plot_state_CROP2 == None:
-        plot_state_CROP2 = plot_state_CROP2.lower().strip()
+        plot_state_CROP2 = CropType(plot_state_CROP2.lower().strip())
     if not plot_state_CROP3 == None:
-        plot_state_CROP3 = plot_state_CROP3.lower().strip()
+        plot_state_CROP3 = CropType(plot_state_CROP3.lower().strip())
 
     if not crop1 == None:
-        crop1 = crop1.lower().strip()
+        crop1 = CropType(crop1.lower().strip())
     if not crop2 == None:
-        crop2 = crop2.lower().strip()
+        crop2 = CropType(crop2.lower().strip())
     if not crop3 == None:
-        crop3 = crop3.lower().strip()
+        crop3 = CropType(crop3.lower().strip())
     
     #if plotActivityType = 'TERMINATION' and STATE = 'CROP' fail and pass error message
     if (plotActivityType == 'TERMINATION' and plot_state_STATE == 'FALLOW'):
@@ -95,8 +112,5 @@ def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop
         'CROP2' : [crop2],
         'CROP3': [crop3]
     })
-
-    #write new line to plotStateData.csv
-    newrow.to_csv(get_reference_data_path('plotStateData.csv'), mode='a', index=False, header=False)
 
     return newrow

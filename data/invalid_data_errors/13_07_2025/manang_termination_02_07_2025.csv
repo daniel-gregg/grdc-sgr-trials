@@ -1,0 +1,7 @@
+plotID,errorLocation,errorType,errorMsg
+MANANG_S9_P2312_R1,checkPlotState,<class 'ValueError'>,"Check plot MANANG_S9_P2312_R1. Terminated crops must match planted crops
+ Cropoatnot in planted set"
+MANANG_S9_P2312_R2,checkPlotState,<class 'ValueError'>,"Check plot MANANG_S9_P2312_R2. Terminated crops must match planted crops
+ Cropoatnot in planted set"
+MANANG_S9_P2312_R3,checkPlotState,<class 'ValueError'>,"Check plot MANANG_S9_P2312_R3. Terminated crops must match planted crops
+ Cropoatnot in planted set"

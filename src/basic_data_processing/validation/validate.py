@@ -4,6 +4,7 @@
 # base imports
 from pyprojroot.here import here
 import sys
+import time
 
 #append path using 'here'
 path_root = here()
@@ -12,6 +13,7 @@ sys.path.append(str(path_root))
 import os
 from copy import deepcopy
 from pydantic import ValidationError
+import datetime
 
 # module imports
 from src.utils.upload import uploadFiles
@@ -26,6 +28,7 @@ from src.utils.base_paths import get_base_data_path
 from src.utils.base_paths import get_raw_data_path 
 from src.utils.base_paths import get_validated_data_path
 from src.utils.base_paths import get_reference_data_path
+from src.utils.base_paths import get_invalid_data_path
 
 def validateData(data, schema):
     #validate data against schema
@@ -46,6 +49,25 @@ def validateData(data, schema):
 def process_raw_formatted_data():
 ### list sites and activities in the raw_data file
 
+    # Get the current date as a string
+    current_date = datetime.datetime.today()
+    formatted_date = current_date.strftime("%d_%m_%Y")
+
+    # check/create the path for saving failed validation
+    path_for_saving_failed_validation = get_invalid_data_path(formatted_date)
+    if not os.path.exists(path_for_saving_failed_validation):
+        os.makedirs(path_for_saving_failed_validation)  
+    else:
+        #remove all files in the directory
+        for file in os.listdir(path_for_saving_failed_validation):
+            file_path = os.path.join(path_for_saving_failed_validation, file)
+            try:
+                if os.path.isfile(file_path) or os.path.islink(file_path):
+                    os.unlink(file_path)
+                elif os.path.isdir(file_path):
+                    os.rmdir(file_path)
+            except Exception as e:
+                print('Failed to delete %s. Reason: %s' % (file_path, e))
 
     #sites:
     sites_list = os.listdir(get_raw_data_path())
@@ -65,7 +87,7 @@ def process_raw_formatted_data():
     # Loop through each site and activity, call uploadFiles and store resultant dataframe
     for site in sites_activities_dict:
         for activity in sites_activities_dict[site]:
-            sites_activities_dict[site][activity].append(uploadFiles(site,activity))
+            sites_activities_dict[site][activity] = uploadFiles(site,activity)
 
     ### Loop through the sites_activities_dict and call validation on each item - on pass save to processed_data
     # Note: the object returned by 'uploadFiles' above is a list of data files (possibly empty)
@@ -74,42 +96,49 @@ def process_raw_formatted_data():
             data = sites_activities_dict[site][activity]
 
             #Attempt validation
-            print('\n')
             if data: #if not empty
-                for i, file in enumerate(data):
+                for i, (key, file) in enumerate(data.items()):
                     #check if there is a file to load
                     path_to_target = get_raw_data_path(site, activity)
                     print('checking activity {} for site {} in path {}'.format(activity, site, path_to_target))
-                    if not data[i]:
-                        print('activity {} has no new data to upload\n'.format(activity))
-                        continue
                     
                     #get file name
-                    file_name_date = str(*data[i].keys())
+                    file_name_date = key
 
                     #attempt validation
-                    try:
-                        valid_data_frame = validateData(*file.values(),activity)
-                    except ValueError as e:
-                        raise e
-                    except ValidationError as e:
-                        raise e
-                    except FileNotFoundError as e:
-                        raise e
+                    validation_result = validateData(file,activity)
                     
-                    #If validation passes, process data
-                    #get key (date) for file
-                    path_for_saving = get_validated_data_path(site, activity)
+                    # check if validation failed - if so save to dict
+                    if isinstance(validation_result, dict):
+                        #If validation fails save error log
+                        #get key (date) for file
+                        file_name = site + '_' + activity + '_' + file_name_date + '.csv'
+                        #join file name to directory path
+                        save_path = os.path.join(path_for_saving_failed_validation, file_name) 
+                        #save errors to csv
+                        validation_result['errors'].to_csv(save_path, index=False)
+                        #log outcome
+                        print('Failed to validate file {}. Error log is located in {}\n\n'.format(file_name_date, path_for_saving_failed_validation) )
+                    else:
+                        #if validation passes, save the data
+                        valid_data_frame = validation_result
 
-                    #join file name to directory path
-                    save_path = os.path.join(path_for_saving, file_name_date) 
+                        #If validation passes, process data
+                        #get key (date) for file
+                        path_for_saving = get_validated_data_path(site, activity)
 
-                    #save as pickle
-                    valid_data_frame.to_pickle(save_path)
+                        #join file name to directory path
+                        save_path = os.path.join(path_for_saving, file_name_date) 
 
-                    #log outcome
-                    print('successfully uploaded file {} for activity {}\n\n'.format(file_name_date, activity) )
+                        #save as pickle
+                        valid_data_frame.to_pickle(save_path)
+
+                        #log outcome
+                        print('successfully uploaded file {} for activity {}\n\n'.format(file_name_date, activity) )
+
+                        #wait half a second to avoid overwriting files
+                        time.sleep(0.5)                        
             
             else:
-                print('no new data to upload\n')
+                print(f'no new data to upload for site {site}\n')
         

@@ -28,6 +28,7 @@ class TerminationMethod(AutoEnum):
 #Crop termination outcme - improves detail for pasture and other crops above (can move pasture types into own types)
 class Outcome(AutoEnum):
     success = alias('harvest','good','pass') #indicates that planting objectives were substantively achieved
+    fail = alias('FAIL ', 'failed', 'failure') # no reason given
     fail_water = alias('water','dry','drought') #crop failed due to insufficient crop water availability
     fail_pests = alias('vermin', 'insects', 'mice', 'locusts') #crop failed due to pests
     fail_disease = alias('disease', 'fungus', 'infection', 'rot') #crop failed due to disease 
@@ -46,7 +47,23 @@ class terminationState(AutoEnum):
 class Reason(AutoEnum):
     sale = alias('sell','market','revenue') #market sale
     mulch = alias('groundcover', 'soilmanagement') #use for groundcover, soil health, etc
-    fodder = alias('livestock', 'silage', 'cattle', 'grazing', 'sheep') #fodder reason
+    fodder = alias('livestock', 'silage', 'cattle', 'grazing', 'sheep', 'hay') #fodder reason
+
+class CropType(AutoEnum):
+    wheat = alias('durum')
+    barley = auto()
+    canola = auto()
+    lupins = auto()
+    peas = auto()
+    vetch = auto()
+    oat = alias('oats')
+    triticale = auto()
+    pasture = alias('clover', 'chicory', 'perennial ryegrass', 'subclover', 'brassica', 'tillage radish', 'balansa clover')
+    lentil = auto()
+    chickpea = auto()
+    fababean = auto()
+    fieldpea = auto()
+    millet = auto()
 
 
 #Crops and crop varieties
@@ -65,9 +82,9 @@ class TerminationModel(BaseModel):
     # To Do - define a validator to ensure the date is not in the future
     
     #Crops harvested
-    crop1Name : str
-    crop2Name : Optional[str]
-    crop3Name : Optional[str]
+    crop1Name : CropType
+    crop2Name : Optional[CropType]
+    crop3Name : Optional[CropType]
 
     #Termination reason
     harvestOutcome : Outcome
@@ -110,8 +127,13 @@ class TerminationModel(BaseModel):
             #create a lower case version
             crop_name = crop_name.lower().strip()
 
+            #check if crop_name is 'pasture' - if so go to next
+            if crop_name == 'pasture':
+                continue
+
             #remove whitespace
             crop_name = "".join(crop_name.split())
+
 
             #check if crop_name is included in the crops in the datafile
             possible_crop_names = list(crops_varieties.columns)
@@ -121,4 +143,6 @@ class TerminationModel(BaseModel):
 
             if not(crop_name in possible_crop_names):
                 raise ValueError("Please check your crop names. {} is not included in the allowed crops".format(crop_name))                           
+    
+        return self
             

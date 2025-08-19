@@ -12,7 +12,7 @@ from src.utils.auto_enum import AutoEnum, auto, alias
 import pandas as pd
 from pydantic import BaseModel, Field, ConfigDict, field_validator
 from enum import Enum
-from typing import Optional
+from typing import Optional, Union
 
 from src.utils.base_paths import get_reference_data_path
 
@@ -32,7 +32,6 @@ class PesticideProductsModel(BaseModel):
     price: Optional[float]
 
 class TargetPest(AutoEnum):
-    not_provided = None
     fall_army_worm = alias('faw')
     locusts = alias('grasshoppers')
     other_insects = alias('insects','other')
@@ -54,7 +53,7 @@ class PesticideApplicationsModel(BaseModel):
     # To Do - define a validator to ensure the date is not in the future
 
     # Target pest
-    targetPest: TargetPest
+    targetPest: Optional[TargetPest]
 
     #Define and validate pesticide name against names in the 'PesticidesProductData' df
     name: str
@@ -76,8 +75,8 @@ class PesticideApplicationsModel(BaseModel):
                 return "no pesticide products data ('PesticideProductData.csv') exists in expected directory (.../sgr_data/output)"
         
         #check if provided 'pessticidename' is in the existing products list
-        if sum(pesticideProducts['name'].str.lower().str.contains(pestname.lower().strip()))==0:
-            raise ValueError("Pesticide product must be defined in the 'pesticideProductData' table in '.../sgr_data/data'")
+        if sum(pesticideProducts['name'].str.lower().str.match(pestname.lower().strip()))==0:
+            raise ValueError("Pesticide product {} must be defined in the 'pesticideProductData' table in '.../sgr_data/data'".format(pestname))
         return pestname
     
     
