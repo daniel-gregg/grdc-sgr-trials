@@ -8,6 +8,7 @@
 from src.basic_data_processing.validation.validate import process_raw_formatted_data
 from src.basic_data_processing.final_processing.prices_and_costs import integratePricesAndCosts
 from src.analysis.gross_margin.grossmargin import getAnnualGrossMargin
+from src.analysis.gross_margin.grossmargin import getCropSequenceGrossMargin
 
 # To do:
 #from src.basic_data_processing.final_processing.remote_sense_data import integrateRemoteSenseData
@@ -18,7 +19,7 @@ from src.analysis.gross_margin.grossmargin import getAnnualGrossMargin
 # to do
 # pre_process_tor_data_files() - locate this in 'pre-processing'
 
-# 
+#
 process_raw_formatted_data()
 
 ##### Final processing
@@ -34,7 +35,9 @@ integratePricesAndCosts()
 # integrateFieldMeasures()
 
 ##### Analysis (e.g. gross margins, simulations, etc.)
-getAnnualGrossMargin()
+
+getCropSequenceGrossMargin()
+#getAnnualGrossMargin()
 
 # calculate and generate reporting for gross margins
 
