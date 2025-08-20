@@ -27,11 +27,20 @@ import datetime
 'Custom imports'
 'TBD - this is for additional modules'
 
-from src.utils.base_paths import get_processed_data_path
-from src.utils.base_paths import get_reference_data_path
+from src.utils.base_paths import get_processed_data_path, get_reference_data_path
 from src.utils.aggregation_utilities import getProcessedDataList
 from src.utils.base_paths import get_gross_margin_data_path
 
+## In order to calculate gross margins at the crop level we need to
+# split the data by site, plot and year, then additionally split it by
+# crop-sequence. The latter is defined as the period from post harvest to harvest (inclusive)
+# one way to do this is to copy the processed_data file then:
+# 1. subset by site and plot
+# 2. Check that it has a crop sequence (i.e. a sowing and harvest date)
+# 3. if yes, then subset by the crop sequence period
+# 3. calculate the gross margin for that period
+# 4. then remove that data from the copied file
+# 5. repeat until no complete crop sequences are left
 
 def getStateChangeIndex(series):
     """
@@ -43,35 +52,33 @@ def getStateChangeIndex(series):
             return i-1
     return None  # No state change found
 
-def getCropSequenceIndex(states):
+def getCropSequenceIndex(dat):
     # returns the index of the first crop sequence in the supplied data
+    # dat MUST start with a FALLOW state
 
-    #if dat['state'].iloc[0] != 'FALLOW':
-    #    raise ValueError("Data must start with a FALLOW state")
+    if dat['state'].iloc[0] != 'FALLOW':
+        raise ValueError("Data must start with a FALLOW state")
 
-    # set the starting state
-    starting_state = states[0]
+    # Get states first
+    states = dat['state'].tolist()
 
-    # if the starting state is FALLOW, then the sequence should be FALLOW, CROP, FALLOW
-    if starting_state == 'FALLOW':
-        end_of_pre_fallow_state = getStateChangeIndex(states)
-        #check that there remain both FALLOW and CROP states after the first FALLOW state
-        if ('CROP' not in states[end_of_pre_fallow_state:]) and ('FALLOW' not in states[end_of_pre_fallow_state:]):
-            raise ValueError("There is no full crop sequence in the data")
+    ### find the index of the first FALLOW state after a CROP state
+    # First get the initial sequence of FALLOW states
+    fallow_index = getStateChangeIndex(states)
+    if fallow_index is None:
+        raise ValueError("No FALLOW state found in the data")
+    # Now find the index of the first CROP state after the initial FALLOW states
+    crop_index = getStateChangeIndex(states[fallow_index:])
+    if crop_index is None:
+        raise ValueError("No CROP state found in the data")
 
-        crop_start_index = end_of_pre_fallow_state + 1
-        crop_end_index = getStateChangeIndex(states[crop_start_index:]) + crop_start_index + 1
-
-    else:
-        end_of_pre_fallow_state = None
-        crop_start_index = 0
-        crop_end_index = getStateChangeIndex(states) + 1
+    # Adjust the crop index to account for the offset
+    crop_index += fallow_index
 
     return ({
-        'starting_state': starting_state,
-        'end_of_pre_fallow_state': end_of_pre_fallow_state,
-        'crop_start_index': crop_start_index,
-        'crop_end_index': crop_end_index,
+        'fallow_end_index' : fallow_index,
+        'crop_start_index' : fallow_index + 1,
+        'crop_end_index': crop_index
     })
 
 def genStateSeriesToMatchProcessedData(dat):
@@ -80,10 +87,6 @@ def genStateSeriesToMatchProcessedData(dat):
     plotStateData only records state at change of state date
     processed_data has many entries based on the date of an activity (not necessarily a state change)
     We need a series of state that is 'filled in' to match the processed data
-
-    Key issues are that:
-    - all activities matching the date of a state/state change must have that state
-        - this can be an issue when several activities are recorded on the same date but the state change is not the first of these
     """
 
     # note that this ONLY works for a data file with a single plot
@@ -139,34 +142,6 @@ def genStateSeriesToMatchProcessedData(dat):
 
     return dat
 
-def checkExistenceOfCropState(states_list):
-    """
-    Function to check if there is a crop state in the data.
-    If there is no crop state, raise an error.
-    """
-    # check if states_list starts with FALLOW
-    if states_list[0] == 'FALLOW':
-
-        # check if ALL states are FALLOW
-        if all(state == 'FALLOW' for state in states_list):
-            return False
-        # remove initial FALLOW states using index from getStateChangeIndex
-        initial_fallow_index = getStateChangeIndex(states_list)
-        states_list = states_list[initial_fallow_index + 1:]
-
-    ### now check that the remaining sequence is CROP then STATE
-
-    # check if empty
-    if not states_list:
-        return False
-
-    # check that there remains a FALLOW entry in the states_list
-    if 'FALLOW' not in states_list:
-        return False
-
-    # else all good
-    return True
-
 def getCropSequenceGrossMargin():
     """
     Function to calculate gross margin for a crop sequence.
@@ -208,12 +183,6 @@ def getCropSequenceGrossMargin():
             plots = [*set(subdat_site['plotID'])]
 
             for plot in plots:
-
-                # check if 'BUFFER' is in the plotID
-                if 'BUFFER' in plot:
-                    # skip this plot
-                    continue
-
                 subdat_plot = subdat_site.loc[subdat_site['plotID'] == plot]
 
                 # Order the data by date
@@ -221,8 +190,8 @@ def getCropSequenceGrossMargin():
 
                 subdat_plot = genStateSeriesToMatchProcessedData(subdat_plot)
 
-                # Check if the plot has a crop sequence (i.e. There is a 'CROP' sequence followed by at least one 'FALLOW' state)
-                if not (checkExistenceOfCropState(subdat_plot['state'].tolist())):
+                # Check if the plot has a crop sequence (i.e. at least one of each of 'FALLOW' and 'CROP')
+                if not (('FALLOW' in subdat_plot['state'].values) and ('CROP' in subdat_plot['state'].values)):
                     sites_list.append(site)
                     plots_list.append(plot)
                     years_list.append('NA')
@@ -232,24 +201,21 @@ def getCropSequenceGrossMargin():
                     revenue_dollars.append('NA')
                     gross_margin_dollars.append('NA')
 
-                    crop_sequence_number.append('NA')
-                    continue
-
                 else:
                     # while there is a complete crop sequence left in subdat_plot, calculate gross margin
                     # initialise crop sequence number
                     crop_sequence_ind = 1
 
-                    while checkExistenceOfCropState(subdat_plot['state'].tolist()):
+                    while (('FALLOW' in subdat_plot['state'].values) and ('CROP' in subdat_plot['state'].values)):
                         # A crop sequence starts from immediately after harvest (i.e. 'FALLOW') state and
                         # ends immediately after to the next harvest
                         # so a crop sequence will look like this in the state variable:
                         # FALLOW, FALLOW, ..., FALLOW, CROP, CROP, ..., CROP, [FALLOW]
                         # Where the last FALLOW is not included in this crop sequence
                         # Also note that ALL plots start in a FALLOW state
-                        crop_sequence = getCropSequenceIndex(subdat_plot['state'].tolist())
+                        crop_sequence = getCropSequenceIndex(subdat_plot)
                         # get final data frame including cost and revenue components
-                        subdat_plot_crop = subdat_plot.iloc[0:crop_sequence['crop_end_index']+1] #pandas shite - start index is inclusive, end index is exclusive WTF
+                        subdat_plot_crop = subdat_plot.iloc[0:crop_sequence['crop_end_index']]
 
                         # calculate crop gross margin inputs
                         operating_costs = float(np.sum(subdat_plot_crop['costs_activity_dollars']))
@@ -267,10 +233,7 @@ def getCropSequenceGrossMargin():
                         crop_sequence_number.append(crop_sequence_ind)
 
                         # remove the crop sequence from the subdat_plot
-                        subdat_plot = subdat_plot.iloc[crop_sequence['crop_end_index'] + 1:] #pandas shite - start index is inclusive, end index is exclusive WTF
-                        #check if empty
-                        if subdat_plot.empty:
-                            break
+                        subdat_plot = subdat_plot.iloc[crop_sequence['crop_end_index'] + 1:]
                         crop_sequence_ind += 1
 
         gm_df = pd.DataFrame({
@@ -291,6 +254,7 @@ def getCropSequenceGrossMargin():
         else:
             os.mkdir(file_path_gm_csv)
             gm_df.to_csv(get_gross_margin_data_path(file))
+
 
 
 def getAnnualGrossMargin():

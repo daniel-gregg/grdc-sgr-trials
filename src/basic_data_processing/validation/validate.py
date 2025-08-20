@@ -25,7 +25,7 @@ from src.basic_data_processing.validation.modules.validate_sowing import validat
 from src.basic_data_processing.validation.modules.validate_termination import validateTerminationModel
 
 from src.utils.base_paths import get_base_data_path
-from src.utils.base_paths import get_raw_data_path 
+from src.utils.base_paths import get_raw_data_path
 from src.utils.base_paths import get_validated_data_path
 from src.utils.base_paths import get_reference_data_path
 from src.utils.base_paths import get_invalid_data_path
@@ -56,7 +56,7 @@ def process_raw_formatted_data():
     # check/create the path for saving failed validation
     path_for_saving_failed_validation = get_invalid_data_path(formatted_date)
     if not os.path.exists(path_for_saving_failed_validation):
-        os.makedirs(path_for_saving_failed_validation)  
+        os.makedirs(path_for_saving_failed_validation)
     else:
         #remove all files in the directory
         for file in os.listdir(path_for_saving_failed_validation):
@@ -101,20 +101,20 @@ def process_raw_formatted_data():
                     #check if there is a file to load
                     path_to_target = get_raw_data_path(site, activity)
                     print('checking activity {} for site {} in path {}'.format(activity, site, path_to_target))
-                    
+
                     #get file name
                     file_name_date = key
 
                     #attempt validation
                     validation_result = validateData(file,activity)
-                    
+
                     # check if validation failed - if so save to dict
                     if isinstance(validation_result, dict):
                         #If validation fails save error log
                         #get key (date) for file
                         file_name = site + '_' + activity + '_' + file_name_date + '.csv'
                         #join file name to directory path
-                        save_path = os.path.join(path_for_saving_failed_validation, file_name) 
+                        save_path = os.path.join(path_for_saving_failed_validation, file_name)
                         #save errors to csv
                         validation_result['errors'].to_csv(save_path, index=False)
                         #log outcome
@@ -128,7 +128,7 @@ def process_raw_formatted_data():
                         path_for_saving = get_validated_data_path(site, activity)
 
                         #join file name to directory path
-                        save_path = os.path.join(path_for_saving, file_name_date) 
+                        save_path = os.path.join(path_for_saving, file_name_date)
 
                         #save as pickle
                         valid_data_frame.to_pickle(save_path)
@@ -137,8 +137,8 @@ def process_raw_formatted_data():
                         print('successfully uploaded file {} for activity {}\n\n'.format(file_name_date, activity) )
 
                         #wait half a second to avoid overwriting files
-                        time.sleep(0.5)                        
-            
+                        time.sleep(0.5)
+
             else:
                 print(f'no new data to upload for site {site}\n')
-        
+
