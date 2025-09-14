@@ -170,7 +170,6 @@ def checkExistenceOfCropState(states_list):
 def getCropSequenceGrossMargin():
     """
     Function to calculate gross margin for a crop sequence.
-    This function is a placeholder and needs to be implemented.
     """
 
     # get processed data files list
@@ -249,7 +248,7 @@ def getCropSequenceGrossMargin():
                         # Also note that ALL plots start in a FALLOW state
                         crop_sequence = getCropSequenceIndex(subdat_plot['state'].tolist())
                         # get final data frame including cost and revenue components
-                        subdat_plot_crop = subdat_plot.iloc[0:crop_sequence['crop_end_index']+1] #pandas shite - start index is inclusive, end index is exclusive WTF
+                        subdat_plot_crop = subdat_plot.iloc[0:crop_sequence['crop_end_index']+1] #pandas: start index is inclusive, end index is exclusive
 
                         # calculate crop gross margin inputs
                         operating_costs = float(np.sum(subdat_plot_crop['costs_activity_dollars']))
@@ -280,6 +279,137 @@ def getCropSequenceGrossMargin():
             'crop_sequence' : crop_sequence_number,
             'operational_costs_dollars' : operational_costs_dollars,
             'material_input_costs_dollars' : material_input_costs_dollars,
+            'plot_yield_kilograms_per_hectare' : 'TBD',
+            'plot_main_crop' : 'TBD',
+            'plot_revenue_dollars' : revenue_dollars,
+            'plot_gross_margin_dollars' : gross_margin_dollars
+        })
+
+        # write to file with processed file date- use different folders for different GM processing dates to separate iterations
+        date_string = datetime.datetime.now().strftime("%d_%m_%Y")
+        dir_path_gm_csv = get_gross_margin_data_path(date_string)
+        if os.path.exists(dir_path_gm_csv):
+            gm_df.to_csv(os.path.join(dir_path_gm_csv, file))
+        else:
+            os.mkdir(dir_path_gm_csv)
+            gm_df.to_csv(os.path.join(dir_path_gm_csv, file))
+
+
+def getGrossMarginSensitivityToCropPrices():
+    """
+    Function to simulate gross margin for a crop phase
+    In this function we recalculate revenues for a range of crop prices.
+    """
+
+    # get processed data files list
+    processed_data_list = getProcessedDataList()
+
+    # Loop through each processed data file
+    # loop through to read in
+    for file in processed_data_list:
+        filepath = os.path.join(get_processed_data_path(), file)
+        data = pd.read_csv(filepath)
+
+        ## append dates to data file using year, month and day columns
+        data['date'] = pd.to_datetime(data[['year', 'month', 'day']])
+
+        # reset data index
+        data.reset_index(drop=True, inplace=True)
+
+        #initialise arrays
+        operational_costs_dollars = []
+        material_input_costs_dollars = []
+        revenue_dollars = []
+        gross_margin_dollars = []
+        sites_list = []
+        plots_list = []
+        years_list = []
+        crop_sequence_number = []
+
+        # subset by site and plot
+        sites = [*set(data['site'])]
+
+        for site in sites:
+            subdat_site = data.loc[data['site'] == site,]
+
+            #get plots and subset
+            plots = [*set(subdat_site['plotID'])]
+
+            for plot in plots:
+
+                # check if 'BUFFER' is in the plotID
+                if 'BUFFER' in plot:
+                    # skip this plot
+                    continue
+
+                subdat_plot = subdat_site.loc[subdat_site['plotID'] == plot]
+
+                # Order the data by date
+                subdat_plot = subdat_plot.sort_values(by=['year', 'month', 'day'])
+
+                subdat_plot = genStateSeriesToMatchProcessedData(subdat_plot)
+
+                # Check if the plot has a crop sequence (i.e. There is a 'CROP' sequence followed by at least one 'FALLOW' state)
+                if not (checkExistenceOfCropState(subdat_plot['state'].tolist())):
+                    sites_list.append(site)
+                    plots_list.append(plot)
+                    years_list.append('NA')
+
+                    operational_costs_dollars.append('NA')
+                    material_input_costs_dollars.append('NA')
+                    revenue_dollars.append('NA')
+                    gross_margin_dollars.append('NA')
+
+                    crop_sequence_number.append('NA')
+                    continue
+
+                else:
+                    # while there is a complete crop sequence left in subdat_plot, calculate gross margin
+                    # initialise crop sequence number
+                    crop_sequence_ind = 1
+
+                    while checkExistenceOfCropState(subdat_plot['state'].tolist()):
+                        # A crop sequence starts from immediately after harvest (i.e. 'FALLOW') state and
+                        # ends immediately after to the next harvest
+                        # so a crop sequence will look like this in the state variable:
+                        # FALLOW, FALLOW, ..., FALLOW, CROP, CROP, ..., CROP, [FALLOW]
+                        # Where the last FALLOW is not included in this crop sequence
+                        # Also note that ALL plots start in a FALLOW state
+                        crop_sequence = getCropSequenceIndex(subdat_plot['state'].tolist())
+                        # get final data frame including cost and revenue components
+                        subdat_plot_crop = subdat_plot.iloc[0:crop_sequence['crop_end_index']+1] #pandas: start index is inclusive, end index is exclusive
+
+                        # calculate crop gross margin inputs
+                        operating_costs = float(np.sum(subdat_plot_crop['costs_activity_dollars']))
+                        material_costs = float(np.sum(subdat_plot_crop['costs_product_applied_dollars']))
+                        gross_revenue = float(np.sum(subdat_plot_crop['revenue_crops_dollars']))
+
+                        sites_list.append(site)
+                        plots_list.append(plot)
+                        years_list.append(subdat_plot_crop['year'].iloc[0])
+
+                        operational_costs_dollars.append(operating_costs)
+                        material_input_costs_dollars.append(material_costs)
+                        revenue_dollars.append(gross_revenue)
+                        gross_margin_dollars.append(gross_revenue - operating_costs - material_costs)
+                        crop_sequence_number.append(crop_sequence_ind)
+
+                        # remove the crop sequence from the subdat_plot
+                        subdat_plot = subdat_plot.iloc[crop_sequence['crop_end_index'] + 1:] #pandas shite - start index is inclusive, end index is exclusive WTF
+                        #check if empty
+                        if subdat_plot.empty:
+                            break
+                        crop_sequence_ind += 1
+
+        gm_df = pd.DataFrame({
+            'site' : sites_list,
+            'plot' : plots_list,
+            'year' : years_list,
+            'crop_sequence' : crop_sequence_number,
+            'operational_costs_dollars' : operational_costs_dollars,
+            'material_input_costs_dollars' : material_input_costs_dollars,
+            'plot_yield_kilograms_per_hectare' : 'TBD',
+            'plot_main_crop' : 'TBD',
             'plot_revenue_dollars' : revenue_dollars,
             'plot_gross_margin_dollars' : gross_margin_dollars
         })
