@@ -196,6 +196,12 @@ def getCropSequenceGrossMargin():
         plots_list = []
         years_list = []
         crop_sequence_number = []
+        crop_1_name = []
+        crop_2_name = []
+        crop_3_name = []
+        crop_1_yield = []
+        crop_2_yield = []
+        crop_3_yield = []
 
         # subset by site and plot
         sites = [*set(data['site'])]
@@ -232,6 +238,13 @@ def getCropSequenceGrossMargin():
                     gross_margin_dollars.append('NA')
 
                     crop_sequence_number.append('NA')
+                    crop_1_name.append('NA')
+                    crop_2_name.append('NA')
+                    crop_3_name.append('NA')
+                    crop_1_yield.append('NA')
+                    crop_2_yield.append('NA')
+                    crop_3_yield.append('NA')
+
                     continue
 
                 else:
@@ -265,6 +278,36 @@ def getCropSequenceGrossMargin():
                         gross_margin_dollars.append(gross_revenue - operating_costs - material_costs)
                         crop_sequence_number.append(crop_sequence_ind)
 
+                        # get crop names
+                        crop_1_n = subdat_plot_crop['crop1Name']
+                        crop_2_n = subdat_plot_crop['crop2Name']
+                        crop_3_n = subdat_plot_crop['crop3Name']
+
+                        # need to remove empty and NaN entries
+                        crop_1_n = [name for name in crop_1_n if pd.notna(name) and name != '']
+                        crop_2_n = [name for name in crop_2_n if pd.notna(name) and name != '']
+                        crop_3_n = [name for name in crop_3_n if pd.notna(name) and name != '']
+
+                        # then add first element in
+                        crop_1_name.append(crop_1_n[0] if crop_1_n else 'NA')
+                        crop_2_name.append(crop_2_n[0] if crop_2_n else 'NA')
+                        crop_3_name.append(crop_3_n[0] if crop_3_n else 'NA')
+
+                        # get crop yields
+                        crop_1_y = subdat_plot_crop['crop1Yield']
+                        crop_2_y = subdat_plot_crop['crop2Yield']
+                        crop_3_y = subdat_plot_crop['crop3Yield']
+
+                        # need to remove empty and NaN entries in yields first
+                        crop_1_y = [y for y in crop_1_y if pd.notna(y) and y != '']
+                        crop_2_y = [y for y in crop_2_y if pd.notna(y) and y != '']
+                        crop_3_y = [y for y in crop_3_y if pd.notna(y) and y != '']
+
+                        # then add first element in
+                        crop_1_yield.append(crop_1_y[0] if crop_1_y else 'NA')
+                        crop_2_yield.append(crop_2_y[0] if crop_2_y else 'NA')
+                        crop_3_yield.append(crop_3_y[0] if crop_3_y else 'NA')
+
                         # remove the crop sequence from the subdat_plot
                         subdat_plot = subdat_plot.iloc[crop_sequence['crop_end_index'] + 1:] #pandas shite - start index is inclusive, end index is exclusive WTF
                         #check if empty
@@ -279,8 +322,12 @@ def getCropSequenceGrossMargin():
             'crop_sequence' : crop_sequence_number,
             'operational_costs_dollars' : operational_costs_dollars,
             'material_input_costs_dollars' : material_input_costs_dollars,
-            'plot_yield_kilograms_per_hectare' : 'TBD',
-            'plot_main_crop' : 'TBD',
+            'crop_1_name' : crop_1_name,
+            'crop_2_name' : crop_2_name,
+            'crop_3_name' : crop_3_name,
+            'crop_1_yield' : crop_1_yield,
+            'crop_2_yield' : crop_2_yield,
+            'crop_3_yield' : crop_3_yield,
             'plot_revenue_dollars' : revenue_dollars,
             'plot_gross_margin_dollars' : gross_margin_dollars
         })
