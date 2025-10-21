@@ -1,0 +1,169 @@
+﻿PLOT_ID,Site,System ID,Phase ID,Replicate ID,System detailed description,System category,Gross system category,Nitrogen strategy
+HART_S1.1_P1231_R1,HART,S1.1,P1231,R1,,Baseline (SDP N),Baseline,Mid
+HART_S1.1_P1231_R2,HART,S1.1,P1231,R2,,Baseline (SDP N),Baseline,Mid
+HART_S1.1_P1231_R3,HART,S1.1,P1231,R3,,Baseline (SDP N),Baseline,Mid
+HART_S1.1_P2312_R1,HART,S1.1,P2312,R1,,Baseline (SDP N),Baseline,Mid
+HART_S1.1_P2312_R2,HART,S1.1,P2312,R2,,Baseline (SDP N),Baseline,Mid
+HART_S1.1_P2312_R3,HART,S1.1,P2312,R3,,Baseline (SDP N),Baseline,Mid
+HART_S1.1_P3123_R1,HART,S1.1,P3123,R1,,Baseline (SDP N),Baseline,Mid
+HART_S1.1_P3123_R2,HART,S1.1,P3123,R2,,Baseline (SDP N),Baseline,Mid
+HART_S1.1_P3123_R3,HART,S1.1,P3123,R3,,Baseline (SDP N),Baseline,Mid
+HART_S1.2_P1231_R1,HART,S1.2,P1231,R1,,Baseline (Mid N),Baseline,Mid
+HART_S1.2_P1231_R2,HART,S1.2,P1231,R2,,Baseline (Mid N),Baseline,Mid
+HART_S1.2_P1231_R3,HART,S1.2,P1231,R3,,Baseline (Mid N),Baseline,Mid
+HART_S1.2_P2312_R1,HART,S1.2,P2312,R1,,Baseline (Mid N),Baseline,Mid
+HART_S1.2_P2312_R2,HART,S1.2,P2312,R2,,Baseline (Mid N),Baseline,Mid
+HART_S1.2_P2312_R3,HART,S1.2,P2312,R3,,Baseline (Mid N),Baseline,Mid
+HART_S1.2_P3123_R1,HART,S1.2,P3123,R1,,Baseline (Mid N),Baseline,Mid
+HART_S1.2_P3123_R2,HART,S1.2,P3123,R2,,Baseline (Mid N),Baseline,Mid
+HART_S1.2_P3123_R3,HART,S1.2,P3123,R3,,Baseline (Mid N),Baseline,Mid
+HART_S1.3_P1231_R1,HART,S1.3,P1231,R1,,Baseline (SDP High N),Baseline,High
+HART_S1.3_P1231_R2,HART,S1.3,P1231,R2,,Baseline (SDP High N),Baseline,High
+HART_S1.3_P1231_R3,HART,S1.3,P1231,R3,,Baseline (SDP High N),Baseline,High
+HART_S1.3_P2312_R1,HART,S1.3,P2312,R1,,Baseline (SDP High N),Baseline,High
+HART_S1.3_P2312_R2,HART,S1.3,P2312,R2,,Baseline (SDP High N),Baseline,High
+HART_S1.3_P2312_R3,HART,S1.3,P2312,R3,,Baseline (SDP High N),Baseline,High
+HART_S1.3_P3123_R1,HART,S1.3,P3123,R1,,Baseline (SDP High N),Baseline,High
+HART_S1.3_P3123_R2,HART,S1.3,P3123,R2,,Baseline (SDP High N),Baseline,High
+HART_S1.3_P3123_R3,HART,S1.3,P3123,R3,,Baseline (SDP High N),Baseline,High
+HART_S10.1_P1231_R1,HART,S10.1,P1231,R1,,Intercropping (Nil N intercrop),Intercropping,Nil
+HART_S10.1_P1231_R2,HART,S10.1,P1231,R2,,Intercropping (Nil N intercrop),Intercropping,Nil
+HART_S10.1_P1231_R3,HART,S10.1,P1231,R3,,Intercropping (Nil N intercrop),Intercropping,Nil
+HART_S10.1_P2312_R1,HART,S10.1,P2312,R1,,Intercropping (Nil N intercrop),Intercropping,Nil
+HART_S10.1_P2312_R2,HART,S10.1,P2312,R2,,Intercropping (Nil N intercrop),Intercropping,Nil
+HART_S10.1_P2312_R3,HART,S10.1,P2312,R3,,Intercropping (Nil N intercrop),Intercropping,Nil
+HART_S10.1_P3123_R1,HART,S10.1,P3123,R1,,Intercropping (Nil N intercrop),Intercropping,Nil
+HART_S10.1_P3123_R2,HART,S10.1,P3123,R2,,Intercropping (Nil N intercrop),Intercropping,Nil
+HART_S10.1_P3123_R3,HART,S10.1,P3123,R3,,Intercropping (Nil N intercrop),Intercropping,Nil
+HART_S10.2_P1231_R1,HART,S10.2,P1231,R1,,Intercropping (Half N intercrop),Intercropping,Low
+HART_S10.2_P1231_R2,HART,S10.2,P1231,R2,,Intercropping (Half N intercrop),Intercropping,Low
+HART_S10.2_P1231_R3,HART,S10.2,P1231,R3,,Intercropping (Half N intercrop),Intercropping,Low
+HART_S10.2_P2312_R1,HART,S10.2,P2312,R1,,Intercropping (Half N intercrop),Intercropping,Low
+HART_S10.2_P2312_R2,HART,S10.2,P2312,R2,,Intercropping (Half N intercrop),Intercropping,Low
+HART_S10.2_P2312_R3,HART,S10.2,P2312,R3,,Intercropping (Half N intercrop),Intercropping,Low
+HART_S10.2_P3123_R1,HART,S10.2,P3123,R1,,Intercropping (Half N intercrop),Intercropping,Low
+HART_S10.2_P3123_R2,HART,S10.2,P3123,R2,,Intercropping (Half N intercrop),Intercropping,Low
+HART_S10.2_P3123_R3,HART,S10.2,P3123,R3,,Intercropping (Half N intercrop),Intercropping,Low
+HART_S10.3_P1231_R1,HART,S10.3,P1231,R1,,Intercropping (Full N intercrop),Intercropping,Mid
+HART_S10.3_P1231_R2,HART,S10.3,P1231,R2,,Intercropping (Full N intercrop),Intercropping,Mid
+HART_S10.3_P1231_R3,HART,S10.3,P1231,R3,,Intercropping (Full N intercrop),Intercropping,Mid
+HART_S10.3_P2312_R1,HART,S10.3,P2312,R1,,Intercropping (Full N intercrop),Intercropping,Mid
+HART_S10.3_P2312_R2,HART,S10.3,P2312,R2,,Intercropping (Full N intercrop),Intercropping,Mid
+HART_S10.3_P2312_R3,HART,S10.3,P2312,R3,,Intercropping (Full N intercrop),Intercropping,Mid
+HART_S10.3_P3123_R1,HART,S10.3,P3123,R1,,Intercropping (Full N intercrop),Intercropping,Mid
+HART_S10.3_P3123_R2,HART,S10.3,P3123,R2,,Intercropping (Full N intercrop),Intercropping,Mid
+HART_S10.3_P3123_R3,HART,S10.3,P3123,R3,,Intercropping (Full N intercrop),Intercropping,Mid
+HART_S2.1_P0000_R1,HART,S2.1,P0000,R1,,Responsive: Adviser (risk-neutral) (Low N),Responsive,Low
+HART_S2.1_P0000_R2,HART,S2.1,P0000,R2,,Responsive: Adviser (risk-neutral) (Low N),Responsive,Low
+HART_S2.1_P0000_R3,HART,S2.1,P0000,R3,,Responsive: Adviser (risk-neutral) (Low N),Responsive,Low
+HART_S2.2_P0000_R1,HART,S2.2,P0000,R1,,Responsive: Adviser (risk-neutral) (Mid N),Responsive,Low
+HART_S2.2_P0000_R2,HART,S2.2,P0000,R2,,Responsive: Adviser (risk-neutral) (Mid N),Responsive,Low
+HART_S2.2_P0000_R3,HART,S2.2,P0000,R3,,Responsive: Adviser (risk-neutral) (Mid N),Responsive,Low
+HART_S2.3_P0000_R1,HART,S2.3,P0000,R1,,Responsive: Adviser (risk-neutral) (High N),Responsive,Low
+HART_S2.3_P0000_R2,HART,S2.3,P0000,R2,,Responsive: Adviser (risk-neutral) (High N),Responsive,Low
+HART_S2.3_P0000_R3,HART,S2.3,P0000,R3,,Responsive: Adviser (risk-neutral) (High N),Responsive,Low
+HART_S3_P1234_R1,HART,S3,P1234,R1,,More pulses,Increase pulses,Mid
+HART_S3_P1234_R2,HART,S3,P1234,R2,,More pulses,Increase pulses,Mid
+HART_S3_P1234_R3,HART,S3,P1234,R3,,More pulses,Increase pulses,Mid
+HART_S3_P2341_R1,HART,S3,P2341,R1,,More pulses,Increase pulses,Mid
+HART_S3_P2341_R2,HART,S3,P2341,R2,,More pulses,Increase pulses,Mid
+HART_S3_P2341_R3,HART,S3,P2341,R3,,More pulses,Increase pulses,Mid
+HART_S3_P3412_R1,HART,S3,P3412,R1,,More pulses,Increase pulses,Mid
+HART_S3_P3412_R2,HART,S3,P3412,R2,,More pulses,Increase pulses,Mid
+HART_S3_P3412_R3,HART,S3,P3412,R3,,More pulses,Increase pulses,Mid
+HART_S3_P4123_R1,HART,S3,P4123,R1,,More pulses,Increase pulses,Mid
+HART_S3_P4123_R2,HART,S3,P4123,R2,,More pulses,Increase pulses,Mid
+HART_S3_P4123_R3,HART,S3,P4123,R3,,More pulses,Increase pulses,Mid
+HART_S4.1_P1234_R1,HART,S4.1,P1234,R1,,Canola (Low N),Canola,Low
+HART_S4.1_P1234_R2,HART,S4.1,P1234,R2,,Canola (Low N),Canola,Low
+HART_S4.1_P1234_R3,HART,S4.1,P1234,R3,,Canola (Low N),Canola,Low
+HART_S4.1_P2341_R1,HART,S4.1,P2341,R1,,Canola (Low N),Canola,Low
+HART_S4.1_P2341_R2,HART,S4.1,P2341,R2,,Canola (Low N),Canola,Low
+HART_S4.1_P2341_R3,HART,S4.1,P2341,R3,,Canola (Low N),Canola,Low
+HART_S4.1_P3412_R1,HART,S4.1,P3412,R1,,Canola (Low N),Canola,Low
+HART_S4.1_P3412_R2,HART,S4.1,P3412,R2,,Canola (Low N),Canola,Low
+HART_S4.1_P3412_R3,HART,S4.1,P3412,R3,,Canola (Low N),Canola,Low
+HART_S4.1_P4123_R1,HART,S4.1,P4123,R1,,Canola (Low N),Canola,Low
+HART_S4.1_P4123_R2,HART,S4.1,P4123,R2,,Canola (Low N),Canola,Low
+HART_S4.1_P4123_R3,HART,S4.1,P4123,R3,,Canola (Low N),Canola,Low
+HART_S4.2_P1234_R1,HART,S4.2,P1234,R1,,Canola (Mid N),Canola,Mid
+HART_S4.2_P1234_R2,HART,S4.2,P1234,R2,,Canola (Mid N),Canola,Mid
+HART_S4.2_P1234_R3,HART,S4.2,P1234,R3,,Canola (Mid N),Canola,Mid
+HART_S4.2_P2341_R1,HART,S4.2,P2341,R1,,Canola (Mid N),Canola,Mid
+HART_S4.2_P2341_R2,HART,S4.2,P2341,R2,,Canola (Mid N),Canola,Mid
+HART_S4.2_P2341_R3,HART,S4.2,P2341,R3,,Canola (Mid N),Canola,Mid
+HART_S4.2_P3412_R1,HART,S4.2,P3412,R1,,Canola (Mid N),Canola,Mid
+HART_S4.2_P3412_R2,HART,S4.2,P3412,R2,,Canola (Mid N),Canola,Mid
+HART_S4.2_P3412_R3,HART,S4.2,P3412,R3,,Canola (Mid N),Canola,Mid
+HART_S4.2_P4123_R1,HART,S4.2,P4123,R1,,Canola (Mid N),Canola,Mid
+HART_S4.2_P4123_R2,HART,S4.2,P4123,R2,,Canola (Mid N),Canola,Mid
+HART_S4.2_P4123_R3,HART,S4.2,P4123,R3,,Canola (Mid N),Canola,Mid
+HART_S4.3_P1234_R1,HART,S4.3,P1234,R1,,Canola (High N),Canola,High
+HART_S4.3_P1234_R2,HART,S4.3,P1234,R2,,Canola (High N),Canola,High
+HART_S4.3_P1234_R3,HART,S4.3,P1234,R3,,Canola (High N),Canola,High
+HART_S4.3_P2341_R1,HART,S4.3,P2341,R1,,Canola (High N),Canola,High
+HART_S4.3_P2341_R2,HART,S4.3,P2341,R2,,Canola (High N),Canola,High
+HART_S4.3_P2341_R3,HART,S4.3,P2341,R3,,Canola (High N),Canola,High
+HART_S4.3_P3412_R1,HART,S4.3,P3412,R1,,Canola (High N),Canola,High
+HART_S4.3_P3412_R2,HART,S4.3,P3412,R2,,Canola (High N),Canola,High
+HART_S4.3_P3412_R3,HART,S4.3,P3412,R3,,Canola (High N),Canola,High
+HART_S4.3_P4123_R1,HART,S4.3,P4123,R1,,Canola (High N),Canola,High
+HART_S4.3_P4123_R2,HART,S4.3,P4123,R2,,Canola (High N),Canola,High
+HART_S4.3_P4123_R3,HART,S4.3,P4123,R3,,Canola (High N),Canola,High
+HART_S5_P0000_R1,HART,S5,P0000,R1,,Responsive: Adviser (risk-tolerant),Responsive,Low
+HART_S5_P0000_R2,HART,S5,P0000,R2,,Responsive: Adviser (risk-tolerant),Responsive,Low
+HART_S5_P0000_R3,HART,S5,P0000,R3,,Responsive: Adviser (risk-tolerant),Responsive,Low
+HART_S5_P0000_R4,HART,S5,P0000,R4,,Responsive: Adviser (risk-tolerant),Responsive,Low
+HART_S5_P0000_R5,HART,S5,P0000,R5,,Responsive: Adviser (risk-tolerant),Responsive,Low
+HART_S5_P0000_R6,HART,S5,P0000,R6,,Responsive: Adviser (risk-tolerant),Responsive,Low
+HART_S5_P0000_R7,HART,S5,P0000,R7,,Responsive: Adviser (risk-tolerant),Responsive,Low
+HART_S5_P0000_R8,HART,S5,P0000,R8,,Responsive: Adviser (risk-tolerant),Responsive,Low
+HART_S5_P0000_R9,HART,S5,P0000,R9,,Responsive: Adviser (risk-tolerant),Responsive,Low
+HART_S6_P1234_R1,HART,S6,P1234,R1,,Pulse-canola,Pulse-canola,Mid
+HART_S6_P1234_R2,HART,S6,P1234,R2,,Pulse-canola,Pulse-canola,Mid
+HART_S6_P1234_R3,HART,S6,P1234,R3,,Pulse-canola,Pulse-canola,Mid
+HART_S6_P2341_R1,HART,S6,P2341,R1,,Pulse-canola,Pulse-canola,Mid
+HART_S6_P2341_R2,HART,S6,P2341,R2,,Pulse-canola,Pulse-canola,Mid
+HART_S6_P2341_R3,HART,S6,P2341,R3,,Pulse-canola,Pulse-canola,Mid
+HART_S6_P3412_R1,HART,S6,P3412,R1,,Pulse-canola,Pulse-canola,Mid
+HART_S6_P3412_R2,HART,S6,P3412,R2,,Pulse-canola,Pulse-canola,Mid
+HART_S6_P3412_R3,HART,S6,P3412,R3,,Pulse-canola,Pulse-canola,Mid
+HART_S6_P4123_R1,HART,S6,P4123,R1,,Pulse-canola,Pulse-canola,Mid
+HART_S6_P4123_R2,HART,S6,P4123,R2,,Pulse-canola,Pulse-canola,Mid
+HART_S6_P4123_R3,HART,S6,P4123,R3,,Pulse-canola,Pulse-canola,Mid
+HART_S7_P1234_R1,HART,S7,P1234,R1,,Pulse on pulse,Pulse,Mid
+HART_S7_P1234_R2,HART,S7,P1234,R2,,Pulse on pulse,Pulse,Mid
+HART_S7_P1234_R3,HART,S7,P1234,R3,,Pulse on pulse,Pulse,Mid
+HART_S7_P2341_R1,HART,S7,P2341,R1,,Pulse on pulse,Pulse,Mid
+HART_S7_P2341_R2,HART,S7,P2341,R2,,Pulse on pulse,Pulse,Mid
+HART_S7_P2341_R3,HART,S7,P2341,R3,,Pulse on pulse,Pulse,Mid
+HART_S7_P3412_R1,HART,S7,P3412,R1,,Pulse on pulse,Pulse,Mid
+HART_S7_P3412_R2,HART,S7,P3412,R2,,Pulse on pulse,Pulse,Mid
+HART_S7_P3412_R3,HART,S7,P3412,R3,,Pulse on pulse,Pulse,Mid
+HART_S7_P4123_R1,HART,S7,P4123,R1,,Pulse on pulse,Pulse,Mid
+HART_S7_P4123_R2,HART,S7,P4123,R2,,Pulse on pulse,Pulse,Mid
+HART_S7_P4123_R3,HART,S7,P4123,R3,,Pulse on pulse,Pulse,Mid
+HART_S8_P1234_R1,HART,S8,P1234,R1,,More cereals,Increase cereals,Mid
+HART_S8_P1234_R2,HART,S8,P1234,R2,,More cereals,Increase cereals,Mid
+HART_S8_P1234_R3,HART,S8,P1234,R3,,More cereals,Increase cereals,Mid
+HART_S8_P2341_R1,HART,S8,P2341,R1,,More cereals,Increase cereals,Mid
+HART_S8_P2341_R2,HART,S8,P2341,R2,,More cereals,Increase cereals,Mid
+HART_S8_P2341_R3,HART,S8,P2341,R3,,More cereals,Increase cereals,Mid
+HART_S8_P3412_R1,HART,S8,P3412,R1,,More cereals,Increase cereals,Mid
+HART_S8_P3412_R2,HART,S8,P3412,R2,,More cereals,Increase cereals,Mid
+HART_S8_P3412_R3,HART,S8,P3412,R3,,More cereals,Increase cereals,Mid
+HART_S8_P4123_R1,HART,S8,P4123,R1,,More cereals,Increase cereals,Mid
+HART_S8_P4123_R2,HART,S8,P4123,R2,,More cereals,Increase cereals,Mid
+HART_S8_P4123_R3,HART,S8,P4123,R3,,More cereals,Increase cereals,Mid
+HART_S9_P1234_R1,HART,S9,P1234,R1,,Winter cover cropping,Winter cover cropping,Mid
+HART_S9_P1234_R2,HART,S9,P1234,R2,,Winter cover cropping,Winter cover cropping,Mid
+HART_S9_P1234_R3,HART,S9,P1234,R3,,Winter cover cropping,Winter cover cropping,Mid
+HART_S9_P2341_R1,HART,S9,P2341,R1,,Winter cover cropping,Winter cover cropping,Mid
+HART_S9_P2341_R2,HART,S9,P2341,R2,,Winter cover cropping,Winter cover cropping,Mid
+HART_S9_P2341_R3,HART,S9,P2341,R3,,Winter cover cropping,Winter cover cropping,Mid
+HART_S9_P3412_R1,HART,S9,P3412,R1,,Winter cover cropping,Winter cover cropping,Mid
+HART_S9_P3412_R2,HART,S9,P3412,R2,,Winter cover cropping,Winter cover cropping,Mid
+HART_S9_P3412_R3,HART,S9,P3412,R3,,Winter cover cropping,Winter cover cropping,Mid
+HART_S9_P4123_R1,HART,S9,P4123,R1,,Winter cover cropping,Winter cover cropping,Mid
+HART_S9_P4123_R2,HART,S9,P4123,R2,,Winter cover cropping,Winter cover cropping,Mid
+HART_S9_P4123_R3,HART,S9,P4123,R3,,Winter cover cropping,Winter cover cropping,Mid
