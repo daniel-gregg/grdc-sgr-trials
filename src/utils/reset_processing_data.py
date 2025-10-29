@@ -26,24 +26,24 @@ def reset_plot_state_reference(site = None):
             shutil.copy(original_file, current_file)
         except FileNotFoundError as e:
             raise e
-    
+
     else:
         # read in current reference plot_state_data as pd
         plot_state_data = pd.read_csv(get_reference_data_path('plotStateDataStarting.csv'))
         starting_data = pd.read_csv(get_reference_data_path('plotStateDataStarting.csv'))
 
-        # 
+        #
         # delete all records in plot_state_data for 'site' only
         plot_state_data = plot_state_data[~plot_state_data['PLOT_ID'].str.contains(site.upper())]
 
         # replace records in plot_state_data with starting_data for 'site' only
-        plot_state_data = pd.concat([plot_state_data, starting_data[starting_data['PLOT_ID'].str.contains(site.upper())]])    
+        plot_state_data = pd.concat([plot_state_data, starting_data[starting_data['PLOT_ID'].str.contains(site.upper())]])
 
         # re-save plot state data
         plot_state_data.to_csv(get_reference_data_path('plotStateData.csv'), index=False)
 
 def remove_validated_plot_state_data(site):
-    
+
     # check if the site has a 'sowing' and 'termination' folder in the validated data
     sowing_path = get_validated_data_path(site, 'sowing')
     termination_path = get_validated_data_path(site, 'termination')
@@ -74,10 +74,37 @@ def reset_plot_state_data(site=None):
 
         for site_name in sites_list:
             remove_validated_plot_state_data(site_name)
-        
+
         # reset all plot state data to the starting reference
         reset_plot_state_reference()
     else:
         # remove the validated data for the site
         remove_validated_plot_state_data(site)
         reset_plot_state_reference(site)
+
+
+# remove all validated data files for all sites or a specific site
+def reset_all_validated_data(site=None):
+    """
+    Remove all validated data files for all sites or a specific site
+    """
+    if not site:
+        sites_list = os.listdir(get_validated_data_path())
+
+        for site_name in sites_list:
+            validated_site_path = get_validated_data_path(site_name)
+            if os.path.exists(validated_site_path):
+                # listdir for activities
+                activities = os.listdir(validated_site_path)
+                for activity in activities:
+                    activity_path = os.path.join(validated_site_path, activity)
+                    # check for any files in site-activity path, if any delete
+                    if os.path.exists(activity_path):
+                        files_list = os.listdir(activity_path)
+                        if len(files_list)>0:
+                            for file in files_list:
+                                file_path = os.path.join(activity_path, file)
+                                os.remove(file_path)
+
+        # reset all plot state data to the starting reference
+        reset_plot_state_reference(site_name)

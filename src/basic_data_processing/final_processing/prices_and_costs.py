@@ -207,6 +207,8 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                     ## generate activity comments
                     if data.iloc[row]['comments'] is not None and not pd.isna(data.iloc[row]['comments']):
                         comments_from_data.append(data.iloc[row]['comments'])
+                    else:
+                        comments_from_data.append('')
 
                     #check if id, date and activity are same as last to ensure no double counting of activities
                     # the first iteration case
@@ -227,7 +229,7 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                     else:
                         data.loc[row,'appliedAmount'] = float(data.iloc[row]['appliedAmount'])
                         product = data.iloc[row]['name']
-                        print('product for product price is {} at site {}'.format(product, site))
+                        #print('product for product price is {} at site {}'.format(product, site))
                         product_price = float(getProductPrice(product, activity))
                         product_qty = float(data.iloc[row]['appliedAmount'])
                         product_costs.append(np.multiply(float(product_price), float(product_qty)))
@@ -239,9 +241,9 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                         crop1 = data.iloc[row]['crop1Name']
                         crop2 = data.iloc[row]['crop2Name']
                         crop3 = data.iloc[row]['crop3Name']
-                        print('crop 1 is {} at site {}'.format(crop1, site))
-                        print('crop 2 is {} at site {}'.format(crop2, site))
-                        print('crop 3 is {} at site {}'.format(crop3, site))
+                        #print('crop 1 is {} at site {}'.format(crop1, site))
+                        #print('crop 2 is {} at site {}'.format(crop2, site))
+                        #print('crop 3 is {} at site {}'.format(crop3, site))
                         if pd.isna(crop1):
                             price1 = float(0)
                             yield1 = float(0)
@@ -286,9 +288,11 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                             total_yield_tonnes = (yield1 + yield2 + yield3)/1000 #convert to tonnes
                             multicrop_cost_per_tonne = getActivityCostsData('multi_crop', year)
                             multicrop_harvest_cost = total_yield_tonnes * multicrop_cost_per_tonne
-                            multicrop_harvest_costs.append(multicrop_harvest_cost)
-                        else:
-                            multicrop_harvest_costs.append(float(0))
+                            print(multicrop_harvest_cost)
+                            print(f'{site} has pre multicrop activity cost of {activity_cost[len(activity_cost)-1]} and multicrop cost of {multicrop_harvest_cost}')
+                            # now we need to append these to the activity costs that have already been added above
+                            activity_cost[len(activity_cost)-1] = activity_cost[len(activity_cost)-1] + multicrop_harvest_cost
+                            print(f'{site} has post multicrop activity cost of {activity_cost[len(activity_cost)-1]}')
 
                 data['date'] = dates
                 data['costs_activity_dollars'] = activity_cost
