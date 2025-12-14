@@ -1,7 +1,7 @@
 ## Set all base dir paths here as functions
 
 # base imports
-import os 
+import os
 
 def get_base_data_path():
     return (os.path.join('data'))
@@ -13,8 +13,8 @@ def get_raw_data_path(site = None, activity = None):
         if activity:
             return (os.path.join('data', 'raw_data', site, activity))
         else:
-            return (os.path.join('data', 'raw_data', site)) 
-        
+            return (os.path.join('data', 'raw_data', site))
+
 
 def get_validated_data_path(site = None, activity = None):
     if not site:
@@ -38,7 +38,16 @@ def get_gross_margin_data_path(file = None):
         return os.path.join('data', 'outputs', 'gross_margins')
     else:
         return os.path.join('data', 'outputs', 'gross_margins',file)
-    
+
+def get_outputs_path():
+    return os.path.join('data', 'outputs')
+
+def get_system_baseline_comparisons_path(file = None):
+    if not file:
+        return os.path.join('data', 'outputs', 'system_baseline_comparisons')
+    else:
+        return os.path.join('data', 'outputs', 'system_baseline_comparisons', file)
+
 def get_invalid_data_path(date = None):
     # returns the path to the invalid data folder for a specific site and activity
 

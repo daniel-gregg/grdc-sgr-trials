@@ -9,6 +9,7 @@ from src.basic_data_processing.validation.validate import process_raw_formatted_
 from src.basic_data_processing.final_processing.prices_and_costs import integratePricesAndCosts
 from src.analysis.gross_margin.grossmargin import getAnnualGrossMargin
 from src.analysis.gross_margin.grossmargin import getCropSequenceGrossMargin
+from src.analysis.reporting.system_baseline_comparisons import gen_system_baseline_comparison_results
 
 # To do:
 #from src.basic_data_processing.final_processing.remote_sense_data import integrateRemoteSenseData
@@ -39,7 +40,11 @@ integratePricesAndCosts()
 getCropSequenceGrossMargin()
 #getAnnualGrossMargin()
 
-# calculate and generate reporting for gross margins
+# calculate and generate comparisons of gms between systems and baselines for reporting
+gen_system_baseline_comparison_results()
+
 
 ##### Detailed reporting (e.g. formatted reports)
 # to do 2025
+
+

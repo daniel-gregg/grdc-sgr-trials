@@ -288,11 +288,11 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                             total_yield_tonnes = (yield1 + yield2 + yield3)/1000 #convert to tonnes
                             multicrop_cost_per_tonne = getActivityCostsData('multi_crop', year)
                             multicrop_harvest_cost = total_yield_tonnes * multicrop_cost_per_tonne
-                            print(multicrop_harvest_cost)
-                            print(f'{site} has pre multicrop activity cost of {activity_cost[len(activity_cost)-1]} and multicrop cost of {multicrop_harvest_cost}')
+                            #print(multicrop_harvest_cost)
+                            #print(f'{site} has pre multicrop activity cost of {activity_cost[len(activity_cost)-1]} and multicrop cost of {multicrop_harvest_cost}')
                             # now we need to append these to the activity costs that have already been added above
                             activity_cost[len(activity_cost)-1] = activity_cost[len(activity_cost)-1] + multicrop_harvest_cost
-                            print(f'{site} has post multicrop activity cost of {activity_cost[len(activity_cost)-1]}')
+                            #print(f'{site} has post multicrop activity cost of {activity_cost[len(activity_cost)-1]}')
 
                 data['date'] = dates
                 data['costs_activity_dollars'] = activity_cost
