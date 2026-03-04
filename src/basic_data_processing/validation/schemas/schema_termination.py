@@ -31,7 +31,7 @@ class Outcome(AutoEnum):
     fail = alias('FAIL ', 'failed', 'failure') # no reason given
     fail_water = alias('water','dry','drought') #crop failed due to insufficient crop water availability
     fail_pests = alias('vermin', 'insects', 'mice', 'locusts') #crop failed due to pests
-    fail_disease = alias('disease', 'fungus', 'infection', 'rot') #crop failed due to disease 
+    fail_disease = alias('disease', 'fungus', 'infection', 'rot') #crop failed due to disease
     fail_strategic = alias('management') #crop terminated early for strategic reasons - provide comments
     fail_other = alias('NA','', 'No reason')
 
@@ -50,7 +50,7 @@ class Reason(AutoEnum):
     fodder = alias('livestock', 'silage', 'cattle', 'grazing', 'sheep', 'hay') #fodder reason
 
 class CropType(AutoEnum):
-    wheat = alias('durum')
+    wheat = alias('durum', 'durum wheat')
     barley = auto()
     canola = auto()
     lupins = auto()
@@ -64,6 +64,7 @@ class CropType(AutoEnum):
     fababean = auto()
     fieldpea = auto()
     millet = auto()
+    fallow = alias('bare ground', 'bareground')
 
 
 #Crops and crop varieties
@@ -74,13 +75,13 @@ class TerminationModel(BaseModel):
 
     ###identifying details
     plotID: str = Field(..., max_length=50)
-    
+
     #date details
     year: int = Field(..., ge=2023, le=2029, description="Year of application event")
     month: int = Field(..., ge=1, le=12, description="Month of application event")
     day: int = Field(..., ge=1, le=31, description="Day of application event")
     # To Do - define a validator to ensure the date is not in the future
-    
+
     #Crops harvested
     crop1Name : CropType
     crop2Name : Optional[CropType]
@@ -91,10 +92,10 @@ class TerminationModel(BaseModel):
     harvestReason : Reason
 
     #Yield
-    crop1Yield : float = Field(..., ge=0,le=10000, description="Kg per hectare")
-    crop2Yield : Optional[float] = Field(..., ge=0,le=10000, description="Kg per hectare")
-    crop3Yield : Optional[float] = Field(..., ge=0,le=10000, description="Kg per hectare")
-    
+    crop1Yield : float = Field(..., ge=0,le=15000, description="Kg per hectare")
+    crop2Yield : Optional[float] = Field(..., ge=0,le=15000, description="Kg per hectare")
+    crop3Yield : Optional[float] = Field(..., ge=0,le=15000, description="Kg per hectare")
+
     #Update Termination state - ensures that the plot state changes to one of the termination states
     terminationState : terminationState
 
@@ -103,7 +104,7 @@ class TerminationModel(BaseModel):
 
     @model_validator(mode='after')
     def validate_choice(self) -> Self:
-        
+
         #get cropnames
         crops = [self.crop1Name, self.crop2Name, self.crop3Name]
 
@@ -123,12 +124,12 @@ class TerminationModel(BaseModel):
             # check if crop_name is empty and if so move to next if it is crop2 or crop3
             if crop_name == None:     #element is empty (and is allowed to be)
                 continue              #move to next loop if empty
-            
+
             #create a lower case version
             crop_name = crop_name.lower().strip()
 
             #check if crop_name is 'pasture' - if so go to next
-            if crop_name == 'pasture':
+            if crop_name == 'pasture' or crop_name == 'fallow' or crop_name == 'bare ground':     #pasture and fallow are allowed crop types that do not require variety validation
                 continue
 
             #remove whitespace
@@ -142,7 +143,7 @@ class TerminationModel(BaseModel):
             #remove any white space in crop_name
 
             if not(crop_name in possible_crop_names):
-                raise ValueError("Please check your crop names. {} is not included in the allowed crops".format(crop_name))                           
-    
+                raise ValueError("Please check your crop names. {} is not included in the allowed crops".format(crop_name))
+
         return self
-            
+

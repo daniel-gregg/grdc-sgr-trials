@@ -141,9 +141,13 @@ def genStateSeriesToMatchProcessedData(dat):
 
 def checkExistenceOfCropState(states_list):
     """
-    Function to check if there is a crop state in the data.
-    If there is no crop state, raise an error.
+    Function to check if there is a crop state in the data (returns True).
+    If there is no crop state return False.
+
+    All plots start with an initialising Fallow state. This needs to be removed to check
+    if remaining states move from CROP to FALLOW at least once.
     """
+
     # check if states_list starts with FALLOW
     if states_list[0] == 'FALLOW':
 
@@ -164,7 +168,7 @@ def checkExistenceOfCropState(states_list):
     if 'FALLOW' not in states_list:
         return False
 
-    # else all good
+    # else all good - there are both CROP and FALLOW states in the data, so there is a crop sequence
     return True
 
 def getCropSequenceGrossMargin():
@@ -214,11 +218,12 @@ def getCropSequenceGrossMargin():
 
             for plot in plots:
 
-                # check if 'BUFFER' is in the plotID
+                # check if 'BUFFER' is in the plotID - BUFFER plots are not real plots and should be excluded from the analysis
                 if 'BUFFER' in plot:
                     # skip this plot
                     continue
 
+                # Subset the data for the plot using plotID
                 subdat_plot = subdat_site.loc[subdat_site['plotID'] == plot]
 
                 # Order the data by date
@@ -254,7 +259,7 @@ def getCropSequenceGrossMargin():
 
                     while checkExistenceOfCropState(subdat_plot['state'].tolist()):
                         # A crop sequence starts from immediately after harvest (i.e. 'FALLOW') state and
-                        # ends immediately after to the next harvest
+                        # ends upon next harvest
                         # so a crop sequence will look like this in the state variable:
                         # FALLOW, FALLOW, ..., FALLOW, CROP, CROP, ..., CROP, [FALLOW]
                         # Where the last FALLOW is not included in this crop sequence
@@ -270,7 +275,9 @@ def getCropSequenceGrossMargin():
 
                         sites_list.append(site)
                         plots_list.append(plot)
-                        years_list.append(subdat_plot_crop['year'].iloc[0])
+
+                        # create the year index based on year sown.
+                        years_list.append(subdat_plot_crop['year'].iloc[crop_sequence['crop_start_index']])
 
                         operational_costs_dollars.append(operating_costs)
                         material_input_costs_dollars.append(material_costs)
@@ -309,11 +316,12 @@ def getCropSequenceGrossMargin():
                         crop_3_yield.append(crop_3_y[0] if crop_3_y else 'NA')
 
                         # remove the crop sequence from the subdat_plot
-                        subdat_plot = subdat_plot.iloc[crop_sequence['crop_end_index'] + 1:] #pandas shite - start index is inclusive, end index is exclusive WTF
+                        subdat_plot = subdat_plot.iloc[crop_sequence['crop_end_index'] + 1:] #pandas shite - start index is inclusive, end index is exclusive
+
                         #check if empty
                         if subdat_plot.empty:
-                            break
-                        crop_sequence_ind += 1
+                            break # there is no more data in this series
+                        crop_sequence_ind += 1 #iterate the crop_sequence_ind ready for next loop
 
         gm_df = pd.DataFrame({
             'site' : sites_list,

@@ -37,7 +37,7 @@ class TimelinessOptions(AutoEnum):
     late = auto()
 
 class CropType(AutoEnum):
-    wheat = alias('durum')
+    wheat = alias('durum', 'durum wheat')
     barley = auto()
     canola = auto()
     lupins = auto()
@@ -51,6 +51,7 @@ class CropType(AutoEnum):
     fababean = auto()
     fieldpea = auto()
     millet = auto()
+    fallow = alias('bare ground', 'bareground')
 
 
 #Crops and crop varieties

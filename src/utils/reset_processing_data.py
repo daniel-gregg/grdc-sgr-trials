@@ -108,3 +108,23 @@ def reset_all_validated_data(site=None):
 
         # reset all plot state data to the starting reference
         reset_plot_state_reference(site_name)
+
+    else:
+    #site is provided
+
+        validated_site_path = get_validated_data_path(site)
+        if os.path.exists(validated_site_path):
+            # listdir for activities
+            activities = os.listdir(validated_site_path)
+            for activity in activities:
+                activity_path = os.path.join(validated_site_path, activity)
+                # check for any files in site-activity path, if any delete
+                if os.path.exists(activity_path):
+                    files_list = os.listdir(activity_path)
+                    if len(files_list)>0:
+                        for file in files_list:
+                            file_path = os.path.join(activity_path, file)
+                            os.remove(file_path)
+
+        # reset all plot state data to the starting reference
+        reset_plot_state_reference(site)

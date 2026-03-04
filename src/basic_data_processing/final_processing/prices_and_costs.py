@@ -164,6 +164,7 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
         #list activities:
         activity_list = os.listdir(get_validated_data_path(site))
         for activity in activity_list:
+            print('processing site {} and activity {}'.format(site, activity))
             dates_list = os.listdir(get_validated_data_path(site, activity))
 
             #check if empty, if so continue
@@ -172,6 +173,7 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
 
             #else get pickle files and merge
             for dated_file in dates_list:
+                print('processing file {}'.format(dated_file))
 
                 # get file path and data for site-activity-date(uploaded) combinations
                 file_path = os.path.join(get_validated_data_path(site, activity), dated_file)
@@ -194,6 +196,7 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                 comments_from_data = []
 
                 for row in range(data.shape[0]):
+                    print('processing row {} of {}'.format(row, nrow))
 
                     #get date - this is used to ensure product applications that occur in the same effort
                     #   are allocated to a single 'activity' (so no double counting of activity costs)

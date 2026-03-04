@@ -1,24 +1,28 @@
-name,prices_ma5,prices_2022
-Wheat,330,350
-Barley,298,280
-Durum,428,550
-Canola,622,750
-Lentil,650,700
-Fieldpea,451,450
-Field pea,451,450
-Fababean,540,550
-Faba bean,540,550
-Chickpeas,726,800
-Chickpea,726,800
-Oat,238,265
-Vetch,0,0
-Clover,0,0
-Chicory,0,0
-Perennial Ryegrass,0,0
-Subclover,0,0
-Balansa clover,0,0
-Millet,0,0
-Brassica,0,0
-Tillage radish,0,0
-Tillageradish,0,0
-Pasture,0,0
+name,prices_ma5,prices_2019,prices_2020,prices_2021,prices_2022,prices_2023,prices_2024
+Wheat,360,330,280,410,400,380,340
+Barley,311.2,285,230,326,365,350,330
+Durum,477,450,375,610,430,520,475
+Durum wheat,477,450,375,610,430,520,475
+Canola,690,600,580,900,720,650,650
+Lentil,769,600,630,1000,700,915,700
+Fieldpea,458,470,360,500,475,485,430
+Field pea,458,470,360,500,475,485,430
+Fababean,475,590,345,550,420,470,440
+Faba bean,475,590,345,550,420,470,440
+Chickpeas,800,590,560,850,1000,1000,800
+Chickpea,800,590,560,850,1000,1000,800
+Oat,252,250,210,220,300,280,260
+Oats,252,250,210,220,300,280,260
+Vetch,0,0,0,0,0,0,0
+Clover,0,0,0,0,0,0,0
+Chicory,0,0,0,0,0,0,0
+Perennial Ryegrass,0,0,0,0,0,0,0
+Subclover,0,0,0,0,0,0,0
+Balansa clover,0,0,0,0,0,0,0
+Millet,0,0,0,0,0,0,0
+Brassica,0,0,0,0,0,0,0
+Tillage radish,0,0,0,0,0,0,0
+Tillageradish,0,0,0,0,0,0,0
+Pasture,0,0,0,0,0,0,0
+Fallow,0,0,0,0,0,0,0
+Bare ground,0,0,0,0,0,0,0
