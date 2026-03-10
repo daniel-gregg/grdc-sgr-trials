@@ -41,7 +41,7 @@ class TargetPest(AutoEnum):
 
 # Provides the core model for entering pesticide application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'pesticide' to ensure
-# aggregation of these data with other activities does not generate duplicated field names. 
+# aggregation of these data with other activities does not generate duplicated field names.
 class PesticideApplicationsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
@@ -65,27 +65,28 @@ class PesticideApplicationsModel(BaseModel):
         try:
             pesticideProducts = pd.read_csv(get_reference_data_path('PestProductData.csv'), index_col=False)
         except:
-            
+
             #check if a testProducts csv is available
             try:
                 pesticideProducts = pd.read_csv(here('data/test_Data/testPesticideProductData.csv'))
                 print("Note that you have not specified a pesticideProducts dataset so the TEST data is being used")
-            
-            except: 
+
+            except:
                 return "no pesticide products data ('PesticideProductData.csv') exists in expected directory (.../sgr_data/output)"
-        
+
         #check if provided 'pessticidename' is in the existing products list
-        if sum(pesticideProducts['name'].str.lower().str.match(pestname.lower().strip()))==0:
+        data_string = pestname.lower().strip()
+        if sum(pesticideProducts['name'].str.lower().str.contains(data_string, regex = False))==0:
             raise ValueError("Pesticide product {} must be defined in the 'pesticideProductData' table in '.../sgr_data/data'".format(pestname))
         return pestname
-    
-    
+
+
     #Define and validate units against options in the 'PesticideUnits' model - automated by the 'use_enum_values' arg
     unitsAppliedKgOrLitres: PesticidesUnits
 
     #Amount of pesticide applied
     appliedAmount: float = Field(..., ge=0,le=500, description="Number of litres/kg applied PER HECTARE")
-    
+
     #optional indications regarding timing and comments
     comments: Optional[str] = Field(..., max_length=4000, description="Comments (maximum 4,000 characters)")
 

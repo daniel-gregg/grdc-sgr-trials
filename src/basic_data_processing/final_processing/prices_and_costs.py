@@ -196,7 +196,7 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                 comments_from_data = []
 
                 for row in range(data.shape[0]):
-                    print('processing row {} of {}'.format(row, nrow))
+                    print('processing row {} of {} for activity {} at site {} and file {}'.format(row, nrow, activity, site, dated_file))
 
                     #get date - this is used to ensure product applications that occur in the same effort
                     #   are allocated to a single 'activity' (so no double counting of activity costs)

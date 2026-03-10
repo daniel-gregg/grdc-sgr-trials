@@ -34,7 +34,7 @@ class FungicideProductsModel(BaseModel):
 
 # Provides the core model for entering fungicide application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'fungicide' to ensure
-# aggregation of these data with other activities does not generate duplicated field names. 
+# aggregation of these data with other activities does not generate duplicated field names.
 class FungicideApplicationsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
@@ -55,22 +55,23 @@ class FungicideApplicationsModel(BaseModel):
         try:
             fungicideProducts = pd.read_csv(get_reference_data_path('FungProductData.csv'), index_col=False)
         except:
-            
+
             #check if a testProducts csv is available
             try:
                 fungicideProducts = pd.read_csv(here('data/test_data/testFungProductData.csv'))
                 print("Note that you have not specified a FungicideProducts dataset so the TEST data is being used")
-            
-            except: 
+
+            except:
                 return "no fungicide products data ('FungicideProductData.csv') exists in expected directory (.../sgr_data/data)"
-        
+
         #check if provided 'fungicidename' is in the existing products list
         #if sum(fungicideProducts['name'].str.lower().str.contains(fungname.lower().strip()))==0:
-        if sum(fungicideProducts['name'].str.lower().str.match(fungname.lower().strip()))==0:
+        data_string = fungname.lower().strip()
+        if sum(fungicideProducts['name'].str.lower().str.contains(data_string, regex = False))==0:
             raise ValueError("Fungicide product {} must be defined in the 'FungicideProductData' table in '.../sgr_data/data'".format(fungname))
         return fungname
-    
-    
+
+
     #Define and validate units against options in the 'FertiliserUnits' model - automated by the 'use_enum_values' arg
     unitsAppliedKgOrLitres: FungicidesUnits
 

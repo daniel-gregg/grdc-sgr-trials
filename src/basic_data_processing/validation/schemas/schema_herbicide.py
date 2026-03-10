@@ -33,7 +33,7 @@ class HerbicideProductsModel(BaseModel):
 
 # Provides the core model for entering herbicide application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'herb' to ensure
-# aggregation of these data with other activities does not generate duplicated field names. 
+# aggregation of these data with other activities does not generate duplicated field names.
 class HerbicideApplicationsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
@@ -54,22 +54,23 @@ class HerbicideApplicationsModel(BaseModel):
         try:
             herbicideProducts = pd.read_csv(get_reference_data_path('HerbProductData.csv'), index_col=False)
         except:
-            
+
             #check if a testProducts csv is available
             try:
                 herbicideProducts = pd.read_csv(here('data/test_data/testHerbProductData.csv'))
                 print("Note that you have not specified a herbicideProducts dataset so the TEST data is being used")
-            
-            except: 
+
+            except:
                 return "no pesticide products data ('HerbicideProductData.csv') exists in expected directory (.../sgr_data/data)"
-        
-        
+
+
         #check if provided 'herbicidename' is in the existing products list
-        if sum(herbicideProducts['name'].str.lower().str.match(herbname.lower().strip()))==0:
+        data_string = herbname.lower().strip()
+        if sum(herbicideProducts['name'].str.lower().str.contains(data_string, regex = False))==0:
             raise ValueError("Herbicide product {} must be defined in the 'herbicideProductData' table in '.../sgr_data/data'".format(herbname))
         return herbname
-    
-    
+
+
     #Define and validate units against options in the 'FertiliserUnits' model - automated by the 'use_enum_values' arg
     unitsAppliedKgOrLitres: HerbicidesUnits
 

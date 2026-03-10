@@ -1,11 +1,14 @@
 name,units,price,source
 Amistar,L,90,
-Aviator Xpro,L,54.5,SAGIT
-Aviatoir Xpro, L, 54.5, https://grdc.com.au/resources-and-publications/grdc-update-papers/tab-content/grdc-update-papers/2021/02/was-canola-fungicide-investment-justified-in-low-and-medium-rainfall-environments-in-2020
+Aviator Xpro,L,54.5, https://grdc.com.au/resources-and-publications/grdc-update-papers/tab-content/grdc-update-papers/2021/02/was-canola-fungicide-investment-justified-in-low-and-medium-rainfall-environments-in-2020
+Aviator,L,54.5, Duplicate
+Aviatoir Xpro, L, 54.5, Duplicate
 BS1000, L, 6.8, https://shop.northwestag.com.au/products/bs1000-bio-degradable-surfactant-nufarm
 Carbendazim,kg,9.85,SAGIT
 Echo900,kg,25,
 Epoxiconazole 500, L, 35, ESTIMATE using Epoxiconazole 125 as base ($22/L)
+Opus (Epoxiconazole 125), L, 22,
+Epoxiconazole 125, L, 22,
 Flutriafol 500,L,39,SAGIT
 Flutriafol,L,39,SAGIT
 Mancozeb,kg,8.83,SAGIT

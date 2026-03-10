@@ -55,7 +55,7 @@ class FertiliserProductsModel(BaseModel):
 
 # Provides the core model for entering fertiliser application data
 # note: all data entries other than identifying fields (date, ID) and comments must be prefaced by 'fert' to ensure
-# aggregation of these data with other activities does not generate duplicated field names. 
+# aggregation of these data with other activities does not generate duplicated field names.
 class FertiliserApplicationsModel(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
@@ -80,17 +80,18 @@ class FertiliserApplicationsModel(BaseModel):
             try:
                 fertProducts = pd.read_csv(here('data/test_data/testFertProductData.csv'))
                 print("Note that you have not specified a fertProducts dataset so the TEST data is being used")
-            
-            except: 
+
+            except:
                 return "no fertiliser products data ('FertProductData.csv') exists in expected directory (.../sgr_data/data)"
-        
-        
+
+
         #check if provided 'fertname' is in the existing products list
-        if sum(fertProducts['name'].str.lower().str.match(fertname.lower().strip()))==0:
+        data_string = fertname.lower().strip()
+        if sum(fertProducts['name'].str.lower().str.contains(data_string, regex = False))==0:
             raise ValueError("Fertiliser product {} must be defined in the 'fertProductData' table in '..sgr_data//data'".format(fertname))
         return fertname
-    
-    
+
+
     #Define and validate units against options in the 'FertiliserUnits' model - automated by the 'use_enum_values' arg
     unitsAppliedKgOrLitres: FertiliserUnits
 

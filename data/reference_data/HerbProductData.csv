@@ -20,8 +20,12 @@ Boxer Gold,L,12.52,SAGIT
 BoxerGold,L,12.52,SAGIT
 Broadside,L,421, https://stratagreen.com.au/products/broadside-selective-herbicide-20-litre
 Broadstrike, Kg, 429, CHECK THIS
+Brodal Options, L, 48, https://yollacoop.com.au/products/bayer-brodal-options-sc500-5ltr
+Brodal (Diflufenican 500), L, 48, Duplicate of the above
+Brodal, L, 48, Duplicate of the above
 BS1000,L,5.6,SAGIT
 Callisto,L,30,
+Calisto,L,30, Duplicate of above
 Cando, L, 22.5, https://hillsfarmsupplies.com.au/products/nufarm-cando-concentrate-spray-adjuvant
 Carfentrazone,L,85,
 Chlorpyriphos,L,13.5,
@@ -44,7 +48,7 @@ Dual Gold,L,60,
 Ecopar, L, 57.50, CHECK THIS
 Edge 900DF,kg,25,
 Edge,kg,25, Duplicate of above
-"Elantra (Quizalofop 200)", L, 21, https://tuckersstore.com.au/product/apparent-quizalofop-200-10l-active-200gl-quizalofop-p-ethyl
+Elantra (Quizalofop 200), L, 21, https://tuckersstore.com.au/product/apparent-quizalofop-200-10l-active-200gl-quizalofop-p-ethyl
 Elantra 200, L, 21, https://tuckersstore.com.au/product/apparent-quizalofop-200-10l-active-200gl-quizalofop-p-ethyl
 Elevate, L, 132, https://tgrm.com.au/_products//Products/FARMCHEMICALS/ELEVATEHERBICIDE5LT400ECCARFENTRAZONE-ETHYLADAMAELEVATE5L-8105-29579-.aspx
 Ester,L,8.45,SAGIT
@@ -104,7 +108,8 @@ Sakura 850 WG,kg,343.2,SAGIT
 Select Xtra, L, 20, https://specialistsales.com.au/shop/farm-chemicals/herbicides/clethodim-360-herbicide/?attribute_pa_size=5-litre&gad_source=1&gad_campaignid=17736979598&gbraid=0AAAAAD3AJcDfhpHtMsaY5hRoxBkRUW6HP&gclid=Cj0KCQjwvajDBhCNARIsAEE29WqdKF_nmgI0t8GJ0X0OWBx7q6epoEyh-9YvhQL0W2zJe-tf0x6KAOoaAu2kEALw_wcB
 Simazine,kg,12,
 Simazine 900,kg,7.53,SAGIT
-Simazine 900DF,kg,7.53,SAGIT
+Simazine 900DF,kg,7.53,Duplicate of above
+Simazine 900 DF,kg,7.53,Duplicate of above
 SOA,kg,0.96,SAGIT
 Spray Seed 250, L, 24, Estimated from https://bpgsupplies.com.au/products/kendon-sprayquat-250-herbicide-5l
 Stomp Xtra, L, 24.2, https://nuturf.com.au/stomp-xtra-herbicide
@@ -121,3 +126,4 @@ Ultro,kg,25,
 Uptake,L,6.2,SAGIT
 Verdict (Haloxyfop), L, 29, https://www.ovedshorseandpetstore.com.au/apparent-haloxyfop
 Verdict 520, L, 29, Duplicate of above
+Verdict, L, 29, Duplicate of above
