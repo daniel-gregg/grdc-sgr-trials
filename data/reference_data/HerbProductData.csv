@@ -52,6 +52,7 @@ Ecopar, L, 57.50, CHECK THIS
 Edge 900DF,kg,25,
 Edge,kg,25, Duplicate of above
 Elantra (Quizalofop 200), L, 21, https://tuckersstore.com.au/product/apparent-quizalofop-200-10l-active-200gl-quizalofop-p-ethyl
+Elantra (Quizalofp 200), L, 21, https://tuckersstore.com.au/product/apparent-quizalofop-200-10l-active-200gl-quizalofop-p-ethyl
 Elantra 200, L, 21, https://tuckersstore.com.au/product/apparent-quizalofop-200-10l-active-200gl-quizalofop-p-ethyl
 Elevate, L, 132, https://tgrm.com.au/_products//Products/FARMCHEMICALS/ELEVATEHERBICIDE5LT400ECCARFENTRAZONE-ETHYLADAMAELEVATE5L-8105-29579-.aspx
 Ester,L,8.45,SAGIT
@@ -63,28 +64,37 @@ Gluphosinate,L,20,
 Glyphosate,L,4.5,SAGIT
 Glyphosate 450,L,4.5,SAGIT
 Glyphosate 540g/l,L,5.4,SAGIT
+Glyphosate 50,L,5.4,google suggests this is common language for higher strength  (540)
 Grammoxone 360, L, 21, CHECK THIS
 Gramoxone 360, L, 21, Duplicate of the above
+Gramoxopne 360 Pro,L,21,Duplicate of the above
 Grasidim,L,30,
 Grazidim,L,30,
 Haloxyfop,L,44,SAGIT
 Haloxyfop 520,L,44,SAGIT
 Hammer,L,20,
 Hasten,L,4.7,SAGIT
-Intercept,L,275,
-Intervix,L,29.46,SAGIT
+Intercept,L,22.5,
+Intervix,L,22.5,SAGIT
+Intercept/Intervix,L,22.5,SAGIT
+Intervix/Intercept,L,22.5,SAGIT
 Kamba 500, L, 25, Google
 Leopard,L,21,
 Liase,L,4,
 Lontrel Advanced 600,L,145,
+Lontrol Advanced 600,L,145,
+Lontrel Advanced  600,L,145,
 Lontrel Advanced, L, 145,
+Lontrel 750 SG, L, 145,
 Lontrel,L,145,
 LVA Agritone,kg,8,
 LVE Agritone,kg,8, Duplicate of the above
 Mateno Complete, L, 0, CHECK
 MCPA LVE,L,8.14,SAGIT
 MCPA LVE (~100mL/leaf),L,8.14,SAGIT
+MCPA LVE (~100 mL/leaf)
 LVE MCPA,L,8.14,Duplicate of above
+LVE Agritone (MCPA 570),kg,8.14,Duplicate of above
 Overwatch,L,10,
 Oxyflurfen,L,15.76,SAGIT
 Palmero 750 WG, KG, 103, https://specialistsales.com.au/shop/farm-chemicals/herbicides/residual-herbicides/bounty-750-wg-herbicide/?srsltid=AfmBOorkCeEuGDxUT7XH1y1q0fwqIPZErrJzyg675YGnL3W91tDnL53q
@@ -100,10 +110,12 @@ Quizalofop 200,L,35,
 Raptor,kg,270,
 Reflex,L,15,
 Reglone,L,13.8,SAGIT
+Rexade, KG, 700, Google - CHECK
 "Roundup, 2,4-D",L,6,SAGIT
 Roundup,L,6,SAGIT
 Rustler,L,65,
 Rustler 900 WG,L,65,
+Rustler 500 SC,L,22, Based on generic version at https://tuckersstore.com.au/product/apparent-pilferer-500sc-20l-active-500gkg-propyzamide
 Rustler 500SC,L,22, Based on generic version at https://tuckersstore.com.au/product/apparent-pilferer-500sc-20l-active-500gkg-propyzamide
 Sakura,kg,343.2,SAGIT
 Sakura Flow,L,343.2,DUPLICATE OF SAGIT
@@ -114,6 +126,7 @@ Simazine,kg,12,
 Simazine 900,kg,7.53,SAGIT
 Simazine 900DF,kg,7.53,Duplicate of above
 Simazine 900 DF,kg,7.53,Duplicate of above
+Simazine 900g/L,kg,7.53,Duplicate of above
 SOA,kg,0.96,SAGIT
 Spray Seed 250, L, 24, Estimated from https://bpgsupplies.com.au/products/kendon-sprayquat-250-herbicide-5l
 Stomp Xtra, L, 24.2, https://nuturf.com.au/stomp-xtra-herbicide
@@ -123,6 +136,7 @@ Terbyne extreme,L,15,
 Terrador,kg,300,
 Thistle Killem,L,27,
 Thistrol Gold, L, 23, https://specialistsales.com.au/shop/farm-chemicals/herbicides/thistrol
+Tigrex,L,14,https://shop.northwestag.com.au/products/tigrex-selective-herbicide-bayer-cropscience
 Tri-allate,L,11.5,https://www.ovedshorseandpetstore.com.au/brands/apparent-ag/apparent-check-mate-500gl-triallate-20ltrs
 Triallate,L,25,duplicate of above
 Trifluralin,L,25,SAGIT

@@ -1,5 +1,6 @@
 name,units,price,source
 Affirm, L, 0, CHECK - should be enamectin 17g/L but can't find a price reference
+Alpha-cypermethrin, L, 15, https://specialistsales.com.au/shop/turf-domestic/insecticides-turf-care/liquid-insecticide/cropro-buzzard-insecticide-alpha-cypermethrin/?srsltid=AfmBOopf7XBvmoWPF1iZKN9xuY75ijZ-NUibNLJvwY8B-MDPApGRt2jZ
 Alpha-scud,L,135,
 Albatross,L,135,
 Arrow 100, L, 21.25, https://www.google.com/search?sca_esv=f3fe50cfd75d2507&rlz=1C1ONGR_en-GBAU1160AU1161&q=Talstar+100+20l&udm=28&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZjSkgYzz5-5RrRWAIniWd7tzPwkE1KJWcRvaH01D-XIX002E0qNXsgfZ6fffiMQMigVxnU6tfQmfH9K5I6DpRZ0bZHP7J9wZhgZxLhz_VHUjP3FUfq8aIQ89-q-WX4tdwHbYSXtQ5Wzr0LQX3-uevbkvkHtjr2tuVBsQmiMlabeztv_zfWGzDInTmpt5ePpR0cLdBIA&ved=1t:220175&ictx=111&biw=1337&bih=944&dpr=1
@@ -13,15 +14,19 @@ Apparent Miyagi, L, 95, Alt for Karate/Karate Zeon: https://www.fmb.com.au/farm-
 Karate Zeon, L, 95, Duplicate of above
 Le-mat,L,36,
 Le-Met (Omethoate), L, 35, https://nwlivestock.com.au/product/le-mat-290-sl-insecticide
+Le-mat (omethoate), L, 35, https://nwlivestock.com.au/product/le-mat-290-sl-insecticide
+Omethoate (Le-mat), L, 35, https://nwlivestock.com.au/product/le-mat-290-sl-insecticide
 Metarex,kg,15,
 Metarex Inov, Kg, 19, https://www.airr.com.au/product/crop-pasture-protection/crop-protection/agnova-metarex-inov-10kg/?srsltid=AfmBOopVhXN4Qc7YWMJafBZDCPZCClYtxIvap-0r2cy-BpTjbyybdKr5
 MouseOff,kg,75,
 Mouse Off,kg,75,
+Mouse bait,kg,75,
 Pirimor, kg, 84, https://yollacoop.com.au/products/pirimor-wg-5kg
 Pyrenix Super,L,11.6,SAGIT
 Pyrinex Super,L,11.6,SAGIT
 Sumi-alpha flex,L,9.84,SAGIT
 Talstar 100, L, 21.25, https://www.google.com/search?sca_esv=f3fe50cfd75d2507&rlz=1C1ONGR_en-GBAU1160AU1161&q=Talstar+100+20l&udm=28&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZjSkgYzz5-5RrRWAIniWd7tzPwkE1KJWcRvaH01D-XIX002E0qNXsgfZ6fffiMQMigVxnU6tfQmfH9K5I6DpRZ0bZHP7J9wZhgZxLhz_VHUjP3FUfq8aIQ89-q-WX4tdwHbYSXtQ5Wzr0LQX3-uevbkvkHtjr2tuVBsQmiMlabeztv_zfWGzDInTmpt5ePpR0cLdBIA&ved=1t:220175&ictx=111&biw=1337&bih=944&dpr=1
+Talstar 250, L, 50, https://www.nutrienhorticulture.com.au/product/talstar-250ec
 Transcend,kg,22,
 Trojan,L,95.98,SAGIT
 Wetter 1000, L, 7.70, https://www.ovedshorseandpetstore.com.au/apparent-wetter-1000
