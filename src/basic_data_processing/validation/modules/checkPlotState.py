@@ -30,10 +30,11 @@ class CropType(AutoEnum):
     pasture = alias('clover', 'chicory', 'perennial ryegrass', 'subclover', 'brassica', 'tillage radish', 'balansa clover')
     lentil = auto()
     chickpea = auto()
-    fababean = auto()
-    fieldpea = auto()
+    fababean = alias('faba beans', 'faba', 'fb')
+    fieldpea = alias('field peas')
     millet = auto()
-    #fallow = alias('bare ground', 'bareground')
+    greenmanure = alias('warm cover mix', 'cover crop')
+    fallow = auto()
 
 def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop2=None, crop3=None):
 

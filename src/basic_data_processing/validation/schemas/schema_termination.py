@@ -61,10 +61,11 @@ class CropType(AutoEnum):
     pasture = alias('clover', 'chicory', 'perennial ryegrass', 'subclover', 'brassica', 'tillage radish', 'balansa clover')
     lentil = auto()
     chickpea = auto()
-    fababean = auto()
-    fieldpea = auto()
+    fababean = alias('faba beans', 'faba', 'fb')
+    fieldpea = alias('field peas')
     millet = auto()
-    fallow = alias('bare ground', 'bareground')
+    greenmanure = alias('warm cover mix', 'cover crop')
+    fallow = auto() #alias('bare ground', 'bareground') - doesn't work because it conflicts with the earlier enum in terminationState
 
 
 #Crops and crop varieties
