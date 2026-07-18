@@ -96,7 +96,17 @@ def genStateSeriesToMatchProcessedData(dat):
     plot_state_data['DATE'] = pd.to_datetime(plot_state_data['DATE'], format = 'mixed')
 
     # subset plot_state_data to match the plotID in dat
-    plot_state_data = plot_state_data[plot_state_data['PLOT_ID'] == dat['plotID'].iloc[0]]
+    current_plot_id = dat['plotID'].iloc[0]
+    plot_state_data = plot_state_data[plot_state_data['PLOT_ID'] == current_plot_id]
+
+    # guard: no matching state data for this plot (commonly a plotID mismatch,
+    # e.g. a stray whitespace difference between the processed data and PlotStateData.csv)
+    if plot_state_data.empty:
+        raise ValueError(
+            f"No plot state data found for plotID '{current_plot_id}'. "
+            "Check that the plotID in the processed data exactly matches a PLOT_ID "
+            "in PlotStateData.csv (watch for stray whitespace)."
+        )
 
     # order plot_state_data by date
     plot_state_data = plot_state_data.sort_values(by='DATE')
