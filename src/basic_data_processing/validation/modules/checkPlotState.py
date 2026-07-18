@@ -36,7 +36,7 @@ class CropType(AutoEnum):
     greenmanure = alias('warm cover mix', 'cover crop')
     fallow = auto()
 
-def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop2=None, crop3=None):
+def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop2=None, crop3=None, current_state=None):
 
     #Conduct checks
     if not (plotActivityType == 'SOWING' or plotActivityType == 'TERMINATION'):
@@ -45,25 +45,48 @@ def checkPlotState(plot_id, plotActivityType, year, month, day, crop1=None, crop
     if(plotActivityType=='TERMINATION' and crop1 == None):
         raise ValueError("Check plot " + plot_id + ". At a minimum, the 'crop1' argument must be non-empty if you are seeking to enter a crop termination data observation")
 
-    #read in state data
-    try:
-        plot_state_data = pd.read_csv(get_reference_data_path('PlotStateData.csv'))
-    except FileNotFoundError as e:
-        raise e
+    #Determine the plot's state that applies to THIS event. Two modes:
+    #  * current_state supplied (used by the chronological batch validator, validate_crop_state_activities):
+    #    the caller passes the plot's running state as a dict {'STATE','CROP1','CROP2','CROP3'} so state
+    #    changes made earlier in the same run are visible without re-reading the .csv. This is what makes
+    #    loading multiple seasons / both activities in one run work.
+    #  * current_state omitted (legacy/standalone use): read plotStateData.csv and take the most recent
+    #    state recorded ON OR BEFORE the event date (as-of-date) rather than the global-latest row, so a
+    #    single check does not depend on the order in which later events were loaded.
+    if current_state is not None:
+        plot_state_STATE = current_state.get('STATE')
+        plot_state_CROP1 = current_state.get('CROP1')
+        plot_state_CROP2 = current_state.get('CROP2')
+        plot_state_CROP3 = current_state.get('CROP3')
+    else:
+        #read in state data
+        try:
+            plot_state_data = pd.read_csv(get_reference_data_path('PlotStateData.csv'))
+        except FileNotFoundError as e:
+            raise e
 
-    #subset df by plotID
-    plot_data = plot_state_data.loc[plot_state_data['PLOT_ID'] == plot_id]
-    plot_data = plot_data.replace({np.nan: None})
-    #if no data return an error message indicating that it is necessary to instatiate all plots with a starting state
-    if plot_data.empty:
-        raise ValueError("There is no entry in the plot state data for" + plot_id + ". Please ensure a starting state is initiated for ALL plots prior to data entry")
+        #subset df by plotID
+        plot_data = plot_state_data.loc[plot_state_data['PLOT_ID'] == plot_id]
+        plot_data = plot_data.replace({np.nan: None})
+        #if no data return an error message indicating that it is necessary to instatiate all plots with a starting state
+        if plot_data.empty:
+            raise ValueError("There is no entry in the plot state data for" + plot_id + ". Please ensure a starting state is initiated for ALL plots prior to data entry")
 
-    #order the data by date and get most recent data
-    plot_data_sorted = plot_data.sort_values(by="DATE")
-    plot_state_STATE = plot_data_sorted.tail(1)['STATE'].item() #gets the last entry after being sorted (ascending is default)
-    plot_state_CROP1 = plot_data_sorted.tail(1)['CROP1'].item() #gets the last entry after being sorted (ascending is default)
-    plot_state_CROP2 = plot_data_sorted.tail(1)['CROP2'].item() #gets the last entry after being sorted (ascending is default)
-    plot_state_CROP3 = plot_data_sorted.tail(1)['CROP3'].item() #gets the last entry after being sorted (ascending is default)
+        #parse dates properly (string sorting mis-orders dates like '1/01/2023' vs '10/05/2024')
+        plot_data = plot_data.copy()
+        plot_data['DATE'] = pd.to_datetime(plot_data['DATE'], format='mixed', dayfirst=True)
+        event_date = datetime.datetime(year, month, day)
+
+        #use the most recent state recorded on or before the event date (state 'as of' this event)
+        prior_states = plot_data.loc[plot_data['DATE'] <= event_date].sort_values(by='DATE')
+        if prior_states.empty:
+            raise ValueError("There is no plot state recorded on or before " + str(event_date.date()) + " for " + plot_id + ". Ensure a starting state (dated on or before the first event) exists for ALL plots prior to data entry")
+
+        latest_state = prior_states.tail(1)
+        plot_state_STATE = latest_state['STATE'].item()
+        plot_state_CROP1 = latest_state['CROP1'].item()
+        plot_state_CROP2 = latest_state['CROP2'].item()
+        plot_state_CROP3 = latest_state['CROP3'].item()
 
     #convert strings to lower with no white space
     if not plot_state_CROP1 == None:

@@ -106,6 +106,39 @@ class SowingModel(BaseModel):
     #Comments are optional
     comments: Optional[str] = Field(None, max_length=4000, description="Comments (maximum 4,000 characters)")
 
+    @field_validator('crop1Name', 'crop2Name', 'crop3Name', mode='before')
+    @classmethod
+    def crop_present_in_price_data(cls, value):
+        # Presence check only (NOT a price lookup): confirm each sown crop resolves to a crop that exists
+        # in CropPriceData.csv, so unpriceable / unrecognised crops are caught here at sowing validation
+        # rather than as a traceback later when gross margins are priced (getCropPrice).
+        # Names are matched through the CropType ALIAS regime, so spelling variants (e.g. 'Field Peas',
+        # 'Faba Beans', 'sub clover') resolve to their canonical crop and pass. Empty/None slots allowed.
+        if value is None:
+            return value
+        if isinstance(value, float) and pd.isna(value):
+            return value
+        name = str(value).strip()
+        if name == '':
+            return value
+        # resolve the supplied name via CropType aliases; if it does not resolve, leave it for the field's
+        # own CropType validation to report the standard 'not an allowed crop' error.
+        member = CropType.from_str(name, raise_error=False)
+        if member is None:
+            return value
+        try:
+            crop_price_data = pd.read_csv(get_reference_data_path('CropPriceData.csv'))
+        except FileNotFoundError:
+            return value  # if the price table is missing, do not block validation here
+        # canonicalise the price-table names the same way (fall back to raw for non-CropType entries)
+        priceable = set()
+        for n in crop_price_data['name']:
+            m = CropType.from_str(str(n), raise_error=False)
+            priceable.add(str(m) if m is not None else str(n).lower().strip())
+        if str(member) not in priceable:
+            raise ValueError("Crop '{}' (recognised as '{}') has no entry in CropPriceData.csv - add it so it can be priced".format(value, str(member)))
+        return value
+
     @model_validator(mode='after')
     def validate_choice(self) -> Self:
 

@@ -9,6 +9,7 @@ from src.basic_data_processing.validation.validate import process_raw_formatted_
 from src.basic_data_processing.final_processing.prices_and_costs import integratePricesAndCosts
 from src.analysis.gross_margin.grossmargin import getAnnualGrossMargin
 from src.analysis.gross_margin.grossmargin import getCropSequenceGrossMargin
+from src.analysis.gross_margin.grossmargin import getCropSequenceGrossMarginWithPrices
 from src.analysis.reporting.system_baseline_comparisons import gen_system_baseline_comparison_results
 
 # To do:
@@ -39,6 +40,10 @@ integratePricesAndCosts()
 
 getCropSequenceGrossMargin()
 #getAnnualGrossMargin()
+
+# crop-sequence gross margins with editable reference prices + urea qty/cost (for workshop price updates)
+# writes to '.../data/outputs/gross_margins/<date>_priced/'
+getCropSequenceGrossMarginWithPrices()
 
 # calculate and generate comparisons of gms between systems and baselines for reporting
 gen_system_baseline_comparison_results()

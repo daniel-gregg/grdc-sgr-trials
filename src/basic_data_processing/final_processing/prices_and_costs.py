@@ -95,9 +95,17 @@ def getProductPrice(product, activity):
     #load the .csv
     product_data = pd.read_csv(product_data_path)
     product_names = [x.lower().strip() for x in product_data['name']] #strip whitespace
-    select_bool = [x == product.lower().strip() for x in product_names]
-    #find the product in the file and return the price - this must exist because it has been validated already
-    product_price = product_data.loc[select_bool]['price'].item()
+    #exact match first; if none, fall back to a substring match (a reference name that contains the
+    #supplied product name) to mirror the validation check (which uses .str.contains). This handles
+    #shorthand entries in the data, e.g. 'Gramoxone' -> 'Gramoxone 360', 'Amicide Advance' -> '... 700'.
+    select_bool = [x == product for x in product_names]
+    if not any(select_bool):
+        select_bool = [product in x for x in product_names]
+    matched = product_data.loc[select_bool]
+    if matched.shape[0] == 0:
+        raise ValueError("Product '{}' for activity '{}' is not defined in {}".format(product, activity, product_file_dict[activity]))
+    #take the first match (validation has already confirmed the product exists)
+    product_price = matched['price'].iloc[0]
 
     # replace missing data with average noting that '0' is NOT missing
     if pd.isna(product_price) or product_price == None:
@@ -195,6 +203,16 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                 multicrop_harvest_costs = []
                 comments_from_data = []
 
+                # reference-price columns (added to the output .csv so prices can be reviewed/updated):
+                #   activity_cost_rate -> activity_cost_dollars (the ActivitiesCosts.csv rate for this activity/year)
+                #   cropN_price         -> cropN_price_dollars   ($/kg output price for each planted crop in the row)
+                #   urea_price          -> urea_price_dollars     ($/kg, only populated for urea applications)
+                activity_cost_rate = []
+                crop1_price = []
+                crop2_price = []
+                crop3_price = []
+                urea_price = []
+
                 for row in range(data.shape[0]):
                     print('processing row {} of {} for activity {} at site {} and file {}'.format(row, nrow, activity, site, dated_file))
 
@@ -213,22 +231,47 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                     else:
                         comments_from_data.append('')
 
+                    # reference activity cost rate for this activity/year (from ActivitiesCosts.csv, before any
+                    # same-date zeroing or multicrop adjustment). Stored so the rate can be reviewed/updated later.
+                    this_activity_rate = float(getActivityCostsData(activity, year))
+                    activity_cost_rate.append(this_activity_rate)
+
                     #check if id, date and activity are same as last to ensure no double counting of activities
                     # the first iteration case
                     if row == 0:
-                        activity_cost.append(float(getActivityCostsData(activity, year)))
+                        activity_cost.append(this_activity_rate)
                     else:
                         # the same-date activity case for a given plot (stops multiple counts of applications on the same day when products are just mixed together in reality)
                         if ids[row] == ids[row-1] and activities[row] == activities[row-1] and dates[row] == dates[row-1]:
                             activity_cost.append(float(0))
                         # the different activity case for a given plot
                         else:
-                            activity_cost.append(float(getActivityCostsData(activity, year)))
+                            activity_cost.append(this_activity_rate)
 
+                    # crop output prices ($/kg) - computed and stored for TERMINATION rows only (revenue).
+                    # Sowing crops are NOT priced (crop-name validity is checked at sowing validation instead);
+                    # their cropN_price_dollars are left blank (NaN). price1/2/3 feed the revenue calc below.
+                    if activity == 'termination':
+                        crop1 = data.iloc[row]['crop1Name']
+                        crop2 = data.iloc[row]['crop2Name']
+                        crop3 = data.iloc[row]['crop3Name']
+                        price1 = float(getCropPrice(crop1, price_type)) if not pd.isna(crop1) else float(0)
+                        price2 = float(getCropPrice(crop2, price_type)) if not pd.isna(crop2) else float(0)
+                        price3 = float(getCropPrice(crop3, price_type)) if not pd.isna(crop3) else float(0)
+                        crop1_price.append(price1 if not pd.isna(crop1) else np.nan)
+                        crop2_price.append(price2 if not pd.isna(crop2) else np.nan)
+                        crop3_price.append(price3 if not pd.isna(crop3) else np.nan)
+                    else:
+                        crop1 = crop2 = crop3 = pd.NA
+                        price1 = price2 = price3 = float(0)
+                        crop1_price.append(np.nan)
+                        crop2_price.append(np.nan)
+                        crop3_price.append(np.nan)
 
                     #get product cost - check if a product using activity
                     if activity == 'sowing' or activity == 'termination':
                         product_costs.append(float(0))
+                        urea_price.append(np.nan)
                     else:
                         data.loc[row,'appliedAmount'] = float(data.iloc[row]['appliedAmount'])
                         product = data.iloc[row]['name']
@@ -236,42 +279,39 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                         product_price = float(getProductPrice(product, activity))
                         product_qty = float(data.iloc[row]['appliedAmount'])
                         product_costs.append(np.multiply(float(product_price), float(product_qty)))
+                        # record the urea reference price ($/kg) only when this row is a urea application
+                        if isinstance(product, str) and product.strip().lower() == 'urea':
+                            urea_price.append(product_price)
+                        else:
+                            urea_price.append(np.nan)
 
                     #if activity is termination, get yield and revenue
                     if not activity == 'termination':
                         revenue_dollars.append(float(0))
                     else:
-                        crop1 = data.iloc[row]['crop1Name']
-                        crop2 = data.iloc[row]['crop2Name']
-                        crop3 = data.iloc[row]['crop3Name']
+                        # crop names (crop1/2/3) and $/kg prices (price1/2/3) were resolved above for this row
                         #print('crop 1 is {} at site {}'.format(crop1, site))
                         #print('crop 2 is {} at site {}'.format(crop2, site))
                         #print('crop 3 is {} at site {}'.format(crop3, site))
                         if pd.isna(crop1):
-                            price1 = float(0)
                             yield1 = float(0)
                         else:
-                            price1 = float(getCropPrice(crop1, price_type))
                             yield1 = data.iloc[row]['crop1Yield']
                             if yield1 is not None:
                                 yield1 = float(yield1)
                             else:
                                 yield1 = float(0)
                         if pd.isna(crop2):
-                            price2 = float(0)
                             yield2 = float(0)
                         else:
-                            price2 = float(getCropPrice(crop2, price_type))
                             yield2 = data.iloc[row]['crop2Yield']
                             if yield2 is not None:
                                 yield2 = float(yield2)
                             else:
                                 yield2 = float(0)
                         if pd.isna(crop3):
-                            price3 = float(0)
                             yield3 = float(0)
                         else:
-                            price3 = float(getCropPrice(crop3, price_type))
                             yield3 = data.iloc[row]['crop3Yield']
                             if yield3 is not None:
                                 yield3 = float(yield3)
@@ -301,6 +341,21 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                 data['costs_activity_dollars'] = activity_cost
                 data['costs_product_applied_dollars'] = product_costs
                 data['revenue_crops_dollars'] = revenue_dollars
+
+                # reference-price columns (only where relevant to the activity type) so prices can be reviewed
+                # and updated directly from the output .csv. Guarded so they are only added if not already present.
+                if 'activity_cost_dollars' not in data.columns:
+                    data['activity_cost_dollars'] = activity_cost_rate
+                if activity in ('sowing', 'termination'):
+                    if 'crop1_price_dollars' not in data.columns:
+                        data['crop1_price_dollars'] = crop1_price
+                    if 'crop2_price_dollars' not in data.columns:
+                        data['crop2_price_dollars'] = crop2_price
+                    if 'crop3_price_dollars' not in data.columns:
+                        data['crop3_price_dollars'] = crop3_price
+                else:
+                    if 'urea_price_dollars' not in data.columns:
+                        data['urea_price_dollars'] = urea_price
 
                 #append to data_list for merging later using 'reduce'
                 if activity == 'fertiliser':
@@ -346,6 +401,10 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                 'costs_activity_dollars',
                 'costs_product_applied_dollars',
                 'revenue_crops_dollars',
+                'activity_cost_dollars',
+                'crop1_price_dollars',
+                'crop2_price_dollars',
+                'crop3_price_dollars',
                 'comments'
                 ],
             how = 'outer'),
@@ -375,6 +434,8 @@ def integratePricesAndCosts(price_type = 'prices_ma5'):
                 'month',
                 'day',
                 'name',
+                'activity_cost_dollars',
+                'urea_price_dollars',
                 'comments'
                 ],
             how = 'outer'),

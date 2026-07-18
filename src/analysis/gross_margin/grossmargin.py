@@ -360,6 +360,237 @@ def getCropSequenceGrossMargin():
             gm_df.to_csv(os.path.join(dir_path_gm_csv, file))
 
 
+def getCropSequenceGrossMarginWithPrices():
+    """
+    Crop-sequence gross margin, extended with the reference prices/quantities needed to update prices
+    for a workshop without re-running the whole pipeline.
+
+    In addition to the standard crop-sequence gross margin columns, each row includes:
+        * activity_cost_dollars    - total operating (activity/contractor) cost for the sequence
+                                     (identical to operational_costs_dollars; the operating cost is a
+                                     single sum that can be scaled for fuel/contractor rate changes)
+        * crop_1/2/3_name / _yield - the harvested crop(s) and their yields (kg/ha) for the sequence
+        * crop_1/2/3_price_dollars - $/kg output price used for each harvested crop
+        * urea_price_dollars       - $/kg price of urea applied in the sequence
+        * urea_qty_kg              - total kg of urea applied across the sequence
+        * urea_cost_dollars        - total urea material cost across the sequence (part of material_input_costs_dollars)
+
+    These columns let prices be edited directly in the output .csv: revenue can be recomputed from
+    yields x crop prices, and the urea portion of material input costs from urea_qty_kg x urea_price_dollars.
+
+    Relies on the reference-price columns produced by integratePricesAndCosts(); processed files that
+    predate those columns are handled gracefully (the extra fields fall back to NA/0).
+    """
+
+    def _first_non_na(series):
+        # first non-empty, non-NaN value in a series (used to pull a single value per sequence)
+        for value in series:
+            if pd.notna(value) and value != '':
+                return value
+        return 'NA'
+
+    def _safe_column(frame, column):
+        # return the column if present, else an all-NaN series (older processed files lack the price columns)
+        if column in frame.columns:
+            return frame[column]
+        return pd.Series(np.nan, index=frame.index)
+
+    # get processed data files list
+    processed_data_list = getProcessedDataList()
+
+    # Loop through each processed data file
+    for file in processed_data_list:
+        filepath = os.path.join(get_processed_data_path(), file)
+        data = pd.read_csv(filepath)
+
+        ## append dates to data file using year, month and day columns
+        data['date'] = pd.to_datetime(data[['year', 'month', 'day']])
+
+        # reset data index
+        data.reset_index(drop=True, inplace=True)
+
+        #initialise arrays
+        operational_costs_dollars = []
+        material_input_costs_dollars = []
+        revenue_dollars = []
+        gross_margin_dollars = []
+        sites_list = []
+        plots_list = []
+        years_list = []
+        crop_sequence_number = []
+        crop_1_name = []
+        crop_2_name = []
+        crop_3_name = []
+        crop_1_yield = []
+        crop_2_yield = []
+        crop_3_yield = []
+        # new reference-price / urea columns
+        activity_cost_dollars = []
+        crop_1_price_dollars = []
+        crop_2_price_dollars = []
+        crop_3_price_dollars = []
+        urea_price_dollars = []
+        urea_qty_kg = []
+        urea_cost_dollars = []
+
+        # subset by site and plot
+        sites = [*set(data['site'])]
+
+        for site in sites:
+            subdat_site = data.loc[data['site'] == site,]
+
+            #get plots and subset
+            plots = [*set(subdat_site['plotID'])]
+
+            for plot in plots:
+
+                # BUFFER plots are not real plots and should be excluded from the analysis
+                if 'BUFFER' in plot:
+                    continue
+
+                # Subset the data for the plot using plotID
+                subdat_plot = subdat_site.loc[subdat_site['plotID'] == plot]
+
+                # Order the data by date
+                subdat_plot = subdat_plot.sort_values(by=['year', 'month', 'day'])
+
+                subdat_plot = genStateSeriesToMatchProcessedData(subdat_plot)
+
+                # Check if the plot has a crop sequence
+                if not (checkExistenceOfCropState(subdat_plot['state'].tolist())):
+                    sites_list.append(site)
+                    plots_list.append(plot)
+                    years_list.append('NA')
+
+                    operational_costs_dollars.append('NA')
+                    material_input_costs_dollars.append('NA')
+                    revenue_dollars.append('NA')
+                    gross_margin_dollars.append('NA')
+
+                    crop_sequence_number.append('NA')
+                    crop_1_name.append('NA')
+                    crop_2_name.append('NA')
+                    crop_3_name.append('NA')
+                    crop_1_yield.append('NA')
+                    crop_2_yield.append('NA')
+                    crop_3_yield.append('NA')
+
+                    activity_cost_dollars.append('NA')
+                    crop_1_price_dollars.append('NA')
+                    crop_2_price_dollars.append('NA')
+                    crop_3_price_dollars.append('NA')
+                    urea_price_dollars.append('NA')
+                    urea_qty_kg.append('NA')
+                    urea_cost_dollars.append('NA')
+
+                    continue
+
+                else:
+                    # initialise crop sequence number
+                    crop_sequence_ind = 1
+
+                    while checkExistenceOfCropState(subdat_plot['state'].tolist()):
+                        crop_sequence = getCropSequenceIndex(subdat_plot['state'].tolist())
+                        # final data frame including cost and revenue components
+                        subdat_plot_crop = subdat_plot.iloc[0:crop_sequence['crop_end_index']+1]
+
+                        # calculate crop gross margin inputs
+                        operating_costs = float(np.sum(subdat_plot_crop['costs_activity_dollars']))
+                        material_costs = float(np.sum(subdat_plot_crop['costs_product_applied_dollars']))
+                        gross_revenue = float(np.sum(subdat_plot_crop['revenue_crops_dollars']))
+
+                        sites_list.append(site)
+                        plots_list.append(plot)
+
+                        # create the year index based on year sown.
+                        years_list.append(subdat_plot_crop['year'].iloc[crop_sequence['crop_start_index']])
+
+                        operational_costs_dollars.append(operating_costs)
+                        material_input_costs_dollars.append(material_costs)
+                        revenue_dollars.append(gross_revenue)
+                        gross_margin_dollars.append(gross_revenue - operating_costs - material_costs)
+                        crop_sequence_number.append(crop_sequence_ind)
+
+                        # operating cost is a single lever (contractor cost) so activity_cost_dollars == operating_costs
+                        activity_cost_dollars.append(operating_costs)
+
+                        # get crop names (first non-empty value in the sequence)
+                        crop_1_n = [name for name in subdat_plot_crop['crop1Name'] if pd.notna(name) and name != '']
+                        crop_2_n = [name for name in subdat_plot_crop['crop2Name'] if pd.notna(name) and name != '']
+                        crop_3_n = [name for name in subdat_plot_crop['crop3Name'] if pd.notna(name) and name != '']
+
+                        crop_1_name.append(crop_1_n[0] if crop_1_n else 'NA')
+                        crop_2_name.append(crop_2_n[0] if crop_2_n else 'NA')
+                        crop_3_name.append(crop_3_n[0] if crop_3_n else 'NA')
+
+                        # get crop yields (first non-empty value in the sequence)
+                        crop_1_y = [y for y in subdat_plot_crop['crop1Yield'] if pd.notna(y) and y != '']
+                        crop_2_y = [y for y in subdat_plot_crop['crop2Yield'] if pd.notna(y) and y != '']
+                        crop_3_y = [y for y in subdat_plot_crop['crop3Yield'] if pd.notna(y) and y != '']
+
+                        crop_1_yield.append(crop_1_y[0] if crop_1_y else 'NA')
+                        crop_2_yield.append(crop_2_y[0] if crop_2_y else 'NA')
+                        crop_3_yield.append(crop_3_y[0] if crop_3_y else 'NA')
+
+                        # crop output prices ($/kg) - one value per harvested crop for the sequence
+                        crop_1_price_dollars.append(_first_non_na(_safe_column(subdat_plot_crop, 'crop1_price_dollars')))
+                        crop_2_price_dollars.append(_first_non_na(_safe_column(subdat_plot_crop, 'crop2_price_dollars')))
+                        crop_3_price_dollars.append(_first_non_na(_safe_column(subdat_plot_crop, 'crop3_price_dollars')))
+
+                        # urea quantity, price and material cost for the sequence
+                        names = subdat_plot_crop['name'].astype(str).str.strip().str.lower()
+                        urea_mask = names == 'urea'
+                        if urea_mask.any():
+                            urea_amounts = pd.to_numeric(subdat_plot_crop.loc[urea_mask, 'appliedAmount'], errors='coerce')
+                            urea_material = pd.to_numeric(subdat_plot_crop.loc[urea_mask, 'costs_product_applied_dollars'], errors='coerce')
+                            urea_qty_kg.append(float(np.nansum(urea_amounts)))
+                            urea_cost_dollars.append(float(np.nansum(urea_material)))
+                            urea_price_dollars.append(_first_non_na(_safe_column(subdat_plot_crop, 'urea_price_dollars')[urea_mask]))
+                        else:
+                            urea_qty_kg.append(0.0)
+                            urea_cost_dollars.append(0.0)
+                            urea_price_dollars.append('NA')
+
+                        # remove the crop sequence from the subdat_plot
+                        subdat_plot = subdat_plot.iloc[crop_sequence['crop_end_index'] + 1:]
+
+                        if subdat_plot.empty:
+                            break
+                        crop_sequence_ind += 1
+
+        gm_df = pd.DataFrame({
+            'site' : sites_list,
+            'plot' : plots_list,
+            'year' : years_list,
+            'crop_sequence' : crop_sequence_number,
+            'operational_costs_dollars' : operational_costs_dollars,
+            'material_input_costs_dollars' : material_input_costs_dollars,
+            'crop_1_name' : crop_1_name,
+            'crop_2_name' : crop_2_name,
+            'crop_3_name' : crop_3_name,
+            'crop_1_yield' : crop_1_yield,
+            'crop_2_yield' : crop_2_yield,
+            'crop_3_yield' : crop_3_yield,
+            'plot_revenue_dollars' : revenue_dollars,
+            'plot_gross_margin_dollars' : gross_margin_dollars,
+            # editable price / urea columns for workshop updates
+            'activity_cost_dollars' : activity_cost_dollars,
+            'crop_1_price_dollars' : crop_1_price_dollars,
+            'crop_2_price_dollars' : crop_2_price_dollars,
+            'crop_3_price_dollars' : crop_3_price_dollars,
+            'urea_price_dollars' : urea_price_dollars,
+            'urea_qty_kg' : urea_qty_kg,
+            'urea_cost_dollars' : urea_cost_dollars
+        })
+
+        # write to a '<date>_priced' folder so it sits alongside, but does not clobber, the standard GM output
+        date_string = datetime.datetime.now().strftime("%d_%m_%Y")
+        dir_path_gm_csv = get_gross_margin_data_path(date_string + '_priced')
+        if not os.path.exists(dir_path_gm_csv):
+            os.mkdir(dir_path_gm_csv)
+        gm_df.to_csv(os.path.join(dir_path_gm_csv, file))
+
+
 def getGrossMarginSensitivityToCropPrices():
     """
     Function to simulate gross margin for a crop phase
